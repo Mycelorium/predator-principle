@@ -1,0 +1,33 @@
+[
+  {
+    "id": "S013",
+    "type": "primary",
+    "authors": "Bicknell, R. D. C. et al.",
+    "year": 2025,
+    "title": "Predatory drilling and the oldest-known evolutionary arms race in Lapworthella fasciculata",
+    "venue": "Current Biology",
+    "note": "~517 Ma, South Australia; >200 shells; shell-wall thickening tracks rise in perforation frequency.",
+    "url": "https://www.eurekalert.org/news-releases/1069369"
+  },
+  {
+    "id": "S014",
+    "type": "report",
+    "authors": "WWF / Zoological Society of London (Living Planet Index)",
+    "year": 2024,
+    "title": "Living Planet Report 2024",
+    "venue": "WWF",
+    "note": "73% average decline across 34,836 monitored vertebrate populations, 1970-2020. Average of population rates of change, NOT proportion of animals or populations lost; ~half of tracked populations stable or increasing.",
+    "url": "https://livingplanet.panda.org/en-GB/"
+  },
+  {
+    "id": "S015",
+    "type": "primary-synthesis",
+    "authors": "Ceballos, G.; Ehrlich, P. R.; Dirzo, R.",
+    "year": 2017,
+    "title": "Biological annihilation via the ongoing sixth mass extinction signaled by vertebrate population losses and declines",
+    "venue": "PNAS",
+    "doi": "10.1073/pnas.1704949114",
+    "note": "Elevated extinction/decline rates; whether the '6th mass extinction' magnitude is reached is definition-dependent and debated.",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.1704949114"
+  }
+]
