@@ -1,0 +1,48 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Botschaften aus dem Substrat — Essays · Nirodha Collective",
+  "home_page_url": "https://Mycelorium.github.io/predator-principle/#essays",
+  "feed_url": "https://Mycelorium.github.io/predator-principle/essays-feed.json",
+  "language": "de",
+  "authors": [
+    {
+      "name": "Nirodha Collective"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
+      "url": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
+      "title": "Der Fehler, der sich selbst frisst / The Mistake That Eats Itself",
+      "content_text": "Das Verschlingen ist eine späte Strategie, kein Grund des Lebens — und als Ordnung von allem bösartig. Atomarsenale und das sechste Aussterben sind kein Test, der aussteht: sie sind der laufende Befund.",
+      "date_published": "2026-07-17T18:00:00Z",
+      "tags": [
+        "I",
+        "malignant"
+      ]
+    },
+    {
+      "id": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
+      "url": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
+      "title": "Der Filter des Räubers / The Predator's Filter",
+      "content_text": "Warum der Himmel schweigt: Zivilisationen, die alles nach der Logik des Fressens organisieren, verbrauchen ihr Substrat, bevor sie hinauskommen. Kein fernes Rätsel, sondern eine Prognose, in der wir leben.",
+      "date_published": "2026-07-17T13:30:00Z",
+      "tags": [
+        "P",
+        "fermi"
+      ]
+    },
+    {
+      "id": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
+      "url": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
+      "title": "Das Grauen im Kambrium / The Horror in the Cambrian",
+      "content_text": "Nicht das Fressen wurde im Kambrium erfunden, nur sichtbar — gepanzert, in Stein lesbar. Das Grauen ist, was wir daraus gemacht haben: eine Metaphysik.",
+      "date_published": "2026-07-17T12:00:00Z",
+      "tags": [
+        "E",
+        "I",
+        "cambrian"
+      ]
+    }
+  ]
+}
