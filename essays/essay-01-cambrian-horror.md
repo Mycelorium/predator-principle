@@ -32,10 +32,11 @@ Und dann, in einem geologischen Wimpernschlag von vielleicht zwanzig
 Millionen Jahren — was in der Zeitrechnung der Erde weniger ist als eine
 durchwachte Nacht in der eines Menschen — kippt alles. Wir nennen es die
 kambrische Explosion, und der Name ist, wie so oft bei den Dingen, die uns
-zutiefst betreffen, ein Euphemismus. Es explodiert nichts. Es beginnt etwas.
-Es beginnt, ganz konkret und nachweisbar, das Fressen. Zum ersten Mal in der
-Geschichte des Planeten frisst das Leben nicht mehr das Licht und die
-Chemie, sondern sich selbst.
+zutiefst betreffen, ein Euphemismus. Es explodiert nichts. Es wird etwas
+*sichtbar*. Nicht das Fressen selbst — das gab es längst, einzellig und
+unsichtbar, weit über hundert Millionen Jahre früher. Was hier zum ersten Mal
+geschieht: Das Fressen legt sich einen Körper zu, der Abdrücke hinterlässt —
+gepanzert, bewaffnet, in Stein lesbar. Die Angst wird fossil.
 
 ## Was wir wissen, und woher wir es wissen
 
@@ -169,9 +170,10 @@ And then, in a geological blink of perhaps twenty million years — which, on
 Earth's clock, is less than a single sleepless night on a human one —
 everything tips over. We call it the Cambrian explosion, and the name, as so
 often with the things that concern us most deeply, is a euphemism. Nothing
-explodes. Something begins. What begins, quite concretely and demonstrably, is
-eating. For the first time in the planet's history, life stops feeding on light
-and chemistry alone and starts feeding on itself.
+explodes. Something becomes *visible*. Not eating itself — that had existed long
+before, single-celled and invisible, well over a hundred million years earlier.
+What happens here for the first time is that eating acquires a body that leaves
+an imprint — armoured, weaponised, legible in stone. Fear becomes a fossil.
 
 ## What we know, and how we know it
 

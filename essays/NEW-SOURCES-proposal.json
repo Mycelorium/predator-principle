@@ -6,7 +6,7 @@
     "year": 2025,
     "title": "Predatory drilling and the oldest-known evolutionary arms race in Lapworthella fasciculata",
     "venue": "Current Biology",
-    "note": "~517 Ma, South Australia; >200 shells; shell-wall thickening tracks rise in perforation frequency.",
+    "note": "~517 Ma, South Australia; >200 shells; shell-wall thickening tracks rise in perforation frequency. Oldest DOCUMENTED hard-shell arms race — not the origin of predation.",
     "url": "https://www.eurekalert.org/news-releases/1069369"
   },
   {
@@ -29,5 +29,36 @@
     "doi": "10.1073/pnas.1704949114",
     "note": "Elevated extinction/decline rates; whether the '6th mass extinction' magnitude is reached is definition-dependent and debated.",
     "url": "https://www.pnas.org/doi/10.1073/pnas.1704949114"
+  },
+  {
+    "id": "S016",
+    "type": "primary",
+    "authors": "Porter, S. M.",
+    "year": 2016,
+    "title": "Tiny vampires in ancient seas: evidence for predation via perforation in fossils from the 780-740 million-year-old Chuar Group, Grand Canyon, USA",
+    "venue": "Proceedings of the Royal Society B",
+    "note": "Oldest DIRECT fossil evidence for predation on eukaryotes (~740-780 Ma), >200 My before the Cambrian. Drill holes in vase-shaped microfossils, likely by vampyrellid-like predatory protists.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892792/"
+  },
+  {
+    "id": "S017",
+    "type": "primary-synthesis",
+    "authors": "Mills, D. B.",
+    "year": 2020,
+    "title": "The origin of phagocytosis in Earth history",
+    "venue": "Interface Focus",
+    "note": "Phagocytosis (one cell engulfing/eating another — cellular basis of predation) likely originated ~1.2 Ga or earlier; timing and single-vs-multiple origins debated. LECA age 'early' (>1.6 Ga) vs 'late' (<1.2 Ga) unresolved.",
+    "url": "https://royalsocietypublishing.org/doi/abs/10.1098/rsfs.2020.0019"
+  },
+  {
+    "id": "S018",
+    "type": "theoretical",
+    "authors": "de Nooijer, S.; Holland, B. R.; Penny, D.",
+    "year": 2009,
+    "title": "The Emergence of Predators in Early Life: There was No Garden of Eden",
+    "venue": "PLoS ONE",
+    "doi": "10.1371/journal.pone.0005507",
+    "note": "COUNTER-POSITION, and IMPORTANT: this is a simulation / plausibility argument that predation arose very early — NOT fossil proof. Cite it as a claim, not established evidence. No actual early predator is documented; the deep fossil record is silent. Do not let it force hedging.",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0005507"
   }
 ]
