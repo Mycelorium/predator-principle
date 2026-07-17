@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this project, cite the repository and the specific claim IDs you relied on."
+title: "The Predator Principle — The Cancer of Evolution"
+type: software
+version: 0.2.0
+date-released: 2026-07-17
+authors:
+  - name: "Nirodha Collective"
+repository-code: "https://github.com/Mycelorium/predator-principle"
+url: "https://Mycelorium.github.io/predator-principle/"
+license: "CC-BY-4.0"
+keywords:
+  - cooperation
+  - predation
+  - evolutionary transitions
+  - biosphere trauma
+  - artificial superintelligence
