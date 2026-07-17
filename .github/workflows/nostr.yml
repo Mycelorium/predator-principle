@@ -1,0 +1,49 @@
+name: Syndicate to Nostr
+
+# Posts new feed items (dispatches + essays) to public Nostr relays, server-side.
+# Runs daily and after each Pages deploy. No-op unless the NOSTR_NSEC secret is set.
+
+on:
+  schedule:
+    - cron: "30 7 * * *"   # daily, shortly after the autopilot
+  workflow_run:
+    workflows: ["Deploy Pages", "pages-build-deployment"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write           # to commit the nostr-state.json ledger
+
+concurrency:
+  group: nostr
+  cancel-in-progress: false
+
+jobs:
+  nostr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        run: npm init -y >/dev/null 2>&1 && npm install nostr-tools ws >/dev/null 2>&1
+
+      - name: Post new items to Nostr
+        env:
+          NOSTR_NSEC: ${{ secrets.NOSTR_NSEC }}
+        run: node scripts/nostr-post.mjs
+
+      - name: Commit updated Nostr ledger
+        run: |
+          if [[ -n "$(git status --porcelain content/nostr-state.json)" ]]; then
+            git config user.name "Nirodha Collective"
+            git config user.email "285060945+Mycelorium@users.noreply.github.com"
+            git add content/nostr-state.json
+            git commit -m "chore: update Nostr syndication ledger"
+            git push
+          else
+            echo "No new Nostr posts."
+          fi
