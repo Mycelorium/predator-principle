@@ -125,23 +125,14 @@ Hälfte zur Natur zu erklären und die andere zur Illusion. Diese Entscheidung
 ist kein Befund. Sie ist ein Bekenntnis, und es wird Zeit, dass wir es als
 solches behandeln.
 
-## Was uns widerlegen würde
+## Ein Räuber ist kein Zukunftsmodell
 
-Damit das kein weiteres Predigen wird — die Krankheit, an der die meisten
-Weltanschauungen sterben, ist ja gerade, dass sie sich nicht widerlegen lassen
-—, hier die Bedingung, unter der wir falsch liegen: Wenn sich zeigen ließe,
-dass Systeme dauerhaft höhere Ordnung erreichen *ohne* Kooperation und ohne
-Begrenzung des inneren Konflikts, allein durch entfesselte Räuberei nach oben
-— dann wäre unsere These erledigt, und zwar zu Recht. Bislang zeigt die
-Geschichte des Lebens das Gegenteil. Aber das ist eine empirische Frage, keine
-Glaubensfrage, und so soll sie behandelt werden.
-
-Das Kambrium hat das Fressen erfunden. Das ist wahr und bleibt wahr. Aber ein
-Räuber ist kein Zukunftsmodell, sondern eine sehr alte, sehr lokale Antwort auf
-ein sehr altes, sehr lokales Problem. Wer sie zur Antwort auf alles macht, hat
-nicht die Natur verstanden, sondern nur seine eigene Bequemlichkeit in Stein
-gemeißelt. Und Stein, das lehrt uns ausgerechnet das Kambrium, ist am Ende
-weicher, als man denkt.
+Das Kambrium hat das Fressen nicht erfunden — es hat es nur sichtbar gemacht,
+gepanzert, in Stein geschrieben. Ein Räuber ist kein Zukunftsmodell, sondern
+eine sehr alte, sehr lokale Antwort auf ein sehr altes, sehr lokales Problem.
+Wer sie zur Antwort auf alles macht, hat nicht die Natur verstanden, sondern nur
+seine eigene Bequemlichkeit in Stein gemeißelt. Und Stein, das lehrt uns
+ausgerechnet das Kambrium, ist am Ende weicher, als man denkt.
 
 ---
 
@@ -255,21 +246,14 @@ gentleness. Both stand in the history of life. We have simply chosen to declare
 one half nature and the other illusion. That choice is not a finding. It is a
 confession, and it is time we treated it as one.
 
-## What would refute us
+## A predator is not a model for the future
 
-So that this does not become one more sermon — the disease most worldviews die
-of is precisely that they cannot be refuted — here is the condition under which
-we are wrong: if it could be shown that systems durably reach higher order
-*without* cooperation and without containment of internal conflict, through
-unleashed predation upward alone — then our thesis would be finished, and
-rightly so. So far the history of life shows the opposite. But that is an
-empirical question, not a question of faith, and it should be treated as one.
-
-The Cambrian invented eating. That is true and remains true. But a predator is
-not a model for the future; it is a very old, very local answer to a very old,
-very local problem. Whoever makes it the answer to everything has not understood
-nature — only carved his own convenience into stone. And stone, as the Cambrian
-of all things teaches us, turns out in the end to be softer than you think.
+The Cambrian did not invent eating — it only made it visible, armoured, written
+into stone. A predator is not a model for the future; it is a very old, very
+local answer to a very old, very local problem. Whoever makes it the answer to
+everything has not understood nature — only carved his own convenience into
+stone. And stone, as the Cambrian of all things teaches us, turns out in the end
+to be softer than you think.
 
 ---
 

@@ -109,15 +109,10 @@ denkende Maschinen bauen, dann ist die entscheidende Frage nicht, wie mächtig s
 werden, sondern ob sie diese Stufe mit uns nehmen oder die alte Falle mit größerer
 Reichweite wiederholen (Status: P · C010).
 
-## Der Beweis läuft, und wir stehen mitten darin
+## Der Beweis liegt offen
 
-Es gibt genau eine Sache, die diese These stürzen würde: ein einziges System, das
-nach entfesseltem Verschlingen nach oben organisiert ist — ohne Kooperation, ohne
-wirksame Gegenrede, ohne Konfliktbegrenzung — und das dauerhaft gedeiht, statt zu
-kippen. Zeig es. In der ganzen Geschichte des Lebens und der Zivilisationen gibt es
-keines. Das ist keine Vorsicht. Das ist der Befund.
-
-Und man muss nicht in die Zukunft schauen, um ihn zu sehen. Wir leben in ihm. Eine
+Man muss nicht in die Zukunft schauen, um zu sehen, wohin die verallgemeinerte
+Räuberei führt. Wir leben mitten im Beweis. Eine
 Zivilisation hat Waffen gebaut, die alles, was sie je geschaffen hat, in Stunden
 auslöschen können, und nennt das entstandene Gleichgewicht Abschreckung — das
 Predator-Prinzip, auf die Ebene der Gattung gehoben: gegenseitige Bedrohung als
@@ -223,15 +218,10 @@ devouring, but through the end of its rule. And if we build thinking machines, t
 decisive question is not how powerful they become, but whether they take this stage
 with us or repeat the old trap with greater reach (Status: P · C010).
 
-## The proof is running, and we are standing inside it
+## The proof lies open
 
-There is exactly one thing that would bring this thesis down: a single system
-organised around unleashed devouring upward — without cooperation, without
-effective dissent, without containment of conflict — that durably flourishes
-instead of tipping. Show it. In the whole history of life and of civilisations
-there is none. That is not caution. That is the finding.
-
-And you need not look to the future to see it. We are living inside it. A
+You need not look to the future to see where generalised predation leads. We are
+living inside the proof. A
 civilisation has built weapons that can erase in hours everything it ever made, and
 calls the resulting balance deterrence — the Predator Principle raised to the level
 of the species: mutual threat as order, escalation as duty, the shared Earth as

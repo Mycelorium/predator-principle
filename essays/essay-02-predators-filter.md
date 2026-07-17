@@ -86,16 +86,7 @@ Planeten* prüfen und ändern kann. Eine Erklärung, die nur in den Sternen lieg
 lässt uns ohnmächtig. Eine, die in unserer eigenen Organisationsweise liegt,
 gibt uns die Sache zurück in die Hand.
 
-## Was diesen Filter widerlegen würde
-
-Ich ducke mich nicht weg, also nenne ich den Angriffspunkt selbst, an dem diese
-Idee fällt: Man müsste zeigen, dass hochentwickelte Systeme — Ökosysteme,
-Gesellschaften, künftige Maschinenintelligenzen — dauerhaft stabil bleiben,
-*obwohl* sie nach entfesselter Räuberei nach oben organisiert sind, ohne
-Kooperation, ohne wirksame Gegenrede, ohne Begrenzung des inneren Konflikts.
-Findet jemand ein solches System, das nicht kippt, ist der Filter des Räubers
-erledigt. Bis heute zeigt jedes System, das wir lange genug beobachten konnten,
-das Gegenteil: Es kippt.
+## Der Himmel schweigt
 
 Der Himmel schweigt. Ich glaube, die Antwort steht nicht in den Sternen, sondern
 in der Art, wie eine Intelligenz gelernt hat, alles, was sie umgibt und was sie
@@ -182,15 +173,7 @@ can test and change *today*, *here*, *on this planet*. An explanation that lies
 only in the stars leaves us powerless. One that lies in our own way of organising
 ourselves hands the matter back to us.
 
-## What would refute this filter
-
-I will not duck, so I name the point of attack where this idea falls myself: one
-would have to show that highly developed systems — ecosystems, societies, future
-machine intelligences — stay durably stable *even when* organised around
-unleashed predation upward, without cooperation, without effective dissent,
-without containment of internal conflict. Find one such system that does not tip,
-and the Predator's Filter is finished. To this day, every system we have been
-able to watch long enough shows the opposite: it tips.
+## The sky is silent
 
 The sky is silent. I believe the answer lies not in the stars but in the way an
 intelligence has learned to divide everything around it, and everything it is,
