@@ -1,0 +1,122 @@
+[
+  {
+    "id": "S001",
+    "type": "primary-synthesis",
+    "authors": "Nowak, M. A.",
+    "year": 2006,
+    "title": "Five Rules for the Evolution of Cooperation",
+    "venue": "Science",
+    "doi": "10.1126/science.1133755",
+    "url": "https://doi.org/10.1126/science.1133755"
+  },
+  {
+    "id": "S002",
+    "type": "primary-synthesis",
+    "authors": "West, S. A.; Fisher, R. M.; Gardner, A.; Kiers, E. T.",
+    "year": 2015,
+    "title": "Major evolutionary transitions in individuality",
+    "venue": "PNAS",
+    "doi": "10.1073/pnas.1421402112",
+    "url": "https://doi.org/10.1073/pnas.1421402112"
+  },
+  {
+    "id": "S003",
+    "type": "primary-synthesis",
+    "authors": "Szathmáry, E.",
+    "year": 2015,
+    "title": "Toward major evolutionary transitions theory 2.0",
+    "venue": "PNAS",
+    "doi": "10.1073/pnas.1421398112",
+    "url": "https://doi.org/10.1073/pnas.1421398112"
+  },
+  {
+    "id": "S004",
+    "type": "primary",
+    "authors": "Zanette, L. Y.; White, A. F.; Allen, M. C.; Clinchy, M.",
+    "year": 2011,
+    "title": "Perceived predation risk reduces the number of offspring songbirds produce per year",
+    "venue": "Science",
+    "doi": "10.1126/science.1210908",
+    "url": "https://doi.org/10.1126/science.1210908"
+  },
+  {
+    "id": "S005",
+    "type": "primary",
+    "authors": "Zanette, L. Y.; Hobbs, E. C.; Witterick, L. E.; MacDougall-Shackleton, S. A.; Clinchy, M.",
+    "year": 2019,
+    "title": "Predator-induced fear causes PTSD-like changes in the brains and behaviour of wild animals",
+    "venue": "Scientific Reports",
+    "doi": "10.1038/s41598-019-47684-6",
+    "url": "https://doi.org/10.1038/s41598-019-47684-6"
+  },
+  {
+    "id": "S006",
+    "type": "primary",
+    "authors": "Darimont, C. T. et al.",
+    "year": 2015,
+    "title": "The unique ecology of human predators",
+    "venue": "Science",
+    "doi": "10.1126/science.aac4249",
+    "url": "https://doi.org/10.1126/science.aac4249"
+  },
+  {
+    "id": "S007",
+    "type": "primary-synthesis",
+    "authors": "Bar-On, Y. M.; Phillips, R.; Milo, R.",
+    "year": 2018,
+    "title": "The biomass distribution on Earth",
+    "venue": "PNAS",
+    "doi": "10.1073/pnas.1711842115",
+    "url": "https://doi.org/10.1073/pnas.1711842115"
+  },
+  {
+    "id": "S008",
+    "type": "primary",
+    "authors": "Paine, R. T.",
+    "year": 1966,
+    "title": "Food Web Complexity and Species Diversity",
+    "venue": "The American Naturalist",
+    "doi": "10.1086/282400",
+    "url": "https://doi.org/10.1086/282400"
+  },
+  {
+    "id": "S009",
+    "type": "primary-synthesis",
+    "authors": "Estes, J. A. et al.",
+    "year": 2011,
+    "title": "Trophic Downgrading of Planet Earth",
+    "venue": "Science",
+    "doi": "10.1126/science.1205106",
+    "url": "https://doi.org/10.1126/science.1205106"
+  },
+  {
+    "id": "S010",
+    "type": "primary",
+    "authors": "Imhoff, M. L. et al.",
+    "year": 2004,
+    "title": "Global patterns in human consumption of net primary production",
+    "venue": "Nature",
+    "doi": "10.1038/nature02619",
+    "url": "https://doi.org/10.1038/nature02619"
+  },
+  {
+    "id": "S011",
+    "type": "primary-synthesis",
+    "authors": "Howe, J. et al.",
+    "year": 2022,
+    "title": "Multicellularity in animals: The potential for within-organism conflict",
+    "venue": "PNAS",
+    "doi": "10.1073/pnas.2120457119",
+    "url": "https://doi.org/10.1073/pnas.2120457119"
+  },
+  {
+    "id": "S012",
+    "type": "primary",
+    "authors": "Suraci, J. P. et al.",
+    "year": 2019,
+    "title": "Fear of humans as apex predators has landscape-scale impacts from mountain lions to mice",
+    "venue": "Ecology Letters",
+    "doi": "10.1111/ele.13344",
+    "url": "https://doi.org/10.1111/ele.13344"
+  }
+]
