@@ -1,0 +1,33 @@
+name: Automated research inbox
+
+on:
+  schedule:
+    - cron: "41 7 * * 2"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  research-inbox:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Search recent literature metadata
+        run: node scripts/research-watch.mjs
+      - name: Open unreviewed research inbox
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create research-inbox --color D4C5F9 --description "Unreviewed automated literature candidates" --force
+          title="Research inbox — $(date -u +%F)"
+          count=$(gh issue list --state all --search "$title in:title" --json number --jq 'length')
+          if [ "$count" = "0" ]; then
+            gh issue create --title "$title" --label research-inbox --body-file dist/research-candidates.md
+          else
+            echo "Research inbox already exists for today."
+          fi

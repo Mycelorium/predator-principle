@@ -1,0 +1,23 @@
+name: Generate approved content drafts
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/validate.mjs
+      - run: node scripts/generate-content-drafts.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: approved-content-drafts
+          path: content/generated/
+          if-no-files-found: warn

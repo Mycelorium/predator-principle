@@ -1,0 +1,30 @@
+name: Publish weekly digest release
+
+on:
+  schedule:
+    - cron: "37 8 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/generate-weekly-digest.mjs
+      - name: Create subscribable GitHub release
+        if: ${{ hashFiles('dist/weekly-digest.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="dispatch-digest-$(date -u +%G-W%V)"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Digest release already exists: $tag"
+          else
+            gh release create "$tag" --title "Predator Principle Dispatch Digest · $(date -u +%G-W%V)" --notes-file dist/weekly-digest.md
+          fi
