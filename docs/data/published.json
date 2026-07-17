@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "id": "the-old-emergency",
+    "sequence": 1,
+    "class": "I",
+    "claim_ids": [
+      "C011"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S008"
+    ],
+    "title_de": "Ein Raubtier ist kein Zukunftsmodell",
+    "title_en": "A predator is not a model for the future",
+    "hook_de": "Eine alte Überlebensstrategie wurde zur Weltanschauung erhoben.",
+    "hook_en": "An ancient survival strategy was elevated into a worldview.",
+    "body_de": [
+      "Predation existiert und kann in heutigen Ökosystemen Funktionen erfüllen. Daraus folgt kein Auftrag, ihre Logik in Wirtschaft, Politik oder künstliche Intelligenz zu übernehmen.",
+      "Das Predator-Prinzip beginnt, wenn Extraktion Schäden auslagert, Korrektur ausschaltet, Eskalation erzwingt und das gemeinsame Trägersystem beschädigt. Was lokal gewinnt, kann das größere System verlieren lassen."
+    ],
+    "body_en": [
+      "Predation exists and can perform functions in present ecosystems. This creates no obligation to copy its logic into economies, politics, or artificial intelligence.",
+      "The Predator Principle begins when extraction externalises harm, disables correction, compels escalation, and damages the shared substrate. What wins locally can make the larger system lose."
+    ],
+    "boundary_de": "Interpretation: ökologische Predation und das definierte Systemmuster sind nicht identisch.",
+    "boundary_en": "Interpretation: ecological predation and the defined system pattern are not identical.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-17T11:22:21.082Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/the-old-emergency.html"
+  }
+]

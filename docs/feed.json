@@ -3,6 +3,22 @@
   "title": "The Predator Principle — The Cancer of Evolution · Nirodha Collective",
   "home_page_url": "https://Mycelorium.github.io/predator-principle",
   "feed_url": "https://Mycelorium.github.io/predator-principle/feed.json",
-  "authors": [{ "name": "Nirodha Collective" }],
-  "items": []
+  "authors": [
+    {
+      "name": "Nirodha Collective"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://Mycelorium.github.io/predator-principle/posts/the-old-emergency.html",
+      "url": "https://Mycelorium.github.io/predator-principle/posts/the-old-emergency.html",
+      "title": "Ein Raubtier ist kein Zukunftsmodell / A predator is not a model for the future",
+      "content_text": "Predation existiert und kann in heutigen Ökosystemen Funktionen erfüllen. Daraus folgt kein Auftrag, ihre Logik in Wirtschaft, Politik oder künstliche Intelligenz zu übernehmen.\n\nDas Predator-Prinzip beginnt, wenn Extraktion Schäden auslagert, Korrektur ausschaltet, Eskalation erzwingt und das gemeinsame Trägersystem beschädigt. Was lokal gewinnt, kann das größere System verlieren lassen.\n\n\n\nPredation exists and can perform functions in present ecosystems. This creates no obligation to copy its logic into economies, politics, or artificial intelligence.\n\nThe Predator Principle begins when extraction externalises harm, disables correction, compels escalation, and damages the shared substrate. What wins locally can make the larger system lose.\n\n\n\nEvidence boundary: Interpretation: ecological predation and the defined system pattern are not identical.",
+      "date_published": "2026-07-17T11:22:21.082Z",
+      "tags": [
+        "I",
+        "C011"
+      ]
+    }
+  ]
 }

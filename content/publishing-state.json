@@ -1,5 +1,11 @@
 {
-  "published": [],
-  "last_published_at": null,
+  "published": [
+    {
+      "id": "the-old-emergency",
+      "sequence": 1,
+      "published_at": "2026-07-17T11:22:21.082Z"
+    }
+  ],
+  "last_published_at": "2026-07-17T11:22:21.082Z",
   "campaign_completed_at": null
 }
