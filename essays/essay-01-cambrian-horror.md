@@ -40,7 +40,7 @@ gepanzert, bewaffnet, in Stein lesbar. Die Angst wird fossil.
 
 ## Was wir wissen, und woher wir es wissen
 
-Hier muss ich innehalten, denn ich will nicht das tun, was fast alle tun, die
+Hier müssen wir innehalten, denn wir wollen nicht das tun, was fast alle tun, die
 über das Kambrium schreiben: eine Geschichte erzählen und sie für Wissen
 ausgeben. Also der Reihe nach.
 
@@ -168,7 +168,7 @@ an imprint — armoured, weaponised, legible in stone. Fear becomes a fossil.
 
 ## What we know, and how we know it
 
-Here I have to stop, because I refuse to do what almost everyone who writes
+Here we have to stop, because we refuse to do what almost everyone who writes
 about the Cambrian does: tell a story and pass it off as knowledge. So, in
 order.
 
