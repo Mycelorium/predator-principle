@@ -1,0 +1,30 @@
+name: Challenge a claim
+description: Submit counterevidence, a boundary correction, or a falsification.
+title: "[Claim challenge]: C___"
+labels: [claim-challenge]
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID
+      placeholder: C001
+    validations:
+      required: true
+  - type: textarea
+    id: challenge
+    attributes:
+      label: What is wrong, incomplete, or overstated?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary evidence or reproducible analysis
+      description: DOI, dataset, code, protocol, or exact counterexample.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Narrower wording, new boundary, or status change.

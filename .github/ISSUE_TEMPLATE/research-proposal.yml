@@ -1,0 +1,29 @@
+name: Propose a test
+description: Propose a falsifiable study or benchmark.
+title: "[Research proposal]: "
+labels: [research-proposal]
+body:
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and measurements
+    validations:
+      required: true
+  - type: textarea
+    id: falsifier
+    attributes:
+      label: What result would weaken or falsify it?
+    validations:
+      required: true
+  - type: textarea
+    id: safeguards
+    attributes:
+      label: Ethics and anti-predation safeguards
+    validations:
+      required: true
