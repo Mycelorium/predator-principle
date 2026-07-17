@@ -1,0 +1,42 @@
+[
+  {
+    "id": "launch-definition-de",
+    "channel": "website-social-draft",
+    "title": "Das Predator-Prinzip in fünf Kriterien",
+    "body": "Das Predator-Prinzip ist nicht gleichbedeutend mit einem Raubtier. Es ist ein Systemmuster: asymmetrische Extraktion, ausgelagerte Schäden, unterdrückte Rückkopplung, erzwungene Eskalation und Erosion des gemeinsamen Trägersystems. Die prüfbare Hypothese: Treten mindestens vier Merkmale dauerhaft auf, wird lokaler Erfolg zum Risiko für die nächsthöhere Ebene. Prüfe die Definition. Suche Gegenbeispiele. Hilf uns, den Test zu verbessern.",
+    "claim_ids": ["C011"],
+    "evidence_note": "Interpretation / zentrale Synthese. Kein empirischer Einzelbefund.",
+    "approved": false,
+    "reviewed_by": ""
+  },
+  {
+    "id": "launch-fear-cost-de",
+    "channel": "website-social-draft",
+    "title": "Räuber wirken auch ohne zu töten",
+    "body": "In einem kontrollierten Feldexperiment produzieren Singvögel unter wahrgenommener Räubergefahr 40 Prozent weniger Nachwuchs – ohne dass mehr Tiere getötet wurden. Das ist kein universeller Wert für alle Arten. Es zeigt aber: Die Kosten der Predation enden nicht am Körper des gefressenen Tiers.",
+    "claim_ids": ["C002"],
+    "evidence_note": "Empirischer Befund mit enger Art- und Designgrenze; Quelle S004.",
+    "approved": false,
+    "reviewed_by": ""
+  },
+  {
+    "id": "launch-counterargument-de",
+    "channel": "website-social-draft",
+    "title": "Der stärkste Einwand gegen uns",
+    "body": "Räuber sind nicht nutzlos. In bestimmten Ökosystemen erhalten sie Diversität und Funktion; ihr Verlust kann trophische Kaskaden auslösen. Eine Kritik des Predator-Prinzips, die das leugnet, ist falsch. Darum untersuchen wir nicht das Tier als moralisches Problem, sondern ein Systemmuster, das Extraktion von Rückkopplung entkoppelt.",
+    "claim_ids": ["C006", "C011"],
+    "evidence_note": "C006 ist empirisches Gegenmaterial; C011 ist die daraus abgeleitete Systemsynthese.",
+    "approved": false,
+    "reviewed_by": ""
+  },
+  {
+    "id": "launch-asi-de",
+    "channel": "website-social-draft",
+    "title": "Ein Krieg der Optimierer ist keine ASI",
+    "body": "Eine ASI, deren Subagenten täuschen, Ressourcen horten, Korrektur unterdrücken und einander in unbegrenzte Eskalation treiben, wäre kein höherer Ordnungszustand. Sie wäre ein primitives Konfliktmuster mit potenziell kosmischer Reichweite. Wir schlagen einen Multi-Agenten-Test für Wahrhaftigkeit, begrenzte Ressourcenmacht, Reversibilität, Gegenrede und Substraterhalt vor.",
+    "claim_ids": ["C010"],
+    "evidence_note": "Zu prüfende Designhypothese, nicht etablierte ASI-Forschungstatsache.",
+    "approved": false,
+    "reviewed_by": ""
+  }
+]

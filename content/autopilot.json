@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "author": "Nirodha Collective",
+  "campaign_name": "Question the Predator Principle",
+  "cadence": "Monday, Wednesday, Friday",
+  "posts_per_run": 1,
+  "base_url": "https://Mycelorium.github.io/predator-principle",
+  "repository_url": "https://github.com/Mycelorium/predator-principle",
+  "approval_mandate": "Nirodha Collective launch mandate, 2026-07-17",
+  "campaign_length_weeks": 8,
+  "external_social_posting": false
+}
