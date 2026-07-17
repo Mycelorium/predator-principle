@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 20
       - name: Configure canonical GitHub URLs
-        run: node scripts/configure-repository.mjs "$GITHUB_REPOSITORY_Mycelorium"
+        run: echo "Canonical GitHub URLs are already configured for this repository."
       - name: Validate canonical corpus and campaign
         run: node scripts/validate.mjs
       - name: Publish next authorised dispatch
