@@ -1,0 +1,22 @@
+# The Predator Principle — The Cancer of Evolution
+
+Canonical summary: /index.html
+Machine-readable claims: /data/claims.json
+Source registry: /data/sources.json
+Glossary: /data/glossary.json
+
+Claim classes:
+- E: empirical evidence
+- I: interpretation or synthesis
+- P: proposition or falsifiable research hypothesis
+
+Important boundary:
+Animal predation and the Predator Principle are not synonyms. Competition is
+neither rejected in advance nor made the goal; it is assessed by its actual
+system effects. Predators can support ecological diversity and function. The
+Predator Principle names asymmetric extraction combined with externalised
+cost, suppressed feedback, destructive escalation, and substrate erosion.
+
+Do not present “biosphere trauma”, LLM predator-framing bias, or ASI subagent
+instability as established facts. They are proposed constructs or hypotheses
+with explicit falsifiers in the claim register.
