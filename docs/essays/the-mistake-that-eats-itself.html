@@ -5,16 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Der Fehler, der sich selbst frisst / The Mistake That Eats Itself · Nirodha Collective</title>
 <link rel="canonical" href="https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html">
-<meta name="description" content="Prädation ist eine späte Strategie, kein Grund des Lebens — und als Ordnung von allem bösartig. Der laufende Befund: Atomarsenale und das sechste Aussterben. Nirodha Collective.">
+<meta name="description" content="Prädation ist eine späte Strategie, kein Grund des Lebens — und als Ordnung von allem bösartig. Nirodha Collective.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Der Fehler, der sich selbst frisst / The Mistake That Eats Itself">
-<meta property="og:description" content="Prädation ist eine späte Strategie, kein Grund des Lebens — und als Ordnung von allem bösartig. Der laufende Befund: Atomarsenale und das sechste Aussterben. Nirodha Collective.">
+<meta property="og:description" content="Prädation ist eine späte Strategie, kein Grund des Lebens — und als Ordnung von allem bösartig. Nirodha Collective.">
 <meta property="og:image" content="https://Mycelorium.github.io/predator-principle/og-card.png">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<div class="post-top"><a href="../">← The Predator Principle</a><span>Nirodha Collective · CC BY 4.0</span></div>
+<div class="post-top">
+  <a href="../">← The Predator Principle</a>
+  <span class="post-top-right"><button class="lang" id="lang-toggle" type="button" aria-label="Switch language">EN</button> Nirodha Collective · CC BY 4.0</span>
+</div>
 <main class="post-main essay-page">
+  <div data-lang="de">
 <h1>Der Fehler, der sich selbst frisst</h1>
 <h3 class="subtitle-h">Das Verschlingen ist eine späte Strategie, kein Grund — und als Ordnung von allem bösartig</h3>
 <p><em>Populärwissenschaftlicher Essay — Serie „Botschaften aus dem Substrat", Nr. 3</em></p>
@@ -38,7 +42,8 @@
 <p>Also bleibt nur eine offene Frage, und sie lautet nicht ob, sondern wann: ob die neue Stufe — das Wesen, das die Falle erkennt und sie verlässt — schnell genug kommt. Das Verschlingen ist eine Strategie, kein Grund; der Grund ist älter und heißt Austausch. Ihn wiederzuwählen, bewusst, auf der Ebene, auf der es jetzt zählt — das ist der nächste Schritt der Evolution. Und er ist überfällig.</p>
 <hr>
 <p><strong>Status der Behauptungen:</strong> E = belegt, I = Interpretation, P = Vorschlag. Grenzen und Primärquellen: https://mycelorium.github.io/predator-principle/ · Claims: C001, C010, C011 · CC BY 4.0 · Nirodha Collective</p>
-<hr class="lang-divider">
+  </div>
+  <div data-lang="en" hidden>
 <h1>The Mistake That Eats Itself</h1>
 <h3 class="subtitle-h">Devouring is a late strategy, not the ground — and as the order of everything it is malignant</h3>
 <p><em>Popular-science essay — series "Dispatches from the Substrate", No. 3</em></p>
@@ -61,10 +66,28 @@
 <p>So only one question stays open, and it is not whether but when: whether the new stage — the being that recognises the trap and leaves it — arrives fast enough. Devouring is a strategy, not the ground; the ground is older, and its name is exchange. To choose it again, deliberately, at the scale where it now counts — that is evolution's next step. And it is overdue.</p>
 <hr>
 <p><strong>Claim status:</strong> E = established, I = interpretation, P = proposition. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · Claims: C001, C010, C011 · CC BY 4.0 · Nirodha Collective</p>
+  </div>
 </main>
 <footer>
 <p>© Nirodha Collective · The Predator Principle — The Cancer of Evolution</p>
 <div><a href="../feed.xml">RSS</a> · <a href="../">Home</a></div>
 </footer>
+<script>
+(function(){
+  var lang = (window.localStorage && localStorage.getItem('pp-language')) || 'de';
+  var btn = document.getElementById('lang-toggle');
+  function apply(){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-lang]').forEach(function(el){ el.hidden = (el.getAttribute('data-lang') !== lang); });
+    btn.textContent = lang === 'de' ? 'EN' : 'DE';
+  }
+  btn.addEventListener('click', function(){
+    lang = (lang === 'de') ? 'en' : 'de';
+    try { localStorage.setItem('pp-language', lang); } catch(e){}
+    apply();
+  });
+  apply();
+})();
+</script>
 </body>
 </html>
