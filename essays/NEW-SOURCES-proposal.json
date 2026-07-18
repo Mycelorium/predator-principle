@@ -91,5 +91,58 @@
     "venue": "Trends in Ecology & Evolution",
     "note": "COUNTER-POSITION: argues cumulative species lost so far does not reach big-five magnitude, so a sixth mass extinction is not (yet) established. NOTE the category error — compares a beginning (few centuries) to completed events (millennia); does not refute the RATE argument or documented defaunation. Cite honestly, then answer.",
     "url": "https://www.sciencedirect.com/science/article/pii/S0169534725000023"
+  },
+  {
+    "id": "S022",
+    "type": "primary",
+    "authors": "Zanette, L. Y.; White, A. F.; Allen, M. C.; Clinchy, M.",
+    "year": 2011,
+    "title": "Perceived predation risk reduces the number of offspring songbirds produce per year",
+    "venue": "Science",
+    "doi": "10.1126/science.1210908",
+    "note": "Song sparrows protected from actual predation but exposed to predator-sound playback produced ~40% fewer offspring per year. Fear alone — no contact — drives the effect. Class E.",
+    "url": "https://www.science.org/doi/10.1126/science.1210908"
+  },
+  {
+    "id": "S023",
+    "type": "primary",
+    "authors": "Suraci, J. P.; Clinchy, M.; Dill, L. M.; Roberts, D.; Zanette, L. Y.",
+    "year": 2016,
+    "title": "Fear of large carnivores causes a trophic cascade",
+    "venue": "Nature Communications",
+    "doi": "10.1038/ncomms10698",
+    "note": "Large-carnivore vocalisation playback reduced raccoon (mesopredator) foraging; intertidal prey rebounded (crabs, fish, polychaete worms). Non-lethal fear cascades down the food web. NOTE: reported prey are crabs/fish/worms, NOT mussels. Class E.",
+    "url": "https://www.nature.com/articles/ncomms10698"
+  },
+  {
+    "id": "S024",
+    "type": "framework-review",
+    "authors": "Laundré, J. W.; Brown, J. S.; et al. (ecology / landscape of fear)",
+    "year": 2019,
+    "title": "The landscape/ecology of fear: non-consumptive effects of predation risk",
+    "venue": "Trends in Ecology & Evolution / review literature",
+    "note": "Established framework: predation risk (not just predation) reshapes prey behaviour, distribution and reproduction, restructuring ecosystems. Class E as a framework.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5600181/"
+  },
+  {
+    "id": "S025",
+    "type": "primary",
+    "authors": "Dias, B. G.; Ressler, K. J.",
+    "year": 2014,
+    "title": "Parental olfactory experience influences behavior and neural structure in subsequent generations",
+    "venue": "Nature Neuroscience",
+    "doi": "10.1038/nn.3594",
+    "note": "CONTESTED. Mice conditioned to fear acetophenone; F1/F2 showed altered odour response, neural change, and sperm methylation of the odorant-receptor gene. Experts: solid within mice, NOT established for humans; transgenerational epigenetic inheritance in mammals is disputed and unsettled. Cite as class I/contested — never E.",
+    "url": "https://www.nature.com/articles/nn.3594"
+  },
+  {
+    "id": "S026",
+    "type": "primary-synthesis",
+    "authors": "Öhman, A.; Mineka, S. (2001); Isbell, L. A. (2006); primate snake-neuron studies",
+    "year": 2006,
+    "title": "Evolved fear module / snake-detection: preferential threat detection in primates and humans",
+    "venue": "Psychological Review / J. Human Evolution / PNAS",
+    "note": "Humans and other primates detect snakes preferentially and rapidly; primate brains contain snake-responsive neurons. The behavioural finding is class E; the evolutionary-cause reading (predation pressure shaped attention/fear) is class I.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8024491/"
   }
 ]
