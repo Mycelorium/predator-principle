@@ -1,4 +1,4 @@
-const state = { language: localStorage.getItem('pp-language') || 'de', filter: 'all', claims: [], sources: [], published: [] };
+const state = { language: localStorage.getItem('pp-language') || 'en', filter: 'all', claims: [], sources: [], published: [] };
 
 const sourceMap = () => new Map(state.sources.map((source) => [source.id, source]));
 
