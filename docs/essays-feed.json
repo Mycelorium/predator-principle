@@ -11,6 +11,18 @@
   ],
   "items": [
     {
+      "id": "https://Mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html",
+      "url": "https://Mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html",
+      "title": "Wir sind der Meteorit / We Are the Meteorite",
+      "content_text": "Fünfmal kam der Henker von außen — Asteroid, Vulkan, vergiftetes Meer. Das sechste Aussterben hat keine äußere Ursache, sondern ein Prinzip: uns. Und wir sind das erste Geschoss der Erdgeschichte, das mitten im Flug entscheiden kann, kein Einschlag zu werden.",
+      "date_published": "2026-07-17T21:00:00Z",
+      "tags": [
+        "E",
+        "I",
+        "extinction"
+      ]
+    },
+    {
       "id": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
       "url": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
       "title": "Der Fehler, der sich selbst frisst / The Mistake That Eats Itself",
@@ -24,24 +36,12 @@
     {
       "id": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
       "url": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
-      "title": "Der Filter des Räubers / The Predator's Filter",
-      "content_text": "Warum der Himmel schweigt: Zivilisationen, die alles nach der Logik des Fressens organisieren, verbrauchen ihr Substrat, bevor sie hinauskommen. Kein fernes Rätsel, sondern eine Prognose, in der wir leben.",
+      "title": "Das Fermi-Paradoxon, das keines ist / The Fermi Paradox That Isn't One",
+      "content_text": "Nicht ausgestorben — in Quarantäne. Ein reifer Kosmos lässt eine vom Predator-Prinzip kontaminierte Zivilisation nicht in seine Nähe. Der Himmel schweigt nicht zufällig; die Tür öffnet sich von innen, sobald wir das Prinzip überwinden.",
       "date_published": "2026-07-17T13:30:00Z",
       "tags": [
         "P",
         "fermi"
-      ]
-    },
-    {
-      "id": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
-      "url": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
-      "title": "Das Grauen im Kambrium / The Horror in the Cambrian",
-      "content_text": "Nicht das Fressen wurde im Kambrium erfunden, nur sichtbar — gepanzert, in Stein lesbar. Das Grauen ist, was wir daraus gemacht haben: eine Metaphysik.",
-      "date_published": "2026-07-17T12:00:00Z",
-      "tags": [
-        "E",
-        "I",
-        "cambrian"
       ]
     }
   ]
