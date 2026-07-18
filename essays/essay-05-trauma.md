@@ -13,7 +13,7 @@ status: draft-for-review
 lang: de+en
 ---
 
-# Das Trauma, das noch in uns rechnet
+# Das Trauma, das noch in uns läuft
 ### Angst berührt niemanden — und formt trotzdem den ganzen Körper
 
 *Populärwissenschaftlicher Essay — Serie „Botschaften aus dem Substrat", Nr. 5*
