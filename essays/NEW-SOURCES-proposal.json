@@ -60,5 +60,36 @@
     "doi": "10.1371/journal.pone.0005507",
     "note": "COUNTER-POSITION, and IMPORTANT: this is a simulation / plausibility argument that predation arose very early — NOT fossil proof. Cite it as a claim, not established evidence. No actual early predator is documented; the deep fossil record is silent. Do not let it force hedging.",
     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0005507"
+  },
+  {
+    "id": "S019",
+    "type": "primary",
+    "authors": "Ceballos, G.; Ehrlich, P. R.; Barnosky, A. D.; García, A.; Pringle, R. M.; Palmer, T. M.",
+    "year": 2015,
+    "title": "Accelerated modern human-induced species losses: Entering the sixth mass extinction",
+    "venue": "Science Advances",
+    "doi": "10.1126/sciadv.1400253",
+    "note": "Even with conservative background-rate assumptions, modern extinction rates are far above background — the authors argue we are entering the sixth mass extinction. Rate argument, not cumulative magnitude.",
+    "url": "https://www.science.org/doi/10.1126/sciadv.1400253"
+  },
+  {
+    "id": "S020",
+    "type": "primary",
+    "authors": "Pimm, S. L. et al. (2014); De Vos, J. M. et al. (2015)",
+    "year": 2015,
+    "title": "Current and background rates of species extinction",
+    "venue": "Science / Conservation Biology",
+    "note": "Current extinction rates estimated at ~1000x the background rate; De Vos et al. revised the background rate lower, making modern rates even more elevated. Method-dependent but robustly far above background.",
+    "url": "https://www.science.org/doi/10.1126/science.1246752"
+  },
+  {
+    "id": "S021",
+    "type": "primary",
+    "authors": "Wiens, J. J.; Saban, K. E.",
+    "year": 2025,
+    "title": "Questioning the sixth mass extinction",
+    "venue": "Trends in Ecology & Evolution",
+    "note": "COUNTER-POSITION: argues cumulative species lost so far does not reach big-five magnitude, so a sixth mass extinction is not (yet) established. NOTE the category error — compares a beginning (few centuries) to completed events (millennia); does not refute the RATE argument or documented defaunation. Cite honestly, then answer.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0169534725000023"
   }
 ]
