@@ -11,6 +11,30 @@
 ],
 "items": [
 {
+"id": "https://Mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html",
+"url": "https://Mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html",
+"title": "The Dyson Sphere Is a Self-Portrait / Die Dyson-Sphäre ist ein Selbstporträt",
+"content_text": "There is a ranking for civilisations, and its crown is a shell wrapped around a star. But the signature of growing intelligence is efficiency, not throughput — a mature mind need not climb the Kardashev ladder or build a Dyson sphere. The silence in the sky may be the outline of our own hunger, not a verdict.",
+"date_published": "2026-07-19T12:00:00Z",
+"tags": [
+"I",
+"P",
+"dyson"
+]
+},
+{
+"id": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
+"url": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
+"title": "The Horror in the Cambrian / Das Grauen im Kambrium",
+"content_text": "For three billion years almost nothing hunts. Then eating acquires a body — claws, armour, a sixteen-thousand-lens eye — and turns to stone. The Cambrian did not invent predation; it made it architecture. The real fossil is the hole in our thinking, shaped exactly like a predator no one has ever seen.",
+"date_published": "2026-07-19T11:00:00Z",
+"tags": [
+"E",
+"I",
+"cambrian"
+]
+},
+{
 "id": "https://Mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html",
 "url": "https://Mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html",
 "title": "The Biosphere Trauma / Das Biosphären-Trauma",
