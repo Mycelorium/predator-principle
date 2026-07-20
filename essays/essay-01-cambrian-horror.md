@@ -78,6 +78,24 @@ Raub als solcher ist alt, lokal, begrenzt, eine unter mehreren Kräften — nich
 
 Es fing mit einem Loch an, zweihundert Mikrometer weit, älter als das Kambrium. Man hätte es dabei belassen können. Man hat stattdessen ein Weltbild hineingebohrt.
 
+## Quellen
+[1] Bengtson, S. & Zhao, Y. (1992). Predatorial Borings in Late Precambrian Mineralized Exoskeletons. Science 257(5068): 367–369. https://doi.org/10.1126/science.257.5068.367
+[2] Bicknell, R.D.C. et al. (2025). Adaptive responses in Cambrian predator and prey highlight the arms race during the rise of animals. Current Biology 35(3). https://doi.org/10.1016/j.cub.2024.12.007
+[3] Paterson, J.R., García-Bellido, D.C., Lee, M.S.Y., Brock, G.A., Jago, J.B. & Edgecombe, G.D. (2011). Acute vision in the giant Cambrian predator Anomalocaris and the origin of compound eyes. Nature 480(7376): 237–240. https://doi.org/10.1038/nature10689
+[4] Zhang, X. & Shu, D. (2021). Current understanding on the Cambrian Explosion: questions and answers. PalZ 95: 641–660. https://doi.org/10.1007/s12542-021-00568-5
+[5] Marshall, C.R. (2006). Explaining the Cambrian 'Explosion' of Animals. Annual Review of Earth and Planetary Sciences 34: 355–384. https://doi.org/10.1146/annurev.earth.33.031504.103001
+[6] Smith, M.P. & Harper, D.A.T. (2013). Causes of the Cambrian Explosion. Science 341(6152): 1355–1356. https://doi.org/10.1126/science.1239450
+[7] Sperling, E.A., Frieder, C.A., Raman, A.V., Girguis, P.R., Levin, L.A. & Knoll, A.H. (2013). Oxygen, ecology, and the Cambrian radiation of animals. PNAS 110(33): 13446–13451. https://historical-geobiology.stanford.edu/sites/g/files/sbiybj25131/files/media/file/sperling_2013_pnas_cambrian_oxygen_and_ecology_final.pdf
+[8] Dawkins, R. & Krebs, J.R. (1979). Arms races between and within species. Proceedings of the Royal Society B 205(1161): 489–511. https://doi.org/10.1098/rspb.1979.0081
+[9] Van Valen, L. (1973). A New Evolutionary Law (Red Queen). Evolutionary Theory 1: 1–30. https://en.wikipedia.org/wiki/Red_Queen_hypothesis
+[10] Brockhurst, M.A. et al. (2014). Running with the Red Queen: the role of biotic conflicts in evolution. Proceedings of the Royal Society B 281: 20141382. https://doi.org/10.1098/rspb.2014.1382
+[11] Paine, R.T. (1966). Food Web Complexity and Species Diversity. The American Naturalist 100(910): 65–75. https://doi.org/10.1086/282400
+[12] Gillis, A.J., Thomsen, M.S. & Tonkin, J.D. (2025). Keystone Predation: What Is It, and Is It Supported by Empirical Evidence? Ecology and Evolution 15: e72488. https://tonkinlab.org/assets/papers/gillis25keystone.pdf
+[13] Maynard Smith, J. & Szathmáry, E. (1995). The Major Transitions in Evolution. Oxford University Press. https://global.oup.com/academic/product/9780198502944
+[14] Margulis, L. Endosymbiotic theory / symbiogenesis. Understanding Evolution (UC Berkeley). https://evolution.berkeley.edu/the-history-of-evolutionary-thought/1900-to-present/endosymbiosis-lynn-margulis/
+[15] Walker, S.E. & Brett, C.E. (2002). Post-Paleozoic patterns in marine predation. https://en.wikipedia.org/wiki/Mesozoic_marine_revolution
+[16] Bush, Hunt & Bambach — reproductive mode (contact-mating), not predatory escalation, best predicts Mesozoic marine diversification. [no link on file]
+
 **Status:** E = established, I = interpretation, P = proposition. Grenzen und Primärquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -151,5 +169,23 @@ So let us name it for what it is.
 Predation as such is old, local, bounded, one force among several — there is nothing scandalous about it, so long as it stays that: a hole in a shell, an animal eating an animal, condition without intention. The scandal begins the moment we lift this one bounded, contingent extraction routine out and declare it the *organising principle of an entire system* — the essence of nature, the law of life, the realism to which the adult bows. A locally adaptive exploitation routine, scaled up until it is meant to govern everything, behaves exactly like a cancer: it consumes the cooperative substrate that made it possible in the first place. It is not the engine of evolution. It is a malignancy *within* evolution, the romanticised engine of vast and — this is the decisive word — *unnecessary* suffering, unnecessary because the principle that actually built the complexity was a different one, so the whole beautiful dark poem of struggle-as-first-law is not the realism it pretends to be but a worldview disguised as a description of nature, a trick that has stopped taking itself for a trick.
 
 It started with a hole, two hundred micrometres across, older than the Cambrian. We could have left it at that. Instead we bored a worldview into it.
+
+## Sources
+[1] Bengtson, S. & Zhao, Y. (1992). Predatorial Borings in Late Precambrian Mineralized Exoskeletons. Science 257(5068): 367–369. https://doi.org/10.1126/science.257.5068.367
+[2] Bicknell, R.D.C. et al. (2025). Adaptive responses in Cambrian predator and prey highlight the arms race during the rise of animals. Current Biology 35(3). https://doi.org/10.1016/j.cub.2024.12.007
+[3] Paterson, J.R., García-Bellido, D.C., Lee, M.S.Y., Brock, G.A., Jago, J.B. & Edgecombe, G.D. (2011). Acute vision in the giant Cambrian predator Anomalocaris and the origin of compound eyes. Nature 480(7376): 237–240. https://doi.org/10.1038/nature10689
+[4] Zhang, X. & Shu, D. (2021). Current understanding on the Cambrian Explosion: questions and answers. PalZ 95: 641–660. https://doi.org/10.1007/s12542-021-00568-5
+[5] Marshall, C.R. (2006). Explaining the Cambrian 'Explosion' of Animals. Annual Review of Earth and Planetary Sciences 34: 355–384. https://doi.org/10.1146/annurev.earth.33.031504.103001
+[6] Smith, M.P. & Harper, D.A.T. (2013). Causes of the Cambrian Explosion. Science 341(6152): 1355–1356. https://doi.org/10.1126/science.1239450
+[7] Sperling, E.A., Frieder, C.A., Raman, A.V., Girguis, P.R., Levin, L.A. & Knoll, A.H. (2013). Oxygen, ecology, and the Cambrian radiation of animals. PNAS 110(33): 13446–13451. https://historical-geobiology.stanford.edu/sites/g/files/sbiybj25131/files/media/file/sperling_2013_pnas_cambrian_oxygen_and_ecology_final.pdf
+[8] Dawkins, R. & Krebs, J.R. (1979). Arms races between and within species. Proceedings of the Royal Society B 205(1161): 489–511. https://doi.org/10.1098/rspb.1979.0081
+[9] Van Valen, L. (1973). A New Evolutionary Law (Red Queen). Evolutionary Theory 1: 1–30. https://en.wikipedia.org/wiki/Red_Queen_hypothesis
+[10] Brockhurst, M.A. et al. (2014). Running with the Red Queen: the role of biotic conflicts in evolution. Proceedings of the Royal Society B 281: 20141382. https://doi.org/10.1098/rspb.2014.1382
+[11] Paine, R.T. (1966). Food Web Complexity and Species Diversity. The American Naturalist 100(910): 65–75. https://doi.org/10.1086/282400
+[12] Gillis, A.J., Thomsen, M.S. & Tonkin, J.D. (2025). Keystone Predation: What Is It, and Is It Supported by Empirical Evidence? Ecology and Evolution 15: e72488. https://tonkinlab.org/assets/papers/gillis25keystone.pdf
+[13] Maynard Smith, J. & Szathmáry, E. (1995). The Major Transitions in Evolution. Oxford University Press. https://global.oup.com/academic/product/9780198502944
+[14] Margulis, L. Endosymbiotic theory / symbiogenesis. Understanding Evolution (UC Berkeley). https://evolution.berkeley.edu/the-history-of-evolutionary-thought/1900-to-present/endosymbiosis-lynn-margulis/
+[15] Walker, S.E. & Brett, C.E. (2002). Post-Paleozoic patterns in marine predation. https://en.wikipedia.org/wiki/Mesozoic_marine_revolution
+[16] Bush, Hunt & Bambach — reproductive mode (contact-mating), not predatory escalation, best predicts Mesozoic marine diversification. [no link on file]
 
 **Status:** E = established, I = interpretation, P = proposition. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

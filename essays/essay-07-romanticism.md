@@ -98,6 +98,35 @@ Bleibt der eine Satz, der uns gehört und nicht der Forschung, und wir markieren
 
 Man darf die Ökonomie der Bewegung im Sprint des Geparden bewundern. Man darf staunen. Aber das Staunen gehört dem, der nicht das Substrat ist, und wir sollten wenigstens wissen, wo wir stehen, wenn wir es fühlen. Dreh den Bildausschnitt zurück, ein letztes Mal, in den Kopf des Tieres, dem die letzte Sekunde gehört. Von dort aus gibt es keinen Bogen. Es gibt nichts Schönes daran.
 
+## Quellen
+[1] Brady, E. (2013). The Sublime in Modern Philosophy: Aesthetics, Ethics, and Nature. Cambridge University Press.
+[2] Horta, O. (2010). Debunking the Idyllic View of Natural Processes: Population Dynamics and Suffering in the Wild. Télos 17(1):73–88. https://www.stafforini.com/docs/Horta%20-%20Debunking%20the%20idyllic%20view%20of%20natural%20processes.pdf
+[3] Robert, Bronikowski et al. (2015). Born small, die young: Intrinsic, size-selective mortality in marine larval fish. Scientific Reports 5:17065. https://doi.org/10.1038/srep17065
+[4] NOAA/NMFS (n.d.). A Review of Survival Rates of Fish Eggs and Larvae. Marine Fisheries Review 41(3).
+[5] Pianka, E.R. (1970). On r- and K-Selection. American Naturalist 104(940):592–597. http://mitran-lab.amath.unc.edu/courses/MATH564/biblio/Pianka1970On_r_and_K_Selection.pdf
+[6] Reznick, Bryant & Bashey (2002). r- and K-Selection Revisited. Ecology 83(6):1509–1520.
+[7] Bar-On, Phillips & Milo (2018). The biomass distribution on Earth. PNAS 115(25):6506–6511. https://doi.org/10.1073/pnas.1711842115
+[8] Rosenberg et al. (n.d.). The global biomass and number of terrestrial arthropods. PMC9897674. https://pmc.ncbi.nlm.nih.gov/articles/PMC9897674/
+[9] Tomasik, B. (n.d.). How Many Wild Animals Are There? reducing-suffering.org. https://reducing-suffering.org/how-many-wild-animals-are-there/
+[10] Greenspoon et al. (2023). The global biomass of wild mammals. PNAS 120(10):e2204892120.
+[11] Zanette, White, Allen & Clinchy (2011). Perceived Predation Risk Reduces the Number of Offspring Songbirds Produce per Year. Science 334(6061):1398–1401. https://doi.org/10.1126/science.1210908
+[12] Clinchy, Sheriff & Zanette (2013). Predator-induced stress and the ecology of fear. Functional Ecology 27:56–65. https://doi.org/10.1111/1365-2435.12007
+[13] Zanette, L.Y. & Clinchy, M. (2020). Ecology and Neurobiology of Fear in Free-Living Wildlife. Annual Review of Ecology, Evolution, and Systematics 51:297–318. https://publish.uwo.ca/~lzanette/papers/Zanette%20and%20Clinchy%20-%202020%20-%20Ecology%20and%20Neurobiology.pdf
+[14] Preisser, Bolnick & Benard (2005). Scared to Death? The Effects of Intimidation and Consumption in Predator–Prey Interactions. Ecology 86(2):501–509. https://seagrass.fiu.edu/resources/courses/pcb5443/Preisser%20et%20al%202005%20Ecology.pdf
+[15] Preisser & Bolnick (2008). The Many Faces of Fear. PLoS ONE 3(6):e2465. https://doi.org/10.1371/journal.pone.0002465
+[16] Sheriff et al. (2020). Non-consumptive predator effects on prey population size: A dearth of evidence. Journal of Animal Ecology 89(6):1302–1316. https://doi.org/10.1111/1365-2656.13213
+[17] Gibbons et al. (2022). Can insects feel pain? A review of the neural and behavioural evidence. Advances in Insect Physiology 63. https://chittkalab.sbcs.qmul.ac.uk/2022/Gibbons%20et%20al%202022%20Advances%20Insect%20Physiol.pdf
+[18] Darwin, C. to Asa Gray, 22 May 1860. Darwin Correspondence Project DCP-LETT-2814.
+[19] Dawkins, R. (1995). River Out of Eden, pp. 131–132.
+[20] Paine, R.T. (1966). Food Web Complexity and Species Diversity. American Naturalist 100:65–75.
+[21] Ripple & Beschta (2012). Trophic cascades in Yellowstone: The first 15 years after wolf reintroduction. Biological Conservation 145:205–213.
+[22] Painter et al. (2025) vs. MacNulty et al. (2026). Yellowstone aspen debate. Forest Ecology and Management (summarised in ScienceAlert).
+[23] Gillis et al. (2025). Keystone Predation: What Is It, and Is It Supported by Empirical Evidence? PMC12698509. https://pmc.ncbi.nlm.nih.gov/articles/PMC12698509/
+[24] Kricher, J. (2009). The Balance of Nature: Ecology's Enduring Myth. Princeton University Press.
+[25] Ng, Y-K. (1995). Towards Welfare Biology: Evolutionary Economics of Animal Consciousness and Suffering. Biology & Philosophy 10:255–285. https://doi.org/10.1007/BF00852469
+[26] Groff, Z. & Ng, Y-K. (2019). Does suffering dominate enjoyment in the animal kingdom? An update to welfare biology. Biology & Philosophy 34:40. https://doi.org/10.1007/s10539-019-9692-0
+[27] Browning, H. & Veit, W. (2023). Positive Wild Animal Welfare. Biology & Philosophy 38:14. https://doi.org/10.1007/s10539-023-09901-5
+
 **Status:** E = belegt/established, I = Interpretation, P = Proposition. Grenzen und Primärquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -191,5 +220,34 @@ And physics forces none of the beauty. Thermodynamics forces *heterotrophy* — 
 There remains the one sentence that is ours and not the research's, and we mark it as what it is: a proposition, asserted by no source [P]. Predation as a single relation is physics, is biology, is the individual animal that must eat and bears no guilt. We call no individual evil. But predation *generalised into the organising principle of a system* — the boundless, self-serving extraction raised to the logic of the whole and then applauded as beautiful — that is a cancer within evolution. Not because growth is evil, but because unbounded extraction that makes itself the principle has the same shape as a cell that has stopped being a part and begun only to consume.
 
 You may admire the economy of motion in the cheetah's sprint. You may marvel. But the marvel belongs to whoever is not the substrate, and we should at least know where we stand when we feel it. Turn the frame back, one last time, into the head of the animal to whom the final second belongs. From there, there is no arc. There is nothing beautiful about it.
+
+## Sources
+[1] Brady, E. (2013). The Sublime in Modern Philosophy: Aesthetics, Ethics, and Nature. Cambridge University Press.
+[2] Horta, O. (2010). Debunking the Idyllic View of Natural Processes: Population Dynamics and Suffering in the Wild. Télos 17(1):73–88. https://www.stafforini.com/docs/Horta%20-%20Debunking%20the%20idyllic%20view%20of%20natural%20processes.pdf
+[3] Robert, Bronikowski et al. (2015). Born small, die young: Intrinsic, size-selective mortality in marine larval fish. Scientific Reports 5:17065. https://doi.org/10.1038/srep17065
+[4] NOAA/NMFS (n.d.). A Review of Survival Rates of Fish Eggs and Larvae. Marine Fisheries Review 41(3).
+[5] Pianka, E.R. (1970). On r- and K-Selection. American Naturalist 104(940):592–597. http://mitran-lab.amath.unc.edu/courses/MATH564/biblio/Pianka1970On_r_and_K_Selection.pdf
+[6] Reznick, Bryant & Bashey (2002). r- and K-Selection Revisited. Ecology 83(6):1509–1520.
+[7] Bar-On, Phillips & Milo (2018). The biomass distribution on Earth. PNAS 115(25):6506–6511. https://doi.org/10.1073/pnas.1711842115
+[8] Rosenberg et al. (n.d.). The global biomass and number of terrestrial arthropods. PMC9897674. https://pmc.ncbi.nlm.nih.gov/articles/PMC9897674/
+[9] Tomasik, B. (n.d.). How Many Wild Animals Are There? reducing-suffering.org. https://reducing-suffering.org/how-many-wild-animals-are-there/
+[10] Greenspoon et al. (2023). The global biomass of wild mammals. PNAS 120(10):e2204892120.
+[11] Zanette, White, Allen & Clinchy (2011). Perceived Predation Risk Reduces the Number of Offspring Songbirds Produce per Year. Science 334(6061):1398–1401. https://doi.org/10.1126/science.1210908
+[12] Clinchy, Sheriff & Zanette (2013). Predator-induced stress and the ecology of fear. Functional Ecology 27:56–65. https://doi.org/10.1111/1365-2435.12007
+[13] Zanette, L.Y. & Clinchy, M. (2020). Ecology and Neurobiology of Fear in Free-Living Wildlife. Annual Review of Ecology, Evolution, and Systematics 51:297–318. https://publish.uwo.ca/~lzanette/papers/Zanette%20and%20Clinchy%20-%202020%20-%20Ecology%20and%20Neurobiology.pdf
+[14] Preisser, Bolnick & Benard (2005). Scared to Death? The Effects of Intimidation and Consumption in Predator–Prey Interactions. Ecology 86(2):501–509. https://seagrass.fiu.edu/resources/courses/pcb5443/Preisser%20et%20al%202005%20Ecology.pdf
+[15] Preisser & Bolnick (2008). The Many Faces of Fear. PLoS ONE 3(6):e2465. https://doi.org/10.1371/journal.pone.0002465
+[16] Sheriff et al. (2020). Non-consumptive predator effects on prey population size: A dearth of evidence. Journal of Animal Ecology 89(6):1302–1316. https://doi.org/10.1111/1365-2656.13213
+[17] Gibbons et al. (2022). Can insects feel pain? A review of the neural and behavioural evidence. Advances in Insect Physiology 63. https://chittkalab.sbcs.qmul.ac.uk/2022/Gibbons%20et%20al%202022%20Advances%20Insect%20Physiol.pdf
+[18] Darwin, C. to Asa Gray, 22 May 1860. Darwin Correspondence Project DCP-LETT-2814.
+[19] Dawkins, R. (1995). River Out of Eden, pp. 131–132.
+[20] Paine, R.T. (1966). Food Web Complexity and Species Diversity. American Naturalist 100:65–75.
+[21] Ripple & Beschta (2012). Trophic cascades in Yellowstone: The first 15 years after wolf reintroduction. Biological Conservation 145:205–213.
+[22] Painter et al. (2025) vs. MacNulty et al. (2026). Yellowstone aspen debate. Forest Ecology and Management (summarised in ScienceAlert).
+[23] Gillis et al. (2025). Keystone Predation: What Is It, and Is It Supported by Empirical Evidence? PMC12698509. https://pmc.ncbi.nlm.nih.gov/articles/PMC12698509/
+[24] Kricher, J. (2009). The Balance of Nature: Ecology's Enduring Myth. Princeton University Press.
+[25] Ng, Y-K. (1995). Towards Welfare Biology: Evolutionary Economics of Animal Consciousness and Suffering. Biology & Philosophy 10:255–285. https://doi.org/10.1007/BF00852469
+[26] Groff, Z. & Ng, Y-K. (2019). Does suffering dominate enjoyment in the animal kingdom? An update to welfare biology. Biology & Philosophy 34:40. https://doi.org/10.1007/s10539-019-9692-0
+[27] Browning, H. & Veit, W. (2023). Positive Wild Animal Welfare. Biology & Philosophy 38:14. https://doi.org/10.1007/s10539-023-09901-5
 
 **Status:** E = established/belegt, I = interpretation, P = proposition. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

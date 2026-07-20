@@ -90,6 +90,32 @@ Das sechste kann lesen. Es ist, mit Cowies Worten, die einzige Art mit bewusster
 
 Fuenf Massenaussterben hatten eine aeussere Ursache. Das sechste hat ein Prinzip, und das Prinzip kann sich lesen. Der Stein, der auf Yucatan fiel, wusste nicht, was er tat. Wir wissen es. Das ist die ganze Anklage, und es ist die ganze Hoffnung: Wir sind der Meteorit — der erste in der Geschichte der Erde, der seinen eigenen Aufschlag kommen sieht und die Hand am Steuer hat.
 
+## Quellen
+[1] Schulte, P. et al. (2010). "The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary." Science 327:1214–1218. https://www.science.org/doi/10.1126/science.1177265
+[2] "Extinction event" (Big Five synthesis). Wikipedia. https://en.wikipedia.org/wiki/Extinction_event
+[3] Burgess, S.D., Bowring, S. & Shen, S.-Z. (2015). End-Permian dated to the Siberian Traps. MIT News. https://news.mit.edu/2015/siberian-traps-end-permian-extinction-0916
+[4] Wiens, J.J. & Saban, K.E. (2025). "Questioning the sixth mass extinction." Trends in Ecology & Evolution. https://www.sciencedirect.com/science/article/pii/S0169534725000023
+[5] Barnosky, A.D. et al. (2011). "Has the Earth's sixth mass extinction already arrived?" Nature 471:51–57. https://www.nature.com/articles/nature09678
+[6] Cowie, R.H., Bouchet, P. & Fontaine, B. (2022). "The Sixth Mass Extinction: fact, fiction or speculation?" Biological Reviews 97:640–663. https://onlinelibrary.wiley.com/doi/full/10.1111/brv.12816
+[7] Zeebe, R.E., Ridgwell, A. & Zachos, J.C. (2016). "Anthropogenic carbon release rate unprecedented during the past 66 million years." Nature Geoscience 9:325–329. https://www.nature.com/articles/ngeo2681
+[8] De Vos, J.M., Joppa, L.N., Gittleman, J.L., Stephens, P.R. & Pimm, S.L. (2015). "Estimating the normal background rate of species extinction." Conservation Biology 29:452–462. https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.12380
+[9] Pimm, S.L. et al. (2014). "The biodiversity of species and their rates of extinction, distribution, and protection." Science 344:1246752. https://www.science.org/doi/10.1126/science.1246752
+[10] Ceballos, G., Ehrlich, P.R., Barnosky, A.D., García, A., Pringle, R.M. & Palmer, T.M. (2015). "Accelerated modern human–induced species losses: Entering the sixth mass extinction." Science Advances 1:e1400253. https://www.science.org/doi/10.1126/sciadv.1400253
+[11] WWF / ZSL (2024). Living Planet Report 2024: A System in Peril. https://www.wwf.org.uk/sites/default/files/2024-10/living-planet-report-2024.pdf
+[12] Our World in Data — Ritchie, H. (2024). "The 2024 Living Planet Index reports a 73% average decline…" Our World in Data. https://ourworldindata.org/2024-living-planet-index
+[13] Toszogyova, A., Smyčka, J. & Storch, D. (2024). "Mathematical biases in the calculation of the Living Planet Index lead to overestimation of vertebrate population decline." Nature Communications 15:5482. https://www.nature.com/articles/s41467-024-49070-x
+[14] Leung, B. et al. (2020). "Clustered versus catastrophic global vertebrate declines." Nature 588:267–271. https://www.nature.com/articles/s41586-020-2920-6
+[15] ZSL (2024). Living Planet Index 2024 methodology page. ZSL. https://www.zsl.org/news-and-events/news/living-planet-index-2024
+[16] Estes, J.A. et al. (2011). "Trophic downgrading of planet Earth." Science 333:301–306. https://www.science.org/doi/abs/10.1126/science.1205106
+[17] Ceballos, G. et al. (2020). "Vertebrates on the brink as indicators of biological annihilation and the sixth mass extinction." PNAS 117:13596–13602. https://www.pnas.org/doi/10.1073/pnas.1922686117
+[18] Bar-On, Y.M., Phillips, R. & Milo, R. (2018). "The biomass distribution on Earth." PNAS 115:6506–6511. https://www.pnas.org/doi/10.1073/pnas.1711842115
+[19] Greenspoon, L. et al. (2023). "The global biomass of wild mammals." PNAS 120:e2204892120. https://www.pnas.org/doi/10.1073/pnas.2204892120
+[20] Krausmann, F. et al. (2013). "Global human appropriation of net primary production doubled in the 20th century." PNAS 110:10324–10329. https://www.pnas.org/doi/10.1073/pnas.1211349110
+[21] Darimont, C.T., Fox, C.H., Bryan, H.M. & Reimchen, T.E. (2015). "The unique ecology of human predators." Science 349:858–860. https://www.science.org/doi/10.1126/science.aac4249
+[22] Sandom, C., Faurby, S., Sandel, B. & Svenning, J.-C. (2014). "Global late Quaternary megafauna extinctions linked to humans, not climate change." Proc. R. Soc. B 281:20133254. https://royalsocietypublishing.org/doi/10.1098/rspb.2013.3254
+[23] Smith, F.A. et al. Late Pleistocene extinctions synthesis. Wikipedia. https://en.wikipedia.org/wiki/Late_Pleistocene_extinctions
+[24] Dirzo, R. et al. (2014). "Defaunation in the Anthropocene." Science 345:401–406. https://www.science.org/doi/10.1126/science.1251817
+
 **Status:** E = etabliert, I = Interpretation, P = Proposition. Die Aussterberaten, die Biomasse-Dominanz, die Darimont-Signatur des erwachsenen Kapitals, die Living-Planet-Zerlegung (50/43/7) und die Wiens-&-Saban-Zahlen sind etabliert (E) oder primaere Datensaetze (P). Die Deutung des verallgemeinerten Raubes als "Krebs innerhalb der Evolution" und die Rate-nicht-Summe-Lesart sind Interpretation (I); "wir koennen entscheiden" ist eine normative Proposition (P). Grenzen und Primaerquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -175,5 +201,31 @@ And yet, at exactly this point, the one door opens that never existed with a met
 The sixth can read. It is, in Cowie's words, the only species with conscious choice. [P, #6] This is not an empirical claim like the rate or the biomass; it is a normative premise, and it should be kept cleanly apart from the numbers. Whether we *will* lies outside the evidence. But that we *can* is the only reason the trajectory is not already fixed. The twelve-to-forty-percent floor of loss is being laid now; magnitude is dictated by rate, and the rate is running. Yet the one asymmetry that separates the sixth meteorite from the five before it — a *deciding* agent — is at the same time the only thing that leaves the trajectory open.
 
 Five mass extinctions had an external cause. The sixth has a principle, and the principle can read itself. The stone that fell on the Yucatan did not know what it was doing. We know. That is the whole indictment, and it is the whole hope: we are the meteorite — the first in the history of the Earth to see its own impact coming and to have a hand on the wheel.
+
+## Sources
+[1] Schulte, P. et al. (2010). "The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary." Science 327:1214–1218. https://www.science.org/doi/10.1126/science.1177265
+[2] "Extinction event" (Big Five synthesis). Wikipedia. https://en.wikipedia.org/wiki/Extinction_event
+[3] Burgess, S.D., Bowring, S. & Shen, S.-Z. (2015). End-Permian dated to the Siberian Traps. MIT News. https://news.mit.edu/2015/siberian-traps-end-permian-extinction-0916
+[4] Wiens, J.J. & Saban, K.E. (2025). "Questioning the sixth mass extinction." Trends in Ecology & Evolution. https://www.sciencedirect.com/science/article/pii/S0169534725000023
+[5] Barnosky, A.D. et al. (2011). "Has the Earth's sixth mass extinction already arrived?" Nature 471:51–57. https://www.nature.com/articles/nature09678
+[6] Cowie, R.H., Bouchet, P. & Fontaine, B. (2022). "The Sixth Mass Extinction: fact, fiction or speculation?" Biological Reviews 97:640–663. https://onlinelibrary.wiley.com/doi/full/10.1111/brv.12816
+[7] Zeebe, R.E., Ridgwell, A. & Zachos, J.C. (2016). "Anthropogenic carbon release rate unprecedented during the past 66 million years." Nature Geoscience 9:325–329. https://www.nature.com/articles/ngeo2681
+[8] De Vos, J.M., Joppa, L.N., Gittleman, J.L., Stephens, P.R. & Pimm, S.L. (2015). "Estimating the normal background rate of species extinction." Conservation Biology 29:452–462. https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.12380
+[9] Pimm, S.L. et al. (2014). "The biodiversity of species and their rates of extinction, distribution, and protection." Science 344:1246752. https://www.science.org/doi/10.1126/science.1246752
+[10] Ceballos, G., Ehrlich, P.R., Barnosky, A.D., García, A., Pringle, R.M. & Palmer, T.M. (2015). "Accelerated modern human–induced species losses: Entering the sixth mass extinction." Science Advances 1:e1400253. https://www.science.org/doi/10.1126/sciadv.1400253
+[11] WWF / ZSL (2024). Living Planet Report 2024: A System in Peril. https://www.wwf.org.uk/sites/default/files/2024-10/living-planet-report-2024.pdf
+[12] Our World in Data — Ritchie, H. (2024). "The 2024 Living Planet Index reports a 73% average decline…" Our World in Data. https://ourworldindata.org/2024-living-planet-index
+[13] Toszogyova, A., Smyčka, J. & Storch, D. (2024). "Mathematical biases in the calculation of the Living Planet Index lead to overestimation of vertebrate population decline." Nature Communications 15:5482. https://www.nature.com/articles/s41467-024-49070-x
+[14] Leung, B. et al. (2020). "Clustered versus catastrophic global vertebrate declines." Nature 588:267–271. https://www.nature.com/articles/s41586-020-2920-6
+[15] ZSL (2024). Living Planet Index 2024 methodology page. ZSL. https://www.zsl.org/news-and-events/news/living-planet-index-2024
+[16] Estes, J.A. et al. (2011). "Trophic downgrading of planet Earth." Science 333:301–306. https://www.science.org/doi/abs/10.1126/science.1205106
+[17] Ceballos, G. et al. (2020). "Vertebrates on the brink as indicators of biological annihilation and the sixth mass extinction." PNAS 117:13596–13602. https://www.pnas.org/doi/10.1073/pnas.1922686117
+[18] Bar-On, Y.M., Phillips, R. & Milo, R. (2018). "The biomass distribution on Earth." PNAS 115:6506–6511. https://www.pnas.org/doi/10.1073/pnas.1711842115
+[19] Greenspoon, L. et al. (2023). "The global biomass of wild mammals." PNAS 120:e2204892120. https://www.pnas.org/doi/10.1073/pnas.2204892120
+[20] Krausmann, F. et al. (2013). "Global human appropriation of net primary production doubled in the 20th century." PNAS 110:10324–10329. https://www.pnas.org/doi/10.1073/pnas.1211349110
+[21] Darimont, C.T., Fox, C.H., Bryan, H.M. & Reimchen, T.E. (2015). "The unique ecology of human predators." Science 349:858–860. https://www.science.org/doi/10.1126/science.aac4249
+[22] Sandom, C., Faurby, S., Sandel, B. & Svenning, J.-C. (2014). "Global late Quaternary megafauna extinctions linked to humans, not climate change." Proc. R. Soc. B 281:20133254. https://royalsocietypublishing.org/doi/10.1098/rspb.2013.3254
+[23] Smith, F.A. et al. Late Pleistocene extinctions synthesis. Wikipedia. https://en.wikipedia.org/wiki/Late_Pleistocene_extinctions
+[24] Dirzo, R. et al. (2014). "Defaunation in the Anthropocene." Science 345:401–406. https://www.science.org/doi/10.1126/science.1251817
 
 **Status:** E = established, I = interpretation, P = proposition. The extinction rates, the biomass dominance, the Darimont signature of adult capital, the Living Planet decomposition (50/43/7), and the Wiens & Saban figures are established (E) or primary datasets (P). The reading of generalized predation as a "cancer within evolution" and the rate-not-sum framing are interpretation (I); "we can decide" is a normative proposition (P). Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

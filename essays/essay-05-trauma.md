@@ -74,6 +74,32 @@ Man sollte hier keinen Aufschwung erwarten, keine Wendung ins Helle. Der Räuber
 
 Das Schwierige ist nicht, den Räuber zu erkennen, wo er steht. Das Schwierige ist, ihn zu erkennen, wo er nicht steht — und wo er dennoch regiert, durch uns, mit unserer Stimme, unter dem geliehenen Namen der Nuechternheit. Die Furcht hat ihren Nutzen gehabt, sie hat Koerper durch Jahrmillionen getragen; niemand bestreitet das. Aber Nuetzlichkeit ist nicht Wahrheit, und Ueberlebenswert ist nicht Einsicht. Der Apparat, der uns hierher gebracht hat, gibt weiter seine Alarme, hundert falsche auf einen echten, und die meiste Zeit halten wir seine Reflexe fuer unsere Einsichten.
 
+## Quellen
+
+[1] Zanette, L.Y., White, A.F., Allen, M.C., Clinchy, M. (2011). Perceived Predation Risk Reduces the Number of Offspring Songbirds Produce per Year. Science 334(6061): 1398–1401. https://doi.org/10.1126/science.1210908
+[2] Suraci, J.P., Clinchy, M., Dill, L.M., Roberts, D., Zanette, L.Y. (2016). Fear of large carnivores causes a trophic cascade. Nature Communications 7:10698. https://doi.org/10.1038/ncomms10698
+[3] Suraci, J.P., Clinchy, M., Zanette, L.Y., Wilmers, C.C. (2019). Fear of humans as apex predators has landscape-scale impacts from mountain lions to mice. Ecology Letters 22(10): 1578–1586. https://doi.org/10.1111/ele.13344
+[4] Zanette, L.Y., Clinchy, M. (2020). Ecology and Neurobiology of Fear in Free-Living Wildlife. Annual Review of Ecology, Evolution, and Systematics 51: 297–318. https://doi.org/10.1146/annurev-ecolsys-011720-124613
+[5] Zanette, L.Y., Hobbs, E.C., Witterick, L.E., MacDougall-Shackleton, S.A., Clinchy, M. (2019). Predator-induced fear causes PTSD-like changes in the brains and behaviour of wild animals. Scientific Reports 9:11474. https://doi.org/10.1038/s41598-019-47684-6
+[6] Preisser, E.L., Bolnick, D.I., Benard, M.F. (2005). Scared to Death? The Effects of Intimidation and Consumption in Predator-Prey Interactions. Ecology 86(2): 501–509. https://seagrass.fiu.edu/resources/courses/pcb5443/Preisser%20et%20al%202005%20Ecology.pdf
+[7] Öhman, A., Mineka, S. (2001). Fears, phobias, and preparedness: Toward an evolved module of fear and fear learning. Psychological Review 108(3): 483–522.
+[8] Van Le, Q., Isbell, L.A., Matsumoto, J., et al. (2013). Pulvinar neurons reveal neurobiological evidence of past selection for rapid detection of snakes. PNAS 110(47): 19000–19005. https://doi.org/10.1073/pnas.1312648110
+[9] Isbell, L.A. (2006). Snakes as agents of evolutionary change in primate brains. Journal of Human Evolution 51(1): 1–35.
+[10] Coelho, C.M., Zsido, A.N., et al. (2019). Are Humans Prepared to Detect, Fear, and Avoid Snakes? The Mismatch Between Laboratory and Ecological Evidence. Frontiers in Psychology 10:2094. https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02094/full
+[11] Dias, B.G., Ressler, K.J. (2014). Parental olfactory experience influences behavior and neural structure in subsequent generations. Nature Neuroscience 17(1): 89–96. https://doi.org/10.1038/nn.3594
+[12] Francis, G. (2014). Inherited Memories: Too Good To Be True? Discover/Neuroskeptic. https://www.discovermagazine.com/mind/inherited-memories-too-good-to-be-true
+[13] Boonstra, R., Hik, D., Singleton, G.R., Tinnikov, A. (1998). The impact of predator-induced stress on the snowshoe hare cycle. Ecological Monographs 68(3): 371–394.
+[14] Sheriff, M.J., Krebs, C.J., Boonstra, R. (2009). The sensitive hare: sublethal effects of predator-induced stress on reproduction in snowshoe hares. Journal of Animal Ecology 78(6): 1249–1258.
+[15] Nesse, R.M. (2005). Natural selection and the regulation of defensive responses: the Smoke Detector Principle. Evolution and Human Behavior / Evolutionary Medicine. https://web.mit.edu/hst527/www/readings/Nesse%20Defensive%20Responses.pdf
+[16] Baumeister, R.F., Bratslavsky, E., Finkenauer, C., Vohs, K.D. (2001). Bad Is Stronger Than Good. Review of General Psychology 5(4): 323–370. https://assets.csom.umn.edu/assets/71516.pdf
+[17] Yeh, D.J., et al. / Dev, A., et al. (2022). Sadder ≠ Wiser: Depressive Realism Is Not Robust to Replication. Collabra: Psychology 8(1):38529. https://online.ucpress.edu/collabra/article/8/1/38529/194062
+[18] Clark, D.A., Beck, A.T. (2010). Cognitive model of anxiety: threat overestimation and hypervigilance (Cognitive Therapy of Anxiety Disorders).
+[19] Paine, R.T. (1966). Food Web Complexity and Species Diversity. American Naturalist 100(910): 65–75.
+[20] Wootton, J.T., et al. (2016). Revisiting Paine's 1966 Sea Star Removal Experiment. American Naturalist.
+[21] Wang, Y., et al. (2024). Adaptive responses in Cambrian predator and prey highlight the arms race during the rise of animals. Current Biology 34(24). https://www.cell.com/current-biology/abstract/S0960-9822(24)01647-6
+[22] Aktipis, C.A., Boddy, A.M., Jansen, G., Hibner, U., Hochberg, M.E., Maley, C.C., Wilkinson, G.S. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Philosophical Transactions of the Royal Society B 370(1673): 20140219. https://doi.org/10.1098/rstb.2014.0219
+[23] Sagan (Margulis), L. (1967) & Archibald, J.M. (2015). Endosymbiosis and eukaryotic cell evolution / symbiogenesis. https://evolution.berkeley.edu/the-history-of-evolutionary-thought/1900-to-present/endosymbiosis-lynn-margulis/
+
 **Status:** E = etabliert, I = Interpretation, P = Proposition. Grenzen und Primaerquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -143,5 +169,31 @@ From this the sentence at issue falls with full edge. Predation, where it stays 
 Expect no upswing here, no turn into the light. The predator at issue has no body left; you cannot shoot it, fence it, drive it off. It sits in seeing itself, in the eye's bias toward the snake, in the smoke detector's arithmetic, in the negative bias that makes the bad louder than the good. We are the sparrow behind the fence. There is no hawk in the sky, and we raise forty percent fewer anyway.
 
 The hard thing is not to recognise the predator where it stands. The hard thing is to recognise it where it does not stand — and where it rules anyway, through us, in our voice, under the borrowed name of sobriety. Fear has had its use; it carried bodies through ages; no one disputes that. But usefulness is not truth, and survival value is not insight. The apparatus that brought us here goes on issuing its alarms, a hundred false for every true, and most of the time we mistake its reflexes for our insights.
+
+## Sources
+
+[1] Zanette, L.Y., White, A.F., Allen, M.C., Clinchy, M. (2011). Perceived Predation Risk Reduces the Number of Offspring Songbirds Produce per Year. Science 334(6061): 1398–1401. https://doi.org/10.1126/science.1210908
+[2] Suraci, J.P., Clinchy, M., Dill, L.M., Roberts, D., Zanette, L.Y. (2016). Fear of large carnivores causes a trophic cascade. Nature Communications 7:10698. https://doi.org/10.1038/ncomms10698
+[3] Suraci, J.P., Clinchy, M., Zanette, L.Y., Wilmers, C.C. (2019). Fear of humans as apex predators has landscape-scale impacts from mountain lions to mice. Ecology Letters 22(10): 1578–1586. https://doi.org/10.1111/ele.13344
+[4] Zanette, L.Y., Clinchy, M. (2020). Ecology and Neurobiology of Fear in Free-Living Wildlife. Annual Review of Ecology, Evolution, and Systematics 51: 297–318. https://doi.org/10.1146/annurev-ecolsys-011720-124613
+[5] Zanette, L.Y., Hobbs, E.C., Witterick, L.E., MacDougall-Shackleton, S.A., Clinchy, M. (2019). Predator-induced fear causes PTSD-like changes in the brains and behaviour of wild animals. Scientific Reports 9:11474. https://doi.org/10.1038/s41598-019-47684-6
+[6] Preisser, E.L., Bolnick, D.I., Benard, M.F. (2005). Scared to Death? The Effects of Intimidation and Consumption in Predator-Prey Interactions. Ecology 86(2): 501–509. https://seagrass.fiu.edu/resources/courses/pcb5443/Preisser%20et%20al%202005%20Ecology.pdf
+[7] Öhman, A., Mineka, S. (2001). Fears, phobias, and preparedness: Toward an evolved module of fear and fear learning. Psychological Review 108(3): 483–522.
+[8] Van Le, Q., Isbell, L.A., Matsumoto, J., et al. (2013). Pulvinar neurons reveal neurobiological evidence of past selection for rapid detection of snakes. PNAS 110(47): 19000–19005. https://doi.org/10.1073/pnas.1312648110
+[9] Isbell, L.A. (2006). Snakes as agents of evolutionary change in primate brains. Journal of Human Evolution 51(1): 1–35.
+[10] Coelho, C.M., Zsido, A.N., et al. (2019). Are Humans Prepared to Detect, Fear, and Avoid Snakes? The Mismatch Between Laboratory and Ecological Evidence. Frontiers in Psychology 10:2094. https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02094/full
+[11] Dias, B.G., Ressler, K.J. (2014). Parental olfactory experience influences behavior and neural structure in subsequent generations. Nature Neuroscience 17(1): 89–96. https://doi.org/10.1038/nn.3594
+[12] Francis, G. (2014). Inherited Memories: Too Good To Be True? Discover/Neuroskeptic. https://www.discovermagazine.com/mind/inherited-memories-too-good-to-be-true
+[13] Boonstra, R., Hik, D., Singleton, G.R., Tinnikov, A. (1998). The impact of predator-induced stress on the snowshoe hare cycle. Ecological Monographs 68(3): 371–394.
+[14] Sheriff, M.J., Krebs, C.J., Boonstra, R. (2009). The sensitive hare: sublethal effects of predator-induced stress on reproduction in snowshoe hares. Journal of Animal Ecology 78(6): 1249–1258.
+[15] Nesse, R.M. (2005). Natural selection and the regulation of defensive responses: the Smoke Detector Principle. Evolution and Human Behavior / Evolutionary Medicine. https://web.mit.edu/hst527/www/readings/Nesse%20Defensive%20Responses.pdf
+[16] Baumeister, R.F., Bratslavsky, E., Finkenauer, C., Vohs, K.D. (2001). Bad Is Stronger Than Good. Review of General Psychology 5(4): 323–370. https://assets.csom.umn.edu/assets/71516.pdf
+[17] Yeh, D.J., et al. / Dev, A., et al. (2022). Sadder ≠ Wiser: Depressive Realism Is Not Robust to Replication. Collabra: Psychology 8(1):38529. https://online.ucpress.edu/collabra/article/8/1/38529/194062
+[18] Clark, D.A., Beck, A.T. (2010). Cognitive model of anxiety: threat overestimation and hypervigilance (Cognitive Therapy of Anxiety Disorders).
+[19] Paine, R.T. (1966). Food Web Complexity and Species Diversity. American Naturalist 100(910): 65–75.
+[20] Wootton, J.T., et al. (2016). Revisiting Paine's 1966 Sea Star Removal Experiment. American Naturalist.
+[21] Wang, Y., et al. (2024). Adaptive responses in Cambrian predator and prey highlight the arms race during the rise of animals. Current Biology 34(24). https://www.cell.com/current-biology/abstract/S0960-9822(24)01647-6
+[22] Aktipis, C.A., Boddy, A.M., Jansen, G., Hibner, U., Hochberg, M.E., Maley, C.C., Wilkinson, G.S. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Philosophical Transactions of the Royal Society B 370(1673): 20140219. https://doi.org/10.1098/rstb.2014.0219
+[23] Sagan (Margulis), L. (1967) & Archibald, J.M. (2015). Endosymbiosis and eukaryotic cell evolution / symbiogenesis. https://evolution.berkeley.edu/the-history-of-evolutionary-thought/1900-to-present/endosymbiosis-lynn-margulis/
 
 **Status:** E = established, I = interpretation, P = proposition. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

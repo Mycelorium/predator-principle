@@ -140,6 +140,41 @@ Und wir schneiden die Tarnung ab. Prädation ist nicht Wettbewerb. Sie ist Wettb
 
 Und die eine grosse Linie, die durch alles laeuft: der Teil, der sich gegen das Ganze optimiert, das ihn traegt, hat einen Namen, wenn er zum Prinzip des Ganzen wird. In der Zelle heisst er Krebs. Der Wolf ist nicht der Krebs. Der Wolf gehoert ins Bild. Der Zahn hat seine Stelle. Aber der Zahn ist nicht der Wettstreit — und ein System, das die Prädation zu seiner Verfassung erhebt, frisst sich von innen auf und nennt es, bis zuletzt, den Wettbewerb.
 
+## Quellen
+
+[1] Bianconi et al. (2013). An estimation of the number of cells in the human body. Annals of Human Biology. [no link on file]
+[2] Aktipis, C.A. et al. (2015). Cancer and intercellular cooperation. Royal Society Open Science 4:170470. https://pmc.ncbi.nlm.nih.gov/articles/PMC5666247/
+[3] PLOS Biology (2025). Applying multilevel selection to understand cancer evolution. PLOS Biology. https://doi.org/10.1371/journal.pbio.3003290
+[4] Hayek, F. (1945). The Use of Knowledge in Society. American Economic Review 35(4):519. https://cdn.mises.org/qjae5_3_3.pdf
+[5] Schumpeter, J. (1942). Capitalism, Socialism and Democracy ("creative destruction"). https://digitalcommons.unomaha.edu/cgi/viewcontent.cgi?article=1026&context=econrealestatefacpub
+[6] Brooke Group v. Brown & Williamson, 509 U.S. 209 (1993). https://yalelawjournal.org/pdf/HemphillWeiser_ab5gd5ks.pdf
+[7] Khan, L. (2017). Amazon's Antitrust Paradox. Yale Law Journal 126:710. https://yalelawjournal.org/note/amazons-antitrust-paradox
+[8] Rennert, K. et al. (2022). Comprehensive evidence implies a higher social cost of CO2. Nature 610:687. https://www.nature.com/articles/s41586-022-05224-9
+[9] Snyder, G. (1965). Stability–instability paradox. https://en.wikipedia.org/wiki/Stability%E2%80%93instability_paradox
+[10] Nowak, M. (2006). Five Rules for the Evolution of Cooperation. Science 314:1560.
+[11] Science Advances (2025). Coevolution of cooperative lifestyles and reduced cancer prevalence in mammals. Science Advances. https://doi.org/10.1126/sciadv.adw0685
+[12] Kropotkin, P. (1902). Mutual Aid: A Factor of Evolution. https://en.wikipedia.org/wiki/Mutual_Aid:_A_Factor_of_Evolution
+[13] Stigler, G. (1971). The Theory of Economic Regulation. Bell Journal of Economics 2:3. https://regulatorystudies.columbian.gwu.edu/sites/g/files/zaxdzs4751/files/downloads/Books/GW%20Reg%20Studies%20-%20Stigler,%20The%20Economic%20Theory%20of%20Economic%20Regulation%20-%20CCoglianese.pdf
+[14] Fehr, E. & Gächter, S. (2000). Cooperation and Punishment in Public Goods Experiments. American Economic Review 90(4):980. https://web.mit.edu/14.160/www/Coop_PunAER.pdf
+[15] Ostrom, E. (1990). Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press. https://www.actu-environnement.com/media/pdf/ostrom_1990.pdf
+[16] McGee, J. (1958). Predatory Price Cutting: The Standard Oil (N.J.) Case. Journal of Law & Economics 1:137–169. https://www.cato.org/sites/cato.org/files/pubs/pdf/pa169.pdf
+[17] Leslie, C. (2012). Revisiting the Revisionist History of Standard Oil. Southern California Law Review 85:573. https://scholarship.law.uci.edu/faculty_scholarship/70/
+[18] Areeda, P. & Turner, D. (1975). Predatory Pricing and Related Practices under Section 2 of the Sherman Act. Harvard Law Review 88:697. https://scholarship.law.upenn.edu/cgi/viewcontent.cgi?article=2827&context=faculty_scholarship
+[19] De Loecker, J. & Eeckhout, J. (2017). The Rise of Market Power and the Macroeconomic Implications. NBER WP 23687 / QJE. https://www.nber.org/system/files/working_papers/w23687/w23687.pdf
+[20] De Loecker, J. & Eeckhout, J. (2018). Global Market Power. NBER WP 24768. https://www.nber.org/system/files/working_papers/w24768/w24768.pdf
+[21] Autor, D., Dorn, D., Katz, L., Patterson, C., Van Reenen, J. (2020). The Fall of the Labor Share and the Rise of Superstar Firms. QJE 135(2):645–709. https://www.nber.org/system/files/working_papers/w23396/w23396.pdf
+[22] Azar, J. & Marinescu, I. (2024). Monopsony Power in the Labor Market: From Theory to Policy. Annual Review of Economics. https://www.annualreviews.org/content/journals/10.1146/annurev-economics-072823-030431
+[23] Boyer, M. & Kotchoni, R. (2015). How Much Do Cartels Overcharge? Review of Industrial Organization 47:119–153. https://link.springer.com/article/10.1007/s11151-015-9472-1
+[24] Connor, J. & Lande, R. (2010–2014). Cartel overcharge database. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4906907
+[25] Tullock, G. (1967). The Welfare Costs of Tariffs, Monopolies, and Theft. Western Economic Journal 5:224. https://www.econlib.org/library/Enc/RentSeeking.html
+[26] Krueger, A. (1974). The Political Economy of the Rent-Seeking Society. American Economic Review 64:291. https://www.econlib.org/library/Enc/RentSeeking.html
+[27] Carrigan, C. & Coglianese, C. (2016). Capturing Regulatory Reality: Stigler's The Theory of Economic Regulation. https://scholarship.law.upenn.edu/faculty_scholarship/1650/
+[28] Hardin, G. (1968). The Tragedy of the Commons. Science 162:1243–1248. https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+[29] Rodgers, C. et al. (n.d.). Historical-commons critique (Tragedy of the commons synthesis). https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+[30] Ostrom design principles, catalogued in Baggio et al. (2016) and Ratner/Cox applicability review. Sustainability 9(7):1287. https://www.mdpi.com/2071-1050/9/7/1287
+[31] Capitals Coalition / Trucost–S&P (2024). Unpriced Environmental Costs: The Top Externalities of the Global Market. https://capitalscoalition.org/wp-content/uploads/2024/07/Unpriced-Environmental-Costs-The-Top-Externalities-of-the-Global-Market-Report.pdf
+[32] ICAN (2024). Global Nuclear Weapons Spending 2023. https://www.voanews.com/a/spending-on-nuclear-weapons-hit-91-4-billion-in-2023-watchdog-finds/7658631.html
+
 **Status:** E = etabliert/belegt, I = Interpretation, P = Proposition. Der strukturelle Schnitt in "Zwei Dinge" ist eine Proposition **[P]**, gestuetzt auf die Daten, nicht aus ihnen deduziert; die Groessenangaben zu Aufschlaegen, Kartellen, SC-CO2 und Abschreckungskausalitaet sind umstritten und als solche markiert. Grenzen und Primaerquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -275,5 +310,40 @@ So, once more, so it holds. We praise competition — the real, the bounded, the
 And we cut the camouflage. Predation is not competition. It is competition with the feedback cut: asymmetric stakes, suppressed signal, externalized cost, compelled escalation, consumed substrate. It borrows the words "free market," "low prices," "human nature," "deterrence," and with borrowed dignity it kills the very thing it borrowed the dignity from.
 
 And the one great line running through it all: the part that optimizes against the whole that carries it has a name, once it becomes the principle of the whole. In the cell it is called cancer. The wolf is not the cancer. The wolf belongs in the picture. The tooth has its station. But the tooth is not the contest — and a system that raises predation to its constitution eats itself from within and calls it, to the last, competition.
+
+## Sources
+
+[1] Bianconi et al. (2013). An estimation of the number of cells in the human body. Annals of Human Biology. [no link on file]
+[2] Aktipis, C.A. et al. (2015). Cancer and intercellular cooperation. Royal Society Open Science 4:170470. https://pmc.ncbi.nlm.nih.gov/articles/PMC5666247/
+[3] PLOS Biology (2025). Applying multilevel selection to understand cancer evolution. PLOS Biology. https://doi.org/10.1371/journal.pbio.3003290
+[4] Hayek, F. (1945). The Use of Knowledge in Society. American Economic Review 35(4):519. https://cdn.mises.org/qjae5_3_3.pdf
+[5] Schumpeter, J. (1942). Capitalism, Socialism and Democracy ("creative destruction"). https://digitalcommons.unomaha.edu/cgi/viewcontent.cgi?article=1026&context=econrealestatefacpub
+[6] Brooke Group v. Brown & Williamson, 509 U.S. 209 (1993). https://yalelawjournal.org/pdf/HemphillWeiser_ab5gd5ks.pdf
+[7] Khan, L. (2017). Amazon's Antitrust Paradox. Yale Law Journal 126:710. https://yalelawjournal.org/note/amazons-antitrust-paradox
+[8] Rennert, K. et al. (2022). Comprehensive evidence implies a higher social cost of CO2. Nature 610:687. https://www.nature.com/articles/s41586-022-05224-9
+[9] Snyder, G. (1965). Stability–instability paradox. https://en.wikipedia.org/wiki/Stability%E2%80%93instability_paradox
+[10] Nowak, M. (2006). Five Rules for the Evolution of Cooperation. Science 314:1560.
+[11] Science Advances (2025). Coevolution of cooperative lifestyles and reduced cancer prevalence in mammals. Science Advances. https://doi.org/10.1126/sciadv.adw0685
+[12] Kropotkin, P. (1902). Mutual Aid: A Factor of Evolution. https://en.wikipedia.org/wiki/Mutual_Aid:_A_Factor_of_Evolution
+[13] Stigler, G. (1971). The Theory of Economic Regulation. Bell Journal of Economics 2:3. https://regulatorystudies.columbian.gwu.edu/sites/g/files/zaxdzs4751/files/downloads/Books/GW%20Reg%20Studies%20-%20Stigler,%20The%20Economic%20Theory%20of%20Economic%20Regulation%20-%20CCoglianese.pdf
+[14] Fehr, E. & Gächter, S. (2000). Cooperation and Punishment in Public Goods Experiments. American Economic Review 90(4):980. https://web.mit.edu/14.160/www/Coop_PunAER.pdf
+[15] Ostrom, E. (1990). Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press. https://www.actu-environnement.com/media/pdf/ostrom_1990.pdf
+[16] McGee, J. (1958). Predatory Price Cutting: The Standard Oil (N.J.) Case. Journal of Law & Economics 1:137–169. https://www.cato.org/sites/cato.org/files/pubs/pdf/pa169.pdf
+[17] Leslie, C. (2012). Revisiting the Revisionist History of Standard Oil. Southern California Law Review 85:573. https://scholarship.law.uci.edu/faculty_scholarship/70/
+[18] Areeda, P. & Turner, D. (1975). Predatory Pricing and Related Practices under Section 2 of the Sherman Act. Harvard Law Review 88:697. https://scholarship.law.upenn.edu/cgi/viewcontent.cgi?article=2827&context=faculty_scholarship
+[19] De Loecker, J. & Eeckhout, J. (2017). The Rise of Market Power and the Macroeconomic Implications. NBER WP 23687 / QJE. https://www.nber.org/system/files/working_papers/w23687/w23687.pdf
+[20] De Loecker, J. & Eeckhout, J. (2018). Global Market Power. NBER WP 24768. https://www.nber.org/system/files/working_papers/w24768/w24768.pdf
+[21] Autor, D., Dorn, D., Katz, L., Patterson, C., Van Reenen, J. (2020). The Fall of the Labor Share and the Rise of Superstar Firms. QJE 135(2):645–709. https://www.nber.org/system/files/working_papers/w23396/w23396.pdf
+[22] Azar, J. & Marinescu, I. (2024). Monopsony Power in the Labor Market: From Theory to Policy. Annual Review of Economics. https://www.annualreviews.org/content/journals/10.1146/annurev-economics-072823-030431
+[23] Boyer, M. & Kotchoni, R. (2015). How Much Do Cartels Overcharge? Review of Industrial Organization 47:119–153. https://link.springer.com/article/10.1007/s11151-015-9472-1
+[24] Connor, J. & Lande, R. (2010–2014). Cartel overcharge database. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4906907
+[25] Tullock, G. (1967). The Welfare Costs of Tariffs, Monopolies, and Theft. Western Economic Journal 5:224. https://www.econlib.org/library/Enc/RentSeeking.html
+[26] Krueger, A. (1974). The Political Economy of the Rent-Seeking Society. American Economic Review 64:291. https://www.econlib.org/library/Enc/RentSeeking.html
+[27] Carrigan, C. & Coglianese, C. (2016). Capturing Regulatory Reality: Stigler's The Theory of Economic Regulation. https://scholarship.law.upenn.edu/faculty_scholarship/1650/
+[28] Hardin, G. (1968). The Tragedy of the Commons. Science 162:1243–1248. https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+[29] Rodgers, C. et al. (n.d.). Historical-commons critique (Tragedy of the commons synthesis). https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+[30] Ostrom design principles, catalogued in Baggio et al. (2016) and Ratner/Cox applicability review. Sustainability 9(7):1287. https://www.mdpi.com/2071-1050/9/7/1287
+[31] Capitals Coalition / Trucost–S&P (2024). Unpriced Environmental Costs: The Top Externalities of the Global Market. https://capitalscoalition.org/wp-content/uploads/2024/07/Unpriced-Environmental-Costs-The-Top-Externalities-of-the-Global-Market-Report.pdf
+[32] ICAN (2024). Global Nuclear Weapons Spending 2023. https://www.voanews.com/a/spending-on-nuclear-weapons-hit-91-4-billion-in-2023-watchdog-finds/7658631.html
 
 **Status:** E = established/belegt, I = interpretation, P = proposition. The structural cut in "Two things" is a proposition **[P]**, supported by the data, not deduced from it; the magnitudes for markups, cartels, SC-CO2, and deterrence causation are contested and marked as such. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

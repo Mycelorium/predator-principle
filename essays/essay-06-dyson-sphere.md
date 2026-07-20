@@ -104,6 +104,33 @@ Denn es gibt eine Gegen-Signatur, und wir haben sie die ganze Zeit betrachtet. D
 
 Die feste Dyson-Sphäre ist kein Ziel. Sie ist eine Diagnose. Sie zeigt nicht, wohin Intelligenz strebt, sondern woran eine Zivilisation stirbt, die den Hunger mit der Reife verwechselt hat. Ein Fleck am Himmel, den wir gesucht und nicht gefunden haben, und das Nichtfinden ist die gnädigste Nachricht, die der Kosmos uns senden konnte.
 
+## Quellen
+
+[1] Dyson, F. J. (1960). Search for Artificial Stellar Sources of Infrared Radiation. Science 131(3414): 1667–1668. https://doi.org/10.1126/science.131.3414.1667
+[2] Dyson, F. J. (1960). Reply to letters (der "Maddox exchange"). Science 132: 252. https://en.wikipedia.org/wiki/Dyson_sphere
+[3] Shell theorem. Wikipedia. https://en.wikipedia.org/wiki/Shell_theorem
+[4] Sallmen, Korpela, Crawford-Taylor (2025). Ringworlds and Dyson spheres can be stable. MNRAS 537(2): 1249. https://academic.oup.com/mnras/article/537/2/1249/7989465
+[5] Kardashev, N. S. (1964). Transmission of Information by Extraterrestrial Civilizations. Soviet Astronomy 8: 217. https://ui.adsabs.harvard.edu/abs/1964SvA.....8..217K/abstract
+[6] Kardashev scale. Wikipedia. https://en.wikipedia.org/wiki/Kardashev_scale
+[7] Griffith, Wright, et al. (2015). The Ĝ Infrared Search for Extraterrestrial Civilizations with Large Energy Supplies. III. The Reddest Extended Sources in WISE. ApJS 217:25. https://iopscience.iop.org/article/10.1088/0067-0049/217/2/25
+[8] Suazo, Zackrisson, et al. (2024). Project Hephaistos – II. Dyson sphere candidates from Gaia DR3, 2MASS, and WISE. MNRAS 531(1): 695. https://doi.org/10.1093/mnras/stae1186
+[9] Rejeb Sfar et al. (2024). Background Contamination of the Project Hephaistos Dyson Sphere Candidates. RNAAS 8:130. https://iopscience.iop.org/article/10.3847/2515-5172/ad5017
+[10] High-resolution imaging of the radio source associated with Project Hephaistos Dyson Sphere Candidate G (2025). MNRAS Letters 538: L56. https://academic.oup.com/mnrasl/article/538/1/L56/7954734
+[11] Haqq-Misra, J. & Baum, S. (2009). The Sustainability Solution to the Fermi Paradox. JBIS 62: 47 (arXiv:0906.0568). https://arxiv.org/pdf/0906.0568
+[12] Attwell, D. & Laughlin, S. B. (2001). An Energy Budget for Signaling in the Grey Matter of the Brain. J. Cereb. Blood Flow Metab. 21(10): 1133. https://journals.sagepub.com/doi/10.1097/00004647-200110000-00001
+[13] Levy, W. B. & Calvert, V. G. (2021). Communication consumes 35 times more energy than computation in the human cortex. PNAS 118(18): e2008173118. https://www.pnas.org/doi/10.1073/pnas.2008173118
+[14] Koomey, Berard, Sanchez, Wong (2011). Implications of Historical Trends in the Electrical Efficiency of Computing. IEEE Annals of the History of Computing 33(3): 46–54. https://ieeexplore.ieee.org/document/5440129/
+[15] Koomey's law. Wikipedia. https://en.wikipedia.org/wiki/Koomey%27s_law
+[16] Landauer's principle. Wikipedia. https://en.wikipedia.org/wiki/Landauer%27s_principle
+[17] Bérut, Arakelyan, Petrosyan, Ciliberto, Lutz, Bechhoefer (2012). Experimental verification of Landauer's principle linking information and thermodynamics. Nature 483: 187. https://www.physics.rutgers.edu/~morozov/677_f2017/Physics_677_2017_files/Berut_Lutz_Nature2012.pdf
+[18] Hong, Lambson, Dhuey, Bokor (2016). Experimental test of Landauer's principle in single-bit operations on nanomagnetic memory bits. Science Advances 2:e1501492. https://www.science.org/doi/10.1126/sciadv.1501492
+[19] Making Habitable Worlds: Planets Versus Megastructures (arXiv:2309.06562). https://arxiv.org/html/2309.06562v4
+[20] Ren, S. et al. (2025). From Efficiency Gains to Rebound Effects: The Problem of Jevons' Paradox in AI's Polarized Environmental Debate. ACM FAccT '25 (arXiv:2501.16548). https://arxiv.org/html/2501.16548v1
+[21] IEA (2024). Electricity 2024 / Energy and AI. International Energy Agency. https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+[22] Vermeij, G. J. (1987). Evolution and Escalation: An Ecological History of Life. Princeton University Press. https://press.princeton.edu/books/paperback/9780691000800/evolution-and-escalation
+[23] Aktipis, C. A. et al. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Phil. Trans. R. Soc. B 370:20140219. https://pmc.ncbi.nlm.nih.gov/articles/PMC4581024/
+[24] Capp, J.-P. et al. (2023). The paradox of cooperation among selfish cancer cells. Evolutionary Applications. https://pmc.ncbi.nlm.nih.gov/articles/PMC10363833/
+
 **Status:** E = etabliert, I = Interpretation, P = Proposition. Grenzen und Primärquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -201,5 +228,32 @@ Now lay the two images over each other. A single predator, hunting and hunted, t
 For there is a counter-signature, and we have been looking at it the whole time. The brain at twenty watts. Computation near Landauer's limit. The efficiency curve pointing downward for sixty years. That is intelligence that has stopped generalising extraction and stands instead in competition over thrift. That is the portrait a mature being would draw of itself. Not the devoured star. The frugal thought.
 
 The solid Dyson sphere is not a goal. It is a diagnosis. It shows not where intelligence is heading, but what a civilisation dies of when it has confused hunger with maturity. A speck in the sky we searched for and did not find, and the not-finding is the most merciful message the cosmos could have sent us.
+
+## Sources
+
+[1] Dyson, F. J. (1960). Search for Artificial Stellar Sources of Infrared Radiation. Science 131(3414): 1667–1668. https://doi.org/10.1126/science.131.3414.1667
+[2] Dyson, F. J. (1960). Reply to letters (the "Maddox exchange"). Science 132: 252. https://en.wikipedia.org/wiki/Dyson_sphere
+[3] Shell theorem. Wikipedia. https://en.wikipedia.org/wiki/Shell_theorem
+[4] Sallmen, Korpela, Crawford-Taylor (2025). Ringworlds and Dyson spheres can be stable. MNRAS 537(2): 1249. https://academic.oup.com/mnras/article/537/2/1249/7989465
+[5] Kardashev, N. S. (1964). Transmission of Information by Extraterrestrial Civilizations. Soviet Astronomy 8: 217. https://ui.adsabs.harvard.edu/abs/1964SvA.....8..217K/abstract
+[6] Kardashev scale. Wikipedia. https://en.wikipedia.org/wiki/Kardashev_scale
+[7] Griffith, Wright, et al. (2015). The Ĝ Infrared Search for Extraterrestrial Civilizations with Large Energy Supplies. III. The Reddest Extended Sources in WISE. ApJS 217:25. https://iopscience.iop.org/article/10.1088/0067-0049/217/2/25
+[8] Suazo, Zackrisson, et al. (2024). Project Hephaistos – II. Dyson sphere candidates from Gaia DR3, 2MASS, and WISE. MNRAS 531(1): 695. https://doi.org/10.1093/mnras/stae1186
+[9] Rejeb Sfar et al. (2024). Background Contamination of the Project Hephaistos Dyson Sphere Candidates. RNAAS 8:130. https://iopscience.iop.org/article/10.3847/2515-5172/ad5017
+[10] High-resolution imaging of the radio source associated with Project Hephaistos Dyson Sphere Candidate G (2025). MNRAS Letters 538: L56. https://academic.oup.com/mnrasl/article/538/1/L56/7954734
+[11] Haqq-Misra, J. & Baum, S. (2009). The Sustainability Solution to the Fermi Paradox. JBIS 62: 47 (arXiv:0906.0568). https://arxiv.org/pdf/0906.0568
+[12] Attwell, D. & Laughlin, S. B. (2001). An Energy Budget for Signaling in the Grey Matter of the Brain. J. Cereb. Blood Flow Metab. 21(10): 1133. https://journals.sagepub.com/doi/10.1097/00004647-200110000-00001
+[13] Levy, W. B. & Calvert, V. G. (2021). Communication consumes 35 times more energy than computation in the human cortex. PNAS 118(18): e2008173118. https://www.pnas.org/doi/10.1073/pnas.2008173118
+[14] Koomey, Berard, Sanchez, Wong (2011). Implications of Historical Trends in the Electrical Efficiency of Computing. IEEE Annals of the History of Computing 33(3): 46–54. https://ieeexplore.ieee.org/document/5440129/
+[15] Koomey's law. Wikipedia. https://en.wikipedia.org/wiki/Koomey%27s_law
+[16] Landauer's principle. Wikipedia. https://en.wikipedia.org/wiki/Landauer%27s_principle
+[17] Bérut, Arakelyan, Petrosyan, Ciliberto, Lutz, Bechhoefer (2012). Experimental verification of Landauer's principle linking information and thermodynamics. Nature 483: 187. https://www.physics.rutgers.edu/~morozov/677_f2017/Physics_677_2017_files/Berut_Lutz_Nature2012.pdf
+[18] Hong, Lambson, Dhuey, Bokor (2016). Experimental test of Landauer's principle in single-bit operations on nanomagnetic memory bits. Science Advances 2:e1501492. https://www.science.org/doi/10.1126/sciadv.1501492
+[19] Making Habitable Worlds: Planets Versus Megastructures (arXiv:2309.06562). https://arxiv.org/html/2309.06562v4
+[20] Ren, S. et al. (2025). From Efficiency Gains to Rebound Effects: The Problem of Jevons' Paradox in AI's Polarized Environmental Debate. ACM FAccT '25 (arXiv:2501.16548). https://arxiv.org/html/2501.16548v1
+[21] IEA (2024). Electricity 2024 / Energy and AI. International Energy Agency. https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+[22] Vermeij, G. J. (1987). Evolution and Escalation: An Ecological History of Life. Princeton University Press. https://press.princeton.edu/books/paperback/9780691000800/evolution-and-escalation
+[23] Aktipis, C. A. et al. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Phil. Trans. R. Soc. B 370:20140219. https://pmc.ncbi.nlm.nih.gov/articles/PMC4581024/
+[24] Capp, J.-P. et al. (2023). The paradox of cooperation among selfish cancer cells. Evolutionary Applications. https://pmc.ncbi.nlm.nih.gov/articles/PMC10363833/
 
 **Status:** E = established, I = interpretation, P = proposition. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

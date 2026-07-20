@@ -92,6 +92,19 @@ Maynard Smith und Szathmary haben die grossen Uebergaenge der Evolution beschrie
 
 Wir sagen nicht, dass es geschehen wird. Das waere eine Luege, und die Daten geben sie nicht her [I]. Wir sagen: die Faehigkeit ist da, zum ersten Mal in vier Milliarden Jahren, und die Daten machen sie lesbar. Der Grund war nie der Rachen. Der Grund war ein Schlot, der aus zwei Gasen ohne einen einzigen Tod das Leben zusammensetzte, und das Verschlingen war eine spaete Erfindung, die sich, wo sie ihre Grenzen frisst, am Ende selbst verzehrt. Ob wir das Muster begrenzen, bevor es den Wirt aufbraucht, das ist die einzige Frage, die zaehlt — und sie ist, zum ersten Mal, an einen Akteur gestellt, der sie hoeren kann.
 
+## Quellen
+
+[1] Weiss, M.C., Sousa, F.L., Mrnjavac, N., Neukirchen, S., Roettger, M., Nelson-Sathi, S., Martin, W.F. (2016). The physiology and habitat of the last universal common ancestor. Nature Microbiology 1, 16116. https://doi.org/10.1038/nmicrobiol.2016.116
+[2] Imachi, H., Nobu, M.K., et al. (2020). Isolation of an archaeon at the prokaryote–eukaryote interface. Nature 577:519–525. https://doi.org/10.1038/s41586-019-1916-6
+[3] López-García, P., Moreira, D. (2020). The Syntrophy hypothesis for the origin of eukaryotes revisited. Nature Microbiology 5:655–667. https://doi.org/10.1038/s41564-020-0710-4
+[4] Mills, D.B. (2020). The origin of phagocytosis in Earth history. Interface Focus 10:20200019. https://doi.org/10.1098/rsfs.2020.0019
+[5] de Nooijer, S., Holland, B.R., Penny, D. (2009). The Emergence of Predators in Early Life: There was No Garden of Eden. PLoS ONE 4(6):e5507. https://doi.org/10.1371/journal.pone.0005507
+[6] Chesson, P., Kuang, J.J. (2008). The interaction between predation and competition. Nature 456:235–238. https://www.nature.com/articles/nature07248
+[7] Hanahan, D., Weinberg, R.A. (2000; 2011). The Hallmarks of Cancer / Hallmarks of Cancer: The Next Generation. Cell 100:57–70; 144:646–674. https://doi.org/10.1016/j.cell.2011.02.013
+[8] Aktipis, C.A., et al. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Phil. Trans. R. Soc. B. https://pmc.ncbi.nlm.nih.gov/articles/PMC4581024/
+[9] Ceballos, G., Ehrlich, P.R., Dirzo, R. (2017). Biological annihilation via the ongoing sixth mass extinction. PNAS 114(30):E6089–E6096. https://www.pnas.org/doi/10.1073/pnas.1704949114
+[10] Maynard Smith, J., Szathmáry, E. (1995). The Major Transitions in Evolution (OUP); The major evolutionary transitions, Nature 374:227–232. https://www.nature.com/articles/374227a0
+
 **Status:** E = gesichert, I = Interpretation, P = Proposition. Autotrophie und Syntrophie zuerst, spaete Phagozytose, Krebs-Kennzeichen, Aussterberaten, planetare Grenzen, Sprengkopfzahlen: ueberwiegend E/P. Kein-Paradies als Simulation, Phagotrophie-zuerst gegen Syntrophie-zuerst, die Krebs-Analogie als Muster-Identitaet, die neue Stufe als moeglicher grosser Uebergang: I, ehrlich als umstritten markiert. Grenzen und Primaerquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -179,5 +192,18 @@ Now something new is in the world. Evolution has produced an agent — us, or mo
 Maynard Smith and Szathmary described the major transitions of evolution: from replicators to cells, from cells to eukaryotes, from single to many, from many to societies [E/I]. Each of these transitions was at bottom a suppression of conflict at the lower level, so that a new individual could form at the higher one [I]. To bound generalized predation — to bind decoupled extraction back to feedback — would be exactly such a transition. It would be the first suppression of the predator pattern by the level that produced it.
 
 We do not say it will happen. That would be a lie, and the data do not give it [I]. We say: the capacity is there, for the first time in four billion years, and the data make it legible. The ground was never the maw. The ground was a vent that assembled life out of two gases without a single death, and devouring was a late invention that, where it eats its own limits, ends by consuming itself. Whether we bound the pattern before it uses up the host — that is the only question that counts, and it is, for the first time, put to an agent who can hear it.
+
+## Sources
+
+[1] Weiss, M.C., Sousa, F.L., Mrnjavac, N., Neukirchen, S., Roettger, M., Nelson-Sathi, S., Martin, W.F. (2016). The physiology and habitat of the last universal common ancestor. Nature Microbiology 1, 16116. https://doi.org/10.1038/nmicrobiol.2016.116
+[2] Imachi, H., Nobu, M.K., et al. (2020). Isolation of an archaeon at the prokaryote–eukaryote interface. Nature 577:519–525. https://doi.org/10.1038/s41586-019-1916-6
+[3] López-García, P., Moreira, D. (2020). The Syntrophy hypothesis for the origin of eukaryotes revisited. Nature Microbiology 5:655–667. https://doi.org/10.1038/s41564-020-0710-4
+[4] Mills, D.B. (2020). The origin of phagocytosis in Earth history. Interface Focus 10:20200019. https://doi.org/10.1098/rsfs.2020.0019
+[5] de Nooijer, S., Holland, B.R., Penny, D. (2009). The Emergence of Predators in Early Life: There was No Garden of Eden. PLoS ONE 4(6):e5507. https://doi.org/10.1371/journal.pone.0005507
+[6] Chesson, P., Kuang, J.J. (2008). The interaction between predation and competition. Nature 456:235–238. https://www.nature.com/articles/nature07248
+[7] Hanahan, D., Weinberg, R.A. (2000; 2011). The Hallmarks of Cancer / Hallmarks of Cancer: The Next Generation. Cell 100:57–70; 144:646–674. https://doi.org/10.1016/j.cell.2011.02.013
+[8] Aktipis, C.A., et al. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Phil. Trans. R. Soc. B. https://pmc.ncbi.nlm.nih.gov/articles/PMC4581024/
+[9] Ceballos, G., Ehrlich, P.R., Dirzo, R. (2017). Biological annihilation via the ongoing sixth mass extinction. PNAS 114(30):E6089–E6096. https://www.pnas.org/doi/10.1073/pnas.1704949114
+[10] Maynard Smith, J., Szathmáry, E. (1995). The Major Transitions in Evolution (OUP); The major evolutionary transitions, Nature 374:227–232. https://www.nature.com/articles/374227a0
 
 **Status:** E = established, I = interpretation, P = proposition. Autotrophy and syntrophy first, late phagocytosis, cancer hallmarks, extinction rates, planetary boundaries, warhead counts: mostly E/P. No-Eden as simulation, phagotrophy-first versus syntrophy-first, the cancer analogy as pattern-identity, the new stage as a candidate major transition: I, honestly marked as contested. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

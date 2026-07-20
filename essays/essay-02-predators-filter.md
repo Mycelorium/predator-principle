@@ -102,6 +102,33 @@ Wir haben Schuesseln zum Himmel gerichtet und nach dem Hunger gehorcht, den wir 
 
 Die Stille am Himmel ist kein Käfig. Sie ist ein Spiegel.
 
+## Quellen
+[1] Hanson, R., Martin, D., McCarter, C., Paulson, J. (2021). If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare (the grabby aliens model). The Astrophysical Journal 922: 182. https://arxiv.org/abs/2102.01522
+[2] Kardashev, N. (1964). Kardashev scale (with critiques; Mullan & Haqq-Misra 2019). Wikipedia. https://en.wikipedia.org/wiki/Kardashev_scale
+[3] Liu, C. (2008). The Dark Forest; dark forest hypothesis. Wikipedia. https://en.wikipedia.org/wiki/Dark_forest_hypothesis
+[4] Bar-On, Y.M., Phillips, R., Milo, R. (2018). The biomass distribution on Earth. PNAS 115(25): 6506-6511. https://doi.org/10.1073/pnas.1711842115
+[5] Ritchie, H. & Roser, M. (based on Bar-On et al. 2018). Wild mammals make up only a few percent of the world's mammals. Our World in Data. https://ourworldindata.org/wild-mammals-birds-biomass
+[6] Darimont, C.T., Fox, C.H., Bryan, H.M., Reimchen, T.E. (2015). The unique ecology of human predators. Science 349(6250): 858-860. https://doi.org/10.1126/science.aac4249
+[7] Bonhommeau, S., Dubroca, L., Le Pape, O., et al. (2013). Eating up the world's food web and the human trophic level. PNAS 110(51): 20617-20620.
+[8] Ceballos, G., Ehrlich, P.R., Barnosky, A.D., et al. (2015). Accelerated modern human-induced species losses: entering the sixth mass extinction. Science Advances 1(5): e1400253. https://doi.org/10.1126/sciadv.1400253
+[9] Ceballos, G., Ehrlich, P.R., Dirzo, R. (2017). Biological annihilation via the ongoing sixth mass extinction signaled by vertebrate population losses and declines. PNAS 114(30): E6089-E6096. https://doi.org/10.1073/pnas.1704949114
+[10] Smith, F.A., Elliott Smith, R.E., Lyons, S.K., Payne, J.L. (2018). Body size downgrading of mammals over the late Quaternary. Science 360(6386): 310-313. https://doi.org/10.1126/science.aao5987
+[11] Sandom, C., Faurby, S., Sandel, B., Svenning, J.-C. (2014). Global late Quaternary megafauna extinctions linked to humans, not climate change. Proceedings of the Royal Society B 281: 20133254.
+[12] WWF / ZSL (2024). Living Planet Report 2024 (Living Planet Index). https://www.worldwildlife.org/publications/2024-living-planet-report
+[13] Ritchie, H. (2024). The 2024 Living Planet Index reports a 73% average decline... what's changed? Our World in Data. https://ourworldindata.org/2024-living-planet-index
+[14] SIPRI (2025). World nuclear forces (SIPRI Yearbook 2025). https://www.sipri.org/research/armament-and-disarmament/weapons-mass-destruction/world-nuclear-forces
+[15] Kristensen, H.M., Korda, M., et al. (2025-2026). Status of World Nuclear Forces. Federation of American Scientists. https://fas.org/initiative/status-world-nuclear-forces/
+[16] Jagermeyr, J., Robock, A., Elliott, J., et al. (2020). A regional nuclear conflict would compromise global food security. PNAS 117(13): 7071-7081. https://doi.org/10.1073/pnas.1919049117
+[17] Robock, A. (2010/2019). Nuclear winter (Focus Article). WIREs Climate Change. https://climate.envsci.rutgers.edu/pdf/WiresClimateChangeNW.pdf
+[18] Maynard Smith, J. & Szathmary, E. (1995). The Major Transitions in Evolution. Oxford University Press.
+[19] Simard, S.W., et al. (1997/2021). Belowground carbon transfer / the 'mother tree' hypothesis (incl. Finding the Mother Tree, 2021). https://suzannesimard.com/research/
+[20] Karst, J., Jones, M.D., Hoeksema, J.D. (2023). Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks in forests. Nature Ecology & Evolution 7: 501-511. https://doi.org/10.1038/s41559-023-01986-1
+[21] Henriksson, N., Marshall, J., Hogberg, M.N., et al. (2023). Re-examining the evidence for the mother tree hypothesis - resource sharing among trees via ectomycorrhizal networks. New Phytologist 239: 19-28. https://doi.org/10.1111/nph.18935
+[22] Aktipis, C.A., Boddy, A.M., Jansen, G., et al. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Philosophical Transactions of the Royal Society B 370: 20140219. https://doi.org/10.1098/rstb.2014.0219
+[23] Aktipis, C.A. (2020). The Cheating Cell: How Evolution Helps Us Understand and Treat Cancer. Princeton University Press.
+[24] Hanson, R. (1998). The Great Filter - Are We Almost Past It? https://mason.gmu.edu/~rhanson/greatfilter.html
+[25] Sandberg, A., Drexler, E., Ord, T. (2018). Dissolving the Fermi Paradox. arXiv:1806.02404. https://arxiv.org/abs/1806.02404
+
 **Status:** E = etabliert, I = Interpretation, P = Proposition. Grenzen und Primaerquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -199,5 +226,32 @@ You cannot prove that a mature intelligence does not carry the predatory as an o
 We pointed dishes at the sky and listened for the hunger we know. We painted a hunter into the darkness and then called the darkness dangerous. We built the appetite into our ruler and mistook its absence for a riddle. All along, the silence in the sky was no cage, no locked door with something lurking behind it. It was the absence of exactly what we listen for. And whoever listens for their own image and hears nothing has learned, without meaning to, the most honest thing about themselves.
 
 The silence in the sky is no cage. It is a mirror.
+
+## Sources
+[1] Hanson, R., Martin, D., McCarter, C., Paulson, J. (2021). If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare (the grabby aliens model). The Astrophysical Journal 922: 182. https://arxiv.org/abs/2102.01522
+[2] Kardashev, N. (1964). Kardashev scale (with critiques; Mullan & Haqq-Misra 2019). Wikipedia. https://en.wikipedia.org/wiki/Kardashev_scale
+[3] Liu, C. (2008). The Dark Forest; dark forest hypothesis. Wikipedia. https://en.wikipedia.org/wiki/Dark_forest_hypothesis
+[4] Bar-On, Y.M., Phillips, R., Milo, R. (2018). The biomass distribution on Earth. PNAS 115(25): 6506-6511. https://doi.org/10.1073/pnas.1711842115
+[5] Ritchie, H. & Roser, M. (based on Bar-On et al. 2018). Wild mammals make up only a few percent of the world's mammals. Our World in Data. https://ourworldindata.org/wild-mammals-birds-biomass
+[6] Darimont, C.T., Fox, C.H., Bryan, H.M., Reimchen, T.E. (2015). The unique ecology of human predators. Science 349(6250): 858-860. https://doi.org/10.1126/science.aac4249
+[7] Bonhommeau, S., Dubroca, L., Le Pape, O., et al. (2013). Eating up the world's food web and the human trophic level. PNAS 110(51): 20617-20620.
+[8] Ceballos, G., Ehrlich, P.R., Barnosky, A.D., et al. (2015). Accelerated modern human-induced species losses: entering the sixth mass extinction. Science Advances 1(5): e1400253. https://doi.org/10.1126/sciadv.1400253
+[9] Ceballos, G., Ehrlich, P.R., Dirzo, R. (2017). Biological annihilation via the ongoing sixth mass extinction signaled by vertebrate population losses and declines. PNAS 114(30): E6089-E6096. https://doi.org/10.1073/pnas.1704949114
+[10] Smith, F.A., Elliott Smith, R.E., Lyons, S.K., Payne, J.L. (2018). Body size downgrading of mammals over the late Quaternary. Science 360(6386): 310-313. https://doi.org/10.1126/science.aao5987
+[11] Sandom, C., Faurby, S., Sandel, B., Svenning, J.-C. (2014). Global late Quaternary megafauna extinctions linked to humans, not climate change. Proceedings of the Royal Society B 281: 20133254.
+[12] WWF / ZSL (2024). Living Planet Report 2024 (Living Planet Index). https://www.worldwildlife.org/publications/2024-living-planet-report
+[13] Ritchie, H. (2024). The 2024 Living Planet Index reports a 73% average decline... what's changed? Our World in Data. https://ourworldindata.org/2024-living-planet-index
+[14] SIPRI (2025). World nuclear forces (SIPRI Yearbook 2025). https://www.sipri.org/research/armament-and-disarmament/weapons-mass-destruction/world-nuclear-forces
+[15] Kristensen, H.M., Korda, M., et al. (2025-2026). Status of World Nuclear Forces. Federation of American Scientists. https://fas.org/initiative/status-world-nuclear-forces/
+[16] Jagermeyr, J., Robock, A., Elliott, J., et al. (2020). A regional nuclear conflict would compromise global food security. PNAS 117(13): 7071-7081. https://doi.org/10.1073/pnas.1919049117
+[17] Robock, A. (2010/2019). Nuclear winter (Focus Article). WIREs Climate Change. https://climate.envsci.rutgers.edu/pdf/WiresClimateChangeNW.pdf
+[18] Maynard Smith, J. & Szathmary, E. (1995). The Major Transitions in Evolution. Oxford University Press.
+[19] Simard, S.W., et al. (1997/2021). Belowground carbon transfer / the 'mother tree' hypothesis (incl. Finding the Mother Tree, 2021). https://suzannesimard.com/research/
+[20] Karst, J., Jones, M.D., Hoeksema, J.D. (2023). Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks in forests. Nature Ecology & Evolution 7: 501-511. https://doi.org/10.1038/s41559-023-01986-1
+[21] Henriksson, N., Marshall, J., Hogberg, M.N., et al. (2023). Re-examining the evidence for the mother tree hypothesis - resource sharing among trees via ectomycorrhizal networks. New Phytologist 239: 19-28. https://doi.org/10.1111/nph.18935
+[22] Aktipis, C.A., Boddy, A.M., Jansen, G., et al. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Philosophical Transactions of the Royal Society B 370: 20140219. https://doi.org/10.1098/rstb.2014.0219
+[23] Aktipis, C.A. (2020). The Cheating Cell: How Evolution Helps Us Understand and Treat Cancer. Princeton University Press.
+[24] Hanson, R. (1998). The Great Filter - Are We Almost Past It? https://mason.gmu.edu/~rhanson/greatfilter.html
+[25] Sandberg, A., Drexler, E., Ord, T. (2018). Dissolving the Fermi Paradox. arXiv:1806.02404. https://arxiv.org/abs/1806.02404
 
 **Status:** E = established, I = interpretation, P = proposition. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

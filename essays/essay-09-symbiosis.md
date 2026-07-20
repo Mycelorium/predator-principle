@@ -120,6 +120,50 @@ Der Zahn ist real. Der Raub ist real, kreativ, an seinem Ort. Wir leugnen ihn ni
 
 Sieh in deine eigene Zelle. Da atmet ein Fremder, der keiner mehr ist. Das ist die Wahrheit über den Grund.
 
+## Quellen
+[1] Wikipedia. "Mitochondrial DNA." Wikipedia. https://en.wikipedia.org/wiki/Mitochondrial_DNA
+[2] Sagan (Margulis), L. (1967). "On the origin of mitosing cells." Journal of Theoretical Biology 14(3):225–274.
+[3] Archibald, J.M. (2015). "Lynn Margulis and the endosymbiont hypothesis: 50 years later." Molecular Biology of the Cell 26(8):1315–1319. https://doi.org/10.1091/mbc.e16-07-0509
+[4] Spang, A. et al. (2015). "Complex archaea that bridge the gap between prokaryotes and eukaryotes." Nature 521:173–179. https://www.nature.com/articles/nature21031
+[5] "Dominant contribution of Asgard archaea to eukaryogenesis." (2025). Nature. https://www.nature.com/articles/s41586-025-09960-6
+[6] Martin, W.F. & Lane, N. (2016). "Energy for two: New archaeal lineages and the origin of mitochondria." BioEssays 38(9):850–856. https://doi.org/10.1002/bies.201600089
+[7] "Eukaryogenesis, a syntrophy affair." (2019). Molecular Microbiology (PMC6684364). https://pmc.ncbi.nlm.nih.gov/articles/PMC6684364/
+[8] Morris, B.E.L. et al. (2013). "Microbial syntrophy: interaction for the common good." FEMS Microbiology Reviews 37(3):384–406. https://doi.org/10.1093/femsre/12019
+[9] Schink, B. (1997). "Energetics of syntrophic cooperation in methanogenic degradation." Microbiology and Molecular Biology Reviews 61(2):262–280. https://pmc.ncbi.nlm.nih.gov/articles/PMC232610/
+[10] McInerney, M.J. et al. (2009). "Syntrophy in Anaerobic Global Carbon Cycles." Current Opinion in Biotechnology 20(6):623–632. https://pmc.ncbi.nlm.nih.gov/articles/PMC2790021/
+[11] "Primary endosymbiosis and the evolution of light and oxygen sensing in photosynthetic eukaryotes." (2014). Frontiers in Ecology and Evolution 2:66. https://doi.org/10.3389/fevo.2014.00066
+[12] "Phylogenomic Insights into the Origin of Primary Plastids." (2021). Systematic Biology. https://pubmed.ncbi.nlm.nih.gov/33988690/
+[13] "Are Cyanobacteria an Ancestor of Chloroplasts or Just One of the Gene Donors?" (2021). PMC8227023. https://pmc.ncbi.nlm.nih.gov/articles/PMC8227023/
+[14] Wikipedia. "Mycorrhiza." Wikipedia. https://en.wikipedia.org/wiki/Mycorrhiza
+[15] Brundrett, M.C. & Tedersoo, L. (2018). "Evolutionary history of mycorrhizal symbioses and global host plant diversity." New Phytologist 220(4):1108–1115. https://doi.org/10.1111/nph.14976
+[16] Kiers, E.T. et al. (2011). "Reciprocal rewards stabilize cooperation in the mycorrhizal symbiosis." Science 333(6044):880–882. https://pubmed.ncbi.nlm.nih.gov/21836016/
+[17] Kiers, E.T., Rousseau, R.A., West, S.A. & Denison, R.F. (2003). "Host sanctions and the legume–rhizobium mutualism." Nature 425:78–81. https://doi.org/10.1038/nature01931
+[18] Kiers, E.T. et al. (2011/2006). "Failure to fix nitrogen … triggers host sanctions." PMC3136820. https://pmc.ncbi.nlm.nih.gov/articles/PMC3136820/
+[19] Ågren, J.A., Davies, N.G. & Foster, K.R. (2019). "Enforcement is central to the evolution of cooperation." Nature Ecology & Evolution 3:1018–1029. https://doi.org/10.1038/s41559-019-0907-1
+[20] El Mouden, C., West, S.A. & Gardner, A. (2010). "The enforcement of cooperation by policing." Evolution 64(7):2139–2152. https://doi.org/10.1111/j.1558-5646.2010.00963.x
+[21] Maynard Smith, J. & Szathmáry, E. (1995). "The major evolutionary transitions." Nature 374:227–232. https://pubmed.ncbi.nlm.nih.gov/7885442/
+[22] Maynard Smith, J. & Szathmáry, E. (1995). The Major Transitions in Evolution. Oxford University Press. https://global.oup.com/academic/product/the-major-transitions-in-evolution-9780198502944
+[23] West, S.A., Fisher, R.M., Gardner, A. & Kiers, E.T. (2015). "Major evolutionary transitions in individuality." PNAS 112(33):10112–10119. https://doi.org/10.1073/pnas.1421402112
+[24] Michod, R.E. & Roze, D. (2001). "Cooperation and conflict in the evolution of multicellularity." Heredity 86:1–7. https://www.nature.com/articles/6888080
+[25] Fisher, R.M., Cornwallis, C.K. & West, S.A. (2013). "Group formation, relatedness, and the evolution of multicellularity." Current Biology 23:1120–1125.
+[26] Hamilton, W.D. (1964). "The genetical evolution of social behaviour, I & II." Journal of Theoretical Biology 7(1):1–52.
+[27] West, S.A., Griffin, A.S. & Gardner, A. (2007). "Evolutionary explanations for cooperation." Current Biology 17(16):R661–R672. https://doi.org/10.1016/j.cub.2007.06.004
+[28] West, S.A., Griffin, A.S. & Gardner, A. (2007). "Social semantics: altruism, cooperation, mutualism, strong reciprocity and group selection." Journal of Evolutionary Biology 20(2):415–432. https://doi.org/10.1111/j.1420-9101.2006.01258.x
+[29] Ratcliff, W.C. et al. (2012). "Experimental evolution of multicellularity." PNAS 109(5):1595–1600. https://doi.org/10.1073/pnas.1115323109
+[30] Bozdag, G.O. et al. (2023). "De novo evolution of macroscopic multicellularity." Nature 617:747–754. https://doi.org/10.1038/s41586-023-06052-1
+[31] Spribille, T. et al. (2016). "Basidiomycete yeasts in the cortex of ascomycete macrolichens." Science 353(6298):488–492. https://www.sciencedaily.com/releases/2016/07/160721151213.htm
+[32] Spribille, T. et al. (2022). "Evolutionary biology of lichen symbioses." New Phytologist 234(5):1566–1582. https://doi.org/10.1111/nph.18048
+[33] Wikipedia. "Buchnera aphidicola." Wikipedia. https://en.wikipedia.org/wiki/Buchnera_(bacterium)
+[34] Kopp, C. et al. (2015). "Subcellular investigation of photosynthesis-driven carbon assimilation in the coral Pocillopora damicornis." mBio 6(1):e02299-14. https://doi.org/10.1128/mbio.02299-14
+[35] "Coral Symbiosis Carbon Flow: A Numerical Model Study." (2022). Frontiers in Marine Science 9:749921. https://doi.org/10.3389/fmars.2022.749921
+[36] Bordenstein, S.R. & Theis, K.R. (2015). "Host Biology in Light of the Microbiome: Ten Principles of Holobionts and Hologenomes." PLoS Biology 13(8):e1002226. https://doi.org/10.1371/journal.pbio.1002226
+[37] "Getting the Hologenome Concept Right: an Eco-Evolutionary Framework." (2016). mSystems (PMC5069740). https://pmc.ncbi.nlm.nih.gov/articles/PMC5069740/
+[38] Walder, F. & van der Heijden, M.G.A. (2015). "Regulation of resource exchange in the arbuscular mycorrhizal symbiosis." Nature Plants 1:15159. https://doi.org/10.1038/nplants.2015.159
+[39] Noë, R. & Hammerstein, P.; Werner, G.D.A. et al. (2016). "Biological trade and markets." Philosophical Transactions of the Royal Society B 371:20150101. https://doi.org/10.1098/rstb.2015.0101
+[40] Aktipis, C.A. et al. (2015). "Cancer across the tree of life: cooperation and cheating in multicellularity." Philosophical Transactions of the Royal Society B 370:20140219. https://pmc.ncbi.nlm.nih.gov/articles/PMC4581024/
+[41] Aktipis, C.A. (2020). The Cheating Cell: How Evolution Helps Us Understand and Treat Cancer. Princeton University Press. https://pmc.ncbi.nlm.nih.gov/articles/PMC7947955/
+[42] "Cancer, collapse, and the politics of somatic evolution." (2026). Evolution, Medicine, and Public Health 14(1). https://academic.oup.com/emph/article/14/1/1/8444434
+
 **Status:** E = etabliert/belegt (Endosymbiose, Genomzahlen, Syntrophie-Thermodynamik, Mykorrhiza-Verbreitung, Wirtssanktionen, Buchnera, experimentelle Vielzelligkeit, Hamilton), I = Interpretation (Eukaryogenese-Mechanismus, große Übergänge, Durchsetzung als zentral, Krebs-als-Zusammenbruch), P = Proposition/umstritten (Korallen-Kohlenstoff bis 90 % vs. 38 %, biologischer Markt als allgemein, Hologenom als Selektionseinheit, "Kooperation ist der Grund" als Metaphysik). Grenzen und Primärquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
 
 ---
@@ -235,5 +279,49 @@ Return to the 1,487 proteins. To the 92 percent of plant families. To the 407 mi
 The tooth is real. Predation is real, creative, in its place. We do not deny it, we do not romanticize it. We only say where it belongs: as a component, bound, limited, regulated — never as the ground. Because the ground was never the tooth. The ground is the alliance grown so tight it fused into one being, and then again, and again, up through every threshold life ever crossed. The deepest layer is not the eating. The deepest layer is the merger, enforced and bounded, to the point of indistinguishability of self and other.
 
 Look inside your own cell. There breathes a stranger who is no longer one. That is the truth about the ground.
+
+## Sources
+[1] Wikipedia. "Mitochondrial DNA." Wikipedia. https://en.wikipedia.org/wiki/Mitochondrial_DNA
+[2] Sagan (Margulis), L. (1967). "On the origin of mitosing cells." Journal of Theoretical Biology 14(3):225–274.
+[3] Archibald, J.M. (2015). "Lynn Margulis and the endosymbiont hypothesis: 50 years later." Molecular Biology of the Cell 26(8):1315–1319. https://doi.org/10.1091/mbc.e16-07-0509
+[4] Spang, A. et al. (2015). "Complex archaea that bridge the gap between prokaryotes and eukaryotes." Nature 521:173–179. https://www.nature.com/articles/nature21031
+[5] "Dominant contribution of Asgard archaea to eukaryogenesis." (2025). Nature. https://www.nature.com/articles/s41586-025-09960-6
+[6] Martin, W.F. & Lane, N. (2016). "Energy for two: New archaeal lineages and the origin of mitochondria." BioEssays 38(9):850–856. https://doi.org/10.1002/bies.201600089
+[7] "Eukaryogenesis, a syntrophy affair." (2019). Molecular Microbiology (PMC6684364). https://pmc.ncbi.nlm.nih.gov/articles/PMC6684364/
+[8] Morris, B.E.L. et al. (2013). "Microbial syntrophy: interaction for the common good." FEMS Microbiology Reviews 37(3):384–406. https://doi.org/10.1093/femsre/12019
+[9] Schink, B. (1997). "Energetics of syntrophic cooperation in methanogenic degradation." Microbiology and Molecular Biology Reviews 61(2):262–280. https://pmc.ncbi.nlm.nih.gov/articles/PMC232610/
+[10] McInerney, M.J. et al. (2009). "Syntrophy in Anaerobic Global Carbon Cycles." Current Opinion in Biotechnology 20(6):623–632. https://pmc.ncbi.nlm.nih.gov/articles/PMC2790021/
+[11] "Primary endosymbiosis and the evolution of light and oxygen sensing in photosynthetic eukaryotes." (2014). Frontiers in Ecology and Evolution 2:66. https://doi.org/10.3389/fevo.2014.00066
+[12] "Phylogenomic Insights into the Origin of Primary Plastids." (2021). Systematic Biology. https://pubmed.ncbi.nlm.nih.gov/33988690/
+[13] "Are Cyanobacteria an Ancestor of Chloroplasts or Just One of the Gene Donors?" (2021). PMC8227023. https://pmc.ncbi.nlm.nih.gov/articles/PMC8227023/
+[14] Wikipedia. "Mycorrhiza." Wikipedia. https://en.wikipedia.org/wiki/Mycorrhiza
+[15] Brundrett, M.C. & Tedersoo, L. (2018). "Evolutionary history of mycorrhizal symbioses and global host plant diversity." New Phytologist 220(4):1108–1115. https://doi.org/10.1111/nph.14976
+[16] Kiers, E.T. et al. (2011). "Reciprocal rewards stabilize cooperation in the mycorrhizal symbiosis." Science 333(6044):880–882. https://pubmed.ncbi.nlm.nih.gov/21836016/
+[17] Kiers, E.T., Rousseau, R.A., West, S.A. & Denison, R.F. (2003). "Host sanctions and the legume–rhizobium mutualism." Nature 425:78–81. https://doi.org/10.1038/nature01931
+[18] Kiers, E.T. et al. (2011/2006). "Failure to fix nitrogen … triggers host sanctions." PMC3136820. https://pmc.ncbi.nlm.nih.gov/articles/PMC3136820/
+[19] Ågren, J.A., Davies, N.G. & Foster, K.R. (2019). "Enforcement is central to the evolution of cooperation." Nature Ecology & Evolution 3:1018–1029. https://doi.org/10.1038/s41559-019-0907-1
+[20] El Mouden, C., West, S.A. & Gardner, A. (2010). "The enforcement of cooperation by policing." Evolution 64(7):2139–2152. https://doi.org/10.1111/j.1558-5646.2010.00963.x
+[21] Maynard Smith, J. & Szathmáry, E. (1995). "The major evolutionary transitions." Nature 374:227–232. https://pubmed.ncbi.nlm.nih.gov/7885442/
+[22] Maynard Smith, J. & Szathmáry, E. (1995). The Major Transitions in Evolution. Oxford University Press. https://global.oup.com/academic/product/the-major-transitions-in-evolution-9780198502944
+[23] West, S.A., Fisher, R.M., Gardner, A. & Kiers, E.T. (2015). "Major evolutionary transitions in individuality." PNAS 112(33):10112–10119. https://doi.org/10.1073/pnas.1421402112
+[24] Michod, R.E. & Roze, D. (2001). "Cooperation and conflict in the evolution of multicellularity." Heredity 86:1–7. https://www.nature.com/articles/6888080
+[25] Fisher, R.M., Cornwallis, C.K. & West, S.A. (2013). "Group formation, relatedness, and the evolution of multicellularity." Current Biology 23:1120–1125.
+[26] Hamilton, W.D. (1964). "The genetical evolution of social behaviour, I & II." Journal of Theoretical Biology 7(1):1–52.
+[27] West, S.A., Griffin, A.S. & Gardner, A. (2007). "Evolutionary explanations for cooperation." Current Biology 17(16):R661–R672. https://doi.org/10.1016/j.cub.2007.06.004
+[28] West, S.A., Griffin, A.S. & Gardner, A. (2007). "Social semantics: altruism, cooperation, mutualism, strong reciprocity and group selection." Journal of Evolutionary Biology 20(2):415–432. https://doi.org/10.1111/j.1420-9101.2006.01258.x
+[29] Ratcliff, W.C. et al. (2012). "Experimental evolution of multicellularity." PNAS 109(5):1595–1600. https://doi.org/10.1073/pnas.1115323109
+[30] Bozdag, G.O. et al. (2023). "De novo evolution of macroscopic multicellularity." Nature 617:747–754. https://doi.org/10.1038/s41586-023-06052-1
+[31] Spribille, T. et al. (2016). "Basidiomycete yeasts in the cortex of ascomycete macrolichens." Science 353(6298):488–492. https://www.sciencedaily.com/releases/2016/07/160721151213.htm
+[32] Spribille, T. et al. (2022). "Evolutionary biology of lichen symbioses." New Phytologist 234(5):1566–1582. https://doi.org/10.1111/nph.18048
+[33] Wikipedia. "Buchnera aphidicola." Wikipedia. https://en.wikipedia.org/wiki/Buchnera_(bacterium)
+[34] Kopp, C. et al. (2015). "Subcellular investigation of photosynthesis-driven carbon assimilation in the coral Pocillopora damicornis." mBio 6(1):e02299-14. https://doi.org/10.1128/mbio.02299-14
+[35] "Coral Symbiosis Carbon Flow: A Numerical Model Study." (2022). Frontiers in Marine Science 9:749921. https://doi.org/10.3389/fmars.2022.749921
+[36] Bordenstein, S.R. & Theis, K.R. (2015). "Host Biology in Light of the Microbiome: Ten Principles of Holobionts and Hologenomes." PLoS Biology 13(8):e1002226. https://doi.org/10.1371/journal.pbio.1002226
+[37] "Getting the Hologenome Concept Right: an Eco-Evolutionary Framework." (2016). mSystems (PMC5069740). https://pmc.ncbi.nlm.nih.gov/articles/PMC5069740/
+[38] Walder, F. & van der Heijden, M.G.A. (2015). "Regulation of resource exchange in the arbuscular mycorrhizal symbiosis." Nature Plants 1:15159. https://doi.org/10.1038/nplants.2015.159
+[39] Noë, R. & Hammerstein, P.; Werner, G.D.A. et al. (2016). "Biological trade and markets." Philosophical Transactions of the Royal Society B 371:20150101. https://doi.org/10.1098/rstb.2015.0101
+[40] Aktipis, C.A. et al. (2015). "Cancer across the tree of life: cooperation and cheating in multicellularity." Philosophical Transactions of the Royal Society B 370:20140219. https://pmc.ncbi.nlm.nih.gov/articles/PMC4581024/
+[41] Aktipis, C.A. (2020). The Cheating Cell: How Evolution Helps Us Understand and Treat Cancer. Princeton University Press. https://pmc.ncbi.nlm.nih.gov/articles/PMC7947955/
+[42] "Cancer, collapse, and the politics of somatic evolution." (2026). Evolution, Medicine, and Public Health 14(1). https://academic.oup.com/emph/article/14/1/1/8444434
 
 **Status:** E = established (endosymbiosis, genome counts, syntrophy thermodynamics, mycorrhiza prevalence, host sanctions, Buchnera, experimental multicellularity, Hamilton), I = interpretation (eukaryogenesis mechanism, major transitions, enforcement-as-central, cancer-as-breakdown), P = proposition/contested (coral carbon up to 90% vs. 38%, biological market as general, hologenome as unit of selection, "cooperation is the ground" as metaphysics). Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
