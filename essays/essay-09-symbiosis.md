@@ -1,0 +1,239 @@
+---
+id: the-ground-was-never-the-tooth
+type: popular-science-essay
+series: "Dispatches from the Substrate"
+number: 9
+author: Nirodha Collective
+license: CC BY 4.0
+class: E+I (P where flagged)
+voice: v3
+status: draft-for-review
+---
+
+# Der Grund war nie der Zahn
+
+### Symbiose, Syntrophie und die kooperative Architektur des Lebens
+
+## Sieh in deine eigene Zelle
+
+Sieh nach innen. In jeder Zelle deines Körpers, zu Hunderten, manchmal zu Tausenden, liegen Kraftwerke, die nicht deine sind. Sie tragen eine eigene, ringförmige DNA. Beim Menschen sind es 16.569 Basenpaare, 37 Gene: dreizehn für Proteine, zweiundzwanzig für tRNA, zwei für rRNA. [E, Ref 3] Das ist der Rest. Das ist alles, was übrig blieb von einem freilebenden Bakterium, das vor etwa zwei Milliarden Jahren in einen anderen Einzeller einzog und nie wieder ging.
+
+Denn ein arbeitendes Mitochondrium braucht etwa 1.500 Proteine. [E, Ref 3] Siebenunddreißig Gene, dreizehn Proteine — und der Rest? Rund 1.487 Proteine werden im Zellkern kodiert, ins Mitochondrium importiert, dort eingebaut. [E, Ref 3] Das ehemalige Bakterium hat den größten Teil seines Genoms abgegeben, verlagert, in den Wirtskern eingeschmolzen. Es hat aufgehört, ein Feind zu sein, aufgehört, ein Gast zu sein, und ist zu einem Organ geworden. Massenhafter endosymbiontischer Gentransfer, so nennt man das nüchtern. [E, Ref 3]
+
+Merke dir diese Zahl: 1.487. Merke dir, dass sie die Richtung anzeigt. Nicht Verzehr. Nicht Auslöschung. Integration bis zur Ununterscheidbarkeit.
+
+## Die Theorie, die man auslachte
+
+Lynn Margulis — sie veröffentlichte 1967 noch unter dem Namen Sagan — reichte eine Arbeit ein, "On the origin of mitosing cells", und wurde nach eigenem Bekunden von etwa fünfzehn Zeitschriften abgelehnt, bevor sie erschien. [E, Ref 2] Die Idee war zu einfach und zu ungeheuerlich zugleich: dass die komplexe Zelle, die eukaryotische Zelle, aus der du bestehst, aus der jeder Baum, jeder Pilz, jedes Tier besteht, keine Erfindung eines einzelnen Vorfahren ist, sondern eine Fusion. Ein Zusammenschluss von Getrenntem. Ein Bündnis, das so eng wurde, dass es zu einem einzigen Wesen verschmolz.
+
+Fünfzig Jahre später ist es keine Ketzerei mehr, sondern Lehrbuch. Archibald (2015) fasst es zusammen: der endosymbiontische Ursprung der Mitochondrien aus einem Alphaproteobakterium und der Plastiden aus einem Cyanobakterium gilt heute als gesichert. [E, Ref 1] Und die Wirtszelle selbst? Spang et al. (2015) fanden die Asgard-Archaeen, die nächsten prokaryotischen Verwandten der eukaryotischen Wirtslinie. [E, Ref 5] Eine Arbeit in *Nature* (2025) bekräftigt den dominanten Beitrag der Asgard-Archaeen zur Eukaryogenese. [E, Ref 7] Die Herkunft der komplexen Zelle: ein Archaeon und ein Bakterium, die einander nicht auffraßen, sondern miteinander verwuchsen.
+
+Man hat das lange als Eroberung erzählt. Ein Räuber verschlingt seine Beute, die Beute überlebt im Bauch, wird versklavt. Eine hübsche Geschichte, blutig, dramatisch, falsch in dem, worauf es ankommt. Denn was auch immer die erste Begegnung war — der *stabile Ausgang* ist keine Ausbeutung bis zur Erschöpfung. Der stabile Ausgang ist Gentransfer, wechselseitige Abhängigkeit, Integration. [E/I, Ref 3, 4, 6] Das Mitochondrium wurde nicht in die Unterwerfung gefressen. Es wurde ein Teil.
+
+## Syntrophie: wenn zwei die Thermodynamik überlisten
+
+Geh tiefer, unter die Zelle, hinunter zur reinen Energetik. Es gibt Reaktionen, die ein einzelner Organismus nicht durchführen kann, weil sie endergonisch sind — sie laufen nicht, sie verbrauchen mehr Energie, als sie liefern, sie stehen still. Ethanol zu Acetat und Wasserstoff, zum Beispiel. Kein Bakterium der Welt kann davon leben. Solange der Wasserstoff sich staut, ist die Reaktion energetisch verschlossen.
+
+Nun setze ein zweites Wesen daneben, einen Methanbildner, der den Wasserstoff wegfrisst, sobald er entsteht. Halte den Wasserstoffpartialdruck niedrig, und plötzlich kippt die Bilanz. Was verschlossen war, wird offen. Was endergonisch war, wird exergonisch. [E, Ref 11, 13] Morris et al. (2013) nennen es "obligat mutualistischen Stoffwechsel": zwischenartlicher Wasserstoff- oder Formiattransfer, der die Energieausbeute bei niedrigem Wasserstoffdruck auf −15 bis −20 kJ/mol ATP bringt. [E, Ref 11] Schink (1997) hat die Thermodynamik dieser Kooperation am thermodynamischen Limit beschrieben, wo jedes Wesen mit dem knappsten denkbaren Energiegewinn lebt. [E, Ref 13]
+
+Sieh, was hier geschieht. Zwei Organismen tun *gemeinsam*, was keiner allein tun kann — nicht als Metapher, nicht als Sentimentalität, sondern als harte Physik. McInerney et al. (2009) zeigen, dass solche syntrophen Konsortien für den globalen anaeroben Kohlenstoff- und Methankreislauf unentbehrlich sind. [E, Ref 12] Der Planet atmet durch Bündnisse. Die Chemie des Lebens läuft an ihren Rändern nur, weil Wesen sich gegenseitig die Produkte aus dem Weg räumen.
+
+Und die Eukaryogenese selbst, so die Deutung, war ein solcher Vorgang: eine syntrophe Affäre. [I, Ref 6] Martin und Lane (2016) argumentieren, dass erst die mitochondriale Partnerschaft jenen Energie-pro-Gen-Überschuss lieferte, aus dem die eukaryotische Komplexität wuchs. [I, Ref 4] Der Mechanismus bleibt umstritten — mito-früh oder mito-spät, Phagozytose oder nicht, das Energieargument selbst wird debattiert. [I, Ref 6, 4, §6] Die Fusion behaupten wir; über die Reihenfolge der Ereignisse hüten wir uns vor falscher Sicherheit. Aber das Muster steht: Der Sprung zur Komplexität war ein Zusammenschluss.
+
+## Die Pflanze schluckte eine Sonne
+
+Und dann geschah es noch einmal. In der Ahnenlinie der Archaeplastiden — der Rotalgen, der Grünalgen, aller Landpflanzen — zog ein Cyanobakterium ein, ein Wesen, das das Licht in Zucker verwandeln konnte. Ein einziges Ereignis, vor mehr als einer Milliarde Jahren. [E, Ref 8, 10] Aus diesem einen Bündnis stammt jedes grüne Blatt, das du je gesehen hast.
+
+Und wieder dieselbe Bewegung, dieselbe Richtung. Das Genom des Cyanobakteriums, in freilebenden Verwandten mindestens 1,6 Millionen Basenpaare groß, schrumpfte im Plastiden auf 100 bis 200 Kilobasen. [E, Ref 8] Rund 90 Prozent der Plastidenproteine werden heute im Zellkern kodiert. [E, Ref 8] Eine Pflanze braucht mehr als 2.000 Proteine, die in den Plastiden gerichtet werden. [E, Ref 8] Dieselbe Geschichte wie beim Mitochondrium: das eingezogene Wesen gibt seine Autonomie ab, sein Genom wandert in den Wirtskern, und was bleibt, ist ein Organ, das ohne den Wirt nicht mehr leben kann und der Wirt nicht ohne es.
+
+Ein einziges Ereignis für den Plastiden-Kompartiment — das ist gut belegt. [E, Ref 8, 10] Dass die *Gene* des Plastiden auch andere Spender haben, ein Mosaik der Herkunft, das ist eine Feinheit, die man nicht verschweigen darf: einzelnes Ereignis, mosaikartige Genabstammung. [I, Ref 9, §6] Aber der Kern steht fels. Die Photosynthese, das Fundament fast aller Nahrungsketten der Erde, ist kein Raub. Sie ist eine geerbte Kooperation, mehr als eine Milliarde Jahre alt.
+
+## Der Boden unter den Wäldern
+
+Komm an die Oberfläche, in die Erde unter deinen Füßen. Etwa 407 Millionen Jahre alt ist der Rhynie Chert, ein versteinertes Stück schottischen Bodens, und in ihm sieht man schon, was heute noch geschieht: Pilze, die in den Wurzeln früher Landpflanzen leben. [E, Ref 15] Brundrett und Tedersoo (2018) haben es global vermessen: Mykorrhizen finden sich in 92 Prozent der Pflanzenfamilien, in etwa 80 Prozent aller Arten. [E, Ref 14, 15] Rund 78 Prozent der Pflanzenarten leben mit arbuskulären Mykorrhizapilzen. [E, Ref 15] Die Symbiose ist 400 bis 460 Millionen Jahre alt. [E, Ref 14, 15] Sie ist so alt wie die Pflanzen an Land selbst. Es gab nie eine Landpflanze ohne Pilz. Der Wald stand nie allein.
+
+Und der Handel, der hier läuft, ist beziffert: Etwa 20 Prozent des von der Pflanze photosynthetisierten Kohlenstoffs fließen in den Pilz, getauscht gegen Phosphat, das der Pilz aus dem Boden holt, den die Wurzel nicht erreicht. [E, Ref 15] Ein Fünftel der Ernte, freiwillig abgegeben — nein, nicht freiwillig, das ist das Wort, vor dem wir uns hüten müssen. Nicht freiwillig. Erzwungen.
+
+## Kooperation ist kein Gefühl. Sie wird durchgesetzt.
+
+Hier liegt der ganze Angelpunkt, und wer ihn verfehlt, versteht nichts. Kooperation in der Biologie ist keine Freundlichkeit. Sie ist kein Edelmut, keine Harmonie, kein Zurücklehnen. Sie ist ein Mechanismus, und sie ist nur dort real, wo sie *durchgesetzt und begrenzt* wird.
+
+Sieh Kiers et al. (2011): Pflanzen belohnen bevorzugt jene Pilze, die mehr Phosphat liefern; die Pilze wiederum bevorzugen jene Wurzeln, die mehr Kohlenstoff liefern. [E, Ref 16] Wechselseitige Belohnung, ein Markt. Wer betrügt, bekommt weniger. Wer liefert, bekommt mehr. Das ist keine Liebe. Das ist Buchhaltung mit Sanktionsgewalt.
+
+Und die Sanktion wird härter. Kiers et al. (2003) zeigten am Bündnis von Sojabohne und Rhizobium: Wenn ein Knöllchenbakterium keinen Stickstoff mehr fixiert — wenn es betrügt, die Leistung verweigert und trotzdem sitzen bleibt — dann drosselt die Pflanze die Sauerstoffzufuhr zu diesem Knöllchen und senkt die Fortpflanzung der Betrüger um rund 50 Prozent. [E, Ref 19] Die Hälfte. Der Wirt bestraft den Schmarotzer, und die Bestrafung trifft sogar die sich klonal fortpflanzenden Verwandten des Betrügers. [E, Ref 20]
+
+Jetzt dreh das Argument um, das der Zyniker gern bringt. Er sagt: Seht doch, überall Betrüger, überall Kontrolle — also ist Kooperation schwach, sekundär, ein dünner Firnis über dem wahren Gesetz des Fressens. Falsch. Genau verkehrt. Man bewacht, was schützenswert ist. Die Allgegenwart der Durchsetzung beweist, dass die Kooperation der *tragende* Zustand ist, der Zustand, der die Last hält und den zu verteidigen sich lohnt. Ågren, Davies und Foster (2019) sagen es unmissverständlich: Durchsetzung ist zentral für die Evolution der Kooperation — auf jeder Ebene, vom Genom bis zur Gesellschaft. [I, Ref 21] El Mouden, West und Gardner (2010) haben das formale Modell: Kontrolle richtet die Interessen innerhalb eines Kollektivs aus. [I, Ref 22] Der Betrüger schafft keine Ordnung. Er zehrt von einer Ordnung, die er selbst nicht erzeugen kann.
+
+## Die großen Übergänge
+
+Tritt zurück und sieh das ganze Bild. Maynard Smith und Szathmáry (1995) haben die Grammatik dieser Geschichte geschrieben: die großen evolutionären Übergänge. [E/I, Ref 25, 26] Immer wieder dasselbe Muster — unabhängig replizierende Einheiten werden zu einem Individuum höherer Ordnung. Gene bündeln sich zu Chromosomen. Chromosomen zu Genomen. Getrennte Zellen zur eukaryotischen Zelle. Zellen zum vielzelligen Körper. Individuen zum eusozialen Staat. Und jeder dieser Übergänge verlangt dasselbe: die Unterdrückung des Konflikts auf der niedrigeren Ebene. [E/I, Ref 25]
+
+West, Fisher, Gardner und Kiers (2015) präzisieren: Übergänge in der Individualität werden von Kooperation getragen, plus von Mechanismen, die den Konflikt innerhalb der Gruppe begrenzen. [I, Ref 27] Michod und Roze (2001) benennen die Werkzeuge: Keimbahn, Apoptose, Selbstkontrolle — Anpassungen, die den Konflikt innerhalb des Organismus regeln. [I, Ref 28] Hoher Verwandtschaftsgrad, klonale Entwicklung, so Fisher, Cornwallis und West (2013), untermauert die stabile vielzellige Kooperation. [E, Ref 44]
+
+Und der mathematische Boden unter allem: Hamilton (1964). Seine Regel, rb > c — Verwandtschaftsgrad mal Nutzen größer als die Kosten — ist das quantitative Rückgrat, das erklärt, warum Gene überhaupt Kooperatoren bauen. [E, Ref 43] Der Formalismus wurde debattiert, Kin-Selektion gegen Multilevel-Selektion, Nowak und andere gegen ein Heer von Ko-Autoren; die Substanz steht nicht in Zweifel. [I, §6] West, Griffin und Gardner (2007) haben die Taxonomie sauber gezogen, damit niemand Kooperation mit Naivität verwechselt. [E, Ref 23, 24]
+
+Merke den Fehlschluss, den man hier so gern begeht. Man sagt: Kooperation reduziert sich doch auf Eigennutz, auf das egoistische Gen, auf "wechselseitige Ausbeutung". Das ist eine Ebenenverwechslung. Die Gen-Logik erklärt, *warum* Kooperatoren gebaut werden. Das Wesen in der Welt — die eukaryotische Zelle, die Flechte, der Körper — ist ein wirkliches neues Individuum mit eigener Fitness. [I, Ref 27] Und beachte die Asymmetrie, die der Zyniker unterschlägt: Die Logik des egoistischen Gens *sagt Kooperation voraus und verlangt sie*. Sie lizenziert keine verallgemeinerte Raubgier. Das Mitochondrium ist der Beweis: nicht Ausbeutung bis zur Erschöpfung, sondern begrenzte Partnerschaft mit massivem Gentransfer. [E, Ref 3, 4]
+
+## Aus dem Nichts, im Labor
+
+Man kann es geschehen sehen. Ratcliff et al. (2012) setzten einzellige Hefe unter einen einfachen Druck: Wer schneller absinkt, überlebt. Und binnen kurzem entstanden Schneeflockenhefen — vielzellige Cluster, de novo, mit Arbeitsteilung auf Basis von Apoptose, dem programmierten Zelltod, der Teile des Clusters opfert, damit das Ganze sich teilen kann. [E, Ref 41] Vielzelligkeit, im Labor geboren, aus dem Nichts.
+
+Bozdag et al. (2023), aus demselben Labor, trieben es weiter: rund 600 Selektionsrunden. Die anaerobe Schneeflockenhefe wurde etwa 20.000-mal größer — makroskopisch, mit bloßem Auge sichtbar — und rund 10.000-mal zäher, durch Zellform und Verflechtung. [E, Ref 42] Sauerstoff, so zeigte sich, begrenzt die Evolution der Vielzelligkeit. Aber der Punkt ist: Man legt den Druck an, und das Leben antwortet mit Zusammenschluss. Es antwortet, indem es aus vielen eines macht.
+
+## Flechten, Blattläuse, Korallen: die Vielheit im Einen
+
+Sieh eine Flechte an, diesen grau-grünen Belag auf dem Stein, den man für ein einzelnes Ding hält. Er ist kein Ding. Lange nannte man ihn eine Zweierbeziehung, Pilz und Alge. Dann fanden Spribille et al. (2016) einen dritten Partner: eine Basidiomyceten-Hefe im Cortex von Großflechten, auf sechs Kontinenten, die Abwehrstoffe wie Vulpinsäure produziert. [E, Ref 32] Spribille et al. (2022) zeichnen heute das Bild einer vielgliedrigen Symbiose. [I, Ref 33] Was du für ein Individuum hältst, ist ein Bündnis, das seine Form vergessen hat.
+
+Sieh eine Blattlaus. In ihr lebt *Buchnera aphidicola*, ein Bakterium mit einem Genom von nur 600 bis 650 Kilobasen, rund 500 bis 560 Proteinen — geschrumpft, abhängig, unfähig, allein zu leben. [E, Ref 34] Es überproduziert Tryptophan und essenzielle Aminosäuren, die die Blattlaus aus ihrer zuckrigen, proteinarmen Nahrung nicht bekommt. [E, Ref 34] Das Bündnis ist 160 bis 280 Millionen Jahre alt, obligat, mütterlich vererbt, ko-spezierend — die beiden Linien haben sich gemeinsam aufgespalten, Schritt für Schritt, wie ein Paar, das zusammen altert. [E, Ref 34] Rund 5,6 Millionen Buchnera-Zellen in einer erwachsenen Blattlaus. [E, Ref 34]
+
+Sieh eine Koralle. Kopp et al. (2015) verfolgten mit NanoSIMS den Kohlenstoff: Innerhalb von 15 Minuten erscheint der von der Alge fixierte ¹³C-Kohlenstoff in den Lipidtröpfchen des Korallenwirts; der Stickstoff, ¹⁵N, folgt erst nach mehr als drei Stunden. [E, Ref 36] Bis zu etwa 90 Prozent des von der Alge fixierten Kohlenstoffs werden an den Wirt weitergegeben. [E, Ref 36] Hier ist Ehrlichkeit geboten: "Bis zu 90 Prozent" ist eine Spanne, kontextabhängig; eine Modellstudie (Front. Mar. Sci. 2022) parametrisiert die Weitergabe weit niedriger, bei rund 38 Prozent. [P, Ref 37, §6] Die Zahl ist umstritten, nach Methode, Art und Nährstofflage. Aber dass die Koralle vom Zucker ihrer Alge lebt und das Riff auf diesem Tausch steht — das steht.
+
+Der Holobiont, das Wirt-Mikroben-Kollektiv, ist ein nützlicher Rahmen (Bordenstein und Theis 2015). [P, Ref 30] Ob das Hologenom eine kohärente *Selektionseinheit* ist, bleibt umstritten. [P, Ref 31, §6] Wir behaupten das Kollektiv; die Metaphysik der Selektionsebene lassen wir offen.
+
+## Wo man Raub mit Wettbewerb verwechselt — und warum das die ganze Lüge ist
+
+Jetzt zur Camouflage. Der Zyniker sagt: Aber die Selektion selbst ist Wettbewerb, der Kampf ums Dasein, "Natur, rot an Zahn und Kralle" — also ist das Fressen der Grund, und eure Kooperation ist die Ausnahme. Hier muss man scharf schneiden, denn hier steckt der ganze Betrug.
+
+Erstens: Selektion ist Wettbewerb, ja — aber Selektion ist nur *differenzielles Fortbestehen*, gleichgültig gegen den Mechanismus. Was an jeder großen Schwelle fortbestand, tat es durch Verschmelzen und Kooperieren. [I, Ref 4, 5, 6, 8, 25, 27] Die Selektion *wählt*; sie *baut* die höhere Einheit nicht. Gebaut wird sie durch Kooperation, und der Wettbewerb läuft dann *zwischen* den neuen Einheiten. Wer "Selektion" als "Raub" liest, verwechselt den Filter mit dem, was er filtert.
+
+Zweitens, und das ist die Kernunterscheidung, die man niemals zusammenschütten darf: **Raub ist nicht Wettbewerb.** Raub ist asymmetrische Entnahme — der Gewinn des einen wird aus der verzehrten Substanz des anderen gezogen, die Interaktion *senkt die Summe* und *beendet den Verlierer* (+/−). Zum Organisationsprinzip eines Systems verallgemeinert, ist Raub selbstverzehrend. Ein Räuber, der alle Beute frisst, stirbt aus. Deshalb regulieren dauerhafte Systeme ihn. Als *Bestandteil* eines Ökosystems: real, kreativ, treibend. Als *Prinzip* eines Systems: nie lebensfähig.
+
+Der begrenzte Wettbewerb dagegen ist etwas ganz anderes und etwas Schönes: symmetrische Rivalität in einem geteilten Rahmen. Nischenaufteilung. Sexuelle Selektion. Der biologische Markt der Mykorrhiza und der Rhizobien. [E, Ref 16, 17, 18, 19] Ebenbürtige konkurrieren *um* eine Ressource unter Regeln, von denen sie gemeinsam abhängen; der Rahmen bleibt bestehen; der Wettbewerb sortiert und optimiert, ohne die Substanz zu zerstören. Wir loben diesen Wettbewerb. Er gehört zum Schönsten, was das Leben hervorbringt.
+
+Aber sieh, wie der Rahmen selbst beschaffen ist: Er ist kooperativ und durchgesetzt. Ein Markt braucht Regeln. Ein Körper braucht Kontrolle. Ein Ökosystem braucht Regulation. Wettbewerb ohne einen begrenzenden kooperativen Rahmen degeneriert zur Entnahme und zum Zusammenbruch. Und hier liegt die Falle im Wort: "Wettbewerb" deckt in der Ökologie beides, die ebenbürtige Rivalität und die faktisch räuberische Störung. Zum *Weltbild* erhoben, schmuggelt das Wort den Raub unter einem respektablen Namen ein. Man sagt "Wettbewerb" und meint das Fressen. Das ist die Camouflage. Schneide sie weg.
+
+Und die "wechselseitige Ausbeutung" der Symbioseforscher (Herre, West)? Das klingt räuberisch, meint aber das Gegenteil: einen stabilen, wechselseitig nützlichen, durchgesetzten Tausch. [E/I, Ref 17, 23, 24] Es ist die *Buchhaltung*, nicht das Wesen. Das entstehende Wesen — die eukaryotische Zelle, die Flechte, der Holobiont — ist ein echtes neues Individuum.
+
+## Der Krebs: das Prinzip, das sich selbst frisst
+
+Und nun das schärfste Bild, der Beweis, der keine Deutung mehr braucht. Was geschieht, wenn der Raub *innerhalb* eines kooperativen Körpers zum Prinzip wird? Aktipis et al. (2015) haben es benannt: Krebs ist Betrug an den fünf Grundlagen der vielzelligen Kooperation. [I, Ref 38] Eine Zelle hört auf, sich an die Regeln zu halten — sie teilt sich ohne Grenze, verweigert den programmierten Tod, monopolisiert Ressourcen, ignoriert die Bedürfnisse des Ganzen. Aktipis (2020) nennt es die betrügende Zelle. [I, Ref 40] Krebs ist der Zusammenbruch des vielzelligen Gesellschaftsvertrags, wenn die innere Kontrolle, die Immunüberwachung und die entwicklungsbiologischen Schranken erodieren. [I, Ref 39]
+
+Sieh genau hin, denn hier schließt sich der Kreis. Der Krebs ist der verallgemeinerte Räuber im Inneren. Er tut, was das räuberische Prinzip immer tut: Er wächst, er entnimmt, er zerstört die Substanz, aus der er lebt — und dann stirbt er mit dem Wirt, den er getötet hat. Predation, zum Organisationsprinzip *innerhalb* eines kooperativen Körpers erhoben, ist tödlich für den Körper und für den Krebs zugleich. Der Krebs ist kein "Räuber, der dazugehört". Er ist Desertion, schmarotzend an einer Ordnung, die genau die Durchsetzung — Keimbahn, Apoptose, Immunsystem — sonst unterdrückt. [E/I, Ref 38, 39, 19]
+
+Das ist die These, in ein einziges Bild gefasst. Verallgemeinere den Raub zum Prinzip, und du hast einen Krebs innerhalb der Evolution. Nicht weil das einzelne Raubtier böse wäre — der Wolf, der die Kranke reißt, hält das Rudel der Rehe gesund; die Otter, die Seeigel fressen, retten den Kelpwald. Der einzelne Räuber gehört ins Gefüge. Aber die *Verallgemeinerung*, die Romantik, die aus dem Zahn den Grund macht und das Fressen zum Gesetz erklärt — die ist der Krebs. Sie verwechselt einen Bestandteil mit dem Fundament. Sie liest im Riff, im Wald, in der Kolonie den Kampf und übersieht, dass ihre ganze Schönheit die Schönheit *erhaltener kooperativer Struktur* ist.
+
+## Der Grund
+
+Kehr zurück zu den 1.487 Proteinen. Zu den 92 Prozent der Pflanzenfamilien. Zu den 407 Millionen Jahren, seit ein Pilz in eine Wurzel zog. Zu den 15 Minuten, in denen der Zucker der Alge in die Koralle wandert. Zu den 600 Runden, in denen aus einer Zelle ein sichtbares Wesen wurde.
+
+Der Zahn ist real. Der Raub ist real, kreativ, an seinem Ort. Wir leugnen ihn nicht, wir romantisieren ihn nicht. Wir sagen nur, wo er hingehört: als Bestandteil, gebunden, begrenzt, reguliert — niemals als Grund. Denn der Grund war nie der Zahn. Der Grund ist das Bündnis, das so eng wurde, dass es zu einem Wesen verschmolz, und dann noch einmal, und noch einmal, hinauf durch jede Schwelle, die das Leben je überschritt. Die tiefste Schicht ist nicht das Fressen. Die tiefste Schicht ist der Zusammenschluss, durchgesetzt und begrenzt, bis zur Ununterscheidbarkeit von Selbst und Anderem.
+
+Sieh in deine eigene Zelle. Da atmet ein Fremder, der keiner mehr ist. Das ist die Wahrheit über den Grund.
+
+**Status:** E = etabliert/belegt (Endosymbiose, Genomzahlen, Syntrophie-Thermodynamik, Mykorrhiza-Verbreitung, Wirtssanktionen, Buchnera, experimentelle Vielzelligkeit, Hamilton), I = Interpretation (Eukaryogenese-Mechanismus, große Übergänge, Durchsetzung als zentral, Krebs-als-Zusammenbruch), P = Proposition/umstritten (Korallen-Kohlenstoff bis 90 % vs. 38 %, biologischer Markt als allgemein, Hologenom als Selektionseinheit, "Kooperation ist der Grund" als Metaphysik). Grenzen und Primärquellen: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+
+---
+
+---
+
+# The Ground Was Never the Tooth
+
+### Symbiosis, syntrophy and the cooperative architecture of life
+
+## Look inside your own cell
+
+Look inward. In every cell of your body, by the hundreds, sometimes by the thousands, sit power plants that are not yours. They carry their own DNA, ring-shaped. In humans it is 16,569 base pairs, 37 genes: thirteen for proteins, twenty-two for tRNA, two for rRNA. [E, Ref 3] That is the remainder. That is all that is left of a free-living bacterium that moved into another single cell about two billion years ago and never left.
+
+Because a working mitochondrion needs roughly 1,500 proteins. [E, Ref 3] Thirty-seven genes, thirteen proteins — and the rest? Around 1,487 proteins are encoded in the cell nucleus, imported into the mitochondrion, assembled there. [E, Ref 3] The former bacterium gave up most of its genome, transferred it, melted it into the host nucleus. It stopped being an enemy, stopped being a guest, and became an organ. Mass endosymbiotic gene transfer, that is the dry name for it. [E, Ref 3]
+
+Remember that number: 1,487. Remember that it points the direction. Not consumption. Not annihilation. Integration to the point of indistinguishability.
+
+## The theory they laughed at
+
+Lynn Margulis — she published in 1967 still under the name Sagan — submitted a paper, "On the origin of mitosing cells," and by her own account was rejected by some fifteen journals before it appeared. [E, Ref 2] The idea was at once too simple and too outrageous: that the complex cell, the eukaryotic cell, the one you are made of, the one every tree and fungus and animal is made of, is not the invention of a single ancestor but a fusion. A merger of what was separate. An alliance grown so tight it fused into one being.
+
+Fifty years on it is no longer heresy but textbook. Archibald (2015) sums it up: the endosymbiotic origin of mitochondria from an alphaproteobacterium and of plastids from a cyanobacterium is now established. [E, Ref 1] And the host cell itself? Spang et al. (2015) found the Asgard archaea, the closest prokaryotic relatives of the eukaryotic host lineage. [E, Ref 5] A paper in *Nature* (2025) reinforces the dominant contribution of Asgard archaea to eukaryogenesis. [E, Ref 7] The origin of the complex cell: an archaeon and a bacterium that did not devour each other but grew together.
+
+This has long been told as conquest. A predator swallows its prey, the prey survives in the belly, is enslaved. A pretty story, bloody, dramatic, wrong in exactly what matters. Because whatever the first encounter was — the *stable outcome* is not extraction to exhaustion. The stable outcome is gene transfer, mutual dependence, integration. [E/I, Ref 3, 4, 6] The mitochondrion was not eaten into submission. It became a part.
+
+## Syntrophy: when two outwit thermodynamics
+
+Go deeper, beneath the cell, down to bare energetics. There are reactions a single organism cannot run, because they are endergonic — they do not proceed, they cost more energy than they yield, they sit still. Ethanol to acetate and hydrogen, for instance. No bacterium in the world can live off it. As long as the hydrogen piles up, the reaction stays energetically locked.
+
+Now set a second being beside it, a methanogen that eats the hydrogen away the moment it appears. Keep the hydrogen partial pressure low, and suddenly the balance tips. What was locked becomes open. What was endergonic becomes exergonic. [E, Ref 11, 13] Morris et al. (2013) call it "obligately mutualistic metabolism": interspecies hydrogen or formate transfer that, at low hydrogen pressure, brings the yield to −15 to −20 kJ/mol ATP. [E, Ref 11] Schink (1997) described the thermodynamics of this cooperation at the thermodynamic limit, where each being lives on the slimmest conceivable energy gain. [E, Ref 13]
+
+Look at what happens here. Two organisms do *together* what neither can do alone — not as metaphor, not as sentimentality, but as hard physics. McInerney et al. (2009) show that such syntrophic consortia are indispensable to the global anaerobic carbon and methane cycle. [E, Ref 12] The planet breathes through alliances. The chemistry of life runs at its edges only because beings clear each other's products out of the way.
+
+And eukaryogenesis itself, on one reading, was such a process: a syntrophy affair. [I, Ref 6] Martin and Lane (2016) argue that it was the mitochondrial partnership that first delivered the energy-per-gene surplus out of which eukaryotic complexity grew. [I, Ref 4] The mechanism remains contested — mito-early or mito-late, phagocytosis or not, the energy argument itself is debated. [I, Ref 6, 4, §6] We assert the fusion; about the order of events we refuse false certainty. But the pattern stands: the leap to complexity was a merger.
+
+## The plant swallowed a sun
+
+And then it happened again. In the ancestral line of the Archaeplastida — the red algae, the green algae, all land plants — a cyanobacterium moved in, a being that could turn light into sugar. A single event, more than a billion years ago. [E, Ref 8, 10] From that one alliance descends every green leaf you have ever seen.
+
+And again the same motion, the same direction. The cyanobacterium's genome, at least 1.6 million base pairs in free-living relatives, shrank in the plastid to 100–200 kilobases. [E, Ref 8] Around 90 percent of plastid proteins are today encoded in the nucleus. [E, Ref 8] A plant needs more than 2,000 proteins targeted to the plastid. [E, Ref 8] The same story as the mitochondrion: the incomer surrenders its autonomy, its genome migrates into the host nucleus, and what remains is an organ that can no longer live without the host and a host that cannot live without it.
+
+A single event for the plastid compartment — that is well supported. [E, Ref 8, 10] That the plastid's *genes* also have other donors, a mosaic of origin, is a subtlety one must not hide: single event, mosaic gene ancestry. [I, Ref 9, §6] But the core is rock. Photosynthesis, the foundation of nearly every food chain on Earth, is not a robbery. It is an inherited cooperation, more than a billion years old.
+
+## The ground beneath the forests
+
+Come to the surface, into the soil under your feet. The Rhynie chert is about 407 million years old, a petrified piece of Scottish ground, and in it you can already see what still happens today: fungi living inside the roots of early land plants. [E, Ref 15] Brundrett and Tedersoo (2018) measured it globally: mycorrhizas are found in 92 percent of plant families, in about 80 percent of all species. [E, Ref 14, 15] Around 78 percent of plant species live with arbuscular mycorrhizal fungi. [E, Ref 15] The symbiosis is 400 to 460 million years old. [E, Ref 14, 15] It is as old as land plants themselves. There was never a land plant without a fungus. The forest never stood alone.
+
+And the trade running here is quantified: about 20 percent of the carbon the plant photosynthesizes flows into the fungus, exchanged for phosphate that the fungus draws from soil the root cannot reach. [E, Ref 15] A fifth of the harvest, freely given — no, not freely, that is the word we must guard against. Not freely. Enforced.
+
+## Cooperation is not a feeling. It is enforced.
+
+Here lies the whole hinge, and whoever misses it understands nothing. Cooperation in biology is not kindness. It is not nobility, not harmony, not leaning back. It is a mechanism, and it is real only where it is *enforced and bounded*.
+
+Look at Kiers et al. (2011): plants preferentially reward those fungi that supply more phosphate; the fungi in turn favor those roots that supply more carbon. [E, Ref 16] Reciprocal reward, a market. Whoever cheats gets less. Whoever delivers gets more. This is not love. It is accounting with the power to sanction.
+
+And the sanction grows harder. Kiers et al. (2003) showed in the soybean–rhizobium alliance: when a nodule bacterium stops fixing nitrogen — when it cheats, withholds the service and stays put anyway — the plant throttles the oxygen supply to that nodule and cuts the cheaters' reproduction by roughly 50 percent. [E, Ref 19] Half. The host punishes the freeloader, and the punishment strikes even the clonally reproducing relatives of the cheater. [E, Ref 20]
+
+Now turn around the argument the cynic loves to bring. He says: look, cheaters everywhere, control everywhere — so cooperation is weak, secondary, a thin varnish over the true law of eating. Wrong. Exactly backwards. You guard what is worth guarding. The ubiquity of enforcement proves that cooperation is the *load-bearing* state, the state that holds the weight and is worth defending. Ågren, Davies and Foster (2019) say it plainly: enforcement is central to the evolution of cooperation — at every scale, from genome to society. [I, Ref 21] El Mouden, West and Gardner (2010) have the formal model: policing aligns interests within a collective. [I, Ref 22] The cheater creates no order. He feeds on an order he cannot himself produce.
+
+## The major transitions
+
+Step back and see the whole picture. Maynard Smith and Szathmáry (1995) wrote the grammar of this story: the major evolutionary transitions. [E/I, Ref 25, 26] Again and again the same pattern — independently replicating units become an individual of higher order. Genes bundle into chromosomes. Chromosomes into genomes. Separate cells into the eukaryotic cell. Cells into the multicellular body. Individuals into the eusocial colony. And each of these transitions demands the same thing: the suppression of conflict on the lower level. [E/I, Ref 25]
+
+West, Fisher, Gardner and Kiers (2015) sharpen it: transitions in individuality are carried by cooperation, plus mechanisms that bound within-group conflict. [I, Ref 27] Michod and Roze (2001) name the tools: germ line, apoptosis, self-policing — adaptations that regulate conflict within the organism. [I, Ref 28] High relatedness, clonal development, per Fisher, Cornwallis and West (2013), underpins stable multicellular cooperation. [E, Ref 44]
+
+And the mathematical ground beneath it all: Hamilton (1964). His rule, rb > c — relatedness times benefit greater than cost — is the quantitative backbone that explains why genes build cooperators at all. [E, Ref 43] The formalism was debated, kin selection against multilevel selection, Nowak and others against an army of co-authors; the substance is not in doubt. [I, §6] West, Griffin and Gardner (2007) drew the taxonomy cleanly, so that no one confuses cooperation with naivety. [E, Ref 23, 24]
+
+Note the fallacy so eagerly committed here. One says: but cooperation reduces to self-interest, to the selfish gene, to "reciprocal exploitation." That is a confusion of levels. The gene logic explains *why* cooperators get built. The being in the world — the eukaryotic cell, the lichen, the body — is a genuine new individual with its own fitness. [I, Ref 27] And note the asymmetry the cynic conceals: the logic of the selfish gene *predicts cooperation and requires it*. It licenses no generalized predation. The mitochondrion is the proof: not extraction to exhaustion, but bounded partnership with massive gene transfer. [E, Ref 3, 4]
+
+## Out of nothing, in the lab
+
+You can watch it happen. Ratcliff et al. (2012) put single-celled yeast under a simple pressure: whoever settles faster survives. And within short order snowflake yeasts appeared — multicellular clusters, de novo, with division of labor based on apoptosis, the programmed cell death that sacrifices parts of the cluster so the whole can divide. [E, Ref 41] Multicellularity, born in the lab, out of nothing.
+
+Bozdag et al. (2023), from the same lab, drove it further: about 600 rounds of selection. The anaerobic snowflake yeast grew roughly 20,000 times larger — macroscopic, visible to the naked eye — and about 10,000 times tougher, through cell shape and entanglement. [E, Ref 42] Oxygen, it turned out, constrains the evolution of multicellularity. But the point is: you apply the pressure, and life answers with merger. It answers by making many into one.
+
+## Lichens, aphids, corals: the many within the one
+
+Look at a lichen, that gray-green crust on the stone that you take for a single thing. It is no single thing. Long it was called a partnership of two, fungus and alga. Then Spribille et al. (2016) found a third partner: a basidiomycete yeast in the cortex of macrolichens, on six continents, producing defensive compounds like vulpinic acid. [E, Ref 32] Spribille et al. (2022) now paint the picture of a multi-member symbiosis. [I, Ref 33] What you take for an individual is an alliance that has forgotten its own plurality.
+
+Look at an aphid. Inside it lives *Buchnera aphidicola*, a bacterium with a genome of only 600–650 kilobases, around 500–560 proteins — shrunk, dependent, unable to live alone. [E, Ref 34] It overproduces tryptophan and essential amino acids the aphid cannot get from its sugary, protein-poor diet. [E, Ref 34] The alliance is 160 to 280 million years old, obligate, maternally transmitted, co-speciating — the two lineages have split together, step by step, like a couple aging in tandem. [E, Ref 34] Around 5.6 million Buchnera cells in one mature aphid. [E, Ref 34]
+
+Look at a coral. Kopp et al. (2015) tracked the carbon with NanoSIMS: within 15 minutes the ¹³C carbon fixed by the alga appears in the lipid droplets of the coral host; nitrogen, ¹⁵N, follows only after more than three hours. [E, Ref 36] Up to about 90 percent of the carbon the alga fixes is translocated to the host. [E, Ref 36] Here honesty is owed: "up to 90 percent" is a range, context-dependent; a model study (Front. Mar. Sci. 2022) parameterizes translocation far lower, at around 38 percent. [P, Ref 37, §6] The number is disputed by method, species and nutrient state. But that the coral lives off its alga's sugar, and the reef stands on that exchange — that stands.
+
+The holobiont, the host-microbe collective, is a useful frame (Bordenstein and Theis 2015). [P, Ref 30] Whether the hologenome is a coherent *unit of selection* remains contested. [P, Ref 31, §6] We assert the collective; the metaphysics of the selection level we leave open.
+
+## Where predation gets mistaken for competition — and why that is the whole lie
+
+Now to the camouflage. The cynic says: but selection itself is competition, the struggle for existence, "Nature, red in tooth and claw" — so eating is the ground, and your cooperation is the exception. Here one must cut sharply, because here sits the whole fraud.
+
+First: selection is competition, yes — but selection is only *differential persistence*, indifferent to mechanism. What persisted at every great threshold did so by merging and cooperating. [I, Ref 4, 5, 6, 8, 25, 27] Selection *chooses*; it does not *build* the higher unit. It is built by cooperation, and competition then runs *between* the new units. Whoever reads "selection" as "predation" confuses the filter with what it filters.
+
+Second, and this is the core distinction one must never pour together: **predation is not competition.** Predation is asymmetric extraction — one party's gain is drawn from the consumed substance of the other, the interaction *lowers the sum* and *terminates the loser* (+/−). Generalized into a system's organizing principle, predation is self-consuming. A predator that eats all its prey goes extinct. That is why persistent systems regulate it. As a *component* of an ecosystem: real, creative, driving. As a *principle* of a system: never viable.
+
+Bounded competition, by contrast, is something wholly different, and something beautiful: symmetric rivalry within a shared frame. Niche partitioning. Sexual selection. The biological market of the mycorrhiza and the rhizobia. [E, Ref 16, 17, 18, 19] Peers compete *for* a resource under rules they jointly depend on; the frame persists; competition sorts and optimizes without destroying the substance. We praise this competition. It is among the finest things life brings forth.
+
+But see how the frame itself is made: it is cooperative and enforced. A market needs rules. A body needs policing. An ecosystem needs regulation. Competition without a bounding cooperative frame degrades to extraction and collapse. And here lies the trap in the word: "competition" in ecology covers both — the peer rivalry and the effectively predatory interference. Elevated to a *worldview*, the word smuggles predation in under a respectable name. One says "competition" and means eating. That is the camouflage. Cut it away.
+
+And the "reciprocal exploitation" of the symbiosis researchers (Herre, West)? It sounds predatory but means the opposite: a stable, mutually beneficial, enforced exchange. [E/I, Ref 17, 23, 24] It is the *accounting*, not the essence. The emergent being — the eukaryotic cell, the lichen, the holobiont — is a genuine new individual.
+
+## Cancer: the principle that eats itself
+
+And now the sharpest image, the proof that needs no more interpretation. What happens when predation *within* a cooperative body becomes the principle? Aktipis et al. (2015) named it: cancer is cheating on the five foundations of multicellular cooperation. [I, Ref 38] A cell stops keeping the rules — it divides without limit, refuses programmed death, monopolizes resources, ignores the needs of the whole. Aktipis (2020) calls it the cheating cell. [I, Ref 40] Cancer is the collapse of the multicellular social contract when internal policing, immune surveillance and developmental constraint erode. [I, Ref 39]
+
+Look closely, because here the circle closes. Cancer is the generalized predator on the inside. It does what the predatory principle always does: it grows, it extracts, it destroys the substance it lives from — and then it dies with the host it killed. Predation, raised to an organizing principle *inside* a cooperative body, is lethal to the body and to the cancer alike. Cancer is not a "predator that belongs." It is defection, parasitic on an order that the very enforcement — germ line, apoptosis, immune system — otherwise suppresses. [E/I, Ref 38, 39, 19]
+
+That is the thesis, caught in a single image. Generalize predation into a principle, and you have a cancer within evolution. Not because the single predator is evil — the wolf that takes the sick one keeps the herd of deer healthy; the otters that eat sea urchins save the kelp forest. The single predator belongs in the weave. But the *generalization*, the romanticism that makes the ground out of the tooth and declares eating the law — that is the cancer. It confuses a component with the foundation. It reads struggle in the reef, the forest, the colony, and overlooks that all their beauty is the beauty of *maintained cooperative structure*.
+
+## The ground
+
+Return to the 1,487 proteins. To the 92 percent of plant families. To the 407 million years since a fungus moved into a root. To the 15 minutes in which the alga's sugar travels into the coral. To the 600 rounds in which one cell became a visible being.
+
+The tooth is real. Predation is real, creative, in its place. We do not deny it, we do not romanticize it. We only say where it belongs: as a component, bound, limited, regulated — never as the ground. Because the ground was never the tooth. The ground is the alliance grown so tight it fused into one being, and then again, and again, up through every threshold life ever crossed. The deepest layer is not the eating. The deepest layer is the merger, enforced and bounded, to the point of indistinguishability of self and other.
+
+Look inside your own cell. There breathes a stranger who is no longer one. That is the truth about the ground.
+
+**Status:** E = established (endosymbiosis, genome counts, syntrophy thermodynamics, mycorrhiza prevalence, host sanctions, Buchnera, experimental multicellularity, Hamilton), I = interpretation (eukaryogenesis mechanism, major transitions, enforcement-as-central, cancer-as-breakdown), P = proposition/contested (coral carbon up to 90% vs. 38%, biological market as general, hologenome as unit of selection, "cooperation is the ground" as metaphysics). Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
