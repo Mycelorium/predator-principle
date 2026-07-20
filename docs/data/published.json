@@ -1,5 +1,36 @@
 [
   {
+    "id": "five-signs",
+    "sequence": 2,
+    "class": "I",
+    "claim_ids": [
+      "C011"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S006"
+    ],
+    "title_de": "Fünf Zeichen, dass ein System predatorisch wird",
+    "title_en": "Five signs that a system is becoming predatory",
+    "hook_de": "Nicht die Zähne sind entscheidend. Entscheidend ist die Struktur.",
+    "hook_en": "The teeth are not decisive. The structure is.",
+    "body_de": [
+      "Einseitiger Ressourcenfluss. Ausgelagerte Schäden. Unwirksame Gegenrede. Erzwungene Aufrüstung. Zerstörung der gemeinsamen Grundlage.",
+      "Unsere Hypothese ist angreifbar: Treten mindestens vier Merkmale dauerhaft zusammen auf, wächst die Wahrscheinlichkeit, dass lokale Optimierung Instabilität auf der nächsthöheren Ebene erzeugt."
+    ],
+    "body_en": [
+      "One-way resource flow. Externalised harm. Ineffective dissent. Compulsory escalation. Destruction of the common foundation.",
+      "Our hypothesis is attackable: when at least four characteristics persist together, local optimisation increasingly risks instability at the next system level."
+    ],
+    "boundary_de": "Diese Vier-von-fünf-Schwelle ist eine zu validierende Systemhypothese.",
+    "boundary_en": "This four-of-five threshold is a systems hypothesis that requires validation.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-20T10:21:07.246Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/five-signs.html"
+  },
+  {
     "id": "the-old-emergency",
     "sequence": 1,
     "class": "I",

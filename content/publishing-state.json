@@ -4,8 +4,13 @@
       "id": "the-old-emergency",
       "sequence": 1,
       "published_at": "2026-07-17T11:22:21.082Z"
+    },
+    {
+      "id": "five-signs",
+      "sequence": 2,
+      "published_at": "2026-07-20T10:21:07.246Z"
     }
   ],
-  "last_published_at": "2026-07-17T11:22:21.082Z",
+  "last_published_at": "2026-07-20T10:21:07.246Z",
   "campaign_completed_at": null
 }
