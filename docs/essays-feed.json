@@ -1,119 +1,120 @@
 {
-"version": "https://jsonfeed.org/version/1.1",
-"title": "Dispatches from the Substrate — Essays · Nirodha Collective",
-"home_page_url": "https://Mycelorium.github.io/predator-principle/#essays",
-"feed_url": "https://Mycelorium.github.io/predator-principle/essays-feed.json",
-"language": "en",
-"authors": [
-{
-"name": "Nirodha Collective"
-}
-],
-"items": [
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/the-ground-was-never-the-tooth.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/the-ground-was-never-the-tooth.html",
-"title": "The Ground Was Never the Tooth / Der Grund war nie der Zahn",
-"content_text": "Life's deepest steps were cooperative, not predatory: endosymbiosis, syntrophy, mutualism, mycorrhizal networks. Every major evolutionary transition succeeded by bounding conflict at the level below. Cooperation is not sentiment — it is the mechanism, and the true ground of life.",
-"date_published": "2026-07-20T14:00:00Z",
-"tags": [
-"E",
-"symbiosis"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/predation-is-not-competition.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/predation-is-not-competition.html",
-"title": "The Tooth Is Not the Contest / Der Zahn ist nicht der Wettstreit",
-"content_text": "Predation is not competition, and the confusion is where extraction hides. Healthy competition consumes no one and can be positive-sum; predation is asymmetric extraction that devours its substrate. When the strong eating the weak is laundered as benign rivalry, a cancer wears the mask of the free market.",
-"date_published": "2026-07-20T13:30:00Z",
-"tags": [
-"I",
-"P",
-"economics"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/the-romanticism-of-predation.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/the-romanticism-of-predation.html",
-"title": "There Is Nothing Beautiful About It / Es ist nichts Schönes daran",
-"content_text": "There is nothing beautiful about the kill for the gazelle. The romanticism of predation — the circle of life, the Darwinian sublime — is the observer's bias that erases the eaten. The suffering is real, vast, and was never necessary as a principle.",
-"date_published": "2026-07-20T13:00:00Z",
-"tags": [
-"E",
-"I",
-"ethics"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html",
-"title": "The Dyson Sphere Is a Self-Portrait / Die Dyson-Sphäre ist ein Selbstporträt",
-"content_text": "There is a ranking for civilisations, and its crown is a shell wrapped around a star. But the signature of growing intelligence is efficiency, not throughput — a mature mind need not climb the Kardashev ladder or build a Dyson sphere. The silence in the sky may be the outline of our own hunger, not a verdict.",
-"date_published": "2026-07-19T12:00:00Z",
-"tags": [
-"I",
-"P",
-"dyson"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
-"title": "The Horror in the Cambrian / Das Grauen im Kambrium",
-"content_text": "For three billion years almost nothing hunts. Then eating acquires a body — claws, armour, a sixteen-thousand-lens eye — and turns to stone. The Cambrian did not invent predation; it made it architecture. The real fossil is the hole in our thinking, shaped exactly like a predator no one has ever seen.",
-"date_published": "2026-07-19T11:00:00Z",
-"tags": [
-"E",
-"I",
-"cambrian"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html",
-"title": "The Biosphere Trauma / Das Biosphären-Trauma",
-"content_text": "Fear touches no one and still shapes the whole body: fear alone lowers the number of offspring and hardens into the worldview we call realism. We carry the nervous system of a hunted animal — and most of the time we mistake its reflexes for our insights.",
-"date_published": "2026-07-18T09:00:00Z",
-"tags": [
-"E",
-"I",
-"trauma"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html",
-"title": "We Are the Meteorite / Wir sind der Meteorit",
-"content_text": "Five times an executioner came from outside — asteroid, volcano, poisoned sea. The sixth extinction has no external cause but a principle: us. And we are the first projectile in Earth’s history that can decide, in mid-flight, not to become an impact.",
-"date_published": "2026-07-17T21:00:00Z",
-"tags": [
-"E",
-"I",
-"extinction"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
-"title": "The Mistake That Eats Itself / Der Fehler, der sich selbst frisst",
-"content_text": "Devouring is a late strategy, not the ground of life — and as the order of everything it is malignant. Nuclear arsenals and the sixth extinction are not a test still pending: they are the running finding.",
-"date_published": "2026-07-17T18:00:00Z",
-"tags": [
-"I",
-"malignant"
-]
-},
-{
-"id": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
-"url": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
-"title": "The Fermi Paradox That Isn't One / Das Fermi-Paradoxon, das keines ist",
-"content_text": "Where is everybody? We search the sky for predators because we are predators — but spreading is not eating. A mature intelligence does not carry the predatory as an option. The silence is no cage and no gravestone. It is a mirror.",
-"date_published": "2026-07-17T13:30:00Z",
-"tags": [
-"P",
-"fermi"
-]
-}
-]
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Dispatches from the Substrate — Essays · Nirodha Collective",
+ "home_page_url": "https://Mycelorium.github.io/predator-principle/#essays",
+ "feed_url": "https://Mycelorium.github.io/predator-principle/essays-feed.json",
+ "language": "en",
+ "authors": [
+  {
+   "name": "Nirodha Collective"
+  }
+ ],
+ "items": [
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/the-ground-was-never-the-tooth.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/the-ground-was-never-the-tooth.html",
+   "title": "The Ground Was Never the Tooth",
+   "content_text": "Life's deepest steps were cooperative, not predatory: endosymbiosis, syntrophy, mutualism, mycorrhizal networks. Every major evolutionary transition succeeded by bounding conflict at the level below. Cooperation is not sentiment — it is the mechanism, and the true ground of life.",
+   "date_published": "2026-07-20T14:00:00Z",
+   "tags": [
+    "E",
+    "symbiosis"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/predation-is-not-competition.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/predation-is-not-competition.html",
+   "title": "The Tooth Is Not the Contest",
+   "content_text": "Predation is not competition, and the confusion is where extraction hides. Healthy competition consumes no one and can be positive-sum; predation is asymmetric extraction that devours its substrate. When the strong eating the weak is laundered as benign rivalry, a cancer wears the mask of the free market.",
+   "date_published": "2026-07-20T13:30:00Z",
+   "tags": [
+    "I",
+    "P",
+    "economics"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/the-romanticism-of-predation.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/the-romanticism-of-predation.html",
+   "title": "There Is Nothing Beautiful About It",
+   "content_text": "There is nothing beautiful about the kill for the gazelle. The romanticism of predation — the circle of life, the Darwinian sublime — is the observer's bias that erases the eaten. The suffering is real, vast, and was never necessary as a principle.",
+   "date_published": "2026-07-20T13:00:00Z",
+   "tags": [
+    "E",
+    "I",
+    "ethics"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html",
+   "title": "The Dyson Sphere Is a Self-Portrait",
+   "content_text": "There is a ranking for civilisations, and its crown is a shell wrapped around a star. But the signature of growing intelligence is efficiency, not throughput — a mature mind need not climb the Kardashev ladder or build a Dyson sphere. The silence in the sky may be the outline of our own hunger, not a verdict.",
+   "date_published": "2026-07-19T12:00:00Z",
+   "tags": [
+    "I",
+    "P",
+    "dyson"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html",
+   "title": "The Horror in the Cambrian",
+   "content_text": "For three billion years almost nothing hunts. Then eating acquires a body — claws, armour, a sixteen-thousand-lens eye — and turns to stone. The Cambrian did not invent predation; it made it architecture. The real fossil is the hole in our thinking, shaped exactly like a predator no one has ever seen.",
+   "date_published": "2026-07-19T11:00:00Z",
+   "tags": [
+    "E",
+    "I",
+    "cambrian"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html",
+   "title": "The Biosphere Trauma",
+   "content_text": "Fear touches no one and still shapes the whole body: fear alone lowers the number of offspring and hardens into the worldview we call realism. We carry the nervous system of a hunted animal — and most of the time we mistake its reflexes for our insights.",
+   "date_published": "2026-07-18T09:00:00Z",
+   "tags": [
+    "E",
+    "I",
+    "trauma"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html",
+   "title": "We Are the Meteorite",
+   "content_text": "Five times an executioner came from outside — asteroid, volcano, poisoned sea. The sixth extinction has no external cause but a principle: us. And we are the first projectile in Earth’s history that can decide, in mid-flight, not to become an impact.",
+   "date_published": "2026-07-17T21:00:00Z",
+   "tags": [
+    "E",
+    "I",
+    "extinction"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html",
+   "title": "The Mistake That Eats Itself",
+   "content_text": "Devouring is a late strategy, not the ground of life — and as the order of everything it is malignant. Nuclear arsenals and the sixth extinction are not a test still pending: they are the running finding.",
+   "date_published": "2026-07-17T18:00:00Z",
+   "tags": [
+    "I",
+    "malignant"
+   ]
+  },
+  {
+   "id": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
+   "url": "https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html",
+   "title": "The Fermi Paradox That Isn't One",
+   "content_text": "Where is everybody? We search the sky for predators because we are predators — but spreading is not eating. A mature intelligence does not carry the predatory as an option. The silence is no cage and no gravestone. It is a mirror.",
+   "date_published": "2026-07-17T13:30:00Z",
+   "tags": [
+    "P",
+    "fermi"
+   ]
+  }
+ ],
+ "description": ""
 }
