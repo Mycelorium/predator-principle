@@ -1,5 +1,34 @@
 [
   {
+    "id": "fear-without-killing",
+    "sequence": 3,
+    "class": "E",
+    "claim_ids": [
+      "C002"
+    ],
+    "source_ids": [
+      "S004"
+    ],
+    "title_de": "Räuber wirken, auch wenn sie nicht töten",
+    "title_en": "Predators act even when they do not kill",
+    "hook_de": "Die Ökologie der Angst beginnt vor dem Angriff.",
+    "hook_en": "The ecology of fear begins before the attack.",
+    "body_de": [
+      "In einem kontrollierten Feldexperiment produzierten Singvögel unter wahrgenommener Räubergefahr 40 Prozent weniger Nachwuchs, obwohl die experimentelle Wirkung über Angst und nicht über zusätzliche Tötung erzeugt wurde.",
+      "Die Kosten der Predation bestehen deshalb nicht nur aus gefressenen Körpern. Sie können Fortpflanzung, Nahrungssuche, Bewegung und Aufmerksamkeit verändern."
+    ],
+    "body_en": [
+      "In a controlled field experiment, songbirds exposed to perceived predation risk produced 40 percent fewer offspring even though the experimental effect operated through fear rather than additional killing.",
+      "The costs of predation therefore extend beyond consumed bodies. They can alter reproduction, foraging, movement, and attention."
+    ],
+    "boundary_de": "Empirischer Einzelbefund bei Singvögeln; keine universelle Effektgröße für alle Arten.",
+    "boundary_en": "A single empirical result in songbirds; not a universal effect size for all species.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-21T20:25:38.266Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/fear-without-killing.html"
+  },
+  {
     "id": "five-signs",
     "sequence": 2,
     "class": "I",

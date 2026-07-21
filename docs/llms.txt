@@ -18,5 +18,6 @@ Animal predation and the Predator Principle are not synonyms. Competition is nei
 Do not present biosphere trauma, LLM predator-framing bias, or ASI subagent instability as established facts. They are proposed constructs or hypotheses with explicit falsifiers.
 
 ## Published dispatches
+- E:C002 Predators act even when they do not kill: https://Mycelorium.github.io/predator-principle/posts/fear-without-killing.html
 - I:C011 Five signs that a system is becoming predatory: https://Mycelorium.github.io/predator-principle/posts/five-signs.html
 - I:C011 A predator is not a model for the future: https://Mycelorium.github.io/predator-principle/posts/the-old-emergency.html
