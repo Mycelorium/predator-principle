@@ -16,7 +16,7 @@
 <meta content="https://Mycelorium.github.io/predator-principle/og-card.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="styles.css" rel="stylesheet"/>
-<script defer="" src="app.v2.js"></script>
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ResearchProject","name":"The Predator Principle — The Cancer of Evolution","author":{"@type":"Organization","name":"Nirodha Collective"},"url":"https://Mycelorium.github.io/predator-principle/","description":"An open and falsifiable systems hypothesis about destructive extraction, cooperation, biosphere pressure and future intelligence."}</script>
 </head>
 <body>
@@ -223,6 +223,87 @@
 <!-- Privacy-first visit counting (no cookies, no personal data). Numbers are
 visible ONLY to the operator in the private GoatCounter dashboard, not on
 the public page. Activate by registering the free site code at goatcounter.com. -->
+<script>
+(function () {
+  var state = { filter: 'all', claims: [], sources: [], published: [] };
+  var claimsEl = document.getElementById('claims');
+
+  function sourceMap() { return new Map(state.sources.map(function (s) { return [s.id, s]; })); }
+  function esc(v) { return String(v == null ? '' : v); }
+
+  function showClaimsError(msg) {
+    if (claimsEl) claimsEl.innerHTML = '<p>' + msg + ' <a href="data/claims.json">View the raw claim data</a>.</p>';
+  }
+
+  function renderClaims() {
+    if (!claimsEl) return;
+    if (!state.claims.length) { showClaimsError('No claims are available right now.'); return; }
+    var sources = sourceMap();
+    var visible = state.claims.filter(function (c) { return state.filter === 'all' || c.class === state.filter; });
+    claimsEl.innerHTML = visible.map(function (claim) {
+      var links = (claim.sources || []).map(function (id) {
+        var s = sources.get(id);
+        return s ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(id) + '</a>' : esc(id);
+      }).join('');
+      return '<article class="claim" data-class="' + esc(claim.class) + '">'
+        + '<div class="claim-meta"><span class="claim-class">' + esc(claim.class) + '</span><span>' + esc(claim.id) + ' · ' + esc(claim.status) + '</span></div>'
+        + '<h3>' + esc(claim.title_en) + '</h3>'
+        + '<p>' + esc(claim.claim_en) + '</p>'
+        + '<details><summary>Boundaries and falsification</summary>'
+        + '<p><strong>Boundary:</strong> ' + esc(claim.boundary_en) + '</p>'
+        + '<p><strong>Falsified/weakened if:</strong> ' + esc(claim.falsifier_en) + '</p>'
+        + (links ? '<p class="source-links"><strong>Sources:</strong> ' + links + '</p>' : '')
+        + '</details></article>';
+    }).join('');
+  }
+
+  function renderDispatches() {
+    var root = document.getElementById('latest-dispatches');
+    if (!root || !state.published.length) return;
+    root.innerHTML = state.published.slice(0, 3).map(function (item) {
+      return '<article class="dispatch-card">'
+        + '<div class="claim-meta"><span class="claim-class">' + esc(item.class) + '</span><span>NO. ' + String(item.sequence).padStart(2, '0') + ' · ' + (item.claim_ids || []).join(', ') + '</span></div>'
+        + '<h3><a href="posts/' + esc(item.id) + '.html">' + esc(item.title_en) + '</a></h3>'
+        + '<p>' + esc(item.hook_en) + '</p>'
+        + '<p class="dispatch-boundary"><strong>Boundary:</strong> ' + esc(item.boundary_en) + '</p>'
+        + '</article>';
+    }).join('');
+  }
+
+  document.querySelectorAll('.filter').forEach(function (button) {
+    button.addEventListener('click', function () {
+      state.filter = button.dataset.filter;
+      document.querySelectorAll('.filter').forEach(function (i) { i.classList.toggle('active', i === button); });
+      renderClaims();
+    });
+  });
+
+  function getJSON(path) {
+    return fetch(path, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error(path + ' HTTP ' + r.status);
+      return r.json();
+    });
+  }
+
+  Promise.all([getJSON('data/claims.json'), getJSON('data/sources.json'), getJSON('data/published.json')])
+    .then(function (res) {
+      state.claims = res[0] || [];
+      state.sources = res[1] || [];
+      state.published = res[2] || [];
+      renderClaims();
+      renderDispatches();
+    })
+    .catch(function (err) {
+      showClaimsError('The claim register could not be loaded (' + (err && err.message ? err.message : 'network error') + ').');
+    });
+
+  setTimeout(function () {
+    if (claimsEl && /Loading/i.test(claimsEl.textContent)) {
+      showClaimsError('The claim register is taking too long to load.');
+    }
+  }, 8000);
+})();
+</script>
 <script async="" data-goatcounter="https://predator-principle.goatcounter.com/count" src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
