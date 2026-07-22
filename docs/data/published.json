@@ -1,5 +1,36 @@
 [
   {
+    "id": "cooperation-built-complexity",
+    "sequence": 4,
+    "class": "E",
+    "claim_ids": [
+      "C001"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S003"
+    ],
+    "title_de": "Komplexität entstand nicht nur durch Kampf",
+    "title_en": "Complexity did not arise through struggle alone",
+    "hook_de": "Die größten Übergänge des Lebens brauchten Verbindung und Konfliktbegrenzung.",
+    "hook_en": "Life's greatest transitions required integration and conflict control.",
+    "body_de": [
+      "Gene wurden zu Genomen, Zellen zu Organismen und Organismen zu kooperierenden Verbänden. Solche Übergänge werden stabil, wenn Teile zusammenarbeiten und Konflikte innerhalb des neuen Ganzen begrenzt werden.",
+      "Konkurrenz verschwindet dabei nicht. Aber ohne Kooperation und Konfliktkontrolle entsteht keine dauerhafte höhere Individualität."
+    ],
+    "body_en": [
+      "Genes became genomes, cells became organisms, and organisms formed cooperative groups. Such transitions stabilise when parts cooperate and conflict within the new whole is controlled.",
+      "Competition does not disappear. But without cooperation and conflict control, durable higher-level individuality does not emerge."
+    ],
+    "boundary_de": "Kooperation allein garantiert keine Stabilität; Konkurrenz bleibt Teil evolutionärer Prozesse.",
+    "boundary_en": "Cooperation alone does not guarantee stability; competition remains part of evolutionary processes.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-22T09:39:49.794Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/cooperation-built-complexity.html"
+  },
+  {
     "id": "fear-without-killing",
     "sequence": 3,
     "class": "E",

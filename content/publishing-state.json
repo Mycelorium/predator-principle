@@ -14,8 +14,13 @@
       "id": "fear-without-killing",
       "sequence": 3,
       "published_at": "2026-07-21T20:25:38.266Z"
+    },
+    {
+      "id": "cooperation-built-complexity",
+      "sequence": 4,
+      "published_at": "2026-07-22T09:39:49.794Z"
     }
   ],
-  "last_published_at": "2026-07-21T20:25:38.266Z",
+  "last_published_at": "2026-07-22T09:39:49.794Z",
   "campaign_completed_at": null
 }
