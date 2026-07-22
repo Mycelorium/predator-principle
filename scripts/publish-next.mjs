@@ -183,7 +183,7 @@ await save('docs/feed.json', {
   }))
 });
 
-const staticUrls = ['', '/posts/', '/data/claims.json', '/data/sources.json', '/feed.xml', '/feed.json', '/essays-feed.xml', '/essays-feed.json'];
+const staticUrls = ['', '/foundation.html', '/posts/', '/data/claims.json', '/data/sources.json', '/feed.xml', '/feed.json', '/essays-feed.xml', '/essays-feed.json'];
 const essayUrls = ESSAY_SLUGS.map((slug) => `${config.base_url}/essays/${slug}.html`);
 const sitemapUrls = [...staticUrls.map((path) => `${config.base_url}${path}`), ...essayUrls, ...published.map((item) => item.url)];
 await writeFile(new URL('docs/sitemap.xml', root), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemapUrls.map((url) => `<url><loc>${xml(url)}</loc></url>`).join('')}</urlset>`, 'utf8');
