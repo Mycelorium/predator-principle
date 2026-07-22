@@ -27,6 +27,7 @@
 <span>BEYOND THE PREDATOR PRINCIPLE</span>
 </a>
 <nav aria-label="Main navigation">
+<a href="foundation.html">Foundation</a>
 <a href="#essays">Essays</a>
 <a href="#definition">Definition</a>
 <a href="#evidence">Claims</a>
@@ -41,11 +42,40 @@
 <div class="hero-copy">
 <p class="eyebrow">THE CANCER OF EVOLUTION</p>
 <h1>Evolution has cancer.</h1>
-<p class="lead">Predation is ancient, real, and often useful. But a local survival trick was turned into a world-order: pocket the gains, offload the harm, silence the dissent, consume the shared substrate. That pattern — not the animal — is the cancer. And cancer is treatable: life never made its great leaps through eating, but through cooperation and bounded conflict. That is exactly where the way out lies.</p>
+<p class="lead">Predation is ancient, real, and often useful. But a local survival trick was turned into a world-order: pocket the gains, offload the harm, silence the dissent, consume the shared substrate. That pattern — not the animal — is the cancer. And cancer is treatable: life's greatest leaps in complexity ran not through eating but through cooperation and the containment of lower-level conflict. That is where the way out lies.</p>
+<p class="op-def">Here, <em>predatory</em> does not mean carnivorous or competitive. It names a system that persistently combines asymmetric extraction, externalised harm, suppressed feedback, compulsory escalation, and erosion of its own substrate.</p>
 <div class="actions">
 <a class="button primary" href="#essays">Read the essays</a>
-<a class="button" href="#definition">Test the hypothesis</a>
+<a class="button" href="foundation.html">Start with the foundation</a>
 </div>
+</div>
+</section>
+<section class="section definition" id="definition">
+<div class="section-head">
+<p class="eyebrow">THE OPERATIONAL DEFINITION</p>
+<h2>Not every predator. A specific system pattern.</h2>
+<p>Ecological predation can regulate populations and maintain diversity, and healthy competition consumes no one — neither is on trial here. What we name is a system that persistently shows all five of the following at once, beyond the reach of corrective feedback.</p>
+</div>
+<ol class="criteria">
+<li><b>01</b><span>Asymmetric extraction</span></li>
+<li><b>02</b><span>Externalised harm</span></li>
+<li><b>03</b><span>Suppressed feedback</span></li>
+<li><b>04</b><span>Compulsory escalation</span></li>
+<li><b>05</b><span>Substrate erosion</span></li>
+</ol>
+<div class="mechanism">
+<span>THE MECHANISM</span>
+<p>Local advantage becomes system-level pathology when gains are privatised, costs are displaced onto others, and corrective feedback is disabled — the same engine in a cell, an economy, or a swarm of optimisers.</p>
+</div>
+<div class="hypothesis">
+<span>HYPOTHESIS</span>
+<p>When at least four of the five characteristics persist together, local optimisation increasingly generates instability and net loss at the next system level.</p>
+</div>
+<div class="legend" aria-label="Claim status legend">
+<span><b class="claim-class">E</b> empirical evidence</span>
+<span><b class="claim-class">I</b> interpretation</span>
+<span><b class="claim-class">P</b> proposition — testable, not yet established</span>
+<span class="legend-more"><a href="foundation.html">Read the full foundation — mechanism, scope, competing explanations, and what would falsify the generalisation →</a></span>
 </div>
 </section>
 <section class="section essays" id="essays">
@@ -126,25 +156,9 @@
 </div>
 </div>
 <div aria-live="polite" class="latest-dispatches" id="latest-dispatches">
-<p>The latest dispatches appear here automatically.</p>
-</div>
-</section>
-<section class="section definition" id="definition">
-<div class="section-head">
-<p class="eyebrow">THE BOUNDARY</p>
-<h2>Not every predator. A specific system pattern.</h2>
-<p>Ecological predation can regulate populations and maintain diversity. This project examines its generalisation beyond corrective feedback.</p>
-</div>
-<ol class="criteria">
-<li><b>01</b><span>Asymmetric extraction</span></li>
-<li><b>02</b><span>Externalised harm</span></li>
-<li><b>03</b><span>Suppressed feedback</span></li>
-<li><b>04</b><span>Compulsory escalation</span></li>
-<li><b>05</b><span>Substrate erosion</span></li>
-</ol>
-<div class="hypothesis">
-<span>HYPOTHESIS</span>
-<p>When at least four characteristics persist, local optimisation increasingly generates instability and net loss at the next system level.</p>
+<article class="dispatch-card skeleton"><span class="sk sk-meta"></span><span class="sk sk-title"></span><span class="sk sk-line"></span><span class="sk sk-line short"></span></article>
+<article class="dispatch-card skeleton"><span class="sk sk-meta"></span><span class="sk sk-title"></span><span class="sk sk-line"></span><span class="sk sk-line short"></span></article>
+<article class="dispatch-card skeleton"><span class="sk sk-meta"></span><span class="sk sk-title"></span><span class="sk sk-line"></span><span class="sk sk-line short"></span></article>
 </div>
 </section>
 <section class="section evidence" id="evidence">
@@ -210,7 +224,7 @@
 <nav aria-label="Repository, essays and feeds" class="open-links">
 <a href="https://github.com/Mycelorium/predator-principle" rel="noopener" target="_blank">Source &amp; data</a>
 <a href="https://github.com/Mycelorium/predator-principle/tree/main/essays" rel="noopener" target="_blank">Essays</a>
-<a href="https://github.com/Mycelorium/predator-principle/issues" rel="noopener" target="_blank">Contradiction</a>
+<a href="https://github.com/Mycelorium/predator-principle/issues" rel="noopener" target="_blank">Submit counterevidence</a>
 <a href="https://github.com/Mycelorium/predator-principle/issues/new?template=research-proposal.yml" rel="noopener" target="_blank">Test proposal</a>
 <a href="feed.xml">Feed</a>
 </nav>
@@ -243,7 +257,7 @@ the public page. Activate by registering the free site code at goatcounter.com. 
     claimsEl.innerHTML = visible.map(function (claim) {
       var links = (claim.sources || []).map(function (id) {
         var s = sources.get(id);
-        return s ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(id) + '</a>' : esc(id);
+        return s ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener" title="' + esc(s.title) + '" aria-label="Source: ' + esc(s.title) + '">' + esc(id) + '</a>' : esc(id);
       }).join('');
       return '<article class="claim" data-class="' + esc(claim.class) + '">'
         + '<div class="claim-meta"><span class="claim-class">' + esc(claim.class) + '</span><span>' + esc(claim.id) + ' · ' + esc(claim.status) + '</span></div>'
