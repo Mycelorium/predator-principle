@@ -1,5 +1,36 @@
 [
   {
+    "id": "strongest-objection",
+    "sequence": 5,
+    "class": "E",
+    "claim_ids": [
+      "C006",
+      "C011"
+    ],
+    "source_ids": [
+      "S008",
+      "S009"
+    ],
+    "title_de": "Der stärkste Einwand gegen uns",
+    "title_en": "The strongest objection to our thesis",
+    "hook_de": "Räuber sind nicht nutzlos. Wer das behauptet, macht es sich zu einfach.",
+    "hook_en": "Predators are not useless. Anyone claiming that is making it too easy.",
+    "body_de": [
+      "Keystone-Predatoren können Diversität erhalten; der Verlust großer Räuber kann trophische Kaskaden auslösen. Diese Forschung gehört in das Zentrum jeder ehrlichen Kritik des Predator-Prinzips.",
+      "Unsere Antwort ist keine Leugnung. Wir unterscheiden die ökologisch eingebettete Interaktion von einem entkoppelten Organisationsprinzip, das Gewinne privatisiert und Schäden dem größeren System überlässt."
+    ],
+    "body_en": [
+      "Keystone predators can maintain diversity, and the loss of large predators can trigger trophic cascades. This research belongs at the centre of any honest critique of the Predator Principle.",
+      "Our answer is not denial. We distinguish an ecologically embedded interaction from a detached organising principle that privatises gains and leaves harm to the larger system."
+    ],
+    "boundary_de": "Predatorwirkungen sind kontextabhängig; sie können stabilisieren oder destabilisieren.",
+    "boundary_en": "Predator effects are context-dependent; they can stabilise or destabilise.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-22T14:12:53.037Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/strongest-objection.html"
+  },
+  {
     "id": "cooperation-built-complexity",
     "sequence": 4,
     "class": "E",
