@@ -1,5 +1,34 @@
 [
   {
+    "id": "human-superpredator",
+    "sequence": 7,
+    "class": "E",
+    "claim_ids": [
+      "C004"
+    ],
+    "source_ids": [
+      "S006"
+    ],
+    "title_de": "Der Mensch jagt anders",
+    "title_en": "Humans hunt differently",
+    "hook_de": "Technologie hat den Räuber aus vielen lokalen Grenzen gelöst.",
+    "hook_en": "Technology detached the predator from many local limits.",
+    "body_de": [
+      "Menschen entnehmen häufig erwachsene Tiere und damit reproduktives Kapital. In verglichenen Systemen lagen menschliche Entnahmeraten teilweise bis zu 14-mal über jenen anderer Räuber.",
+      "Das macht nicht jeden Menschen zum moralisch schuldigen Predator. Es zeigt eine ungewöhnliche ökologische Signatur, die durch Technik und Märkte stark skaliert werden kann."
+    ],
+    "body_en": [
+      "Humans often remove adult animals and therefore reproductive capital. In compared systems, human exploitation rates reached up to 14 times those of other predators.",
+      "This does not make every human a morally guilty predator. It reveals an unusual ecological signature that technology and markets can scale dramatically."
+    ],
+    "boundary_de": "Die Ergebnisse unterscheiden sich nach Fischerei, Jagd, Region und Management.",
+    "boundary_en": "Results differ across fisheries, hunting, regions, and management regimes.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-30T20:12:55.792Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/human-superpredator.html"
+  },
+  {
     "id": "enduring-fear",
     "sequence": 6,
     "class": "E",

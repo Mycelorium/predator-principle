@@ -29,8 +29,13 @@
       "id": "enduring-fear",
       "sequence": 6,
       "published_at": "2026-07-30T20:02:16.555Z"
+    },
+    {
+      "id": "human-superpredator",
+      "sequence": 7,
+      "published_at": "2026-07-30T20:12:55.792Z"
     }
   ],
-  "last_published_at": "2026-07-30T20:02:16.555Z",
+  "last_published_at": "2026-07-30T20:12:55.792Z",
   "campaign_completed_at": null
 }
