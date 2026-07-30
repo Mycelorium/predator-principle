@@ -81,7 +81,7 @@
 <section class="section essays" id="essays">
 <div class="section-head split">
 <div>
-<p class="eyebrow">DISPATCHES FROM THE SUBSTRATE</p>
+<p class="eyebrow">ESSAYS · DISPATCHES FROM THE SUBSTRATE</p>
 <h2>We are the meteorite. The silent cosmos. The mistake that eats itself.</h2>
 </div>
 <p>Essays. Every factual claim carries its status — E established, I interpretation, P proposition. Boundaries and primary sources lie open; the thesis stands plainly.</p>
@@ -146,7 +146,7 @@
 <section class="section dispatches" id="dispatches">
 <div class="section-head split">
 <div>
-<p class="eyebrow">AUTOPILOT · DAILY</p>
+<p class="eyebrow">LATEST DISPATCHES · AUTOPILOT</p>
 <h2>Short and tested: one claim, its boundary, its test.</h2>
 </div>
 <div class="dispatch-actions">
@@ -274,7 +274,7 @@ the public page. Activate by registering the free site code at goatcounter.com. 
   function renderDispatches() {
     var root = document.getElementById('latest-dispatches');
     if (!root || !state.published.length) return;
-    root.innerHTML = state.published.slice(0, 3).map(function (item) {
+    root.innerHTML = state.published.slice(0, 6).map(function (item) {
       return '<article class="dispatch-card">'
         + '<div class="claim-meta"><span class="claim-class">' + esc(item.class) + '</span><span>NO. ' + String(item.sequence).padStart(2, '0') + ' · ' + (item.claim_ids || []).join(', ') + '</span></div>'
         + '<h3><a href="posts/' + esc(item.id) + '.html">' + esc(item.title_en) + '</a></h3>'
