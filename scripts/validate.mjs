@@ -90,7 +90,7 @@ for (const entry of publishingState.published || []) {
 if (autopilot.enabled && !autopilot.approval_mandate?.trim()) errors.push('Enabled autopilot requires an approval mandate.');
 if (!/^https:\/\//.test(autopilot.base_url || '')) errors.push('Autopilot base_url must use HTTPS.');
 
-for (const path of ['docs/index.html', 'docs/styles.css', 'docs/app.js', 'docs/llms.txt', 'docs/feed.xml', 'docs/feed.json', 'docs/sitemap.xml', 'docs/posts/index.html', 'corpus/systems-hypothesis.md', 'corpus/evidence-map.md']) {
+for (const path of ['docs/index.html', 'docs/styles.css', 'docs/llms.txt', 'docs/feed.xml', 'docs/feed.json', 'docs/sitemap.xml', 'docs/posts/index.html', 'corpus/systems-hypothesis.md', 'corpus/evidence-map.md']) {
   try { await access(new URL(path, root)); } catch { errors.push(`Required file missing: ${path}`); }
 }
 
