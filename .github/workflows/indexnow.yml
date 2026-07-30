@@ -1,0 +1,34 @@
+name: Announce pages to IndexNow
+
+# Tells the IndexNow network (Bing, Yandex, Seznam, Naver) that pages are new or
+# changed, instead of waiting for a crawler. No account and no secret required —
+# the key is a public text file on the site.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/sitemap.xml'
+      - 'scripts/indexnow.mjs'
+  schedule:
+    # After the autopilot has published (Mon/Wed/Fri 07:17 UTC).
+    - cron: '45 7 * * 1,3,5'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Announce sitemap URLs
+        run: node scripts/indexnow.mjs
