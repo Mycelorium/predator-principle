@@ -1,5 +1,37 @@
 [
   {
+    "id": "biosphere-trauma-test",
+    "sequence": 9,
+    "class": "I",
+    "claim_ids": [
+      "C008"
+    ],
+    "source_ids": [
+      "S004",
+      "S005",
+      "S007",
+      "S010"
+    ],
+    "title_de": "Hat die Biosphäre ein Belastungsgedächtnis?",
+    "title_en": "Does the biosphere carry a memory of pressure?",
+    "hook_de": "Biosphären-Trauma soll keine Metapher bleiben. Es muss messbar werden oder verworfen werden.",
+    "hook_en": "Biosphere trauma must not remain a metaphor. It must become measurable or be rejected.",
+    "body_de": [
+      "Wir schlagen ein Forschungsmodell vor, das chronische Bedrohung, Stressfolgen, Fortpflanzungsverlust, Verhaltensverengung, gestörte Interaktionsnetze und industrielle Extraktion verbindet.",
+      "Wenn dieses Modell nichts besser erklärt oder vorhersagt als bestehende Indikatoren, ist der Begriff wissenschaftlich überflüssig. Genau dieser Test macht ihn ernsthaft."
+    ],
+    "body_en": [
+      "We propose a research model connecting chronic threat, stress effects, reproductive loss, behavioural contraction, disrupted interaction networks, and industrial extraction.",
+      "If this model explains or predicts nothing beyond existing indicators, the term is scientifically unnecessary. That test is what makes it serious."
+    ],
+    "boundary_de": "Keine klinische Diagnose der Erde; der Zusatznutzen des Konstrukts ist unbewiesen.",
+    "boundary_en": "Not a clinical diagnosis of Earth; the construct's added value is unproven.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-30T20:41:41.831Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/biosphere-trauma-test.html"
+  },
+  {
     "id": "earth-not-warehouse",
     "sequence": 8,
     "class": "E",
