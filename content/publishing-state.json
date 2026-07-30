@@ -34,8 +34,13 @@
       "id": "human-superpredator",
       "sequence": 7,
       "published_at": "2026-07-30T20:12:55.792Z"
+    },
+    {
+      "id": "earth-not-warehouse",
+      "sequence": 8,
+      "published_at": "2026-07-30T20:14:47.566Z"
     }
   ],
-  "last_published_at": "2026-07-30T20:12:55.792Z",
+  "last_published_at": "2026-07-30T20:14:47.566Z",
   "campaign_completed_at": null
 }

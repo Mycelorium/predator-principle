@@ -1,5 +1,35 @@
 [
   {
+    "id": "earth-not-warehouse",
+    "sequence": 8,
+    "class": "E",
+    "claim_ids": [
+      "C005"
+    ],
+    "source_ids": [
+      "S007",
+      "S010"
+    ],
+    "title_de": "Die Erde ist kein Lagerhaus",
+    "title_en": "Earth is not a warehouse",
+    "hook_de": "Eine Biosphäre ist ein Netz von Rückkopplungen, kein Inventar frei verfügbarer Teile.",
+    "hook_en": "A biosphere is a network of feedback, not an inventory of freely available parts.",
+    "body_de": [
+      "Menschliche Landnutzung, Biomasseverschiebung und Aneignung biologischer Produktion wirken im planetaren Maßstab. Die moderne Extraktion übertrifft die Reichweite eines lokalen Räuber-Beute-Verhältnisses.",
+      "Das Predator-Prinzip fragt deshalb nicht nur, wie viel entnommen wird. Es fragt, ob diejenigen, die den Schaden tragen, wirksame Rückkopplung in die Entscheidung zurückbringen können."
+    ],
+    "body_en": [
+      "Human land use, biomass redistribution, and appropriation of biological production operate at planetary scale. Modern extraction exceeds the reach of a local predator-prey relation.",
+      "The Predator Principle therefore asks not only how much is taken. It asks whether those carrying the harm can return effective feedback to the decision."
+    ],
+    "boundary_de": "Planetare Veränderungen haben mehrere Ursachen und sind nicht allein durch Predation erklärbar.",
+    "boundary_en": "Planetary changes have multiple causes and are not explained by predation alone.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-30T20:14:47.566Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/earth-not-warehouse.html"
+  },
+  {
     "id": "human-superpredator",
     "sequence": 7,
     "class": "E",
