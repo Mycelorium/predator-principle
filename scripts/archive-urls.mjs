@@ -14,7 +14,10 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const PAUSE_MS = 8000;
-const MAX_PER_RUN = 12;
+const MAX_PER_RUN = 8;
+// Save Page Now performs a live crawl and can hang for minutes. Without a hard
+// timeout a single stuck URL would stall the whole job.
+const REQUEST_TIMEOUT_MS = 45000;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -48,7 +51,12 @@ if (process.env.IA_ACCESS_KEY && process.env.IA_SECRET_KEY) {
 let archived = 0;
 for (const url of pending) {
   try {
-    const res = await fetch(`https://web.archive.org/save/${url}`, { method: 'GET', headers, redirect: 'follow' });
+    const res = await fetch(`https://web.archive.org/save/${url}`, {
+      method: 'GET',
+      headers,
+      redirect: 'follow',
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+    });
     if (res.ok || res.status === 302) {
       seen.push(url);
       archived += 1;
