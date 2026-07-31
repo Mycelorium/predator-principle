@@ -16,7 +16,6 @@ on:
 permissions:
   contents: write
   issues: write
-  administration: read   # required by the repository traffic API
 
 concurrency:
   group: reach-report
@@ -35,6 +34,10 @@ jobs:
       - name: Build the report
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: a classic personal access token with the "repo" scope. The
+          # built-in workflow token is refused by the repository traffic API, so
+          # visitor numbers stay blank until this secret exists.
+          REACH_TOKEN: ${{ secrets.REACH_TOKEN }}
           GOATCOUNTER_SITE: ${{ secrets.GOATCOUNTER_SITE }}
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
         run: node scripts/reach-report.mjs
