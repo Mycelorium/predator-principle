@@ -22,16 +22,18 @@ const api = async (path) => {
   return res.json();
 };
 
+const failed = [];
 const safe = async (path, fallback) => {
   try { return await api(path); }
-  catch (error) { console.log(`skipped ${error.message}`); return fallback; }
+  catch (error) { console.log(`unavailable: ${error.message}`); failed.push(path); return fallback; }
 };
 
 const repoInfo = await safe('', {});
-const views = await safe('/traffic/views', { count: 0, uniques: 0 });
-const clones = await safe('/traffic/clones', { count: 0, uniques: 0 });
-const referrers = await safe('/traffic/popular/referrers', []);
-const paths = await safe('/traffic/popular/paths', []);
+const views = await safe('/traffic/views', null);
+const clones = await safe('/traffic/clones', null);
+const referrers = await safe('/traffic/popular/referrers', null);
+const paths = await safe('/traffic/popular/paths', null);
+const trafficAvailable = Boolean(views && clones);
 
 const published = JSON.parse(await readFile(new URL('docs/data/published.json', root), 'utf8')).length;
 let nostrNotes = 0;
@@ -44,10 +46,10 @@ const now = {
   forks: repoInfo.forks_count ?? 0,
   watchers: repoInfo.subscribers_count ?? 0,
   issues: repoInfo.open_issues_count ?? 0,
-  views: views.count ?? 0,
-  unique_visitors: views.uniques ?? 0,
-  clones: clones.count ?? 0,
-  unique_cloners: clones.uniques ?? 0,
+  views: views?.count ?? null,
+  unique_visitors: views?.uniques ?? null,
+  clones: clones?.count ?? null,
+  unique_cloners: clones?.uniques ?? null,
   published,
   nostr_notes: nostrNotes,
 };
@@ -58,13 +60,14 @@ catch { /* first run */ }
 const previous = history[history.length - 1];
 
 const delta = (key) => {
-  if (!previous || previous[key] === undefined) return '';
+  if (!previous || previous[key] === undefined || previous[key] === null) return '';
+  if (now[key] === null) return '';
   const diff = now[key] - previous[key];
   if (!diff) return ' (unchanged)';
   return diff > 0 ? ` (+${diff})` : ` (${diff})`;
 };
 
-const humanReferrers = referrers.filter((r) => !/github\.com/i.test(r.referrer));
+const humanReferrers = (referrers || []).filter((r) => !/github\.com/i.test(r.referrer));
 
 const body = [
   `Automatic weekly reach report for the week ending ${now.date}. Numbers only — no interpretation added.`,
@@ -76,14 +79,20 @@ const body = [
   `- Open issues: **${now.issues}**${delta('issues')}`,
   '',
   '## Traffic (GitHub, last 14 days)',
-  `- Unique visitors: **${now.unique_visitors}**${delta('unique_visitors')} · views ${now.views}${delta('views')}`,
-  `- Unique cloners: **${now.unique_cloners}**${delta('unique_cloners')} · clones ${now.clones}${delta('clones')}`,
+  trafficAvailable
+    ? `- Unique visitors: **${now.unique_visitors}**${delta('unique_visitors')} · views ${now.views}${delta('views')}\n` +
+      `- Unique cloners: **${now.unique_cloners}**${delta('unique_cloners')} · clones ${now.clones}${delta('clones')}`
+    : '- **Not available in this run** — the workflow token was refused by the traffic API (' +
+      `${failed.join(', ')}). This is a permissions problem, not a reading of zero. ` +
+      'Check it under Insights → Traffic in the meantime.',
   '',
-  humanReferrers.length
-    ? `### Referrers other than GitHub itself\n${humanReferrers.map((r) => `- ${r.referrer}: ${r.count} views, ${r.uniques} unique`).join('\n')}`
-    : '### Referrers other than GitHub itself\n- none. Nobody is linking here yet.',
+  trafficAvailable
+    ? (humanReferrers.length
+        ? `### Referrers other than GitHub itself\n${humanReferrers.map((r) => `- ${r.referrer}: ${r.count} views, ${r.uniques} unique`).join('\n')}`
+        : '### Referrers other than GitHub itself\n- none. Nobody is linking here yet.')
+    : '',
   '',
-  paths.length
+  trafficAvailable && paths && paths.length
     ? `### Most visited paths\n${paths.slice(0, 5).map((p) => `- \`${p.path}\` — ${p.count} views`).join('\n')}`
     : '',
   '',
