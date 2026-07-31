@@ -14,7 +14,7 @@ const dryRun = process.env.DRY_RUN === '1';
 const ESSAY_SLUGS = [
   'horror-in-the-cambrian', 'the-predators-filter', 'the-mistake-that-eats-itself',
   'we-are-the-meteorite', 'the-trauma-that-still-runs', 'dyson-sphere-self-portrait',
-  'the-romanticism-of-predation', 'predation-is-not-competition', 'the-ground-was-never-the-tooth'
+  'the-romanticism-of-predation', 'predation-is-not-competition', 'the-ground-was-never-the-tooth', 'taste-of-the-infinite-mind'
 ];
 
 const [config, campaign, state, claims, sources] = await Promise.all([
