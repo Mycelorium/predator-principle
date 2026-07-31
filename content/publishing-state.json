@@ -44,8 +44,13 @@
       "id": "biosphere-trauma-test",
       "sequence": 9,
       "published_at": "2026-07-30T20:41:41.831Z"
+    },
+    {
+      "id": "science-inherited-metaphors",
+      "sequence": 10,
+      "published_at": "2026-07-31T06:46:06.869Z"
     }
   ],
-  "last_published_at": "2026-07-30T20:41:41.831Z",
+  "last_published_at": "2026-07-31T06:46:06.869Z",
   "campaign_completed_at": null
 }

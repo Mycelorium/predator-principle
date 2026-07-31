@@ -1,5 +1,32 @@
 [
   {
+    "id": "science-inherited-metaphors",
+    "sequence": 10,
+    "class": "P",
+    "claim_ids": [
+      "C009"
+    ],
+    "source_ids": [],
+    "title_de": "Wissenschaft muss ihre geerbten Metaphern testen",
+    "title_en": "Science must test the metaphors it inherited",
+    "hook_de": "Survival, Kampf, Sieg und Konkurrenz sind keine neutralen Wörter, wenn sie erklären sollen, was Leben ist.",
+    "hook_en": "Survival, struggle, victory, and competition are not neutral words when they are used to explain what life is.",
+    "body_de": [
+      "Wir vermuten, dass wissenschaftliche und populäre Korpora Konkurrenz und Extraktion stärker sichtbar machen als Symbiose, Kooperation und Konfliktbegrenzung.",
+      "Das ist keine Anklage gegen Forschende. Es ist eine prüfbare Frage: vorregistrierte Wörterbücher, verblindete Annotation, mehrere Fachgebiete, mehrere Sprachen und Veröffentlichung auch bei einem Nullresultat."
+    ],
+    "body_en": [
+      "We suspect that scientific and popular corpora make competition and extraction more visible than symbiosis, cooperation, and conflict control.",
+      "This is not an accusation against researchers. It is a testable question: preregistered dictionaries, blinded annotation, multiple disciplines, multiple languages, and publication even if the result is null."
+    ],
+    "boundary_de": "Hypothese: Eine systematische Übergewichtung ist noch nicht nachgewiesen.",
+    "boundary_en": "Hypothesis: systematic overweighting has not yet been demonstrated.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-31T06:46:06.869Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/science-inherited-metaphors.html"
+  },
+  {
     "id": "biosphere-trauma-test",
     "sequence": 9,
     "class": "I",
