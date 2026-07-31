@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Share the argument · The Predator Principle — The Cancer of Evolution</title>
+<meta name="description" content="One-click submission links for every dispatch and essay. Read the room before you post.">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .share-main{max-width:960px;margin:0 auto;padding:3.5rem 24px 7rem}
+  .etiquette{border-left:5px solid var(--acid);background:#e9e5db;padding:1.1rem 1.3rem;margin:2rem 0 3rem}
+  .etiquette p{margin:.45rem 0;font-size:.97rem}
+  .etiquette b{font-weight:800}
+  .instance-row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:2rem 0 0;font-size:.9rem}
+  .instance-row input{flex:1;min-width:220px;padding:.6rem .7rem;border:1px solid var(--line);
+    background:var(--white);font:inherit;font-size:.9rem}
+  .item{border-top:1px solid var(--line);padding:2rem 0}
+  .item h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:.4rem 0 .5rem;line-height:1.08}
+  .item .meta{font-size:.72rem;font-weight:900;letter-spacing:.09em;color:var(--muted)}
+  .item .hook{color:#414842;max-width:70ch;margin:0 0 1.1rem}
+  .row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.5rem 0}
+  .row .lbl{font-size:.7rem;font-weight:900;letter-spacing:.09em;color:var(--muted);min-width:76px}
+  .btn{display:inline-block;padding:.5rem .8rem;border:1px solid var(--ink);text-decoration:none;
+    font-weight:750;font-size:.83rem;background:transparent;cursor:pointer;font-family:inherit;color:var(--ink)}
+  .btn:hover{background:var(--ink);color:var(--white)}
+  .btn.key{background:var(--acid);border-color:var(--acid)}
+  .btn.key:hover{background:var(--ink);color:var(--white);border-color:var(--ink)}
+  select{padding:.5rem .6rem;border:1px solid var(--ink);background:var(--white);font:inherit;font-size:.83rem}
+  .said{font-size:.78rem;color:var(--forest);font-weight:800}
+  .subnote{font-size:.8rem;color:var(--muted);margin:.3rem 0 0;max-width:70ch}
+  #list p.loading{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="post-top">
+  <a href="./">← The Predator Principle — The Cancer of Evolution</a>
+  <a href="posts/">All dispatches</a>
+</header>
+
+<main class="share-main">
+  <p class="eyebrow">NIRODHA COLLECTIVE</p>
+  <h1 style="font-family:Georgia,serif;font-weight:400;font-size:clamp(2.4rem,6vw,4rem);line-height:.98;margin:.2rem 0 1rem;letter-spacing:-.04em">Share the argument</h1>
+  <p class="lead" style="max-width:70ch">Every dispatch and essay, with the submission form of each place already filled in.
+  One click opens it; you press submit. Nothing is posted automatically — and that is deliberate.</p>
+
+  <div class="etiquette">
+    <p><b>Before you post anywhere:</b> read that community's rules. Most bans on this kind of link are not about
+    the argument, they are about someone dropping a link and leaving.</p>
+    <p><b>Post in one place at a time.</b> Simultaneous submissions across many subreddits look like spam and are
+    treated as such — by the filters and by the readers.</p>
+    <p><b>Stay for the discussion.</b> This project asks to be refuted. A submission without a reply from the
+    author is worse than no submission: it wastes the one chance the strongest objection had to reach us.</p>
+    <p><b>On Hacker News:</b> use the original title, no editorialising, and add your context as the first comment
+    rather than in the title. One submission — if it does not catch, let it go.</p>
+  </div>
+
+  <div class="instance-row">
+    <label for="instance"><b>Your Mastodon instance</b> (optional, for the Mastodon buttons)</label>
+    <input id="instance" type="text" placeholder="e.g. mastodon.social" autocomplete="off">
+  </div>
+
+  <div id="list"><p class="loading">Loading the dispatches …</p></div>
+</main>
+
+<footer><p>© Nirodha Collective · Claim-linked public research</p><a href="feed.xml">RSS</a></footer>
+
+<script>
+(function () {
+  // Subreddits worth considering, with the honest caveat for each.
+  var SUBS = [
+    { r: 'PhilosophyofScience', note: 'falsifiability, demarcation — the natural home for the claim register', mode: 'text' },
+    { r: 'philosophy', note: 'strict: substantive posts only, and the rules expect a summary comment from you', mode: 'text' },
+    { r: 'slatestarcodex', note: 'receptive to long speculative arguments; expects rigour and good faith', mode: 'text' },
+    { r: 'collapse', note: 'fits the extinction and biosphere pieces; emotionally charged audience', mode: 'link' },
+    { r: 'ecology', note: 'be careful: working ecologists will check the predation claims first', mode: 'link' },
+    { r: 'ControlProblem', note: 'for the ASI, optimiser and Dyson-sphere pieces', mode: 'text' },
+    { r: 'EverythingScience', note: 'broad, low friction, low engagement', mode: 'link' },
+    { r: 'Futurology', note: 'heavily moderated, self-promotion restricted — read the rules first', mode: 'link' }
+  ];
+
+  var list = document.getElementById('list');
+  var instanceInput = document.getElementById('instance');
+
+  function esc(v) { return String(v == null ? '' : v); }
+  function trim(text, max) { return text.length <= max ? text : text.slice(0, max - 1).replace(/\s+\S*$/, '') + '…'; }
+
+  function getJSON(path) {
+    return fetch(path, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error(path + ' HTTP ' + r.status);
+      return r.json();
+    });
+  }
+
+  function toItems(feed, kind) {
+    return (feed.items || []).map(function (item) {
+      var paragraphs = String(item.content_text || '').split('\n').filter(function (line) { return line.trim(); });
+      var boundary = paragraphs.filter(function (p) { return /^Evidence boundary:/i.test(p); })[0] || '';
+      var prose = paragraphs.filter(function (p) { return !/^Evidence boundary:/i.test(p); });
+      return {
+        kind: kind,
+        title: String(item.title || '').split(' / ')[0].trim(),
+        url: item.url,
+        date: (item.date_published || '').slice(0, 10),
+        hook: prose[0] || '',
+        body: prose.slice(0, 2).join('\n\n'),
+        boundary: boundary
+      };
+    });
+  }
+
+  function selfText(item) {
+    var parts = [
+      item.body,
+      item.boundary ? '**' + item.boundary + '**' : '',
+      'Full piece, with sources and the claim status: ' + item.url,
+      '',
+      'This is published as a falsifiable systems hypothesis, not as settled fact — every claim on the site carries its evidence status (E empirical / I interpretation / P proposition) and its own falsifier. Counterevidence is genuinely wanted; the strongest objection is published alongside the thesis.'
+    ].filter(Boolean);
+    return trim(parts.join('\n\n'), 1500);
+  }
+
+  function render(items) {
+    if (!items.length) { list.innerHTML = '<p>No items in the feeds.</p>'; return; }
+    list.innerHTML = '';
+
+    items.forEach(function (item, index) {
+      var wrap = document.createElement('article');
+      wrap.className = 'item';
+
+      var hn = 'https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(item.url) +
+               '&t=' + encodeURIComponent(trim(item.title, 80));
+      var bsky = 'https://bsky.app/intent/compose?text=' +
+               encodeURIComponent(item.title + '\n\n' + item.url);
+
+      wrap.innerHTML =
+        '<p class="meta">' + esc(item.kind) + (item.date ? ' · ' + esc(item.date) : '') + '</p>' +
+        '<h2>' + esc(item.title) + '</h2>' +
+        '<p class="hook">' + esc(trim(item.hook, 260)) + '</p>' +
+        '<div class="row"><span class="lbl">DIRECT</span>' +
+          '<a class="btn key" href="' + hn + '" target="_blank" rel="noopener">Hacker News</a>' +
+          '<a class="btn" href="' + bsky + '" target="_blank" rel="noopener">Bluesky</a>' +
+          '<button class="btn" type="button" data-act="mastodon" data-i="' + index + '">Mastodon</button>' +
+          '<a class="btn" href="' + esc(item.url) + '" target="_blank" rel="noopener">Open the piece</a>' +
+        '</div>' +
+        '<div class="row"><span class="lbl">REDDIT</span>' +
+          '<select data-role="sub" data-i="' + index + '">' +
+            SUBS.map(function (s, si) {
+              return '<option value="' + si + '">r/' + s.r + '</option>';
+            }).join('') +
+          '</select>' +
+          '<button class="btn" type="button" data-act="reddit-text" data-i="' + index + '">Open as text post</button>' +
+          '<button class="btn" type="button" data-act="reddit-link" data-i="' + index + '">Open as link post</button>' +
+        '</div>' +
+        '<p class="subnote" data-role="note" data-i="' + index + '"></p>' +
+        '<div class="row"><span class="lbl">CLIPBOARD</span>' +
+          '<button class="btn" type="button" data-act="copy-url" data-i="' + index + '">Copy link</button>' +
+          '<button class="btn" type="button" data-act="copy-text" data-i="' + index + '">Copy summary</button>' +
+          '<span class="said" data-role="said" data-i="' + index + '"></span>' +
+        '</div>';
+
+      list.appendChild(wrap);
+    });
+
+    function noteFor(index) {
+      var select = list.querySelector('select[data-i="' + index + '"]');
+      var note = list.querySelector('p[data-role="note"][data-i="' + index + '"]');
+      var sub = SUBS[Number(select.value)];
+      note.textContent = 'r/' + sub.r + ' — ' + sub.note + (sub.mode === 'text'
+        ? ' · a text post usually lands better here.'
+        : ' · a link post is normal here.');
+    }
+    items.forEach(function (_, index) { noteFor(index); });
+
+    list.addEventListener('change', function (event) {
+      if (event.target.dataset.role === 'sub') noteFor(Number(event.target.dataset.i));
+    });
+
+    list.addEventListener('click', function (event) {
+      var act = event.target.dataset.act;
+      if (!act) return;
+      var index = Number(event.target.dataset.i);
+      var item = items[index];
+      var said = list.querySelector('span[data-role="said"][data-i="' + index + '"]');
+
+      if (act === 'reddit-text' || act === 'reddit-link') {
+        var select = list.querySelector('select[data-i="' + index + '"]');
+        var sub = SUBS[Number(select.value)];
+        var base = 'https://www.reddit.com/r/' + sub.r + '/submit?title=' + encodeURIComponent(trim(item.title, 290));
+        var target = act === 'reddit-link'
+          ? base + '&url=' + encodeURIComponent(item.url)
+          : base + '&text=' + encodeURIComponent(selfText(item));
+        window.open(target, '_blank', 'noopener');
+      }
+
+      if (act === 'mastodon') {
+        var host = (instanceInput.value || '').trim().replace(/^https?:\/\//, '').replace(/\/+$/, '');
+        if (!host) { instanceInput.focus(); return; }
+        window.open('https://' + host + '/share?text=' +
+          encodeURIComponent(item.title + '\n\n' + trim(item.hook, 200) + '\n\n' + item.url +
+          '\n\n#predation #evolution'), '_blank', 'noopener');
+      }
+
+      if (act === 'copy-url' || act === 'copy-text') {
+        var payload = act === 'copy-url' ? item.url : selfText(item);
+        navigator.clipboard.writeText(payload).then(function () {
+          if (said) { said.textContent = 'Copied'; setTimeout(function () { said.textContent = ''; }, 2000); }
+        });
+      }
+    });
+  }
+
+  Promise.all([
+    getJSON('feed.json').catch(function () { return { items: [] }; }),
+    getJSON('essays-feed.json').catch(function () { return { items: [] }; })
+  ]).then(function (res) {
+    var items = toItems(res[0], 'DISPATCH').concat(toItems(res[1], 'ESSAY'));
+    items.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+    render(items);
+  }).catch(function (error) {
+    list.innerHTML = '<p>The feeds could not be loaded (' + esc(error.message) + ').</p>';
+  });
+})();
+</script>
+</body>
+</html>
