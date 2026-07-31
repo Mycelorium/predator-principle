@@ -49,8 +49,13 @@
       "id": "science-inherited-metaphors",
       "sequence": 10,
       "published_at": "2026-07-31T06:46:06.869Z"
+    },
+    {
+      "id": "llm-mirror-or-amplifier",
+      "sequence": 11,
+      "published_at": "2026-07-31T09:59:11.246Z"
     }
   ],
-  "last_published_at": "2026-07-31T06:46:06.869Z",
+  "last_published_at": "2026-07-31T09:59:11.246Z",
   "campaign_completed_at": null
 }

@@ -1,5 +1,32 @@
 [
   {
+    "id": "llm-mirror-or-amplifier",
+    "sequence": 11,
+    "class": "P",
+    "claim_ids": [
+      "C009"
+    ],
+    "source_ids": [],
+    "title_de": "Ist ein LLM nur Spiegel – oder Verstärker?",
+    "title_en": "Is an LLM merely a mirror—or an amplifier?",
+    "hook_de": "Eine Verzerrung im Archiv kann zur Voreinstellung der nächsten Intelligenz werden.",
+    "hook_en": "A distortion in the archive can become a default of the next intelligence.",
+    "body_de": [
+      "Sprachmodelle lernen aus menschlichen Texten. Wenn diese Texte Konkurrenz als selbstverständlich und Kooperation als Ausnahme rahmen, könnten Modelle dieselbe Gewichtung reproduzieren oder verstärken.",
+      "Wir verlangen keine Zustimmung. Wir verlangen Tests mit semantisch passenden Prompts, mehreren Modellfamilien, mehreren Sprachen, Quellenvergleich und klaren Nullhypothesen."
+    ],
+    "body_en": [
+      "Language models learn from human texts. If those texts frame competition as normal and cooperation as exceptional, models may reproduce or amplify that weighting.",
+      "We do not demand agreement. We demand tests using semantically matched prompts, multiple model families, multiple languages, source comparison, and explicit null hypotheses."
+    ],
+    "boundary_de": "Aus Modellantworten kann nicht direkt auf konkrete Trainingsdaten geschlossen werden.",
+    "boundary_en": "Model outputs do not directly reveal specific training data.",
+    "approved": true,
+    "approved_by": "Nirodha Collective – launch mandate 2026-07-17",
+    "published_at": "2026-07-31T09:59:11.246Z",
+    "url": "https://Mycelorium.github.io/predator-principle/posts/llm-mirror-or-amplifier.html"
+  },
+  {
     "id": "science-inherited-metaphors",
     "sequence": 10,
     "class": "P",

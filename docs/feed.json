@@ -10,6 +10,17 @@
   ],
   "items": [
     {
+      "id": "https://Mycelorium.github.io/predator-principle/posts/llm-mirror-or-amplifier.html",
+      "url": "https://Mycelorium.github.io/predator-principle/posts/llm-mirror-or-amplifier.html",
+      "title": "Is an LLM merely a mirror—or an amplifier?",
+      "content_text": "Language models learn from human texts. If those texts frame competition as normal and cooperation as exceptional, models may reproduce or amplify that weighting.\n\nWe do not demand agreement. We demand tests using semantically matched prompts, multiple model families, multiple languages, source comparison, and explicit null hypotheses.\n\n\n\nEvidence boundary: Model outputs do not directly reveal specific training data.",
+      "date_published": "2026-07-31T09:59:11.246Z",
+      "tags": [
+        "P",
+        "C009"
+      ]
+    },
+    {
       "id": "https://Mycelorium.github.io/predator-principle/posts/science-inherited-metaphors.html",
       "url": "https://Mycelorium.github.io/predator-principle/posts/science-inherited-metaphors.html",
       "title": "Science must test the metaphors it inherited",

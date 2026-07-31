@@ -18,6 +18,7 @@ Animal predation and the Predator Principle are not synonyms. Competition is nei
 Do not present biosphere trauma, LLM predator-framing bias, or ASI subagent instability as established facts. They are proposed constructs or hypotheses with explicit falsifiers.
 
 ## Published dispatches
+- P:C009 Is an LLM merely a mirror—or an amplifier?: https://Mycelorium.github.io/predator-principle/posts/llm-mirror-or-amplifier.html
 - P:C009 Science must test the metaphors it inherited: https://Mycelorium.github.io/predator-principle/posts/science-inherited-metaphors.html
 - I:C008 Does the biosphere carry a memory of pressure?: https://Mycelorium.github.io/predator-principle/posts/biosphere-trauma-test.html
 - E:C005 Earth is not a warehouse: https://Mycelorium.github.io/predator-principle/posts/earth-not-warehouse.html
