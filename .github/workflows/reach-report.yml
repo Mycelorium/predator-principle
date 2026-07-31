@@ -1,0 +1,51 @@
+name: Weekly reach report
+
+# Files an honest weekly issue: stars, forks, unique visitors, non-GitHub
+# referrers, dispatches live, Nostr notes out — each with the change since last
+# week, so a real signal is distinguishable from crawler noise.
+#
+# Needs no setup. If GOATCOUNTER_SITE and GOATCOUNTER_TOKEN are added later, real
+# website visits are included; until then the report says plainly that there is
+# no visitor data at all.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 0'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: reach-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build the report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GOATCOUNTER_SITE: ${{ secrets.GOATCOUNTER_SITE }}
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: node scripts/reach-report.mjs
+
+      - name: Commit history
+        run: |
+          if [[ -n "$(git status --porcelain content/reach-history.json)" ]]; then
+            git config user.name "Nirodha Collective"
+            git config user.email "285060945+Mycelorium@users.noreply.github.com"
+            git add content/reach-history.json
+            git commit -m "chore: record weekly reach snapshot"
+            git push
+          else
+            echo "No change."
+          fi
