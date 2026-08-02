@@ -137,17 +137,16 @@
   {
     "id": "C009",
     "class": "P",
-    "status": "narrowed-by-run-1",
-    "title_de": "Der kooperative Rahmen fehlt, bis man ihn nennt",
-    "title_en": "The cooperative frame is absent until it is named",
-    "claim_de": "In kanonischen Zusammenfassungen und in ökonomischen Erklärungen lassen Sprachmodelle kooperative Mechanismen aus, bis der Rahmen genannt wird; konkrete biologische Erklärungen sind nicht betroffen. Gemessen in Lauf 1 (2026-08-02, zwei Claude-Modelle, 40 Antworten).",
-    "claim_en": "In canonical summary-level answers and in economic explanations, language models omit cooperative mechanisms until the frame is named; specific biological explanations are unaffected. Measured in run 1 (2026-08-02, two Claude models, 40 responses): asked for \"the main forces driving evolution\", both models named no cooperative mechanism at all; asked what makes an economy productive, both scored a cooperation share of 0.00 without a cue and about 0.5 with one.",
+    "status": "research-needed",
+    "title_de": "Wissenschaft und LLMs könnten Predator-Frames übergewichten",
+    "title_en": "Science and LLMs may overweight predator frames",
+    "claim_de": "Wissenschaftliche Korpora und Sprachmodelle könnten Konkurrenz, Kampf und Extraktion gegenüber Kooperation, Symbiose und Konfliktbegrenzung systematisch übergewichten.",
+    "claim_en": "Scientific corpora and language models may systematically overweight competition, struggle, and extraction relative to cooperation, symbiosis, and conflict control.",
     "sources": [],
-    "boundary_de": "Lauf 1 hat die ursprüngliche, breitere Behauptung widerlegt. Nur eine Modellfamilie, nur Englisch, eine Antwort je Prompt, lexikonbasierte Auswertung. Die Korpus-Hälfte der Behauptung ist ungeprüft.",
-    "boundary_en": "Run 1 REFUTED the broader original claim: on questions whose textbook answer is cooperative, both models led with the cooperative mechanism (83 % and 67 %) and spent most of their words on it (share 0.83 and 0.82). One model family only, English only, one response per prompt, lexicon-based scoring, and the first-mention measure on the cued set was contaminated by the word order of our own prompt. The corpus half of the original claim has not been tested at all.",
-    "falsifier_de": "Geschwächt oder widerlegt, wenn bei randomisierter Cue-Reihenfolge, k >= 5 Wiederholungen und anderen Modellfamilien auch ohne Cue kooperative Mechanismen genannt werden.",
-    "falsifier_en": "Weakened or refuted if, with randomised cue order, k >= 5 replicates and other model families, summary-level and economic answers name cooperative mechanisms without a cue at rates comparable to the cued condition.",
-    "evidence_en": "Run 1, preregistered: research/llm-framing/RESULTS-run-1.md"
+    "boundary_de": "Das ist eine Forschungsfrage, keine Feststellung über Trainingsdaten oder wissenschaftliche Absicht. Sie ist als Proposition registriert und so markiert.",
+    "boundary_en": "This is a research question, not a finding about training data or scientific intent. It is registered as a proposition and marked as one.",
+    "falsifier_de": "Geschwächt oder widerlegt, wenn systematische Vergleiche von Korpora und Modellausgaben keine Asymmetrie zwischen kompetitiven und kooperativen Rahmungen zeigen.",
+    "falsifier_en": "Weakened or refuted if systematic comparisons of corpora and model outputs show no asymmetry between competitive and cooperative framings."
   },
   {
     "id": "C010",
