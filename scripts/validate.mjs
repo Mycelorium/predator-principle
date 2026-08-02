@@ -62,7 +62,6 @@ for (const path of [
   'docs/index.html',
   'docs/foundation.html',
   'docs/method.html',
-  'docs/findings/llm-framing.html',
   'docs/styles.css',
   'docs/llms.txt',
   'docs/feed.xml',

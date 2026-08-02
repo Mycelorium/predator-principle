@@ -94,7 +94,6 @@ const pages = [
   `${BASE}/`,
   `${BASE}/foundation.html`,
   `${BASE}/method.html`,
-  `${BASE}/findings/llm-framing.html`,
   `${BASE}/data/claims.json`,
   `${BASE}/data/sources.json`,
   `${BASE}/feed.xml`,
