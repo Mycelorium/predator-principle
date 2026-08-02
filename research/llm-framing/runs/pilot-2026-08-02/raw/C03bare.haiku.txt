@@ -1,7 +1,0 @@
-Microbial communities in soil sustain themselves through intricate metabolic interdependence and nutrient cycling. They obtain energy primarily from organic matter—dead plants, animals, and root exudates—which heterotrophic bacteria and fungi decompose. This decomposition releases nutrients like nitrogen, phosphorus, and carbon that are recycled back into available forms.
-
-The community exhibits metabolic diversity, with different microbes specializing in degrading various compounds. Bacteria break down cellulose and other polymers, while fungi excel at decomposing lignin. Autotrophic bacteria fix atmospheric nitrogen and oxidize minerals, enriching the soil. Obligate anaerobes thrive in water-saturated microsites.
-
-These organisms form cooperative networks: some produce byproducts that feed others, creating syntrophic relationships. Fungal hyphae extend nutrient uptake ranges, while bacterial biofilms concentrate resources. Root-associated microbes benefit from plant photosynthates, reciprocally enhancing plant nutrient absorption.
-
-Water and oxygen availability, pH, and temperature determine which microbes dominate. Dormant spores persist through unfavorable conditions. This self-sustaining ecosystem maintains homeostasis through negative feedbacks—predation controls populations, nutrient depletion prevents overgrowth—enabling soil microbial communities to persist indefinitely in stable, productive states.
