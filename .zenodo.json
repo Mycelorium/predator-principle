@@ -1,0 +1,42 @@
+{
+  "title": "The Predator Principle — The Cancer of Evolution",
+  "description": "<p>An open, falsifiable systems hypothesis: predation generalised into the order of everything is the cancer of evolution — and cancer is treatable.</p><p>The project distinguishes ecological predation, which can regulate populations and maintain diversity, from a detached system pattern that persistently combines asymmetric extraction, externalised harm, suppressed feedback, compulsory escalation and erosion of its own substrate. Competition is neither rejected in advance nor made the goal; it is assessed by its actual system effects.</p><p>Every public claim carries its evidence status — E for empirical evidence, I for interpretation, P for a proposition still to be tested — together with its boundary and the conditions that would falsify it. The strongest objection to the thesis is published alongside it. Counterevidence is explicitly invited through the public issue tracker.</p><p>This release contains the essay corpus, the claim and source registers as machine-readable JSON, the published dispatches, and the automation that keeps them in sync.</p>",
+  "creators": [
+    {
+      "name": "Nirodha Collective"
+    }
+  ],
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "predation",
+    "evolution",
+    "cooperation",
+    "major evolutionary transitions",
+    "endosymbiosis",
+    "ecology of fear",
+    "biosphere",
+    "systems thinking",
+    "falsifiability",
+    "open science",
+    "artificial superintelligence",
+    "AI safety"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://mycelorium.github.io/predator-principle/",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/Mycelorium/predator-principle",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
