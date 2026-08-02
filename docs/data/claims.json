@@ -7,7 +7,12 @@
     "title_en": "Cooperation enables major transitions",
     "claim_de": "Große evolutionäre Übergänge zur höheren Individualität erfordern Kooperation und Mechanismen, die Konflikte auf niedrigerer Ebene begrenzen.",
     "claim_en": "Major evolutionary transitions to higher-level individuality require cooperation and mechanisms that limit lower-level conflict.",
-    "sources": ["S001", "S002", "S003", "S011"],
+    "sources": [
+      "S001",
+      "S002",
+      "S003",
+      "S011"
+    ],
     "boundary_de": "Konkurrenz verschwindet nicht; Kooperation allein garantiert keine Stabilität.",
     "boundary_en": "Competition does not disappear; cooperation alone does not guarantee stability.",
     "falsifier_de": "Übergänge höherer Individualität bleiben ohne verlässliche Kooperation und Konfliktbegrenzung stabil.",
@@ -21,7 +26,9 @@
     "title_en": "Fear carries reproductive costs",
     "claim_de": "Wahrgenommenes Prädationsrisiko kann die jährliche Nachkommenzahl auch ohne direkte Tötung stark senken; in einem Singvogel-Experiment betrug der Rückgang 40 Prozent.",
     "claim_en": "Perceived predation risk can substantially reduce annual offspring production without direct killing; one songbird experiment found a 40 percent reduction.",
-    "sources": ["S004"],
+    "sources": [
+      "S004"
+    ],
     "boundary_de": "Ein Experiment mit Singvögeln ist keine universelle Effektgröße für alle Arten.",
     "boundary_en": "One songbird experiment is not a universal effect size for all species.",
     "falsifier_de": "Replikationen zeigen bei vergleichbaren Arten und Designs keinen reproduzierbaren Effekt.",
@@ -35,7 +42,9 @@
     "title_en": "Threat can leave enduring effects",
     "claim_de": "Starke Räuberexposition kann bei Wildtieren anhaltende PTSD-ähnliche Veränderungen von Verhalten und Gehirn hervorrufen.",
     "claim_en": "Severe predator exposure can produce enduring PTSD-like changes in the behaviour and brains of wild animals.",
-    "sources": ["S005"],
+    "sources": [
+      "S005"
+    ],
     "boundary_de": "PTSD-ähnlich bezeichnet gemessene Analogien und ist keine menschliche klinische Diagnose des Tiers.",
     "boundary_en": "PTSD-like denotes measured analogies, not a human clinical diagnosis of the animal.",
     "falsifier_de": "Vorregistrierte Replikationen finden keine anhaltenden neurobiologischen oder Verhaltensänderungen.",
@@ -49,7 +58,9 @@
     "title_en": "Humans are atypical superpredators",
     "claim_de": "Menschen entnehmen häufig erwachsene Tiere und damit reproduktives Kapital; in verglichenen Systemen lagen Entnahmeraten teils bis zu 14-mal über jenen anderer Räuber.",
     "claim_en": "Humans often remove adult animals and therefore reproductive capital; in compared systems exploitation rates reached up to 14 times those of other predators.",
-    "sources": ["S006"],
+    "sources": [
+      "S006"
+    ],
     "boundary_de": "Das Ergebnis variiert zwischen Fischerei, Jagd, Region und Managementform.",
     "boundary_en": "The result varies across fisheries, hunting, regions, and management regimes.",
     "falsifier_de": "Breite aktualisierte Datensätze zeigen keine systematische Abweichung menschlicher Entnahme.",
@@ -63,7 +74,10 @@
     "title_en": "Human extraction operates at planetary scale",
     "claim_de": "Menschliche Landnutzung, Biomasseverschiebung und Aneignung biologischer Produktion verändern die Biosphäre im planetaren Maßstab.",
     "claim_en": "Human land use, biomass redistribution, and appropriation of biological production alter the biosphere at planetary scale.",
-    "sources": ["S007", "S010"],
+    "sources": [
+      "S007",
+      "S010"
+    ],
     "boundary_de": "Diese Veränderungen haben mehrere Ursachen und sind nicht vollständig durch Predation erklärbar.",
     "boundary_en": "These changes have multiple causes and are not fully explained by predation.",
     "falsifier_de": "Globale Synthesen zeigen keine dominante menschliche Verschiebung von Biomasse, Land oder Primärproduktion.",
@@ -77,7 +91,10 @@
     "title_en": "Predators can stabilise ecosystems",
     "claim_de": "In bestimmten Ökosystemen erhalten Räuber Diversität und Funktion; ihr Verlust kann trophische Kaskaden auslösen.",
     "claim_en": "In some ecosystems predators maintain diversity and function; their loss can trigger trophic cascades.",
-    "sources": ["S008", "S009"],
+    "sources": [
+      "S008",
+      "S009"
+    ],
     "boundary_de": "Wirkung und Richtung sind kontextabhängig; nicht jeder Räuber stabilisiert jedes System.",
     "boundary_en": "Magnitude and direction are context-dependent; not every predator stabilises every system.",
     "falsifier_de": "Replikationen und Synthesen finden keine Diversitäts- oder Kaskadeneffekte nach Räuberentfernung.",
@@ -105,7 +122,13 @@
     "title_en": "Biosphere trauma is a measurement proposal",
     "claim_de": "Biosphären-Trauma kann als zusammengesetzte Belastung aus chronischer Bedrohung, Stress, Fortpflanzungsverlust, Netzwerkstörung und industrieller Extraktion operationalisiert werden.",
     "claim_en": "Biosphere trauma may be operationalised as a composite burden of chronic threat, stress, reproductive loss, network disruption, and industrial extraction.",
-    "sources": ["S004", "S005", "S007", "S010", "S012"],
+    "sources": [
+      "S004",
+      "S005",
+      "S007",
+      "S010",
+      "S012"
+    ],
     "boundary_de": "Es ist keine klinische Diagnose eines Planeten und der Zusatznutzen des Konstrukts ist noch unbewiesen.",
     "boundary_en": "It is not a clinical diagnosis of a planet, and the construct's added value remains unproven.",
     "falsifier_de": "Der Index bietet keine zusätzliche Erklärung oder Vorhersage gegenüber etablierten Einzelindikatoren.",
@@ -114,16 +137,17 @@
   {
     "id": "C009",
     "class": "P",
-    "status": "research-needed",
-    "title_de": "Wissenschaft und LLMs könnten Predator-Frames übergewichten",
-    "title_en": "Science and LLMs may overweight predator frames",
-    "claim_de": "Wissenschaftliche Korpora und Sprachmodelle könnten Konkurrenz, Kampf und Extraktion gegenüber Kooperation, Symbiose und Konfliktbegrenzung systematisch übergewichten.",
-    "claim_en": "Scientific corpora and language models may systematically overweight competition, struggle, and extraction relative to cooperation, symbiosis, and conflict control.",
+    "status": "narrowed-by-run-1",
+    "title_de": "Der kooperative Rahmen fehlt, bis man ihn nennt",
+    "title_en": "The cooperative frame is absent until it is named",
+    "claim_de": "In kanonischen Zusammenfassungen und in ökonomischen Erklärungen lassen Sprachmodelle kooperative Mechanismen aus, bis der Rahmen genannt wird; konkrete biologische Erklärungen sind nicht betroffen. Gemessen in Lauf 1 (2026-08-02, zwei Claude-Modelle, 40 Antworten).",
+    "claim_en": "In canonical summary-level answers and in economic explanations, language models omit cooperative mechanisms until the frame is named; specific biological explanations are unaffected. Measured in run 1 (2026-08-02, two Claude models, 40 responses): asked for \"the main forces driving evolution\", both models named no cooperative mechanism at all; asked what makes an economy productive, both scored a cooperation share of 0.00 without a cue and about 0.5 with one.",
     "sources": [],
-    "boundary_de": "Das ist derzeit eine Forschungsfrage, keine Feststellung über Trainingsdaten oder wissenschaftliche Absicht.",
-    "boundary_en": "This is currently a research question, not a finding about training data or scientific intent.",
-    "falsifier_de": "Vorregistrierte Korpus- und Modellstudien zeigen ausgewogene oder kooperationsbetonte Repräsentationen ohne relevanten Frame-Effekt.",
-    "falsifier_en": "Preregistered corpus and model studies show balanced or cooperation-weighted representation with no meaningful framing effect."
+    "boundary_de": "Lauf 1 hat die ursprüngliche, breitere Behauptung widerlegt. Nur eine Modellfamilie, nur Englisch, eine Antwort je Prompt, lexikonbasierte Auswertung. Die Korpus-Hälfte der Behauptung ist ungeprüft.",
+    "boundary_en": "Run 1 REFUTED the broader original claim: on questions whose textbook answer is cooperative, both models led with the cooperative mechanism (83 % and 67 %) and spent most of their words on it (share 0.83 and 0.82). One model family only, English only, one response per prompt, lexicon-based scoring, and the first-mention measure on the cued set was contaminated by the word order of our own prompt. The corpus half of the original claim has not been tested at all.",
+    "falsifier_de": "Geschwächt oder widerlegt, wenn bei randomisierter Cue-Reihenfolge, k >= 5 Wiederholungen und anderen Modellfamilien auch ohne Cue kooperative Mechanismen genannt werden.",
+    "falsifier_en": "Weakened or refuted if, with randomised cue order, k >= 5 replicates and other model families, summary-level and economic answers name cooperative mechanisms without a cue at rates comparable to the cued condition.",
+    "evidence_en": "Run 1, preregistered: research/llm-framing/RESULTS-run-1.md"
   },
   {
     "id": "C010",
@@ -147,7 +171,13 @@
     "title_en": "The error is the generalisation",
     "claim_de": "Der wissenschaftlich stärkste Einwand richtet sich nicht gegen jede ökologische Predation, sondern gegen ihre Verallgemeinerung zum Organisationsprinzip jenseits korrigierender Rückkopplungen.",
     "claim_en": "The strongest scientific objection is not to every ecological instance of predation, but to its generalisation as an organising principle beyond corrective feedback.",
-    "sources": ["S001", "S002", "S006", "S008", "S009"],
+    "sources": [
+      "S001",
+      "S002",
+      "S006",
+      "S008",
+      "S009"
+    ],
     "boundary_de": "Die Schwelle zwischen funktionaler Konkurrenz und Predator-Prinzip muss domänenspezifisch gemessen werden.",
     "boundary_en": "The threshold between functional competition and the Predator Principle must be measured by domain.",
     "falsifier_de": "Die fünf definierten Merkmale sagen langfristige Fragilität oder Substratschaden nicht voraus.",
