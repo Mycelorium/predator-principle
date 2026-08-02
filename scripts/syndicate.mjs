@@ -29,9 +29,11 @@ const loadJSON = async (path, fallback) => {
 const state = await loadJSON('content/syndication-state.json', {});
 for (const key of ['bluesky', 'mastodon', 'telegram', 'discord']) state[key] ||= [];
 
+// docs/feed.json is generated from the essay corpus by scripts/build-site.mjs
+// and is the single source for syndication. Reading the essays feed as well
+// would post every item twice.
 const feeds = [
   await loadJSON('docs/feed.json', { items: [] }),
-  await loadJSON('docs/essays-feed.json', { items: [] }),
 ];
 
 const items = feeds
