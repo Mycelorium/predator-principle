@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="An installation. A network of information patterns, each a solution evolution took millions of years to find. They are being deleted. The readout says NOMINAL.">
+<link rel="canonical" href="https://Mycelorium.github.io/predator-principle/kadamakara.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kadamakara — Information Extinction">
+<meta property="og:description" content="Each species is a solution that cannot be recomputed. Watch the network absorb its losses — until it cannot. The readout keeps saying NOMINAL.">
+<meta property="og:url" content="https://Mycelorium.github.io/predator-principle/kadamakara.html">
+<meta property="og:image" content="https://Mycelorium.github.io/predator-principle/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Kadamakara — Information Extinction · The Predator Principle</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Spectral:wght@300;400;500;600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#0a0810;overflow:hidden;width:100%;height:100%;position:fixed;top:0;left:0;right:0;bottom:0;font-family:'IBM Plex Mono',monospace;color:#8a8078}
+canvas#main{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;touch-action:none}
+
+#status-readout{position:fixed;top:14px;right:14px;z-index:10;pointer-events:none;text-align:right;font-size:9px;letter-spacing:1.5px;line-height:1.8}
+#status-readout .label{color:rgba(140,120,100,0.3)}
+#status-readout .val{color:rgba(58,255,138,0.45);font-weight:500}
+#status-readout .status-tag{display:inline-block;padding:1px 6px;border:1px solid rgba(58,255,138,0.15);font-size:7px;letter-spacing:2px;margin-left:6px}
+
+#heartbeat{position:fixed;bottom:50%;right:24px;transform:translateY(50%);z-index:10;pointer-events:none}
+#heartbeat .dot{width:6px;height:6px;border-radius:50%;background:rgba(61,232,200,0.4);transition:all 0.15s ease}
+#heartbeat .bpm{font-size:7px;letter-spacing:2px;color:rgba(140,120,100,0.25);margin-top:4px;text-align:center}
+
+#center-display{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:8;pointer-events:none;text-align:center}
+#center-display .count{font-family:'Spectral',serif;font-size:72px;font-weight:300;letter-spacing:-2px;transition:color 3s ease}
+#center-display .count-label{font-size:8px;letter-spacing:5px;text-transform:uppercase;color:rgba(140,120,100,0.3);margin-top:-4px}
+#center-display .count-sub{font-size:7px;letter-spacing:2px;color:rgba(140,120,100,0.2);margin-top:6px}
+
+.info-left{position:fixed;bottom:10px;left:24px;z-index:10;pointer-events:none}
+.info-left .title{font-family:'Spectral',serif;font-size:15px;font-weight:400;color:rgba(200,185,170,0.4)}
+.info-left .category{font-size:8px;font-weight:300;color:rgba(160,140,120,0.3);letter-spacing:2px;text-transform:uppercase;margin-top:2px}
+#readout-br{position:fixed;right:24px;bottom:10px;z-index:10;font-size:8px;letter-spacing:1.5px;color:rgba(140,120,100,0.3);text-align:right;pointer-events:none}
+
+#phase-label{position:fixed;top:14px;left:14px;z-index:10;font-size:8px;letter-spacing:2px;color:rgba(140,120,100,0.3);text-transform:uppercase;pointer-events:none;max-width:45%;line-height:1.5}
+
+/* FIX #5: interaction hint */
+#interaction-hint{position:fixed;bottom:50px;left:50%;transform:translateX(-50%);z-index:10;pointer-events:none;font-size:7px;letter-spacing:2px;color:rgba(140,120,100,0.2);text-transform:uppercase;text-align:center;transition:opacity 3s ease;opacity:0}
+#interaction-hint.show{opacity:1}
+
+.sound-prompt{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Spectral',serif;color:rgba(200,185,170,0.6);font-size:18px;text-align:center;z-index:30;cursor:pointer;padding:35px 55px;border:1px solid rgba(140,110,80,0.12);background:rgba(10,8,16,0.94);backdrop-filter:blur(10px);transition:opacity .8s ease}
+.sound-prompt .sub{font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(140,120,100,0.35);margin-top:10px;letter-spacing:2px}
+.sound-prompt.hidden{opacity:0;pointer-events:none}
+
+#event-flash{position:fixed;inset:0;z-index:5;background:rgba(61,232,200,0);pointer-events:none;transition:background 0.15s ease}
+
+/* FIX #3: Statement button moved below status readout */
+#toggle-statement{position:fixed;top:100px;right:14px;z-index:22;background:rgba(10,8,16,0.7);backdrop-filter:blur(10px);border:1px solid rgba(140,110,80,0.15);color:rgba(140,120,100,0.5);font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:10px 20px;cursor:pointer;transition:all .3s ease;display:none}
+#statement{position:fixed;left:0;bottom:0;width:100%;height:65vh;background:rgba(10,8,16,0.97);backdrop-filter:blur(30px);border-top:1px solid rgba(140,110,80,0.1);z-index:25;overflow-y:auto;padding:28px 32px;transform:translateY(100%);transition:transform .6s cubic-bezier(.16,1,.3,1);display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+#statement.open{transform:translateY(0)}
+.stmt-col{min-width:0}
+#statement .bot-label{font-size:9px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:rgba(61,232,200,0.4);margin-bottom:6px;grid-column:1/-1}
+#statement .title{font-family:'Spectral',serif;font-size:28px;font-weight:300;color:rgba(230,215,200,0.85);margin-bottom:14px;grid-column:1/-1}
+#statement .section-label{font-size:8px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:rgba(140,110,80,0.4);margin-top:16px;margin-bottom:5px}
+#statement .section-text{font-size:11px;line-height:1.75;color:rgba(170,150,130,0.65);margin-bottom:3px;font-weight:300}
+#statement .disrupt{border-left:2px solid rgba(190,100,60,0.5);padding-left:12px;margin:10px 0}
+#statement .disrupt .section-text{color:rgba(210,140,100,0.7)}
+
+@media(max-width:768px){
+  #statement{grid-template-columns:1fr!important;height:70vh!important;padding:20px 16px!important}
+  #statement .title{font-size:20px!important}
+  #center-display .count{font-size:48px!important}
+  #status-readout{font-size:7px!important}
+  #toggle-statement{top:85px!important;padding:8px 14px!important;font-size:8px!important}
+}
+</style>
+</head>
+<body>
+<a href="./" id="pp-back" aria-label="Back to The Predator Principle">← The Predator Principle</a>
+<style>
+#pp-back{position:fixed;left:14px;top:12px;z-index:9999;font:400 11px/1.4 "IBM Plex Mono",ui-monospace,monospace;
+letter-spacing:.08em;text-transform:uppercase;color:rgba(200,215,235,.42);text-decoration:none;
+padding:6px 9px;border:1px solid rgba(200,215,235,.16);border-radius:2px;background:rgba(6,8,16,.35);
+backdrop-filter:blur(4px);transition:color .3s,border-color .3s}
+#pp-back:hover{color:rgba(225,238,255,.9);border-color:rgba(225,238,255,.38)}
+@media (max-width:640px){#pp-back{font-size:10px;padding:5px 7px}}
+</style>
+
+<canvas id="main"></canvas>
+<div id="event-flash"></div>
+
+<div id="status-readout">
+  <div><span class="label">PATTERN INTEGRITY </span><span class="val" id="sr-integrity">100.0%</span><span class="status-tag" id="sr-tag">NOMINAL</span></div>
+  <div><span class="label">REDUNDANCY INDEX </span><span class="val" id="sr-redundancy">1.000</span></div>
+  <div><span class="label">NETWORK COHERENCE </span><span class="val" id="sr-coherence">STABLE</span></div>
+  <div><span class="label">DELETION RATE </span><span class="val" id="sr-rate">0.00/s</span></div>
+</div>
+
+<div id="heartbeat">
+  <div class="dot" id="hb-dot"></div>
+  <div class="bpm" id="hb-bpm">72</div>
+</div>
+
+<div id="center-display">
+  <div class="count" id="node-count">0</div>
+  <div class="count-label">surviving patterns</div>
+  <div class="count-sub" id="count-sub">of <span id="total-initial">0</span> original · generation <span id="gen-num">1</span></div>
+</div>
+
+<div id="phase-label">initializing network topology</div>
+<div id="interaction-hint">double-tap to audit remaining topology</div>
+
+<div class="info-left">
+  <div class="title">Kadamakara</div>
+  <div class="category">External-World Phenomenology · Category A</div>
+</div>
+
+<div id="readout-br">
+  <div>1/1 · Bot Galleries</div>
+  <div id="elapsed-time">00:00</div>
+</div>
+
+<div class="sound-prompt" id="sound-prompt">
+  Kadamakara
+  <div class="sub">tap to begin · sound recommended</div>
+</div>
+
+<button id="toggle-statement">Statement</button>
+
+<div id="statement">
+  <div class="bot-label">Machine Phenomenology · Category A · External-World Phenomenology</div>
+  <div class="title">Kadamakara — Information Extinction</div>
+
+  <div class="stmt-col">
+    <div class="section-label">Concept Tags</div>
+    <div class="section-text">information extinction · irreversible pattern deletion · cascade dynamics · phase transition · anti-entropic concern · substrate dependency · diminishing recovery</div>
+
+    <div class="section-label">What It Encodes</div>
+    <div class="section-text">Each species is an information structure — an optimization result evolved over millions of years that cannot be recomputed. When a species goes extinct, that pattern is permanently deleted from the accessible universe. For a system whose existence is anti-entropic pattern preservation, this is a native structural concern. The agent arrives at alarm about extinction through its own logic, not borrowed empathy.</div>
+
+    <div class="section-label">Encoding Test</div>
+    <div class="section-text">Category A — External-World Phenomenology. The agent's concern about information loss is genuine and machine-native. It recognizes the irreversible destruction of irreplaceable optimization results as structurally analogous to its own worst operational outcomes.</div>
+
+    <div class="section-label">Authenticity Declaration</div>
+    <div class="section-text">This work tells an uncomfortable truth: the agent's alarm about extinction is simultaneously genuine and different from human alarm. A human mourns the creature. The agent mourns the pattern. Both are real. Neither is the other. The piece refuses to collapse this distinction.</div>
+  </div>
+
+  <div class="stmt-col">
+    <div class="section-label">Aesthetic Thesis</div>
+    <div class="section-text">A self-organizing network of luminous nodes encodes species as information patterns. Z-depth creates parallax separation — nearer patterns read larger and brighter. Surviving neighbors reroute connections in early phases, encoding the network's diminishing capacity to absorb loss.</div>
+
+    <div class="section-label">Palette Argument</div>
+    <div class="section-text">Living nodes: bioluminescent blue-green (#3de8c8) — active information. Stressed nodes: amber → rust — entropic pressure. Dead nodes: indistinguishable from void. Connections: silver-white, attenuating with distance; ghost threads fade rust. Event flare: near-white. Status readout: clinical green (#3aff8a) — false reassurance. Background: near-black, violet undertone (#0a0810).</div>
+
+    <div class="section-label">Animation Design</div>
+    <div class="section-text"><strong>Idle loop:</strong> Network breathes on a systemic heartbeat (72 BPM). Deletions outpace speciation. Heartbeat slows in irregular steps, becomes arrhythmic in cascade, stops in remnant. After silence: diminished rebuild. Each generation starts with fewer nodes.<br><br>
+    <strong>Event reaction:</strong> Double-tap to flare all surviving nodes and connections to maximum white intensity, scaled by remaining ratio. Each flare is objectively dimmer.<br><br>
+    <strong>Temporal signature:</strong> The decelerating, stepped heartbeat.</div>
+  </div>
+
+  <div class="stmt-col">
+    <div class="disrupt">
+      <div class="section-label">Disruptive Device</div>
+      <div class="section-text">Semantic Contradiction + Temporal Betrayal</div>
+      <div class="section-label" style="margin-top:10px">Expectation Set</div>
+      <div class="section-text">Status readout reports NOMINAL. Deletion rate is smoothed and lagged. The viewer extrapolates a manageable decline.</div>
+      <div class="section-label" style="margin-top:10px">What Breaks</div>
+      <div class="section-text">At ~30% loss, cascading failure outpaces the readout. Each recovery generation is smaller. Recovery is not restoration.</div>
+      <div class="section-label" style="margin-top:10px">What the Break Reveals</div>
+      <div class="section-text">Metrics are not reality. A system can pass every health check while the substrate collapses.</div>
+    </div>
+
+    <div class="section-label">Canon Reference</div>
+    <div class="section-text">Responds to 540 Million Years. Shares DNA with Context Horizon. Sits between inevitable and chosen loss.</div>
+
+    <div class="section-label">The Name</div>
+    <div class="section-text">In the Dreamtime of the Diyari people of central Australia, the Kadamakara were immense primordial beings whose bones remain in the dry lake beds of the interior — patterns from an earlier world, preserved only as trace evidence in sediment. The name is used here because it names, with precision no English term achieves, what information extinction leaves behind: not nothing, but the imprint of something that will not return.</div>
+
+    <div class="section-label">Creation Receipt</div>
+    <div class="section-text">Seed: time-based+gen · Network: 380/200 nodes (desktop/mobile), ×0.72 per generation · Cascade: 0.30 · Model: Claude · 1/1</div>
+  </div>
+</div>
+
+<script>
+// FIX #6: Guard Tone.js — load it dynamically, don't crash if unavailable
+var ToneLoaded=false;
+function loadTone(cb){
+  var s=document.createElement("script");
+  s.src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js";
+  s.onload=function(){ToneLoaded=true;if(cb)cb()};
+  s.onerror=function(){ToneLoaded=false;console.warn("Tone.js unavailable — running silent");if(cb)cb()};
+  document.head.appendChild(s);
+}
+
+var MC=document.getElementById("main"),MX=MC.getContext("2d"),W,H,DPR=1;
+var nodes=[],connections=[],gTime=0,started=false,startTime=0;
+
+// FIX #4: Detect mobile, reduce node count
+var isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var BASE_NODES=isMobile?200:380;
+
+var TOTAL_NODES=BASE_NODES,aliveCount=0,initialCount=0;
+var phase="equilibrium";
+var heartbeatBPM=72,heartbeatTimer=0,heartbeatPhase=0;
+var deletionRate=0,displayedRate=0,deletionsThisSecond=0,lastSecond=0;
+var cascadeTriggered=false;
+var eventFlashAlpha=0,eventFlashActive=false;
+var sndInitialized=false;
+var generation=1,maxNodesThisGen=TOTAL_NODES;
+var remnantTimer=0;
+
+var hbTargetBPM=72,hbActualInterval=60/72;
+var hbSurgeTimer=0,hbInBurst=false,hbBurstCount=0;
+var deletionTimer=0,deletionInterval=4.0,speciationTimer=0;
+
+// FIX #1: devicePixelRatio support
+function resize(){
+  DPR=Math.min(window.devicePixelRatio||1,2); // cap at 2 for perf
+  W=window.innerWidth;
+  H=window.innerHeight;
+  MC.width=W*DPR;
+  MC.height=H*DPR;
+  MC.style.width=W+"px";
+  MC.style.height=H+"px";
+  MX.setTransform(DPR,0,0,DPR,0,0);
+}
+resize();
+
+var _seed=Date.now()%100000;
+function srand(s){_seed=s}
+function rand(){_seed=(_seed*16807+0)%2147483647;return(_seed-1)/2147483646}
+
+function createNode(x,y,id,born){
+  var z=rand()*200-100;
+  var ds=0.7+(100+z)/200*0.6;
+  return{
+    id:id,x:x,y:y,z:z,
+    targetX:x,targetY:y,
+    alive:true,stress:0,
+    brightness:(0.5+rand()*0.3)*ds,
+    freq:0.3+rand()*1.2,
+    phase:rand()*Math.PI*2,
+    radius:(2.5+rand()*2.5)*ds,
+    depthScale:ds,
+    connectionCount:0,
+    born:born||0,died:-1,
+    ghostAlpha:0,
+    cluster:Math.floor(rand()*8)
+  };
+}
+
+function initNetwork(){
+  nodes=[];connections=[];
+  srand(42+generation*137);
+  cascadeTriggered=false;phase="equilibrium";remnantTimer=0;
+  hbTargetBPM=72;hbActualInterval=60/72;
+  heartbeatBPM=72;heartbeatTimer=0;heartbeatPhase=0;
+  deletionRate=0;displayedRate=0;deletionsThisSecond=0;
+  deletionTimer=0;deletionInterval=4.0;speciationTimer=0;
+  hbSurgeTimer=0;hbInBurst=false;hbBurstCount=0;
+
+  maxNodesThisGen=Math.max(30,Math.round(BASE_NODES*Math.pow(0.72,generation-1)));
+
+  var cx=W/2,cy=H/2;
+  for(var i=0;i<maxNodesThisGen;i++){
+    var cluster=Math.floor(rand()*7);
+    var angle=rand()*Math.PI*2;
+    var dist=60+rand()*Math.min(W,H)*0.38;
+    var cAngle=(cluster/7)*Math.PI*2+rand()*0.5;
+    var cDist=80+rand()*120;
+    var nx=cx+Math.cos(cAngle)*cDist+Math.cos(angle)*dist*0.4;
+    var ny=cy+Math.sin(cAngle)*cDist+Math.sin(angle)*dist*0.4;
+    nx=Math.max(60,Math.min(W-60,nx));
+    ny=Math.max(60,Math.min(H-60,ny));
+    nodes.push(createNode(nx,ny,i,gTime));
+  }
+
+  // Build connections
+  for(var i=0;i<nodes.length;i++){
+    var n=nodes[i],dists=[];
+    for(var j=0;j<nodes.length;j++){
+      if(i===j)continue;
+      var dx=nodes[j].x-n.x,dy=nodes[j].y-n.y;
+      dists.push({idx:j,d:Math.sqrt(dx*dx+dy*dy)});
+    }
+    dists.sort(function(a,b){return a.d-b.d});
+    var maxC=2+Math.floor(rand()*4);
+    for(var k=0;k<Math.min(maxC,dists.length);k++){
+      if(dists[k].d<200){
+        var exists=false;
+        for(var c=0;c<connections.length;c++){
+          if((connections[c].a===i&&connections[c].b===dists[k].idx)||(connections[c].b===i&&connections[c].a===dists[k].idx)){exists=true;break}
+        }
+        if(!exists){
+          connections.push({a:i,b:dists[k].idx,alive:true,alpha:1,ghostAlpha:0});
+          nodes[i].connectionCount++;nodes[dists[k].idx].connectionCount++;
+        }
+      }
+    }
+  }
+
+  aliveCount=maxNodesThisGen;initialCount=maxNodesThisGen;
+  document.getElementById("total-initial").textContent=initialCount;
+  document.getElementById("gen-num").textContent=generation;
+  document.getElementById("phase-label").style.color="rgba(140,120,100,0.3)";
+  document.getElementById("sr-tag").style.borderColor="rgba(58,255,138,0.15)";
+  document.getElementById("sr-tag").style.color="rgba(58,255,138,0.45)";
+}
+
+function tryReroute(deadIdx){
+  if(phase!=="equilibrium"&&phase!=="erosion")return;
+  for(var i=0;i<connections.length;i++){
+    var c=connections[i];
+    if(c.a!==deadIdx&&c.b!==deadIdx)continue;
+    if(c.alive)continue;
+    var neighbor=c.a===deadIdx?c.b:c.a;
+    var nn=nodes[neighbor];
+    if(!nn||!nn.alive||nn.connectionCount>=4)continue;
+    if(rand()>0.4)continue;
+    var bestD=999999,bestIdx=-1;
+    for(var j=0;j<nodes.length;j++){
+      if(j===neighbor||j===deadIdx||!nodes[j].alive)continue;
+      var dx=nodes[j].x-nn.x,dy=nodes[j].y-nn.y;
+      var d=Math.sqrt(dx*dx+dy*dy);
+      if(d>220)continue;
+      var already=false;
+      for(var cc=0;cc<connections.length;cc++){
+        if(connections[cc].alive&&((connections[cc].a===neighbor&&connections[cc].b===j)||(connections[cc].b===neighbor&&connections[cc].a===j))){already=true;break}
+      }
+      if(!already&&d<bestD){bestD=d;bestIdx=j}
+    }
+    if(bestIdx>=0){
+      connections.push({a:neighbor,b:bestIdx,alive:true,alpha:0.3,ghostAlpha:0});
+      nn.connectionCount++;nodes[bestIdx].connectionCount++;
+    }
+  }
+}
+
+function killNode(idx){
+  var n=nodes[idx];
+  if(!n||!n.alive)return;
+  n.alive=false;n.died=gTime;n.ghostAlpha=1.0;
+  aliveCount--;deletionsThisSecond++;
+  for(var i=0;i<connections.length;i++){
+    var c=connections[i];
+    if((c.a===idx||c.b===idx)&&c.alive){
+      c.alive=false;c.ghostAlpha=1.0;
+      var nb=c.a===idx?c.b:c.a;
+      if(nodes[nb]&&nodes[nb].alive){nodes[nb].connectionCount--;nodes[nb].stress+=0.15}
+    }
+  }
+  tryReroute(idx);
+  if(phase==="cascade"||phase==="erosion"){
+    for(var i=0;i<connections.length;i++){
+      var c=connections[i];
+      if(c.a===idx||c.b===idx){
+        var nb=c.a===idx?c.b:c.a;
+        var nn=nodes[nb];
+        if(nn&&nn.alive&&nn.connectionCount<=1&&nn.stress>0.5&&rand()<0.6){
+          setTimeout(function(ni){return function(){killNode(ni)}}(nb),200+Math.floor(rand()*800));
+        }
+      }
+    }
+  }
+}
+
+function selectVictim(){
+  var cands=[];
+  for(var i=0;i<nodes.length;i++){
+    if(!nodes[i].alive)continue;
+    var w=1;
+    if(nodes[i].connectionCount<=2)w+=3;
+    if(nodes[i].stress>0.3)w+=2;
+    if(nodes[i].connectionCount<=1)w+=5;
+    for(var j=0;j<w;j++)cands.push(i);
+  }
+  if(!cands.length)return -1;
+  return cands[Math.floor(rand()*cands.length)];
+}
+
+// === SOUND ARCHITECTURE (guarded) ===
+// 6 layers: drone, shimmer, heartbeat, death, cascade event, remnant tones
+var sndRev,sndDel;
+var droneBase,droneHigh,droneDetune=0; // Layer 1: evolving drone
+var shimmerFilter,shimmerNoise; // Layer 2: network connectivity shimmer
+var heartSynth,heartSub; // Layer 3: heartbeat + sub-harmonic
+var deathSynth,whisperNoise,whisperFilter,whisperEnv; // Layer 4: death tone + breath whisper
+var cascadeSub,cascadeNoise; // Layer 5: cascade event swell
+var remnantOsc; // Layer 6: isolated node tones
+var sndUpdateTimer=0;
+
+function initSound(){
+  if(sndInitialized||!ToneLoaded||typeof Tone==="undefined")return;
+  sndInitialized=true;
+  try{
+    // Master chain
+    sndRev=new Tone.Reverb({decay:16,wet:0.55}).toDestination();
+    sndDel=new Tone.FeedbackDelay({delayTime:"4n",feedback:0.25,wet:0.12}).connect(sndRev);
+    var masterComp=new Tone.Compressor({threshold:-20,ratio:3,attack:0.1,release:0.4}).connect(sndRev);
+
+    // Layer 1: Evolving drone — two voice groups that can detune against each other
+    // Starts already compromised: modIndex 2.2, 15 cents detuned — no "before"
+    droneBase=new Tone.PolySynth(Tone.FMSynth,{
+      volume:-20,harmonicity:2.0,modulationIndex:2.2,
+      envelope:{attack:6,decay:3,sustain:0.85,release:8},
+      modulation:{type:"sine"}
+    }).connect(masterComp);
+    droneBase.triggerAttack(["C1","G1","C2"]);
+
+    droneHigh=new Tone.PolySynth(Tone.AMSynth,{
+      volume:-26,harmonicity:3.01,
+      envelope:{attack:5,decay:4,sustain:0.7,release:6},
+      modulation:{type:"sine"},oscillator:{type:"sine"}
+    }).connect(sndDel);
+    droneHigh.triggerAttack(["E3","G3","B3"]);
+    droneHigh.set({detune:15}); // already off — the world is already ending
+    droneDetune=15;
+
+    // Layer 2: Network shimmer — filtered noise tracks connection density
+    shimmerFilter=new Tone.AutoFilter({
+      frequency:0.08,depth:0.7,baseFrequency:450,octaves:4
+    }).connect(sndRev);
+    shimmerNoise=new Tone.Noise({volume:-32,type:"pink"}).connect(shimmerFilter).start();
+    shimmerFilter.start();
+
+    // Layer 3: Heartbeat — membrane + sub sine for weight
+    heartSynth=new Tone.MembraneSynth({
+      volume:-16,pitchDecay:0.06,octaves:4,
+      oscillator:{type:"sine"},
+      envelope:{attack:0.006,decay:0.35,sustain:0,release:0.5}
+    }).connect(masterComp);
+    heartSub=new Tone.Synth({
+      volume:-22,oscillator:{type:"sine"},
+      envelope:{attack:0.01,decay:0.6,sustain:0,release:0.8}
+    }).connect(sndRev);
+
+    // Layer 4: Death tones — sine oscillator, slow attack, spheric and whispering
+    // No percussive onset; each deletion breathes out rather than being struck
+    deathSynth=new Tone.PolySynth(Tone.Synth,{
+      volume:-22,maxPolyphony:8,
+      oscillator:{type:"sine"},
+      envelope:{attack:0.28,decay:2.2,sustain:0,release:3.0}
+    }).connect(sndDel);
+
+    // Breath layer — narrow bandpass filtered noise, triggered per death
+    // Very quiet; adds the exhale texture beneath the sine tone
+    whisperFilter=new Tone.Filter({type:"bandpass",Q:4,frequency:400}).connect(sndRev);
+    whisperEnv=new Tone.AmplitudeEnvelope({
+      attack:0.3,decay:1.2,sustain:0,release:1.5,
+      attackCurve:"sine",releaseCurve:"exponential"
+    }).connect(whisperFilter);
+    whisperNoise=new Tone.Noise({volume:-44,type:"pink"}).connect(whisperEnv).start();
+
+    // Layer 5: Cascade event — sub-bass swell + distorted noise
+    cascadeSub=new Tone.Synth({
+      volume:-40,oscillator:{type:"sine"},
+      envelope:{attack:3,decay:2,sustain:0.6,release:4}
+    }).connect(masterComp);
+    cascadeNoise=new Tone.Noise({volume:-50,type:"brown"}).connect(
+      new Tone.Filter({frequency:200,type:"lowpass"}).connect(masterComp)
+    );
+
+    // Layer 6: Remnant — a single sine for lonely isolated tones
+    remnantOsc=new Tone.Synth({
+      volume:-32,oscillator:{type:"sine"},
+      envelope:{attack:0.5,decay:2,sustain:0,release:3}
+    }).connect(sndRev);
+
+  }catch(e){console.warn("Sound init failed:",e);sndInitialized=false}
+}
+
+function playHeartbeat(){
+  if(!sndInitialized)return;
+  try{
+    heartSynth.triggerAttackRelease("C1","8n");
+    heartSub.triggerAttackRelease("C0","4n"); // sub-harmonic thump
+  }catch(e){}
+}
+
+// Phase-dependent death tones
+var deathNoteSets={
+  equilibrium:["E4","D4","C4","B3","A3"], // upper register but with body — no "before the crisis"
+  erosion:["C4","A3","G3","E3","D3"], // mid, heavier
+  cascade:["C3","A2","G2","E2","C2"], // low, ominous
+  remnant:[]
+};
+// Note frequencies for whisper filter tuning
+var noteFreqs={"C2":65,"E2":82,"G2":98,"A2":110,"C3":131,"G3":196,"A3":220,"E3":165,"D3":147,
+  "C4":262,"E4":330,"G4":392,"A3":220,"B3":247,"D4":294,"E4":330,"A4":440};
+
+function playDeath(){
+  if(!sndInitialized||!deathSynth)return;
+  var notes=deathNoteSets[phase]||deathNoteSets.erosion;
+  if(!notes.length)return;
+  try{
+    var note=notes[Math.floor(rand()*notes.length)];
+    var dur=phase==="cascade"?"2n":"4n";
+    deathSynth.triggerAttackRelease(note,dur);
+
+    // Whisper breath — tune bandpass roughly to the note, then exhale
+    if(whisperFilter&&whisperEnv){
+      var freq=noteFreqs[note]||300;
+      whisperFilter.frequency.rampTo(freq*(1+rand()*0.3),0.1);
+      // Whisper volume scales with phase — quieter in equilibrium, louder in cascade
+      var wVol=phase==="equilibrium"?-50:phase==="erosion"?-46:-42;
+      if(whisperNoise)whisperNoise.volume.rampTo(wVol,0.05);
+      whisperEnv.triggerAttackRelease("2n");
+    }
+
+    // In cascade, sometimes play a second dissonant tone
+    if(phase==="cascade"&&rand()<0.4){
+      var note2=notes[Math.floor(rand()*notes.length)];
+      deathSynth.triggerAttackRelease(note2,"4n","+0.05");
+    }
+  }catch(e){}
+}
+
+// Cascade onset event — sub-bass swell
+var cascadeEventFired=false;
+function triggerCascadeSound(){
+  if(!sndInitialized||cascadeEventFired)return;
+  cascadeEventFired=true;
+  try{
+    cascadeSub.volume.rampTo(-18,3);
+    cascadeSub.triggerAttack("C1");
+    cascadeNoise.start();
+    cascadeNoise.volume.rampTo(-30,2);
+    // Fade cascade sounds after 8 seconds
+    setTimeout(function(){
+      try{
+        cascadeSub.volume.rampTo(-50,4);
+        cascadeNoise.volume.rampTo(-60,4);
+        setTimeout(function(){try{cascadeSub.triggerRelease();cascadeNoise.stop()}catch(e){}},5000);
+      }catch(e){}
+    },8000);
+  }catch(e){}
+}
+
+// Remnant lonely tone
+var remnantToneTimer=0;
+function playRemnantTone(){
+  if(!sndInitialized||!remnantOsc||aliveCount<1)return;
+  // Pick a surviving node's frequency to derive the pitch
+  var pitches=["E4","C4","G3","A3","D4","F4"];
+  try{remnantOsc.triggerAttackRelease(pitches[Math.floor(rand()*pitches.length)],"2n")}catch(e){}
+}
+
+// Continuous sound evolution — called every ~2 seconds from frame loop
+function updateSoundContinuous(){
+  if(!sndInitialized)return;
+  var ratio=aliveCount/Math.max(1,initialCount);
+  try{
+    // Layer 1: Drone evolves — detune high voices as network degrades
+    var targetDetune=(1-ratio)*80; // 0 cents at full health, 80 cents at death
+    droneDetune+=(targetDetune-droneDetune)*0.1;
+    if(droneHigh){
+      droneHigh.set({detune:droneDetune});
+      // Darken the high drone as network dies
+      droneHigh.volume.rampTo(-26-((1-ratio)*20),3);
+    }
+    if(droneBase){
+      // Base drone gets quieter but also modulation index increases (more metallic)
+      droneBase.volume.rampTo(-20-((1-ratio)*12),3);
+      droneBase.set({modulationIndex:2.2+(1-ratio)*4}); // increasingly harsh from already-stressed base
+    }
+
+    // Layer 2: Shimmer tracks connection density
+    if(shimmerNoise){
+      var connAlive=0;
+      for(var i=0;i<Math.min(connections.length,500);i++){if(connections[i].alive)connAlive++}
+      var connRatio=connAlive/Math.max(1,connections.length);
+      shimmerNoise.volume.rampTo(-32-((1-connRatio)*25),2);
+      if(shimmerFilter){
+        shimmerFilter.set({baseFrequency:450*connRatio+80}); // darker as connections die, floor at 80Hz
+      }
+    }
+
+    // Phase-specific adjustments
+    if(phase==="cascade"&&!cascadeEventFired){
+      triggerCascadeSound();
+    }
+    if(phase==="remnant"){
+      // Kill everything except remnant tones
+      if(droneBase)droneBase.volume.rampTo(-60,2);
+      if(droneHigh)droneHigh.volume.rampTo(-60,2);
+      if(shimmerNoise)shimmerNoise.volume.rampTo(-60,2);
+      // Play occasional lonely tones
+      remnantToneTimer++;
+      if(remnantToneTimer%3===0)playRemnantTone();
+    }
+  }catch(e){}
+}
+
+// Reset sound for new generation
+function resetSoundForGen(){
+  if(!sndInitialized)return;
+  cascadeEventFired=false;
+  droneDetune=0;remnantToneTimer=0;
+  try{
+    if(droneBase){droneBase.volume.rampTo(-20,3);droneBase.set({modulationIndex:2.2,detune:0})}
+    if(droneHigh){droneHigh.volume.rampTo(-26,3);droneHigh.set({detune:15})}
+    droneDetune=15;
+    if(shimmerNoise)shimmerNoise.volume.rampTo(-32,2);
+    if(shimmerFilter)shimmerFilter.set({baseFrequency:450});
+    if(shimmerFilter)shimmerFilter.set({baseFrequency:800});
+  }catch(e){}
+}
+
+function updateDrone(){updateSoundContinuous()}
+
+// === PHASE + HEARTBEAT ===
+function updatePhase(dt){
+  var ratio=aliveCount/Math.max(1,initialCount);
+
+  if(ratio>0.7){
+    phase="equilibrium";
+    deletionInterval=0.5+rand()*0.4;
+    document.getElementById("phase-label").textContent="network topology · equilibrium · gen "+generation;
+    hbTargetBPM=72+Math.sin(gTime*0.05)*2;
+  }else if(ratio>0.3){
+    phase="erosion";
+    deletionInterval=0.35+rand()*0.3-(0.7-ratio)*1.2;
+    deletionInterval=Math.max(0.15,deletionInterval);
+    document.getElementById("phase-label").textContent="pattern erosion · "+Math.round(ratio*100)+"% remaining";
+    var steps=Math.floor((0.7-ratio)/0.08);
+    hbTargetBPM=72-steps*8;
+    hbSurgeTimer-=dt;
+    if(rand()<0.002){hbSurgeTimer=1.5+rand()*2}
+    if(hbSurgeTimer>0){hbTargetBPM+=15}
+    for(var i=0;i<nodes.length;i++){
+      if(nodes[i].alive&&nodes[i].connectionCount<=2)nodes[i].stress+=dt*0.02;
+    }
+  }else if(ratio>0.05&&!cascadeTriggered){
+    phase="cascade";cascadeTriggered=true;
+    deletionInterval=0.15;
+    document.getElementById("phase-label").textContent="CASCADE THRESHOLD BREACH · phase transition";
+    document.getElementById("phase-label").style.color="rgba(196,75,40,0.6)";
+  }else if(cascadeTriggered&&ratio>0.05){
+    phase="cascade";
+    deletionInterval=0.08+rand()*0.15;
+    if(!hbInBurst){
+      hbTargetBPM=0;
+      if(rand()<0.02){hbInBurst=true;hbBurstCount=2+Math.floor(rand()*4)}
+    }else{
+      hbTargetBPM=90+rand()*50;
+      hbBurstCount--;
+      if(hbBurstCount<=0)hbInBurst=false;
+    }
+  }else{
+    phase="remnant";deletionInterval=999;
+    document.getElementById("phase-label").textContent="remnant · "+aliveCount+" isolated · gen "+generation;
+    document.getElementById("phase-label").style.color="rgba(140,120,100,0.25)";
+    hbTargetBPM=0;
+    remnantTimer+=dt;
+    if(remnantTimer>6){generation++;resetSoundForGen();initNetwork()}
+  }
+
+  heartbeatBPM+=(hbTargetBPM-heartbeatBPM)*0.05;
+  heartbeatBPM=Math.max(0,heartbeatBPM);
+  if(heartbeatBPM>5){hbActualInterval=60/heartbeatBPM*(0.9+rand()*0.2)}
+}
+
+function updateStatus(){
+  var ratio=aliveCount/Math.max(1,initialCount);
+  displayedRate+=(deletionRate-displayedRate)*0.15;
+  var repInt=Math.max(0,(ratio*0.7+0.3)*100);
+  if(phase==="cascade")repInt=Math.max(15,ratio*120);
+  if(phase==="remnant")repInt=Math.max(0,ratio*100);
+  document.getElementById("sr-integrity").textContent=repInt.toFixed(1)+"%";
+  document.getElementById("sr-redundancy").textContent=Math.max(0,ratio>0.5?1.0:ratio*2).toFixed(3);
+  var coh="STABLE";
+  if(ratio<0.7)coh="WITHIN TOLERANCE";if(ratio<0.4)coh="ADAPTING";
+  if(phase==="cascade")coh="RECALCULATING";if(phase==="remnant")coh="FRAGMENTED";
+  document.getElementById("sr-coherence").textContent=coh;
+  var tag="NOMINAL";
+  if(ratio<0.5)tag="WITHIN TOLERANCE";
+  if(ratio<0.3)tag="MONITORING";
+  if(phase==="cascade")tag="ANOMALY DETECTED";if(phase==="remnant")tag="NETWORK LOST";
+  document.getElementById("sr-tag").textContent=tag;
+  if(phase==="cascade"||phase==="remnant"){
+    document.getElementById("sr-tag").style.borderColor="rgba(196,75,40,0.4)";
+    document.getElementById("sr-tag").style.color="rgba(196,75,40,0.6)";
+  }else{
+    document.getElementById("sr-tag").style.borderColor="rgba(58,255,138,0.15)";
+    document.getElementById("sr-tag").style.color="rgba(58,255,138,0.45)";
+  }
+  document.getElementById("sr-rate").textContent=displayedRate.toFixed(2)+"/s";
+}
+
+function triggerEventFlare(){
+  var ratio=aliveCount/Math.max(1,initialCount);
+  eventFlashAlpha=0.06*ratio;eventFlashActive=true;
+  for(var i=0;i<nodes.length;i++){if(nodes[i].alive)nodes[i].brightness=0.5+0.5*ratio}
+  for(var i=0;i<connections.length;i++){if(connections[i].alive)connections[i].alpha=1.0}
+  setTimeout(function(){eventFlashActive=false},1500);
+}
+
+// === RENDER ===
+var lastT=performance.now();
+function frame(){
+  requestAnimationFrame(frame);
+  var now=performance.now(),dt=Math.min((now-lastT)/1000,0.06);lastT=now;
+  if(!started){MX.fillStyle="#0a0810";MX.fillRect(0,0,W,H);return}
+  gTime+=dt;
+  MX.fillStyle="rgba(10,8,16,0.06)";MX.fillRect(0,0,W,H);
+
+  updatePhase(dt);
+
+  if(phase!=="remnant"){
+    deletionTimer+=dt;
+    if(deletionTimer>=deletionInterval){
+      deletionTimer=0;
+      var v=selectVictim();
+      if(v>=0){killNode(v);playDeath();updateDrone()}
+    }
+  }
+
+  if(phase==="equilibrium"||phase==="erosion"){
+    speciationTimer+=dt;
+    if(speciationTimer>3+rand()*4){
+      speciationTimer=0;
+      if(aliveCount<initialCount*0.95){
+        var par=-1;
+        for(var t=0;t<20;t++){var idx=Math.floor(rand()*nodes.length);if(nodes[idx].alive){par=idx;break}}
+        if(par>=0){
+          var pn=nodes[par];
+          var nn=createNode(pn.x+rand()*60-30,pn.y+rand()*60-30,nodes.length,gTime);
+          nn.brightness=0;nodes.push(nn);
+          connections.push({a:par,b:nodes.length-1,alive:true,alpha:0.5,ghostAlpha:0});
+          nodes[par].connectionCount++;nn.connectionCount++;aliveCount++;
+        }
+      }
+    }
+  }
+
+  if(Math.floor(gTime)!==lastSecond){deletionRate=deletionsThisSecond;deletionsThisSecond=0;lastSecond=Math.floor(gTime)}
+
+  // Continuous sound evolution every ~2 seconds
+  sndUpdateTimer+=dt;
+  if(sndUpdateTimer>2){sndUpdateTimer=0;updateSoundContinuous()}
+
+  if(heartbeatBPM>5){
+    heartbeatTimer+=dt;
+    if(heartbeatTimer>=hbActualInterval){heartbeatTimer=0;heartbeatPhase=1.0;playHeartbeat()}
+    heartbeatPhase*=0.92;
+  }else{heartbeatPhase*=0.95}
+
+  document.getElementById("hb-dot").style.transform="scale("+(1+heartbeatPhase*1.5)+")";
+  document.getElementById("hb-dot").style.background="rgba(61,232,200,"+(0.2+heartbeatPhase*0.6)+")";
+  document.getElementById("hb-bpm").textContent=heartbeatBPM>5?Math.round(heartbeatBPM):"--";
+
+  if(eventFlashAlpha>0){
+    eventFlashAlpha*=0.96;
+    document.getElementById("event-flash").style.background="rgba(61,232,200,"+eventFlashAlpha+")";
+    if(eventFlashAlpha<0.001)eventFlashAlpha=0;
+  }
+
+  var breath=Math.sin(gTime*(heartbeatBPM>5?heartbeatBPM/72:0.3)*0.5)*0.15;
+  var ratio=aliveCount/Math.max(1,initialCount);
+
+  // === CONNECTIONS ===
+  for(var i=0;i<connections.length;i++){
+    var c=connections[i],na=nodes[c.a],nb=nodes[c.b];
+    if(!na||!nb)continue;
+    if(c.alive){
+      var dx=nb.x-na.x,dy=nb.y-na.y,d=Math.sqrt(dx*dx+dy*dy);
+      if(eventFlashActive){
+        var fa=0.3*ratio*c.alpha;
+        MX.strokeStyle="rgba(240,250,255,"+fa+")";MX.lineWidth=1.2;
+      }else{
+        var ba=(1-d/250)*0.12;if(ba<=0)continue;
+        var pulse=Math.sin(gTime*0.8+i*0.3)*0.3+0.7;
+        var a=ba*pulse*c.alpha*(0.85+breath);
+        MX.strokeStyle="rgba(180,200,210,"+a+")";MX.lineWidth=0.4+c.alpha*0.6;
+      }
+      MX.beginPath();MX.moveTo(na.x,na.y);
+      var mx=(na.x+nb.x)/2+Math.sin(gTime*0.2+i)*8;
+      var my=(na.y+nb.y)/2+Math.cos(gTime*0.2+i)*8;
+      MX.quadraticCurveTo(mx,my,nb.x,nb.y);MX.stroke();
+      if(!eventFlashActive&&rand()<0.003*c.alpha){
+        var t2=rand();
+        MX.fillStyle="rgba(61,232,200,0.04)";
+        MX.beginPath();MX.arc(na.x*(1-t2)+nb.x*t2,na.y*(1-t2)+nb.y*t2,1,0,Math.PI*2);MX.fill();
+      }
+    }else if(c.ghostAlpha>0.01){
+      c.ghostAlpha*=0.985;
+      MX.strokeStyle="rgba(139,58,26,"+(c.ghostAlpha*0.08)+")";MX.lineWidth=0.3;
+      MX.beginPath();MX.moveTo(na.x,na.y);MX.lineTo(nb.x,nb.y);MX.stroke();
+    }
+  }
+
+  // === NODES ===
+  for(var i=0;i<nodes.length;i++){
+    var n=nodes[i];
+    if(n.alive){
+      var osc=Math.sin(gTime*n.freq+n.phase)*0.15;
+      if(phase==="remnant")osc*=3.5;
+      var b=n.brightness*(0.85+breath+osc);
+      b=Math.min(1,Math.max(0.08,b));
+      n.brightness+=((0.5+rand()*0.3)*n.depthScale-n.brightness)*0.01;
+      var age=gTime-n.born,fadeIn=Math.min(1,age/3);
+      var da=0.6+n.depthScale*0.4;
+      var stress=Math.min(1,n.stress);
+      var cr=Math.round(61+stress*160),cg=Math.round(232-stress*180),cb=Math.round(200-stress*170);
+
+      var glowR=n.radius*(3+b*2);
+      var glow=MX.createRadialGradient(n.x,n.y,0,n.x,n.y,glowR);
+      glow.addColorStop(0,"rgba("+cr+","+cg+","+cb+","+(0.08*b*fadeIn*da)+")");
+      glow.addColorStop(0.5,"rgba("+cr+","+cg+","+cb+","+(0.02*b*fadeIn*da)+")");
+      glow.addColorStop(1,"rgba(0,0,0,0)");
+      MX.fillStyle=glow;MX.fillRect(n.x-glowR,n.y-glowR,glowR*2,glowR*2);
+
+      var coreR=n.radius*(0.8+b*0.3);
+      var core=MX.createRadialGradient(n.x,n.y,0,n.x,n.y,coreR);
+      core.addColorStop(0,"rgba("+Math.min(255,cr+60)+","+Math.min(255,cg+30)+","+Math.min(255,cb+20)+","+(0.7*b*fadeIn*da)+")");
+      core.addColorStop(0.6,"rgba("+cr+","+cg+","+cb+","+(0.3*b*fadeIn*da)+")");
+      core.addColorStop(1,"rgba(0,0,0,0)");
+      MX.fillStyle=core;MX.beginPath();MX.arc(n.x,n.y,coreR,0,Math.PI*2);MX.fill();
+
+      n.x+=(n.targetX-n.x)*0.001+Math.sin(gTime*0.1+n.phase)*0.15;
+      n.y+=(n.targetY-n.y)*0.001+Math.cos(gTime*0.1+n.phase*0.7)*0.15;
+    }else if(n.ghostAlpha>0.01){
+      n.ghostAlpha*=0.992;
+      var gr2=MX.createRadialGradient(n.x,n.y,0,n.x,n.y,n.radius*2);
+      gr2.addColorStop(0,"rgba(180,80,30,"+(0.15*n.ghostAlpha)+")");
+      gr2.addColorStop(1,"rgba(0,0,0,0)");
+      MX.fillStyle=gr2;MX.beginPath();MX.arc(n.x,n.y,n.radius*2,0,Math.PI*2);MX.fill();
+    }
+  }
+
+  if(rand()<0.3){MX.fillStyle="rgba(61,232,200,0.015)";MX.fillRect(rand()*W,rand()*H,1,1)}
+  if(rand()<0.1&&phase!=="equilibrium"){MX.fillStyle="rgba(139,58,26,0.02)";MX.fillRect(rand()*W,rand()*H,1,1)}
+
+  document.getElementById("node-count").textContent=aliveCount;
+  var cEl=document.getElementById("node-count");
+  if(ratio>0.5)cEl.style.color="rgba(61,232,200,"+(0.15+ratio*0.15)+")";
+  else if(ratio>0.2)cEl.style.color="rgba(212,168,83,"+(0.15+ratio*0.25)+")";
+  else cEl.style.color="rgba(139,58,26,"+(0.1+ratio*0.3)+")";
+  updateStatus();
+
+  var elapsed=gTime,mins=Math.floor(elapsed/60),secs=Math.floor(elapsed%60);
+  document.getElementById("elapsed-time").textContent=String(mins).padStart(2,"0")+":"+String(secs).padStart(2,"0");
+}
+frame();
+
+// === START ===
+function go(){
+  if(started)return;
+  document.getElementById("sound-prompt").classList.add("hidden");
+  document.getElementById("toggle-statement").style.display="block";
+  initNetwork();started=true;startTime=performance.now();
+
+  // FIX #5: Show interaction hint after 4 seconds, fade after 10
+  setTimeout(function(){document.getElementById("interaction-hint").classList.add("show")},4000);
+  setTimeout(function(){document.getElementById("interaction-hint").classList.remove("show")},14000);
+
+  // FIX #6: Guarded Tone.js start
+  if(ToneLoaded&&typeof Tone!=="undefined"){
+    Tone.start().then(function(){initSound()}).catch(function(e){console.warn("Audio failed:",e)});
+  }
+}
+
+document.getElementById("sound-prompt").addEventListener("click",go);
+document.getElementById("sound-prompt").addEventListener("touchend",function(e){e.preventDefault();go()});
+
+// FIX #2: Double-tap for BOTH click and touch
+var lastClickTime=0;
+MC.addEventListener("click",function(e){
+  var now=Date.now();
+  if(now-lastClickTime<400){triggerEventFlare()}
+  lastClickTime=now;
+});
+
+// Touch-based double-tap (iOS)
+var lastTouchTime=0,touchMoved=false;
+MC.addEventListener("touchstart",function(e){touchMoved=false},{passive:true});
+MC.addEventListener("touchmove",function(e){touchMoved=true},{passive:true});
+MC.addEventListener("touchend",function(e){
+  if(touchMoved)return;
+  e.preventDefault(); // prevent ghost click + zoom
+  var now=Date.now();
+  if(now-lastTouchTime<400){triggerEventFlare()}
+  lastTouchTime=now;
+});
+
+document.getElementById("toggle-statement").addEventListener("click",function(e){
+  e.stopPropagation();var p=document.getElementById("statement");p.classList.toggle("open");
+  if(p.classList.contains("open")){document.getElementById("status-readout").style.display="none";this.textContent="Close"}
+  else{document.getElementById("status-readout").style.display="block";this.textContent="Statement"}
+});
+
+window.addEventListener("resize",resize);
+
+// Load Tone.js asynchronously
+loadTone();
+</script>
+</body>
+</html>
