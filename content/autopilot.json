@@ -1,5 +1,6 @@
 {
-  "enabled": true,
+  "enabled": false,
+  "disabled_reason": "2026-08-02: the campaign dispatches are two-paragraph items without sources in the body. The standard for this project is the essay — English only, in depth, every claim carried by a numbered reference. Thin items published automatically under the same name dilute that. The nine already published stay; the remaining fifteen are to be folded into essays instead of shipped as they are. Set back to true only if the campaign items are rewritten to essay standard.",
   "author": "Nirodha Collective",
   "campaign_name": "Question the Predator Principle",
   "cadence": "Monday, Wednesday, Friday",
