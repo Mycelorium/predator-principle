@@ -1,0 +1,69 @@
+name: Build site and deploy Pages
+
+# One format: the essays. This workflow regenerates the site feeds, the sitemap
+# and llms.txt from docs/essays-feed.xml, commits them, and deploys Pages.
+#
+# It replaces the old "Campaign autopilot and Pages deploy". Note that commits
+# pushed with GITHUB_TOKEN do not trigger other workflows, so the deploy has to
+# happen here rather than by waiting for pages.yml.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/essays-feed.xml"
+      - "docs/essays-feed.json"
+      - "scripts/build-site.mjs"
+      - ".github/workflows/site.yml"
+  schedule:
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build feeds, sitemap and llms.txt from the essay corpus
+        run: node scripts/build-site.mjs
+
+      - name: Validate the claim register and the required files
+        run: node scripts/validate.mjs
+
+      - name: Commit generated files
+        run: |
+          git config user.name "Nirodha Collective"
+          git config user.email "285060945+Mycelorium@users.noreply.github.com"
+          git add docs/feed.xml docs/feed.json docs/sitemap.xml docs/llms.txt
+          if git diff --cached --quiet; then
+            echo "Generated files are already up to date."
+          else
+            git commit -m "build: regenerate feeds, sitemap and llms.txt from the essay corpus"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
