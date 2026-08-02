@@ -18,9 +18,13 @@ This map is designed to prevent the thesis from hiding behind rhetoric.
 ## Strongest counterargument
 
 Predation is not simply “useless”. Robert Paine's keystone-predator work and
-later trophic-cascade research show that predators can maintain diversity and
-ecosystem function. The project's answer is not to deny those results. It is to
-distinguish an evolved ecological relationship, embedded in feedback, from the
+later trophic-cascade research show that removing predators can reduce diversity
+and destabilise ecosystem function. Those results stand, and they are recorded
+as `C006`. What does not follow is the inference usually attached to them: that
+the principle is therefore good. They measure how deeply a system has been
+organised around killing — its dependence — not the worth of the arrangement.
+The project's answer keeps the finding and refuses the inference, and
+distinguishes an ecological relationship still embedded in feedback from the
 generalised Predator Principle: extraction that escapes feedback and erodes its
 own higher-level substrate.
 

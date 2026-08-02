@@ -8,9 +8,13 @@ asymmetric extraction, not individual predators.
 
 ## Isn't predation necessary for ecosystem balance?
 
-Sometimes it is crucial within current ecosystems. Keystone-predator and
-trophic-cascade research is among the strongest counterevidence to simplistic
-versions of the thesis. The systems hypothesis explicitly includes it.
+Within current ecosystems it is often load-bearing. Keystone-predator and
+trophic-cascade research shows what happens when a pillar is pulled out of a
+structure raised on it: the structure falls. That measures dependence, not merit.
+The equilibrium that came out of the Cambrian is an order held by mutual threat;
+calling it "the balance of nature" renames it without changing it. The findings
+stand in the register as `C006`. The conclusion usually attached to them does
+not follow.
 
 ## Is predation literally an evolutionary error?
 

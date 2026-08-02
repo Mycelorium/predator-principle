@@ -9,9 +9,10 @@ not sustainable, regardless of its technical capability.
 ## The precise claim
 
 Animal predation and the Predator Principle are not synonyms. Predation is an
-ecological interaction. It can regulate populations, maintain diversity in
-specific contexts, and support ecosystem function. Denying this would weaken
-the argument.
+ecological interaction; in specific contexts, removing it reduces diversity and
+destabilises ecosystem function. That record is kept, because denying it would
+weaken the argument — and because it states what a system built around killing
+depends on, not what the killing is worth.
 
 The **Predator Principle** is a multiscale system pattern. A strategy approaches
 the pattern when it displays these five properties:
@@ -39,7 +40,8 @@ system level.**
   wild animals. `[E:C002, E:C003]`
 - Humans differ from non-human predators in scale and selectivity, and have
   transformed planetary biomass and land systems. `[E:C004, E:C005]`
-- Predators can also maintain diversity and ecological function. `[E:C006]`
+- Removing predators can reduce diversity and destabilise ecological function —
+  a measure of how far a system has been organised around them. `[E:C006]`
 
 ## What remains interpretation or hypothesis
 

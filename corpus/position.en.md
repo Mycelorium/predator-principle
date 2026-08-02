@@ -18,10 +18,13 @@ the next system level.
 
 ## What we claim
 
-Predation is a real and evolutionarily successful interaction. In existing
-ecosystems predators can regulate populations, maintain diversity, and shape
-trophic cascades. This does not imply asymmetric extraction should be a general
-organising principle for civilisation or intelligence.
+Predation is real and evolutionarily successful. In existing ecosystems,
+removing predators can reduce diversity and trigger trophic cascades. That
+measures how thoroughly those systems have been organised around killing — their
+dependence on it — not the value of the arrangement. Success is not
+justification, and dependence is not merit. Nothing in that record makes
+asymmetric extraction a fit organising principle for civilisation or
+intelligence.
 
 Cooperation and mechanisms that limit internal conflict were central to major
 evolutionary transitions. Perceived predation risk can reduce reproduction;
