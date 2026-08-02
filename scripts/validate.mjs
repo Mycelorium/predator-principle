@@ -61,6 +61,7 @@ try {
 for (const path of [
   'docs/index.html',
   'docs/foundation.html',
+  'docs/kadamakara.html',
   'docs/styles.css',
   'docs/llms.txt',
   'docs/feed.xml',

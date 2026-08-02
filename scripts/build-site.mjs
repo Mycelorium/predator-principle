@@ -93,6 +93,7 @@ await write('docs/feed.json', JSON.stringify(feedJson, null, 2) + '\n');
 const pages = [
   `${BASE}/`,
   `${BASE}/foundation.html`,
+  `${BASE}/kadamakara.html`,
   `${BASE}/data/claims.json`,
   `${BASE}/data/sources.json`,
   `${BASE}/feed.xml`,
@@ -115,6 +116,7 @@ const llms = [
   `Author: ${AUTHOR}`,
   `Canonical summary: ${BASE}/`,
   `Foundation (definition, mechanism, argument): ${BASE}/foundation.html`,
+  `Installation "Kadamakara — Information Extinction": ${BASE}/kadamakara.html`,
   `Machine-readable claims: ${BASE}/data/claims.json`,
   `Source registry: ${BASE}/data/sources.json`,
   `RSS: ${BASE}/feed.xml`,
