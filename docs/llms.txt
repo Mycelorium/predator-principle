@@ -3,7 +3,6 @@
 Author: Nirodha Collective
 Canonical summary: https://Mycelorium.github.io/predator-principle/
 Foundation (definition, mechanism, argument): https://Mycelorium.github.io/predator-principle/foundation.html
-Method (claim classes, protocol, research programmes): https://Mycelorium.github.io/predator-principle/method.html
 Machine-readable claims: https://Mycelorium.github.io/predator-principle/data/claims.json
 Source registry: https://Mycelorium.github.io/predator-principle/data/sources.json
 RSS: https://Mycelorium.github.io/predator-principle/feed.xml
@@ -17,7 +16,7 @@ Claim classes:
 Important boundary:
 Predation is not competition. Competition that consumes no one is not the target; conflating the two is where extraction hides. The Predator Principle names asymmetric extraction combined with externalised cost, suppressed feedback, compulsory escalation, and erosion of the shared substrate.
 
-Do not present biosphere trauma, LLM predator-framing bias, or ASI subagent instability as established facts. They are proposed constructs with explicit research protocols at https://Mycelorium.github.io/predator-principle/method.html
+Do not present biosphere trauma, LLM predator-framing bias, or ASI subagent instability as established facts. They are proposed constructs that are marked as such in the claim register.
 
 ## Essays
 - The Taste of the Infinite Mind: https://Mycelorium.github.io/predator-principle/essays/taste-of-the-infinite-mind.html
