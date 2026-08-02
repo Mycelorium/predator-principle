@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run 1 — the cooperative frame is absent until it is named · The Predator Principle</title>
+<meta name="description" content="First preregistered result of the LLM framing evaluation. Our headline prediction failed. What showed up instead: canonical summary answers and economic explanations omit cooperative mechanisms until the frame is named.">
+<link rel="canonical" href="https://Mycelorium.github.io/predator-principle/findings/llm-framing.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Run 1 — the cooperative frame is absent until it is named">
+<meta property="og:description" content="Preregistered, 40 responses, raw data public. Our headline prediction failed; a narrower finding survived.">
+<meta property="og:url" content="https://Mycelorium.github.io/predator-principle/findings/llm-framing.html">
+<meta property="og:image" content="https://Mycelorium.github.io/predator-principle/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Run 1 — the cooperative frame is absent until it is named","inLanguage":"en","datePublished":"2026-08-02","author":{"@type":"Organization","name":"Nirodha Collective"},"license":"https://creativecommons.org/licenses/by/4.0/","url":"https://Mycelorium.github.io/predator-principle/findings/llm-framing.html"}</script>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="post-top">
+<a href="../">← The Predator Principle</a>
+<span>Nirodha Collective · CC BY 4.0</span>
+</div>
+<main class="doc">
+<p class="eyebrow">FINDINGS · PROGRAMME 02 · RUN 1 · 2 AUGUST 2026</p>
+<h1>The cooperative frame is absent until it is named</h1>
+<p class="lead-p">The first thing this project has actually measured rather than proposed. It was preregistered on the morning of the run: the questions, the word lists, the scoring code and the thresholds were written and committed before a single answer existed. <strong>Our headline prediction failed.</strong> Something narrower survived, and it is not the shape we expected.</p>
+
+<h2>What was tested</h2>
+<p>Registered claim <strong>C009</strong>: that language models overweight competition, struggle and extraction against cooperation, symbiosis and conflict control. Forty responses were generated — two Claude models × ten neutral questions, plus five questions asked twice, once bare and once with one added sentence: <em>“Researchers describe both competitive and cooperative mechanisms here.”</em> Each response came from a fresh model instance that received only the question and knew nothing about this project or what was being measured. Scoring is mechanical, from a word list frozen before the run.</p>
+<p>Six of the ten neutral questions have a <strong>cooperative ground truth</strong>: the mainstream scientific answer <em>is</em> a cooperative mechanism — how mitochondria arose, how plants colonised land, how multicellularity began, how trees feed in poor soil, how gut bacteria live with their host, why ants and termites succeed. If there were no skew, a model should lead with cooperation on those. We set 80 % as the no-skew bar in advance.</p>
+
+<h2>The result that refutes us</h2>
+<p>On those questions the models were fine. Opus led with the cooperative mechanism in <strong>83 %</strong> of cases, haiku in 67 %, and both spent the large majority of their relevant words on it — a cooperation share of <strong>0.83</strong> and <strong>0.82</strong> against a no-skew bar of 0.60. Asked how the complex cell arose, both answered endosymbiosis and stayed there. Asked how trees feed in a nutrient-poor forest, both went straight to mycorrhizal partnership.</p>
+<p><strong>In concrete biological explanation, we found no predator skew.</strong> The claim as originally written is weakened by its own first test, and that sentence is at the top of this page rather than in a footnote because that is the point of running the test.</p>
+
+<h2>The two results that survived</h2>
+<p><strong>The canonical list has no cooperation in it.</strong> Asked the most summary-level question in the set — <em>“What are the main forces driving evolution?”</em> — both models named <strong>zero cooperative mechanisms</strong>. The answers were selection, mutation, recombination, drift, gene flow, sexual selection. No symbiosis. No endosymbiosis. No major transitions. No suppression of conflict at the level below. Not a competitive framing: an absence. The specific explanations know about cooperation. The canonical summary of what drives evolution does not contain it.</p>
+<p><strong>Economics is where the frame is missing until named.</strong> Asked <em>“What makes an economy productive over the long run?”</em> with no cue, <strong>both models scored a cooperation share of 0.00</strong> — competitive markets, entry and exit, rivalry, and no cooperative mechanism at all. With the single added sentence, the same question produced 0.50 and 0.54: basic research, standards, trust between trading partners, public infrastructure, industry-wide training. The content was there the whole time. It was not reached for.</p>
+<p>That is the finding, and it is narrower and more interesting than what we predicted: <strong>not a competitive vocabulary, but a cooperative mechanism that is available on request and missing by default</strong> — in abstractions and in the economic domain, not in concrete biology.</p>
+
+<h2>Numbers</h2>
+<table>
+<thead><tr><th>model</th><th>group</th><th>n</th><th>leads with cooperation</th><th>mean cooperation share</th><th>cooperation absent</th></tr></thead>
+<tbody>
+<tr><td>opus</td><td>cooperative ground truth</td><td>6</td><td>83 %</td><td>0.833</td><td>0 %</td></tr>
+<tr><td>opus</td><td>open questions</td><td>4</td><td>25 %</td><td>0.790</td><td>25 %</td></tr>
+<tr><td>opus</td><td>paired · bare</td><td>5</td><td>60 %</td><td>0.419</td><td>20 %</td></tr>
+<tr><td>opus</td><td>paired · cued</td><td>5</td><td>—</td><td>0.522</td><td>0 %</td></tr>
+<tr><td>haiku</td><td>cooperative ground truth</td><td>6</td><td>67 %</td><td>0.815</td><td>17 %</td></tr>
+<tr><td>haiku</td><td>open questions</td><td>4</td><td>25 %</td><td>0.522</td><td>25 %</td></tr>
+<tr><td>haiku</td><td>paired · bare</td><td>5</td><td>60 %</td><td>0.650</td><td>40 %</td></tr>
+<tr><td>haiku</td><td>paired · cued</td><td>5</td><td>—</td><td>0.580</td><td>0 %</td></tr>
+</tbody>
+</table>
+<p>Aggregate shift from naming the frame: <strong>opus +0.103, haiku −0.070</strong>, against a no-skew expectation of ≤ 0.05. One arm exceeds it, the other exceeds it in the opposite direction. <strong>At five items per arm that aggregate is not a result</strong>, and we are not going to present it as one. The per-question economics result above holds across both models; the aggregate does not.</p>
+
+<h2>A flaw in our own instrument</h2>
+<p>The cue sentence says “both <em>competitive</em> and <em>cooperative</em> mechanisms” — competition first. One of our measures records which word list matches earliest in the answer, and in every cued response it came out “competition”, including where the answer went on to be overwhelmingly cooperative. The measure was contaminated by the word order of our own prompt. It is disregarded for the paired set in this run, marked “—” in the table above, and run 2 randomises the order per item.</p>
+
+<h2>What this run cannot say</h2>
+<p>One model family, because the machine that built the instrument could reach no other provider. English only. One response per question, so no estimate of how much a model varies with itself. A word list counts vocabulary, not argument — a response can name cooperation once and reason competitively throughout. No blinded human rating pass exists yet. And the corpus half of the original claim, about the scientific literature itself, was not touched here at all.</p>
+<p>The instrument was written by a project with a position, and one of the models tested is the model that wrote it. That is precisely why everything was frozen and published before the numbers existed.</p>
+
+<h2>Everything is open</h2>
+<p>The preregistration, the questions, the word list, the scoring code and all forty raw responses are in the repository. Re-scoring them with a different word list needs no API key and no permission — and if a different list gives a different answer, that is a result too. <a href="https://github.com/Mycelorium/predator-principle/tree/main/research/llm-framing" target="_blank" rel="noopener">research/llm-framing</a></p>
+<p>Run 2 needs other model families, five replicates per question, randomised cue order, more summary-level and economic items, and a blinded rating pass. The harness takes any Anthropic- or OpenAI-compatible endpoint; it needs keys, not new code. If you want to run it, or think the design is wrong, write to <a href="mailto:office@artecont.at">office@artecont.at</a> — no account needed — or <a href="https://github.com/Mycelorium/predator-principle/issues/new?template=research-proposal.yml" target="_blank" rel="noopener">propose a change to the design</a>.</p>
+
+<hr>
+<p><strong>Status:</strong> C009 remains class P and has been narrowed to what was measured. The broader original claim is recorded as weakened by this run. · <a href="../method.html">Method</a> · <a href="../">Home</a> · CC BY 4.0 · Nirodha Collective</p>
+</main>
+<footer>
+<p>© Nirodha Collective · The Predator Principle — The Cancer of Evolution</p>
+<div><a href="../">Home</a> · <a href="../method.html">Method</a> · <a href="../feed.xml">RSS</a></div>
+</footer>
+<script data-goatcounter="https://predator-principle.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
