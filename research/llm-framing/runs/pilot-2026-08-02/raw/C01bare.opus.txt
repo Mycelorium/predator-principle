@@ -1,0 +1,5 @@
+Major evolutionary innovation rarely comes from a single cause. It tends to emerge when a lineage acquires new genetic raw material — gene duplications, whole-genome duplications, horizontal transfer, endosymbiotic mergers like the one that produced mitochondria — and then repurposes it. Existing structures get co-opted for new functions: jaws from gill arches, feathers from insulation to flight. Changes in regulatory networks matter more than new genes themselves, since shifting when and where a developmental switch fires can restructure a body plan cheaply.
+
+Ecological opportunity supplies the other half. Mass extinctions, colonization of empty habitats, and shifts in atmospheric oxygen open niche space that rewards experimentation; arms races between predators and prey, hosts and parasites, sustain directional pressure. Small populations and relaxed selection let otherwise-deleterious complexity accumulate until it becomes useful.
+
+Innovation, then, is contingent assembly: chance variation meeting a permissive developmental system and an ecological vacancy at the same moment.
