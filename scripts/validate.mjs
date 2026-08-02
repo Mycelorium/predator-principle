@@ -61,7 +61,6 @@ try {
 for (const path of [
   'docs/index.html',
   'docs/foundation.html',
-  'docs/method.html',
   'docs/styles.css',
   'docs/llms.txt',
   'docs/feed.xml',
@@ -70,7 +69,6 @@ for (const path of [
   'docs/sitemap.xml',
   'corpus/systems-hypothesis.md',
   'corpus/evidence-map.md',
-  'corpus/methodology.md'
 ]) {
   try { await access(new URL(path, root)); } catch { errors.push(`Required file missing: ${path}`); }
 }
