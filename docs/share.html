@@ -211,10 +211,9 @@
   }
 
   Promise.all([
-    getJSON('feed.json').catch(function () { return { items: [] }; }),
-    getJSON('essays-feed.json').catch(function () { return { items: [] }; })
+    getJSON('feed.json').catch(function () { return { items: [] }; })
   ]).then(function (res) {
-    var items = toItems(res[0], 'DISPATCH').concat(toItems(res[1], 'ESSAY'));
+    var items = toItems(res[0], 'ESSAY');
     items.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
     render(items);
   }).catch(function (error) {
