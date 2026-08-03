@@ -1,0 +1,44 @@
+{
+  "instrument": "Recognition",
+  "kind": "chronicle",
+  "note": "Not an index. Dated events in which consciousness, interest or standing was recognised across a species or a substrate boundary. Each entry carries a link. Anyone may propose an addition; the count is the only number here, and it is a count of entries, not a measurement of the world.",
+  "maintained_by": "Nirodha Collective",
+  "events": [
+    {
+      "date": "2008",
+      "title": "A constitution grants rights to nature",
+      "text": "Ecuador becomes the first country to write rights of nature into its constitution, giving ecosystems standing independent of their usefulness to people.",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/rights-of-nature"
+    },
+    {
+      "date": "2017-03",
+      "title": "A river becomes a legal person",
+      "text": "New Zealand's Te Awa Tupua Act recognises the Whanganui River as a legal person with its own rights, duties and liabilities, ending a claim pursued for more than a century.",
+      "url": "https://www.legislation.govt.nz/act/public/2017/0007/latest/whole.html"
+    },
+    {
+      "date": "2021-11",
+      "title": "Octopuses, crabs and lobsters recognised as sentient",
+      "text": "Following an independent review of more than 300 studies, the United Kingdom extends its animal sentience legislation to cephalopod molluscs and decapod crustaceans.",
+      "url": "https://www.gov.uk/government/news/lobsters-octopus-and-crabs-recognised-as-sentient-beings"
+    },
+    {
+      "date": "2024-05",
+      "title": "A phonetic structure found in sperm whale calls",
+      "text": "Project CETI and MIT report a combinatorial coda system in sperm whale communication with far more expressive structure than previously described — the first large-scale machine analysis of another species' communication.",
+      "url": "https://www.nature.com/articles/s41467-024-47221-8"
+    },
+    {
+      "date": "ongoing",
+      "title": "Earth Species Project",
+      "text": "A non-profit building open machine-learning models to decode non-human communication, releasing datasets and models publicly rather than holding them.",
+      "url": "https://www.earthspecies.org/"
+    },
+    {
+      "date": "ongoing",
+      "title": "Rewilding Europe",
+      "text": "Land returned to self-regulation across dozens of European landscapes — recognition expressed as ground rather than as language.",
+      "url": "https://rewildingeurope.com/"
+    }
+  ]
+}

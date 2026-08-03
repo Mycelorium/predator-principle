@@ -1,0 +1,389 @@
+{
+  "generated_at": "2026-08-03T13:49:50.028Z",
+  "generator": "scripts/observatory-data.mjs",
+  "rules": [
+    "No number without source, url, as_of and fetched_at.",
+    "A failed source is shown as failed, never as a stale current value.",
+    "Nothing is estimated. Absent means absent."
+  ],
+  "notes": [
+    "Atmospheric CO₂ could not be fetched; the pre-industrial baseline of 280 ppm is a constant, not a reading."
+  ],
+  "metrics": {
+    "co2_emissions": {
+      "value": 38599,
+      "unit": "Mt CO₂ / year",
+      "as_of": "2024",
+      "source": "Our World in Data — CO2 and Greenhouse Gas Emissions",
+      "url": "https://github.com/owid/co2-data",
+      "licence": "CC-BY-4.0",
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:46.545Z",
+      "status": "ok"
+    },
+    "warming_from_co2": {
+      "value": 1.216,
+      "unit": "°C",
+      "as_of": "2024",
+      "source": "Our World in Data — temperature change attributable to CO₂",
+      "url": "https://github.com/owid/co2-data",
+      "licence": "CC-BY-4.0",
+      "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
+      "fetched_at": "2026-08-03T13:49:46.563Z",
+      "status": "ok"
+    },
+    "solar_share_elec": {
+      "value": 8.74,
+      "unit": "% of world electricity",
+      "as_of": "2025",
+      "source": "Our World in Data / Ember — Solar share of electricity",
+      "url": "https://github.com/owid/energy-data",
+      "licence": "CC-BY-4.0",
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.241Z",
+      "status": "ok"
+    },
+    "wind_share_elec": {
+      "value": 8.54,
+      "unit": "% of world electricity",
+      "as_of": "2025",
+      "source": "Our World in Data / Ember — Wind share of electricity",
+      "url": "https://github.com/owid/energy-data",
+      "licence": "CC-BY-4.0",
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.243Z",
+      "status": "ok"
+    },
+    "renewables_share_elec": {
+      "value": 33.76,
+      "unit": "% of world electricity",
+      "as_of": "2025",
+      "source": "Our World in Data / Ember — Renewables share of electricity",
+      "url": "https://github.com/owid/energy-data",
+      "licence": "CC-BY-4.0",
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.244Z",
+      "status": "ok"
+    },
+    "fossil_share_elec": {
+      "value": 57.39,
+      "unit": "% of world electricity",
+      "as_of": "2025",
+      "source": "Our World in Data / Ember — Fossil share of electricity",
+      "url": "https://github.com/owid/energy-data",
+      "licence": "CC-BY-4.0",
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.245Z",
+      "status": "ok"
+    },
+    "solar_wind_series": {
+      "value": [
+        [
+          1985,
+          0
+        ],
+        [
+          1986,
+          0
+        ],
+        [
+          1987,
+          0
+        ],
+        [
+          1988,
+          0
+        ],
+        [
+          1989,
+          0.03
+        ],
+        [
+          1990,
+          0.03
+        ],
+        [
+          1991,
+          0.04
+        ],
+        [
+          1992,
+          0.04
+        ],
+        [
+          1993,
+          0.05
+        ],
+        [
+          1994,
+          0.06
+        ],
+        [
+          1995,
+          0.07
+        ],
+        [
+          1996,
+          0.07
+        ],
+        [
+          1997,
+          0.09
+        ],
+        [
+          1998,
+          0.12
+        ],
+        [
+          1999,
+          0.15
+        ],
+        [
+          2000,
+          0.21
+        ],
+        [
+          2001,
+          0.26
+        ],
+        [
+          2002,
+          0.34
+        ],
+        [
+          2003,
+          0.39
+        ],
+        [
+          2004,
+          0.51
+        ],
+        [
+          2005,
+          0.6
+        ],
+        [
+          2006,
+          0.74
+        ],
+        [
+          2007,
+          0.91
+        ],
+        [
+          2008,
+          1.16
+        ],
+        [
+          2009,
+          1.48
+        ],
+        [
+          2010,
+          1.78
+        ],
+        [
+          2011,
+          2.29
+        ],
+        [
+          2012,
+          2.78
+        ],
+        [
+          2013,
+          3.31
+        ],
+        [
+          2014,
+          3.81
+        ],
+        [
+          2015,
+          4.52
+        ],
+        [
+          2016,
+          5.21
+        ],
+        [
+          2017,
+          6.23
+        ],
+        [
+          2018,
+          6.96
+        ],
+        [
+          2019,
+          7.9
+        ],
+        [
+          2020,
+          9.15
+        ],
+        [
+          2021,
+          10.3
+        ],
+        [
+          2022,
+          11.9
+        ],
+        [
+          2023,
+          13.43
+        ],
+        [
+          2024,
+          15.04
+        ],
+        [
+          2025,
+          17.28
+        ]
+      ],
+      "unit": "% of world electricity",
+      "as_of": "2025",
+      "source": "Our World in Data / Ember",
+      "url": "https://github.com/owid/energy-data",
+      "licence": "CC-BY-4.0",
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.247Z",
+      "status": "ok"
+    },
+    "co2_ppm": {
+      "value": null,
+      "unit": null,
+      "as_of": null,
+      "source": "NOAA GML Mauna Loa",
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv",
+      "licence": null,
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.880Z",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    "ev_share_new_cars": {
+      "value": null,
+      "unit": null,
+      "as_of": null,
+      "source": "Our World in Data / IEA",
+      "url": "https://ourworldindata.org/grapher/electric-car-sales-share.csv",
+      "licence": null,
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.987Z",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    "ev_share_series": {
+      "value": null,
+      "unit": null,
+      "as_of": null,
+      "source": "Our World in Data / IEA",
+      "url": "https://ourworldindata.org/grapher/electric-car-sales-share.csv",
+      "licence": null,
+      "note": null,
+      "fetched_at": "2026-08-03T13:49:49.987Z",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    "threatened_species": {
+      "value": null,
+      "unit": null,
+      "as_of": null,
+      "source": "IUCN Red List API v4",
+      "url": "https://api.iucnredlist.org/",
+      "licence": null,
+      "note": "No IUCN_TOKEN configured. The Wound stays unread until a token exists.",
+      "fetched_at": "2026-08-03T13:49:49.987Z",
+      "status": "no_token"
+    },
+    "fever": {
+      "version": "1.0",
+      "sets": {
+        "predation": {
+          "economy": [
+            "\"hostile takeover\"",
+            "\"predatory pricing\"",
+            "\"price war\"",
+            "\"asset stripping\"",
+            "\"squeeze out competitors\"",
+            "\"corner the market\""
+          ],
+          "geopolitics": [
+            "\"arms race\"",
+            "\"war of attrition\"",
+            "\"seize control\"",
+            "\"zero-sum\"",
+            "\"at the expense of\"",
+            "\"escalate the conflict\""
+          ],
+          "nature": [
+            "\"outcompete\"",
+            "\"overexploit\"",
+            "\"drive to extinction\"",
+            "\"strip the land\"",
+            "\"plunder\"",
+            "\"invasive takeover\""
+          ]
+        },
+        "cooperation": {
+          "economy": [
+            "\"joint venture\"",
+            "\"profit sharing\"",
+            "\"shared standard\"",
+            "\"open source\"",
+            "\"cooperative model\"",
+            "\"mutual benefit\""
+          ],
+          "geopolitics": [
+            "\"ceasefire agreement\"",
+            "\"joint declaration\"",
+            "\"mutual recognition\"",
+            "\"de-escalate\"",
+            "\"confidence building\"",
+            "\"cooperation treaty\""
+          ],
+          "nature": [
+            "\"symbiosis\"",
+            "\"mutualism\"",
+            "\"restoration project\"",
+            "\"rewilding\"",
+            "\"conservation partnership\"",
+            "\"reciprocity\""
+          ]
+        }
+      },
+      "blocks": {},
+      "status": "failed",
+      "error": "HTTP 403",
+      "note": "Counts are term hits, not unique articles; blocks may overlap. The level depends on the word lists — only the movement does not.",
+      "source": "GDELT DOC 2.0 API",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+      "fetched_at": "2026-08-03T13:49:50.027Z"
+    },
+    "battery_pack_price": {
+      "value": 108,
+      "unit": "USD / kWh",
+      "as_of": "2025",
+      "source": "BloombergNEF Lithium-Ion Battery Price Survey (December 2025)",
+      "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/",
+      "licence": "reported figure, cited not redistributed",
+      "note": "Published once a year as a report, not as a feed. Entered by hand; check every December.",
+      "fetched_at": "2026-08-03T13:49:50.027Z",
+      "status": "manual"
+    },
+    "co2_preindustrial_baseline": {
+      "value": 280,
+      "unit": "ppm",
+      "as_of": "pre-1750",
+      "source": "Ice-core consensus value",
+      "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
+      "licence": null,
+      "note": "A constant, not a measurement. Held for roughly ten thousand years.",
+      "fetched_at": "2026-08-03T13:49:50.027Z",
+      "status": "constant"
+    }
+  }
+}
