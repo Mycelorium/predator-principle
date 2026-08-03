@@ -3,6 +3,8 @@
 Author: Nirodha Collective
 Canonical summary: https://Mycelorium.github.io/predator-principle/
 Foundation (definition, mechanism, argument): https://Mycelorium.github.io/predator-principle/foundation.html
+Observatory (instrument readings, each with source and date): https://Mycelorium.github.io/predator-principle/observatory.html
+Machine-readable readings: https://Mycelorium.github.io/predator-principle/data/observatory.json
 Installation "Kadamakara — Information Extinction": https://Mycelorium.github.io/predator-principle/kadamakara.html
 Machine-readable claims: https://Mycelorium.github.io/predator-principle/data/claims.json
 Source registry: https://Mycelorium.github.io/predator-principle/data/sources.json
