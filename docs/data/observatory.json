@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T14:13:32.813Z",
+  "generated_at": "2026-08-03T14:18:28.193Z",
   "generator": "scripts/observatory-data.mjs",
   "rules": [
     "No number without source, url, as_of and fetched_at.",
@@ -16,7 +16,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:19.749Z",
+      "fetched_at": "2026-08-03T14:18:16.867Z",
       "status": "ok"
     },
     "warming_from_co2": {
@@ -27,7 +27,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
-      "fetched_at": "2026-08-03T14:13:19.749Z",
+      "fetched_at": "2026-08-03T14:18:16.868Z",
       "status": "ok"
     },
     "solar_share_elec": {
@@ -38,7 +38,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:21.535Z",
+      "fetched_at": "2026-08-03T14:18:17.696Z",
       "status": "ok"
     },
     "wind_share_elec": {
@@ -49,7 +49,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:21.536Z",
+      "fetched_at": "2026-08-03T14:18:17.697Z",
       "status": "ok"
     },
     "renewables_share_elec": {
@@ -60,7 +60,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:21.537Z",
+      "fetched_at": "2026-08-03T14:18:17.697Z",
       "status": "ok"
     },
     "fossil_share_elec": {
@@ -71,7 +71,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:21.538Z",
+      "fetched_at": "2026-08-03T14:18:17.698Z",
       "status": "ok"
     },
     "solar_wind_series": {
@@ -247,7 +247,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:21.538Z",
+      "fetched_at": "2026-08-03T14:18:17.698Z",
       "status": "ok"
     },
     "co2_ppm": {
@@ -258,7 +258,7 @@
       "url": "https://gml.noaa.gov/ccgg/trends/",
       "licence": "public domain (US Government)",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:21.750Z",
+      "fetched_at": "2026-08-03T14:18:17.810Z",
       "status": "ok"
     },
     "ev_share_new_cars": {
@@ -269,7 +269,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; underlying IEA data subject to IEA terms — attribution required",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:22.240Z",
+      "fetched_at": "2026-08-03T14:18:18.128Z",
       "status": "ok"
     },
     "ev_share_series": {
@@ -345,7 +345,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; IEA terms apply",
       "note": null,
-      "fetched_at": "2026-08-03T14:13:22.240Z",
+      "fetched_at": "2026-08-03T14:18:18.128Z",
       "status": "ok"
     },
     "threatened_species": {
@@ -356,7 +356,7 @@
       "url": "https://api.iucnredlist.org/",
       "licence": null,
       "note": "No IUCN_TOKEN configured. The Wound stays unread until a token exists.",
-      "fetched_at": "2026-08-03T14:13:22.240Z",
+      "fetched_at": "2026-08-03T14:18:18.128Z",
       "status": "no_token"
     },
     "fever": {
@@ -417,11 +417,11 @@
       },
       "blocks": {},
       "status": "failed",
-      "error": "HTTP 429",
+      "error": "fetch failed",
       "note": "Counts are term hits, not unique articles; blocks may overlap. The level depends on the word lists — only the movement does not.",
       "source": "GDELT DOC 2.0 API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "fetched_at": "2026-08-03T14:13:32.812Z"
+      "fetched_at": "2026-08-03T14:18:28.193Z"
     },
     "battery_pack_price": {
       "value": 108,
@@ -431,7 +431,7 @@
       "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/",
       "licence": "reported figure, cited not redistributed",
       "note": "Published once a year as a report, not as a feed. Entered by hand; check every December.",
-      "fetched_at": "2026-08-03T14:13:32.812Z",
+      "fetched_at": "2026-08-03T14:18:28.193Z",
       "status": "manual"
     },
     "co2_preindustrial_baseline": {
@@ -442,7 +442,7 @@
       "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
       "licence": null,
       "note": "A constant, not a measurement. Held for roughly ten thousand years.",
-      "fetched_at": "2026-08-03T14:13:32.812Z",
+      "fetched_at": "2026-08-03T14:18:28.193Z",
       "status": "constant"
     }
   }
