@@ -219,13 +219,29 @@ const FEVER_SETS = {
 };
 const FEVER_VERSION = '1.0';
 
+// GDELT rate-limits hard, and a shared Actions runner often arrives at an IP that is
+// already hot. One 429 is not a failure of the source — it is a queue. Back off and wait.
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 async function gdeltBlock(terms) {
   const q = `(${terms.join(' OR ')})`;
   const url = 'https://api.gdeltproject.org/api/v2/doc/doc'
     + `?query=${encodeURIComponent(q)}&mode=timelinevol&timespan=3m&format=json`;
-  const j = await get(url, 'json');
-  const data = j?.timeline?.[0]?.data || [];
-  return { url, points: data.map((d) => [d.date, Number(d.value)]) };
+  const waits = [0, 20000, 45000, 90000];
+  let lastError;
+  for (const wait of waits) {
+    if (wait) await sleep(wait);
+    try {
+      const j = await get(url, 'json');
+      const data = j?.timeline?.[0]?.data || [];
+      if (!data.length) throw new Error('empty timeline');
+      return { url, points: data.map((d) => [d.date, Number(d.value)]) };
+    } catch (error) {
+      lastError = error;
+      if (!/429|timeout|empty/i.test(String(error.message))) throw error;
+    }
+  }
+  throw lastError;
 }
 
 const fever = { version: FEVER_VERSION, sets: FEVER_SETS, blocks: {}, status: 'ok' };
@@ -234,7 +250,7 @@ try {
     for (const [domain, terms] of Object.entries(blocks)) {
       const r = await gdeltBlock(terms);
       fever.blocks[`${side}.${domain}`] = r;
-      await new Promise((r2) => setTimeout(r2, 1500));
+      await sleep(12000);
     }
   }
 } catch (error) {
