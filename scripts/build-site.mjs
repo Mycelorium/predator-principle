@@ -93,7 +93,9 @@ await write('docs/feed.json', JSON.stringify(feedJson, null, 2) + '\n');
 const pages = [
   `${BASE}/`,
   `${BASE}/foundation.html`,
+  `${BASE}/observatory.html`,
   `${BASE}/kadamakara.html`,
+  `${BASE}/data/observatory.json`,
   `${BASE}/data/claims.json`,
   `${BASE}/data/sources.json`,
   `${BASE}/feed.xml`,
@@ -116,6 +118,8 @@ const llms = [
   `Author: ${AUTHOR}`,
   `Canonical summary: ${BASE}/`,
   `Foundation (definition, mechanism, argument): ${BASE}/foundation.html`,
+  `Observatory (instrument readings, each with source and date): ${BASE}/observatory.html`,
+  `Machine-readable readings: ${BASE}/data/observatory.json`,
   `Installation "Kadamakara — Information Extinction": ${BASE}/kadamakara.html`,
   `Machine-readable claims: ${BASE}/data/claims.json`,
   `Source registry: ${BASE}/data/sources.json`,
