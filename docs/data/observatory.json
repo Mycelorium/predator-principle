@@ -1,14 +1,12 @@
 {
-  "generated_at": "2026-08-03T13:49:50.028Z",
+  "generated_at": "2026-08-03T14:13:32.813Z",
   "generator": "scripts/observatory-data.mjs",
   "rules": [
     "No number without source, url, as_of and fetched_at.",
     "A failed source is shown as failed, never as a stale current value.",
     "Nothing is estimated. Absent means absent."
   ],
-  "notes": [
-    "Atmospheric CO₂ could not be fetched; the pre-industrial baseline of 280 ppm is a constant, not a reading."
-  ],
+  "notes": [],
   "metrics": {
     "co2_emissions": {
       "value": 38599,
@@ -18,7 +16,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:46.545Z",
+      "fetched_at": "2026-08-03T14:13:19.749Z",
       "status": "ok"
     },
     "warming_from_co2": {
@@ -29,7 +27,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
-      "fetched_at": "2026-08-03T13:49:46.563Z",
+      "fetched_at": "2026-08-03T14:13:19.749Z",
       "status": "ok"
     },
     "solar_share_elec": {
@@ -40,7 +38,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.241Z",
+      "fetched_at": "2026-08-03T14:13:21.535Z",
       "status": "ok"
     },
     "wind_share_elec": {
@@ -51,7 +49,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.243Z",
+      "fetched_at": "2026-08-03T14:13:21.536Z",
       "status": "ok"
     },
     "renewables_share_elec": {
@@ -62,7 +60,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.244Z",
+      "fetched_at": "2026-08-03T14:13:21.537Z",
       "status": "ok"
     },
     "fossil_share_elec": {
@@ -73,7 +71,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.245Z",
+      "fetched_at": "2026-08-03T14:13:21.538Z",
       "status": "ok"
     },
     "solar_wind_series": {
@@ -249,44 +247,106 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.247Z",
+      "fetched_at": "2026-08-03T14:13:21.538Z",
       "status": "ok"
     },
     "co2_ppm": {
-      "value": null,
-      "unit": null,
-      "as_of": null,
-      "source": "NOAA GML Mauna Loa",
-      "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv",
-      "licence": null,
+      "value": 431.44,
+      "unit": "ppm",
+      "as_of": "2026-06",
+      "source": "NOAA Global Monitoring Laboratory — Mauna Loa monthly mean",
+      "url": "https://gml.noaa.gov/ccgg/trends/",
+      "licence": "public domain (US Government)",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.880Z",
-      "status": "failed",
-      "error": "HTTP 403"
+      "fetched_at": "2026-08-03T14:13:21.750Z",
+      "status": "ok"
     },
     "ev_share_new_cars": {
-      "value": null,
-      "unit": null,
-      "as_of": null,
-      "source": "Our World in Data / IEA",
-      "url": "https://ourworldindata.org/grapher/electric-car-sales-share.csv",
-      "licence": null,
+      "value": 25,
+      "unit": "% of new car sales",
+      "as_of": "2025",
+      "source": "Our World in Data, from IEA Global EV Outlook",
+      "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
+      "licence": "OWID CC-BY; underlying IEA data subject to IEA terms — attribution required",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.987Z",
-      "status": "failed",
-      "error": "HTTP 403"
+      "fetched_at": "2026-08-03T14:13:22.240Z",
+      "status": "ok"
     },
     "ev_share_series": {
-      "value": null,
-      "unit": null,
-      "as_of": null,
+      "value": [
+        [
+          2010,
+          0
+        ],
+        [
+          2011,
+          0.1
+        ],
+        [
+          2012,
+          0.2
+        ],
+        [
+          2013,
+          0.3
+        ],
+        [
+          2014,
+          0.4
+        ],
+        [
+          2015,
+          0.7
+        ],
+        [
+          2016,
+          0.9
+        ],
+        [
+          2017,
+          1.4
+        ],
+        [
+          2018,
+          2.4
+        ],
+        [
+          2019,
+          2.7
+        ],
+        [
+          2020,
+          4.4
+        ],
+        [
+          2021,
+          9.3
+        ],
+        [
+          2022,
+          15
+        ],
+        [
+          2023,
+          18
+        ],
+        [
+          2024,
+          21
+        ],
+        [
+          2025,
+          25
+        ]
+      ],
+      "unit": "% of new car sales",
+      "as_of": "2025",
       "source": "Our World in Data / IEA",
-      "url": "https://ourworldindata.org/grapher/electric-car-sales-share.csv",
-      "licence": null,
+      "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
+      "licence": "OWID CC-BY; IEA terms apply",
       "note": null,
-      "fetched_at": "2026-08-03T13:49:49.987Z",
-      "status": "failed",
-      "error": "HTTP 403"
+      "fetched_at": "2026-08-03T14:13:22.240Z",
+      "status": "ok"
     },
     "threatened_species": {
       "value": null,
@@ -296,7 +356,7 @@
       "url": "https://api.iucnredlist.org/",
       "licence": null,
       "note": "No IUCN_TOKEN configured. The Wound stays unread until a token exists.",
-      "fetched_at": "2026-08-03T13:49:49.987Z",
+      "fetched_at": "2026-08-03T14:13:22.240Z",
       "status": "no_token"
     },
     "fever": {
@@ -357,11 +417,11 @@
       },
       "blocks": {},
       "status": "failed",
-      "error": "HTTP 403",
+      "error": "HTTP 429",
       "note": "Counts are term hits, not unique articles; blocks may overlap. The level depends on the word lists — only the movement does not.",
       "source": "GDELT DOC 2.0 API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "fetched_at": "2026-08-03T13:49:50.027Z"
+      "fetched_at": "2026-08-03T14:13:32.812Z"
     },
     "battery_pack_price": {
       "value": 108,
@@ -371,7 +431,7 @@
       "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/",
       "licence": "reported figure, cited not redistributed",
       "note": "Published once a year as a report, not as a feed. Entered by hand; check every December.",
-      "fetched_at": "2026-08-03T13:49:50.027Z",
+      "fetched_at": "2026-08-03T14:13:32.812Z",
       "status": "manual"
     },
     "co2_preindustrial_baseline": {
@@ -382,7 +442,7 @@
       "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
       "licence": null,
       "note": "A constant, not a measurement. Held for roughly ten thousand years.",
-      "fetched_at": "2026-08-03T13:49:50.027Z",
+      "fetched_at": "2026-08-03T14:13:32.812Z",
       "status": "constant"
     }
   }
