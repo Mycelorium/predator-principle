@@ -1,4 +1,4 @@
-// reach-report.mjs — weekly, honest reach report as a GitHub issue.
+// reach-report.mjs — weekly reach report as a GitHub issue. Numbers only.
 //
 // Answers "is anyone actually reading this" with numbers instead of hope, and
 // shows the change since the previous week so a real signal is distinguishable

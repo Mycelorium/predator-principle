@@ -51,6 +51,37 @@ for (const item of items) {
 }
 items.sort((a, b) => new Date(b.iso) - new Date(a.iso));
 
+/* ------------------------------------------------------------------ extras */
+// Work that is not an essay but must still be announced. The essay feed is the
+// single source of truth for essays and is not touched here; these entries are
+// merged into the OUTPUT feeds only, so that RSS readers, the Nostr poster, the
+// social syndicator and share.html can all see them. The sitemap keeps listing
+// them under `pages`, so nothing is duplicated there.
+const extras = [
+  {
+    title: 'Kadamakara — Information Extinction',
+    url: `${BASE}/kadamakara.html`,
+    summary: 'An installation. A network of information patterns, each a solution '
+      + 'evolution took millions of years to find and that cannot be recomputed. '
+      + 'They begin to go dark. The network reroutes around the gaps, the losses '
+      + 'are absorbed, and the readout says NOMINAL. It keeps saying NOMINAL.',
+    pubDate: 'Sun, 02 Aug 2026 12:00:00 GMT',
+  },
+];
+
+for (const item of extras) {
+  const d = new Date(item.pubDate);
+  if (Number.isNaN(d.getTime())) {
+    console.error(`ERROR: bad pubDate on extra "${item.title}" - refusing to build.`);
+    process.exit(1);
+  }
+  item.iso = d.toISOString();
+  item.rfc = d.toUTCString();
+}
+
+const feedItems = [...items, ...extras]
+  .sort((a, b) => new Date(b.iso) - new Date(a.iso));
+
 /* ---------------------------------------------------------------- feed.xml */
 const feedXml = '<?xml version="1.0" encoding="UTF-8"?>'
   + '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
@@ -59,8 +90,8 @@ const feedXml = '<?xml version="1.0" encoding="UTF-8"?>'
   + `<atom:link href="${BASE}/feed.xml" rel="self" type="application/rss+xml"/>`
   + '<description>Essays on the Predator Principle. Every claim carries its evidence status and its sources. CC BY 4.0.</description>'
   + '<language>en</language>'
-  + `<lastBuildDate>${items[0].rfc}</lastBuildDate>`
-  + items.map((i) => '<item>'
+  + `<lastBuildDate>${feedItems[0].rfc}</lastBuildDate>`
+  + feedItems.map((i) => '<item>'
       + `<title>${esc(i.title)}</title>`
       + `<link>${esc(i.url)}</link>`
       + `<guid isPermaLink="true">${esc(i.url)}</guid>`
@@ -78,7 +109,7 @@ const feedJson = {
   feed_url: `${BASE}/feed.json`,
   language: 'en',
   authors: [{ name: AUTHOR }],
-  items: items.map((i) => ({
+  items: feedItems.map((i) => ({
     id: i.url,
     url: i.url,
     title: i.title,
