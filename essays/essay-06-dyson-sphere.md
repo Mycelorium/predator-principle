@@ -183,7 +183,7 @@ If civilisations tend to climb the Kardashev ladder, and if Type III draws in th
 
 On a smaller scale, Project Hephaistos. In 2024 Suazo, Zackrisson and colleagues combed some five million objects within 300 parsecs for the infrared excess a partial Dyson swarm would leave behind. (E) Seven candidates remained, all red dwarfs, with an infrared excess of "uncertain origin" that, the authors state, conventional astrophysics cannot easily account for.
 
-Here honesty is required, in both directions. These seven are not cases banally explained away. They are genuine anomalies, open, unresolved. Follow-up work also shows that the WISE survey, through source confusion, can generate up to about 70 percent false-positive infrared excesses, that several candidates coincide with background galaxies, and that Candidate G has a background radio source as its counterpart. (E) The honest status reads: open anomalies, leaning mundane, unconfirmed. No detection. Seven unconfirmed oddities among five million stars.
+Precision is required here, in both directions. These seven are not cases banally explained away. They are genuine anomalies, open, unresolved. Follow-up work also shows that the WISE survey, through source confusion, can generate up to about 70 percent false-positive infrared excesses, that several candidates coincide with background galaxies, and that Candidate G has a background radio source as its counterpart. (E) The status reads: open anomalies, leaning mundane, unconfirmed. No detection. Seven unconfirmed oddities among five million stars.
 
 What does that prove? Strictly, nothing about convergence. A hundred thousand galaxies and five million stars are, measured against the cosmos, a tiny slice; megastructures may be rare, hard, young. (I) But the non-detection does something definite: it kicks the empirical leg out from under the expansionist prediction. The extrapolation claims Type III should be *common*, all but inevitable. The sky shows: zero in a hundred thousand, seven wobbling candidates in five million. And the assumption that civilisations expand exponentially without limit is just that, an assumption. Haqq-Misra and Baum showed that exponential growth is fundamentally unsustainable, and that the expansion hypothesis is not a law of nature but an unproven premise. (P) We assumed everyone grows into our shape. The sky is conspicuously silent about it.
 
@@ -201,7 +201,7 @@ Now put it together. A brain that thinks on twenty watts. A computing efficiency
 
 With that, the whole picture flips. The solid Dyson sphere, the maximum of energy intake, is not the crown of intelligence but its opposite, fossilised in metal: the notion that eating more is the same as knowing more. A being that must devour an entire star to think would not have thought. It would only have eaten. And even if it wanted to build structures, the rational build would not be the vast cold shell, but small, hot, optimised, a dense, efficient machine rather than a galactic wall. (P/I) The optimum lies in thrift, not in size.
 
-## The honest concession
+## The concession
 
 Here we must stop and concede something, because whoever tells only half the truth forfeits the right to the other half.
 

@@ -171,13 +171,13 @@ Zanette, White, Allen and Clinchy (2011) built an experiment worth memorising. T
 
 This is no outlier. Clinchy, Sheriff and Zanette (2013) show chronic physiological stress with fitness costs [E]. Zanette and Clinchy (2020) document that predator-induced fear produces enduring, PTSD-like neurobiological change in wild prey [E]. Preisser, Bolnick and Benard (2005) found in their meta-analysis that predator intimidation is as strong as direct consumption, often stronger [E, from title/abstract; contested in detail]. Preisser and Bolnick (2008) map the many pathways through which that fear works [E].
 
-Stay honest: Sheriff et al. (2020) counsel caution — the effect of fear on individual animals and their physiology is well established, but robust evidence that fear alone changes *population size* is thin [E/contested]. Good. We do not need the population claim. For the point, the individual suffices: a lifelong, corpseless terror the sublime shot never shows, because it cannot be packed into a beautiful arc.
+Stay exact: Sheriff et al. (2020) counsel caution — the effect of fear on individual animals and their physiology is well established, but robust evidence that fear alone changes *population size* is thin [E/contested]. Good. We do not need the population claim. For the point, the individual suffices: a lifelong, corpseless terror the sublime shot never shows, because it cannot be packed into a beautiful arc.
 
 ## Who can feel
 
 And how far down does it reach? Farther than the backdrop assumes. Gibbons et al. (2022) tested the pain evidence in insects against eight criteria. Adult Diptera and Blattodea meet six of eight — "strong evidence". And, crucially: no insect studied failed a criterion [I/E].
 
-This is not certainty; it is a probability, a graded one, and we assert nothing beyond it. But set that probability beside 10¹⁸ to 10²⁰ arthropods, and in expected value the quantity of predation-linked suffering becomes enormous. Not because a single insect certainly suffers, but because the number is so large that even a modest probability produces a sum you cannot honestly walk away from.
+This is not certainty; it is a probability, a graded one, and we assert nothing beyond it. But set that probability beside 10¹⁸ to 10²⁰ arthropods, and in expected value the quantity of predation-linked suffering becomes enormous. Not because a single insect certainly suffers, but because the number is so large that even a modest probability produces a sum you cannot walk away from.
 
 ## Darwin's ichneumon
 
@@ -209,7 +209,7 @@ And see how the field puts that camouflage on. "Survival of the fittest", "compe
 
 ## What we do not claim
 
-Here is the discipline without which this essay would be dishonest. We do not claim nature is net-negative. That is not established. Ng (1995) put forward the most-cited formal argument that suffering outweighs enjoyment — and Groff and Ng (2019) found a **mathematical error** in it; the corrected model is *ambiguous* and explicitly calls for a "somewhat less pessimistic" reading [E]. That is our honesty anchor. Browning and Veit (2023) mount the strongest opposing case: brief deaths, shock analgesia, systematically undercounted positive experiences; net negativity is not established [P].
+Here is the discipline without which this essay would be worthless. We do not claim nature is net-negative. That is not established. Ng (1995) put forward the most-cited formal argument that suffering outweighs enjoyment — and Groff and Ng (2019) found a **mathematical error** in it; the corrected model is *ambiguous* and explicitly calls for a "somewhat less pessimistic" reading [E]. That is our anchor. Browning and Veit (2023) mount the strongest opposing case: brief deaths, shock analgesia, systematically undercounted positive experiences; net negativity is not established [P].
 
 But — and this is the key — that cuts against the romantic, not for him. If the balance is unproven, then "the circle of life is beautiful, harmonious, good" is **equally unproven**, indeed less defensible, since it asserts positive value where the skeptic asserts only uncertainty. Our thesis is not "nature is maximally bad". It is narrower and harder: there is nothing *beautiful* about it, and the aesthetic-moral endorsement needs a positive warrant the evidence does not supply.
 

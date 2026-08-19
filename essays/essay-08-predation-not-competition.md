@@ -197,9 +197,9 @@ Stop here. Both pictures are called "competition." Both are called "survival of 
 
 ## Two things you must never confuse
 
-There is a good competition, and there is predation, and the second dresses up as the first. Let us hold the good competition high first, honestly, without reservation.
+There is a good competition, and there is predation, and the second dresses up as the first. Let us hold the good competition high first, without reservation.
 
-When two bakers contend for the same customer, the price discovers what the bread is worth — information no planning office on earth can generate from itself, because it lies scattered across a thousand heads and becomes visible only in the contest. **[E]** (Hayek 1945) When a new method displaces an old one, knowledge is released that would otherwise have suffocated in habit. **[E/I]** (Schumpeter 1942) Rival hypotheses correct each other. Sport measures body against body and nobody dies. The election measures majority against majority and the losers go home, not into the grave. Dissent keeps power honest. That is good. That is more than good, it is the procedure by which an open order finds its own errors.
+When two bakers contend for the same customer, the price discovers what the bread is worth — information no planning office on earth can generate from itself, because it lies scattered across a thousand heads and becomes visible only in the contest. **[E]** (Hayek 1945) When a new method displaces an old one, knowledge is released that would otherwise have suffocated in habit. **[E/I]** (Schumpeter 1942) Rival hypotheses correct each other. Sport measures body against body and nobody dies. The election measures majority against majority and the losers go home, not into the grave. Dissent is what keeps power answerable. That is good. That is more than good, it is the procedure by which an open order finds its own errors.
 
 Now the cut. Look at the axes on which the one parts from the other.
 
@@ -247,13 +247,13 @@ Only it was theoretical, not empirical. Go into the trial record McGee himself c
 
 And the trick in the argument? It assumes feedback always survives — that re-entry is always possible, that the market heals itself. That is precisely the condition the predator abolishes. On a platform that recoups through data, lock-in, and cross-market extraction what it lost in the price war, recoupment does not run through the one market you watch but crosswise through the whole system — and becomes "highly rational" while staying legally invisible. **[I/P]** (Khan 2017) The myth wrote a special case into the law.
 
-And the law followed. Since *Brooke Group* 1993 the plaintiff must prove two things: pricing below cost *and* a dangerous probability of recoupment. **[E]** (Brooke Group 1993; Areeda & Turner 1975) A hurdle that shelters the predator by demanding proof of his intent projected into the future. To be honest: Standard Oil's monopoly is established; whether predatory pricing *specifically* built it remains debated. **contested** But the claim that predation is irrational and therefore does not occur has been refuted.
+And the law followed. Since *Brooke Group* 1993 the plaintiff must prove two things: pricing below cost *and* a dangerous probability of recoupment. **[E]** (Brooke Group 1993; Areeda & Turner 1975) A hurdle that shelters the predator by demanding proof of his intent projected into the future. Plainly: Standard Oil's monopoly is established; whether predatory pricing *specifically* built it remains debated. **contested** But the claim that predation is irrational and therefore does not occur has been refuted.
 
 ## Market power is not merit — at least not only
 
 Now comes the more genteel defense. The big firms are simply the better ones. Concentration and high markups merely reflect the productivity of the "superstars" that the consumers themselves chose. Part of this is true. And part of it is camouflage. Let us separate the two.
 
-Look at the numbers. The average markup over cost in the US rose from 18 percent (1980) to 67 percent (2014); at the top, in the highest tenth, from 46 to 160 percent; the profit rate roughly quadrupled. **[I]** (De Loecker & Eeckhout 2017; extended globally 2018) Honesty demands the caveat: the magnitude is disputed, the marginal-cost definition leaves out selling and overhead, the 18-to-67 is not settled in stone. **contested** The direction, though, is broadly accepted.
+Look at the numbers. The average markup over cost in the US rose from 18 percent (1980) to 67 percent (2014); at the top, in the highest tenth, from 46 to 160 percent; the profit rate roughly quadrupled. **[I]** (De Loecker & Eeckhout 2017; extended globally 2018) The caveat is owed: the magnitude is disputed, the marginal-cost definition leaves out selling and overhead, the 18-to-67 is not settled in stone. **contested** The direction, though, is broadly accepted.
 
 Look at labor. The share of wages in value added fell — and it fell not because every firm paid less, but because weight shifted toward firms with an already low labor share. Employment in the largest firms rose from 28 (1987) to 34 percent (2016); manufacturing payroll's share of value added dropped by about sixteen points, almost entirely through this reallocation between firms. **[E/I]** (Autor et al. 2020)
 
@@ -305,7 +305,7 @@ That inverts the whole story. Rent-seeking, capture, skimming are not the human,
 
 ## The tooth is not the contest
 
-So, once more, so it holds. We praise competition — the real, the bounded, the kind that discovers prices and corrects errors and keeps power honest. We praise it without reservation, for it is the procedure by which an open order lives.
+So, once more, so it holds. We praise competition — the real, the bounded, the kind that discovers prices and corrects errors and keeps power answerable. We praise it without reservation, for it is the procedure by which an open order lives.
 
 And we cut the camouflage. Predation is not competition. It is competition with the feedback cut: asymmetric stakes, suppressed signal, externalized cost, compelled escalation, consumed substrate. It borrows the words "free market," "low prices," "human nature," "deterrence," and with borrowed dignity it kills the very thing it borrowed the dignity from.
 
