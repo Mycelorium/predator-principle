@@ -263,6 +263,130 @@ fever.url = 'https://api.gdeltproject.org/api/v2/doc/doc';
 fever.fetched_at = nowIso();
 metrics.fever = fever;
 
+/* ═══════════════════════ 6b · what is taken from the living ═══════════════ */
+// The instruments below read the living world directly rather than its exhaust.
+// Every one is a World-level series from a named dataset, fetched whole so the page
+// can draw the shape of it and not only the last point. A source that cannot be
+// reached records itself as failed and the instrument says so on the page.
+
+const OWID_GRAPHER = (slug) => `https://ourworldindata.org/grapher/${slug}.csv`;
+
+async function grapherWorld(key, slug, cols, meta) {
+  const url = OWID_GRAPHER(slug);
+  try {
+    const rows = parseCsv(await get(url));
+    const world = rows.filter((r) => r.Entity === 'World' || r.Code === 'OWID_WRL');
+    if (!world.length) throw new Error('no World rows in dataset');
+
+    const series = {};
+    for (const [name, column] of Object.entries(cols)) {
+      const pts = world
+        .filter((r) => r[column] !== '' && r[column] != null && !Number.isNaN(Number(r[column])))
+        .map((r) => [Number(r.Year), Number(Number(r[column]).toFixed(2))])
+        .sort((a, b) => a[0] - b[0]);
+      if (!pts.length) throw new Error(`column "${column}" empty for World`);
+      series[name] = pts;
+    }
+
+    const anyKey = Object.keys(series)[0];
+    const last = series[anyKey][series[anyKey].length - 1];
+    put(key, {
+      value: Object.fromEntries(Object.entries(series).map(([n, p]) => [n, p[p.length - 1][1]])),
+      unit: meta.unit, as_of: String(last[0]),
+      source: meta.source, url: meta.url || url, licence: meta.licence, note: meta.note,
+    });
+    metrics[key].series = series;
+    metrics[key].hands = meta.hands || null;
+  } catch (error) {
+    fail(key, { source: meta.source, url, error });
+  }
+}
+
+// 1 · The sea. FAO: the share of assessed marine stocks still inside biologically
+//     sustainable limits, against the share fished beyond them. Two hands, one axis,
+//     and they are heading toward each other.
+await grapherWorld('fish_stocks', 'fish-stocks-within-sustainable-levels', {
+  sustainable: 'Biologically sustainable',
+  overexploited: 'Overexploited',
+}, {
+  unit: '% of assessed marine fish stocks',
+  source: 'FAO, The State of World Fisheries and Aquaculture, via Our World in Data',
+  licence: 'CC-BY-4.0',
+  note: 'Assessed stocks only — stocks nobody assesses are not in this number, and they are not the healthy ones.',
+  hands: { turn: 'sustainable', take: 'overexploited' },
+});
+
+// 2 · The living record. WWF/ZSL Living Planet Index, with the confidence band it
+//     is published with. The band is part of the reading, not a decoration.
+await grapherWorld('living_planet_index', 'global-living-planet-index', {
+  index: 'Central estimate',
+  upper: 'Upper estimate',
+  lower: 'Lower estimate',
+}, {
+  unit: 'index, 1970 = 1',
+  source: 'WWF / Zoological Society of London, Living Planet Index, via Our World in Data',
+  licence: 'CC-BY-4.0',
+  note: 'An average rate of change across monitored vertebrate populations. Not a headcount of animals, and not a share of species lost.',
+  hands: { take: 'index' },
+});
+
+// 3 · The clearing. CO2 released by land-use change — the carbon that was standing
+//     forest and is now air. Already in the OWID CO2 file fetched above.
+try {
+  const rows = parseCsv(await get(OWID_CO2));
+  const pts = rows
+    .filter((r) => r.country === 'World' && r.land_use_change_co2 !== '' && r.land_use_change_co2 != null)
+    .map((r) => [Number(r.year), Number((Number(r.land_use_change_co2) / 1000).toFixed(2))])
+    .sort((a, b) => a[0] - b[0]);
+  if (!pts.length) throw new Error('no World land_use_change_co2 rows');
+  const last = pts[pts.length - 1];
+  const peak = pts.reduce((a, b) => (b[1] > a[1] ? b : a));
+  put('land_use_change_co2', {
+    value: last[1], unit: 'Gt CO₂ / year', as_of: String(last[0]),
+    source: 'Our World in Data — CO2 and Greenhouse Gas Emissions (land-use change)',
+    url: 'https://github.com/owid/co2-data', licence: 'CC-BY-4.0',
+    note: `Carbon released by clearing and converting land. Peak was ${peak[1]} Gt in ${peak[0]}.`,
+  });
+  metrics.land_use_change_co2.series = { taken: pts };
+  metrics.land_use_change_co2.peak = { year: peak[0], value: peak[1] };
+  metrics.land_use_change_co2.hands = { take: 'taken' };
+} catch (error) {
+  fail('land_use_change_co2', {
+    source: 'Our World in Data — CO2 and Greenhouse Gas Emissions',
+    url: 'https://github.com/owid/co2-data', error,
+  });
+}
+
+// 4 · The current. The counter-hand: fossil share of world electricity against the
+//     solar-and-wind share, on one axis, so the crossing can be seen coming.
+try {
+  const rows = parseCsv(await get(OWID_ENERGY));
+  const world = rows.filter((r) => r.country === 'World' && Number(r.year) >= 1985);
+  const pick = (col) => world
+    .filter((r) => r[col] !== '' && r[col] != null)
+    .map((r) => [Number(r.year), Number(Number(r[col]).toFixed(2))])
+    .sort((a, b) => a[0] - b[0]);
+  const fossil = pick('fossil_share_elec');
+  const sw = world
+    .filter((r) => r.solar_share_elec !== '' && r.solar_share_elec != null)
+    .map((r) => [Number(r.year), Number((Number(r.solar_share_elec) + Number(r.wind_share_elec || 0)).toFixed(2))])
+    .sort((a, b) => a[0] - b[0]);
+  if (!fossil.length || !sw.length) throw new Error('no World electricity shares');
+  put('electricity_crossing', {
+    value: { fossil: fossil[fossil.length - 1][1], solar_wind: sw[sw.length - 1][1] },
+    unit: '% of world electricity', as_of: String(fossil[fossil.length - 1][0]),
+    source: 'Our World in Data / Ember — share of electricity generation',
+    url: 'https://github.com/owid/energy-data', licence: 'CC-BY-4.0',
+    note: 'Electricity only, which is about a fifth of final energy. The rest of the system has barely started to turn.',
+  });
+  metrics.electricity_crossing.series = { taken: fossil, turning: sw };
+  metrics.electricity_crossing.hands = { take: 'taken', turn: 'turning' };
+} catch (error) {
+  fail('electricity_crossing', {
+    source: 'Our World in Data / Ember', url: 'https://github.com/owid/energy-data', error,
+  });
+}
+
 /* ══════════════════════════════════════════ 7 · values kept by hand ════════ */
 put('battery_pack_price', {
   value: 108, unit: 'USD / kWh', as_of: '2025',
