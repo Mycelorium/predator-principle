@@ -94,6 +94,14 @@
   .unread{border:1px solid #e6c6b4;background:#fdf3ec;padding:14px 16px;margin:14px 0 0;
     font:400 12px/1.7 var(--mono);color:#8f3a0d}
   .unread b{display:block;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:10.5px;margin-bottom:5px}
+  .chron{list-style:none;margin:14px 0 0;padding:0}
+  .chron li{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid #eeeade}
+  .chron li:first-child{border-top:1px solid #eeeade}
+  .chron time{font:400 11px/1.7 var(--mono);color:var(--turn)}
+  .chron b{font-weight:500;font-size:15px}
+  .chron p{margin:3px 0 0;font-size:14px;color:#4a4d53;max-width:64ch}
+  .chron a{font:400 10.5px/1.7 var(--mono);color:#8c887f}
+  @media (max-width:560px){.chron li{grid-template-columns:1fr;gap:2px}}
   .stamp{font:400 10.5px/1.7 var(--mono);color:#a09b90;margin-top:30px}
   .stamp b{font-weight:500;color:#6c6a64}
   @media (max-width:620px){
@@ -573,6 +581,43 @@
       + '<details class="tbl" open><summary>Seven readings</summary><table><thead><tr><th>Reading</th><th>Value</th><th>As of</th><th>Source</th></tr></thead><tbody>'
       + rows + '</tbody></table></details>';
     host.appendChild(other);
+
+    // the Recognition chronicle — the turning hand that is not a number
+    fetch('data/recognition.json', { cache: 'no-cache' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (rec) {
+        var ev = (rec.events || []).slice().sort(function (a, b) {
+          return String(b.date).localeCompare(String(a.date));
+        });
+        if (!ev.length) return;
+        var sec = document.createElement('section');
+        sec.className = 'inst';
+        sec.innerHTML = '<p class="kicker">Recognition</p>'
+          + '<h2>Where standing was granted across a boundary</h2>'
+          + '<p class="say">' + esc(rec.note || '') + '</p>'
+          + '<ul class="figs"><li><span class="n turn">' + ev.length + '</span>'
+          + '<span class="c">entries in the chronicle</span></li>'
+          + (function () {
+            var yrs = ev.map(function (e) { return /^\d{4}/.exec(String(e.date)); })
+              .filter(Boolean).map(function (mm) { return Number(mm[0]); });
+            if (!yrs.length) return '';
+            var lo = Math.min.apply(null, yrs), hi = Math.max.apply(null, yrs);
+            var undated = ev.length - yrs.length;
+            return '<li><span class="n">' + lo + '–' + hi + '</span><span class="c">the dated span'
+              + (undated ? ', plus ' + undated + ' ongoing' : '') + '</span></li>';
+          })() + '</ul>'
+          + '<ul class="chron">' + ev.map(function (e) {
+            return '<li><time>' + esc(e.date) + '</time><div><b>' + esc(e.title) + '</b>'
+              + '<p>' + esc(e.text) + '</p>'
+              + (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">the record →</a>' : '')
+              + '</div></li>';
+          }).join('') + '</ul>'
+          + '<p class="prov">Kept by ' + esc(rec.maintained_by || 'the Nirodha Collective')
+          + ' · a count of entries, not a measurement of the world · additions may be proposed at '
+          + '<a href="https://github.com/Mycelorium/predator-principle/issues" target="_blank" rel="noopener">the issue tracker</a>.</p>';
+        host.appendChild(sec);
+      })
+      .catch(function () { /* the chronicle is optional; its absence is not a failed reading */ });
 
     charts.forEach(function (c) { c.draw(); });
 
