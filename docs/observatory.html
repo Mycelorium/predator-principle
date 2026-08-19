@@ -192,17 +192,25 @@
     {
       key: 'living_planet_index', kicker: 'The monitored populations',
       title: 'The Living Planet Index',
-      say: 'An average of how fast monitored vertebrate populations are changing in size, set to 1 in 1970. It is not a headcount and it is not a share of species lost — it is a rate, averaged, and it comes with the confidence band you see shaded here, which is part of the reading and not decoration.',
-      dp: 2, unitShort: '', zero: true,
-      lines: [{ name: 'index', label: 'index, 1970 = 1', short: 'index', role: 'take' }],
+      say: 'An average of how fast monitored vertebrate populations are changing in size, with the first year of the record set to 100. It is not a headcount and it is not a share of species lost — it is an average rate of change, and it carries the confidence band you see shaded here, which is part of the reading and not decoration.',
+      dp: 1, unitShort: '', zero: true,
+      lines: [{ name: 'index', label: 'index, first year = 100', short: 'index', role: 'take' }],
       band: { lower: 'lower', upper: 'upper' },
       figures: function (m) {
-        var i = m.series.index, last = i[i.length - 1];
-        return [
-          { n: fmt(last[1], 2), c: 'index in ' + last[0], cls: 'take' },
-          { n: '−' + fmt((1 - last[1]) * 100, 0) + '%', c: 'against the 1970 baseline', cls: 'take' },
-          { n: (last[0] - i[0][0]) + ' yrs', c: 'of record', cls: '' }
+        var i = m.series.index, last = i[i.length - 1], base = i[0];
+        var lo = m.series.lower, hi = m.series.upper;
+        var drop = (1 - last[1] / base[1]) * 100;
+        var out = [
+          { n: fmt(last[1], 1), c: 'index in ' + last[0] + ' (' + base[0] + ' = ' + fmt(base[1], 0) + ')', cls: 'take' },
+          { n: '−' + fmt(drop, 0) + '%', c: 'average decline since ' + base[0], cls: 'take' }
         ];
+        if (lo && hi) {
+          out.push({
+            n: '−' + fmt((1 - hi[hi.length - 1][1] / base[1]) * 100, 0) + ' to −' + fmt((1 - lo[lo.length - 1][1] / base[1]) * 100, 0) + '%',
+            c: 'the published range', cls: ''
+          });
+        }
+        return out;
       }
     },
     {
@@ -338,14 +346,19 @@
       var span = x1 - x0;
       var step = span > 120 ? 40 : span > 60 ? 20 : span > 30 ? 10 : 5;
       var startTick = Math.ceil(x0 / step) * step;
+      var lastTick = null;
       for (var yr = startTick; yr <= x1; yr += step) {
         var tx = svgEl('text', { x: X(yr), y: M.t + ih + 17, 'text-anchor': 'middle' });
         tx.textContent = yr;
         g.appendChild(tx);
+        lastTick = yr;
       }
-      var tl = svgEl('text', { x: X(x1), y: M.t + ih + 17, 'text-anchor': 'end' });
-      tl.textContent = x1;
-      if (x1 - startTick > step * 0.45 || startTick > x1) g.appendChild(tl);
+      // the final year, but only when it is far enough from the last round tick
+      if (lastTick == null || x1 - lastTick > step * 0.5) {
+        var tl = svgEl('text', { x: X(x1), y: M.t + ih + 17, 'text-anchor': 'end' });
+        tl.textContent = x1;
+        g.appendChild(tl);
+      }
       svg.appendChild(g);
 
       // peak marker
