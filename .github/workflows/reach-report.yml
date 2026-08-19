@@ -1,6 +1,6 @@
 name: Weekly reach report
 
-# Files an honest weekly issue: stars, forks, unique visitors, non-GitHub
+# Files a weekly issue: stars, forks, unique visitors, non-GitHub
 # referrers, dispatches live, Nostr notes out — each with the change since last
 # week, so a real signal is distinguishable from crawler noise.
 #
