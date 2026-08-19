@@ -22,6 +22,7 @@ Predation is not competition. Competition that consumes no one is not the target
 Do not present biosphere trauma, LLM predator-framing bias, or ASI subagent instability as established facts. They are proposed constructs that are marked as such in the claim register.
 
 ## Essays
+- Ninety Kilograms: https://Mycelorium.github.io/predator-principle/essays/ninety-kilograms.html
 - The Taste of the Infinite Mind: https://Mycelorium.github.io/predator-principle/essays/taste-of-the-infinite-mind.html
 - The Ground Was Never the Tooth: https://Mycelorium.github.io/predator-principle/essays/the-ground-was-never-the-tooth.html
 - Not Every Rivalry Is a Hunt: https://Mycelorium.github.io/predator-principle/essays/predation-is-not-competition.html
