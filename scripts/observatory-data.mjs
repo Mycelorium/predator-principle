@@ -199,7 +199,7 @@ if (IUCN_TOKEN) {
   metrics.threatened_species = {
     value: null, unit: null, as_of: null,
     source: 'IUCN Red List API v4', url: 'https://api.iucnredlist.org/',
-    licence: null, note: 'No IUCN_TOKEN configured. The Wound stays unread until a token exists.',
+    licence: null, note: 'No IUCN_TOKEN configured; the API requires an access token, so this indicator is not retrieved.',
     fetched_at: nowIso(), status: 'no_token',
   };
 }
@@ -257,17 +257,17 @@ try {
   fever.status = 'failed';
   fever.error = String(error && error.message ? error.message : error);
 }
-fever.note = 'Counts are term hits, not unique articles; blocks may overlap. The level depends on the word lists — only the movement does not.';
+fever.note = 'Counts are term matches rather than unique documents, and query blocks may overlap. The absolute level depends on the term lists used; only relative change over time is comparable.';
 fever.source = 'GDELT DOC 2.0 API';
 fever.url = 'https://api.gdeltproject.org/api/v2/doc/doc';
 fever.fetched_at = nowIso();
 metrics.fever = fever;
 
-/* ═══════════════════════ 6b · what is taken from the living ═══════════════ */
-// The instruments below read the living world directly rather than its exhaust.
-// Every one is a World-level series from a named dataset, fetched whole so the page
-// can draw the shape of it and not only the last point. A source that cannot be
-// reached records itself as failed and the instrument says so on the page.
+/* ════════════════════ 6b · biosphere-state indicators, full series ════════ */
+// World-level series from named datasets, retrieved whole rather than as a latest
+// value, so the page can plot the record. Each retrieval is wrapped independently:
+// a source that cannot be reached is recorded with status "failed" and no
+// substitute value is written.
 
 const OWID_GRAPHER = (slug) => `https://ourworldindata.org/grapher/${slug}.csv`;
 
@@ -302,9 +302,8 @@ async function grapherWorld(key, slug, cols, meta) {
   }
 }
 
-// 1 · The sea. FAO: the share of assessed marine stocks still inside biologically
-//     sustainable limits, against the share fished beyond them. Two hands, one axis,
-//     and they are heading toward each other.
+// 1 · Marine fish stocks by exploitation status (FAO SOFIA, via OWID). The two
+//     categories are exhaustive and sum to 100 per cent.
 await grapherWorld('fish_stocks', 'fish-stocks-within-sustainable-levels', {
   sustainable: 'Biologically sustainable',
   overexploited: 'Overexploited',
@@ -312,12 +311,12 @@ await grapherWorld('fish_stocks', 'fish-stocks-within-sustainable-levels', {
   unit: '% of assessed marine fish stocks',
   source: 'FAO, The State of World Fisheries and Aquaculture, via Our World in Data',
   licence: 'CC-BY-4.0',
-  note: 'Assessed stocks only — stocks nobody assesses are not in this number, and they are not the healthy ones.',
+  note: 'Coverage is limited to stocks assessed by FAO. Unassessed stocks are excluded and their status is unknown. Assessment intervals are irregular.',
   hands: { turn: 'sustainable', take: 'overexploited' },
 });
 
-// 2 · The living record. WWF/ZSL Living Planet Index, with the confidence band it
-//     is published with. The band is part of the reading, not a decoration.
+// 2 · Living Planet Index (WWF/ZSL, via OWID), with the published upper and lower
+//     estimates retained alongside the central series.
 await grapherWorld('living_planet_index', 'global-living-planet-index', {
   index: 'Central estimate',
   upper: 'Upper estimate',
@@ -326,12 +325,11 @@ await grapherWorld('living_planet_index', 'global-living-planet-index', {
   unit: 'index, 1970 = 1',
   source: 'WWF / Zoological Society of London, Living Planet Index, via Our World in Data',
   licence: 'CC-BY-4.0',
-  note: 'An average rate of change across monitored vertebrate populations. Not a headcount of animals, and not a share of species lost.',
+  note: 'Mean proportional rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost. Sampling is uneven across taxa and regions.',
   hands: { take: 'index' },
 });
 
-// 3 · The clearing. CO2 released by land-use change — the carbon that was standing
-//     forest and is now air. Already in the OWID CO2 file fetched above.
+// 3 · CO2 emissions from land-use change (OWID CO2 dataset, already fetched above).
 try {
   const rows = parseCsv(await get(OWID_CO2));
   const pts = rows
@@ -345,7 +343,7 @@ try {
     value: last[1], unit: 'Gt CO₂ / year', as_of: String(last[0]),
     source: 'Our World in Data — CO2 and Greenhouse Gas Emissions (land-use change)',
     url: 'https://github.com/owid/co2-data', licence: 'CC-BY-4.0',
-    note: `Carbon released by clearing and converting land. Peak was ${peak[1]} Gt in ${peak[0]}.`,
+    note: `Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. Uncertainty on this term is substantially larger than on fossil-fuel emissions and the publisher revises the full historical series between releases. Maximum in the series is ${peak[1]} Gt (${peak[0]}).`,
   });
   metrics.land_use_change_co2.series = { taken: pts };
   metrics.land_use_change_co2.peak = { year: peak[0], value: peak[1] };
@@ -357,8 +355,8 @@ try {
   });
 }
 
-// 4 · The current. The counter-hand: fossil share of world electricity against the
-//     solar-and-wind share, on one axis, so the crossing can be seen coming.
+// 4 · Electricity generation shares: fossil fuels against solar and wind, both as
+//     percentages of the same total.
 try {
   const rows = parseCsv(await get(OWID_ENERGY));
   const world = rows.filter((r) => r.country === 'World' && Number(r.year) >= 1985);
@@ -377,7 +375,7 @@ try {
     unit: '% of world electricity', as_of: String(fossil[fossil.length - 1][0]),
     source: 'Our World in Data / Ember — share of electricity generation',
     url: 'https://github.com/owid/energy-data', licence: 'CC-BY-4.0',
-    note: 'Electricity only, which is about a fifth of final energy. The rest of the system has barely started to turn.',
+    note: 'Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator.',
   });
   metrics.electricity_crossing.series = { taken: fossil, turning: sw };
   metrics.electricity_crossing.hands = { take: 'taken', turn: 'turning' };
@@ -393,7 +391,7 @@ put('battery_pack_price', {
   source: 'BloombergNEF Lithium-Ion Battery Price Survey (December 2025)',
   url: 'https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/',
   licence: 'reported figure, cited not redistributed',
-  note: 'Published once a year as a report, not as a feed. Entered by hand; check every December.',
+  note: 'Published annually as a report rather than as a machine-readable feed; value transcribed manually. Next revision expected each December.',
 });
 metrics.battery_pack_price.status = 'manual';
 
@@ -401,7 +399,7 @@ put('co2_preindustrial_baseline', {
   value: 280, unit: 'ppm', as_of: 'pre-1750',
   source: 'Ice-core consensus value',
   url: 'https://www.ncei.noaa.gov/products/paleoclimatology/ice-core',
-  note: 'A constant, not a measurement. Held for roughly ten thousand years.',
+  note: 'Reference value from ice-core records, approximately stable through the Holocene. Fixed input, not a current measurement.',
 });
 metrics.co2_preindustrial_baseline.status = 'constant';
 
@@ -414,9 +412,9 @@ await writeFile(new URL(OUT, root), JSON.stringify({
   generated_at: nowIso(),
   generator: 'scripts/observatory-data.mjs',
   rules: [
-    'No number without source, url, as_of and fetched_at.',
-    'A failed source is shown as failed, never as a stale current value.',
-    'Nothing is estimated. Absent means absent.',
+    'Every value carries source, url, reference period and retrieval timestamp.',
+    'A failed retrieval is recorded as failed; no previous value is substituted.',
+    'No value is interpolated, smoothed, extrapolated or projected.',
   ],
   notes,
   metrics,
