@@ -83,7 +83,10 @@ jobs:
       - name: Commit, and remove this workflow
         run: |
           set -euo pipefail
-          git rm -q .github/workflows/normalise-host-case.yml
+          # -f is required: the rewrite above also touched this file, because the
+          # search string appears in it. The file is being deleted in this very
+          # commit, so discarding those modifications is exactly what we want.
+          git rm -qf .github/workflows/normalise-host-case.yml
           git pull --rebase --autostash origin main || true
           git add -A
           if git diff --cached --quiet; then
