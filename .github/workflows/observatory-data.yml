@@ -49,13 +49,20 @@ jobs:
         run: |
           git config user.name "Nirodha Collective"
           git config user.email "285060945+Mycelorium@users.noreply.github.com"
+          # Rebase first: another workflow may have pushed while this run was
+          # fetching. Staging before the rebase leaves an empty index afterwards,
+          # which made `git commit` exit non-zero and failed the whole run.
+          git pull --rebase --autostash origin main || true
           git add docs/data/observatory.json docs/feed.xml docs/feed.json docs/sitemap.xml docs/llms.txt
           if git diff --cached --quiet; then
             echo "No change in the readings."
           else
-            git pull --rebase --autostash origin main || true
             git commit -m "observatory: refresh instrument readings"
-            git push
+            git push || {
+              echo "Push rejected; rebasing once and retrying."
+              git pull --rebase --autostash origin main
+              git push
+            }
           fi
 
       - uses: actions/configure-pages@v5
