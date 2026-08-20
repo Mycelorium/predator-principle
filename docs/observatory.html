@@ -3,153 +3,200 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Observatory — what is taken, and what turns · The Predator Principle</title>
-<meta name="description" content="Instruments, not opinions. The living world read directly: fish stocks, monitored vertebrate populations, land cleared, and the one current that is turning. Every reading carries its source and the date it was fetched.">
+<title>Observatory — biosphere state and energy transition indicators · The Predator Principle</title>
+<meta name="description" content="A small set of quantitative indicators of biosphere state and of the energy transition, each retrieved automatically from a published dataset and reproduced without adjustment. Full series, no interpolation, no projection.">
 <link rel="canonical" href="https://Mycelorium.github.io/predator-principle/observatory.html">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="The Observatory — what is taken, and what turns">
-<meta property="og:description" content="The living world read directly. Every reading carries its source and the date it was fetched. A source that fails is shown as failed, never as a stale current value.">
+<meta property="og:title" content="Observatory — biosphere state and energy transition indicators">
+<meta property="og:description" content="Indicators retrieved automatically from published datasets and reproduced without adjustment. Full series, no interpolation, no projection.">
 <meta property="og:url" content="https://Mycelorium.github.io/predator-principle/observatory.html">
 <meta property="og:image" content="https://Mycelorium.github.io/predator-principle/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
 <style>
-  .obs{
-    --take:#a8410f;      /* what is taken — solid line */
-    --turn:#0b7c4e;      /* what turns    — dashed line */
-    --rule:#d8d3c8;
-    --grid:#e7e2d6;
+  :root{
+    --bg:#f4f0e7;
+    --panel:#faf8f3;
+    --ink:#14171a;
+    --ink-2:#3c4248;
+    --ink-3:#6b7178;
+    --ink-4:#9aa0a6;
+    --rule:#ddd8cc;
+    --rule-2:#ebe6da;
+    --pressure:#a8410f;
+    --response:#0b7c4e;
+    --sans:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
     --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:400 15px/1.62 var(--sans);
+    font-feature-settings:"tnum" 1,"lnum" 1;
+    -webkit-font-smoothing:antialiased}
+  a{color:inherit}
 
-  .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;
-    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
-    padding:12px 0;margin:26px 0 0;font:400 12px/1 var(--mono)}
-  .toolbar .lbl{color:#6c6a64;letter-spacing:.12em;text-transform:uppercase;font-size:10.5px}
-  .seg{display:inline-flex;border:1px solid var(--rule);background:#fff}
-  .seg button{font:400 12px/1 var(--mono);padding:8px 13px;border:0;background:transparent;
-    color:#33363c;cursor:pointer}
-  .seg button+button{border-left:1px solid var(--rule)}
-  .seg button[aria-pressed="true"]{background:#161b18;color:#fffef8}
-  .toolbar .key{margin-left:auto;display:flex;gap:16px;align-items:center;color:#4a4d53}
-  .toolbar .key span{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
-  .toolbar .key i{width:22px;height:0;border-top-width:2px;display:inline-block}
-  .k-take{border-top:2px solid var(--take)}
-  .k-turn{border-top:2px dashed var(--turn)}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:12px 24px;border-bottom:1px solid var(--rule);
+    font:500 11px/1 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+  .topbar a{text-decoration:none}
+  .topbar a:hover{color:var(--ink)}
 
-  .inst{border-top:1px solid var(--rule);padding:34px 0 6px;margin:0}
-  .inst:first-of-type{border-top:0}
-  .inst .kicker{font:500 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#6c6a64}
-  .inst h2{font-size:27px;font-weight:400;margin:7px 0 6px;letter-spacing:-.01em}
-  .inst .say{max-width:64ch;color:#33363c;margin:0 0 4px}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
 
-  .figs{display:flex;flex-wrap:wrap;gap:0 34px;margin:16px 0 6px;padding:0;list-style:none}
-  .figs li{padding:0}
-  .figs .n{font:400 25px/1.15 Georgia,serif;display:block}
-  .figs .n.take{color:var(--take)}
-  .figs .n.turn{color:var(--turn)}
-  .figs .c{font:400 10.5px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#6c6a64;display:block;margin-top:3px}
+  header.head{padding:52px 0 30px;border-bottom:1px solid var(--rule)}
+  .eyebrow{font:600 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin:0 0 16px}
+  h1{font:600 clamp(27px,3.3vw,37px)/1.16 var(--sans);letter-spacing:-.018em;margin:0 0 18px;max-width:26ch}
+  .method{max-width:70ch;color:var(--ink-2);font-size:15.5px;margin:0}
+  .method + .method{margin-top:10px}
 
-  figure.chart{margin:14px 0 0;position:relative}
-  figure.chart svg{display:block;width:100%;height:auto;touch-action:pan-y}
-  figure.chart svg:focus-visible{outline:2px solid #161b18;outline-offset:3px}
-  .axis text{font:400 10.5px/1 var(--mono);fill:#8c887f}
-  .gridline{stroke:var(--grid);stroke-width:1}
+  dl.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;
+    background:var(--rule-2);border:1px solid var(--rule-2);margin:26px 0 0}
+  dl.meta > div{background:var(--bg);padding:12px 14px}
+  dl.meta dt{font:500 10px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0 0 6px}
+  dl.meta dd{margin:0;font:500 14px/1.35 var(--mono);color:var(--ink)}
+
+  .layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:40px;padding:30px 0 0;align-items:start}
+  .layout > *{min-width:0}
+  main{min-width:0}
+  @media (max-width:960px){.layout{grid-template-columns:1fr;gap:0}nav.rail{display:none}}
+
+  nav.rail{position:sticky;top:20px}
+  nav.rail h2{font:600 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+  nav.rail a{display:block;text-decoration:none;padding:9px 0;border-top:1px solid var(--rule-2);color:var(--ink-2)}
+  nav.rail a:last-child{border-bottom:1px solid var(--rule-2)}
+  nav.rail a .t{display:block;font-size:12.5px;line-height:1.35;font-weight:450}
+  nav.rail a .s{display:block;margin-top:5px;height:20px}
+  nav.rail a:hover .t,nav.rail a[aria-current="true"] .t{color:var(--ink);font-weight:600}
+  nav.rail svg{display:block;width:100%;height:20px;overflow:visible}
+
+  .ind{border:1px solid var(--rule);background:var(--panel);margin:0 0 26px;scroll-margin-top:16px}
+  .ind > .bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;
+    padding:10px 18px;border-bottom:1px solid var(--rule-2);background:var(--bg)}
+  .ind .code{font:600 10px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+  .ind .unit{margin-left:auto;font:400 11px/1 var(--mono);color:var(--ink-4)}
+  .ind .body{padding:20px 18px 18px}
+  .ind h3{font:600 21px/1.28 var(--sans);letter-spacing:-.012em;margin:0 0 8px}
+  .ind .def{max-width:78ch;color:var(--ink-2);font-size:14px;margin:0}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+    background:var(--rule-2);border:1px solid var(--rule-2);margin:18px 0 0}
+  .stats > div{background:var(--panel);padding:11px 13px}
+  .stats .v{font:500 21px/1.15 var(--mono);letter-spacing:-.02em;display:block}
+  .stats .v.pressure{color:var(--pressure)}
+  .stats .v.response{color:var(--response)}
+  .stats .k{display:block;margin-top:5px;font:400 10.5px/1.4 var(--mono);letter-spacing:.06em;color:var(--ink-3)}
+
+  .ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 6px}
+  .seg{display:inline-flex;border:1px solid var(--rule)}
+  .seg button{font:400 11.5px/1 var(--mono);padding:7px 11px;border:0;background:transparent;color:var(--ink-2);cursor:pointer}
+  .seg button + button{border-left:1px solid var(--rule)}
+  .seg button[aria-pressed="true"]{background:var(--ink);color:var(--panel)}
+  .seg button:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}
+  .legend button{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--rule);
+    background:transparent;cursor:pointer;padding:6px 10px;
+    font:400 11.5px/1 var(--mono);color:var(--ink-2)}
+  .legend button[aria-pressed="false"]{opacity:.42}
+  .legend button i{width:16px;height:0;display:inline-block}
+  .legend .sw-solid{border-top:2px solid currentColor}
+  .legend .sw-dash{border-top:2px dashed currentColor}
+
+  .readout{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:baseline;min-height:22px;
+    font:400 12px/1.5 var(--mono);color:var(--ink-3);margin:2px 0 6px}
+  .readout .yr{font-weight:600;color:var(--ink)}
+  .readout span.v{color:var(--ink)}
+  .readout em{font-style:normal;color:var(--ink-4)}
+
+  figure.chart{margin:0;position:relative}
+  figure.chart svg.plot{display:block;width:100%;height:auto;touch-action:pan-y}
+  figure.chart svg.plot:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .axis text{font:400 10.5px/1 var(--mono);fill:var(--ink-4)}
+  .axis .unitlab{fill:var(--ink-3)}
+  .gridline{stroke:var(--rule-2);stroke-width:1}
   .zeroline{stroke:var(--rule);stroke-width:1}
   .ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
-  .ln-take{stroke:var(--take)}
-  .ln-turn{stroke:var(--turn);stroke-dasharray:7 4}
-  .band{fill:var(--take);opacity:.11}
-  .endlab{font:400 11.5px/1 var(--mono)}
-  .endlab.take{fill:var(--take)}
-  .endlab.turn{fill:var(--turn)}
+  .band{opacity:.13}
+  .endlab{font:500 11px/1 var(--mono)}
   .hit{fill:transparent}
-  .cross{stroke:#161b18;stroke-width:1;opacity:.35}
-  .dot{stroke:#f4f0e7;stroke-width:2}
-  .peak text{font:400 10.5px/1 var(--mono);fill:#6c6a64}
-  .peak line{stroke:#b9b3a6;stroke-width:1;stroke-dasharray:2 3}
+  .cross{stroke:var(--ink);stroke-width:1;opacity:.3}
+  .dot{stroke:var(--panel);stroke-width:2}
+  .mark line{stroke:var(--ink-4);stroke-width:1;stroke-dasharray:2 3}
+  .mark text{font:400 10px/1 var(--mono);fill:var(--ink-3)}
 
-  .tip{position:absolute;pointer-events:none;z-index:5;background:#161b18;color:#fffef8;
-    border-radius:2px;padding:8px 11px;font:400 11.5px/1.6 var(--mono);white-space:nowrap;
-    opacity:0;transition:opacity .09s ease}
-  .tip.on{opacity:1}
-  .tip b{font-weight:600;display:block;margin-bottom:3px;letter-spacing:.08em}
-  .tip i{font-style:normal;display:inline-block;width:9px}
+  .tbl-wrap{max-height:330px;overflow:auto;border:1px solid var(--rule-2);margin:4px 0 0}
+  table.data{border-collapse:collapse;width:100%;font:400 12px/1.55 var(--mono)}
+  table.data th,table.data td{text-align:right;padding:5px 12px;border-bottom:1px solid var(--rule-2);white-space:nowrap}
+  table.data th:first-child,table.data td:first-child{text-align:left}
+  table.data thead th{position:sticky;top:0;background:var(--bg);color:var(--ink-3);font-weight:500;
+    border-bottom:1px solid var(--rule)}
 
-  details.tbl{margin:12px 0 0}
-  details.tbl summary{font:400 11.5px/1 var(--mono);color:#6c6a64;cursor:pointer;padding:5px 0}
-  details.tbl summary:hover{color:#161b18}
-  details.tbl table{border-collapse:collapse;font:400 11.5px/1.6 var(--mono);margin:8px 0 0;width:100%;max-width:660px}
-  details.tbl td:first-child,details.tbl th:first-child{width:46%}
-  details.tbl th:nth-child(3),details.tbl td:nth-child(3){white-space:nowrap}
-  details.tbl th,details.tbl td{text-align:right;padding:3px 12px 3px 0;border-bottom:1px solid #eeeade}
-  details.tbl th:first-child,details.tbl td:first-child{text-align:left}
-  details.tbl th{color:#6c6a64;font-weight:500}
-  details.tbl .scroll{max-height:290px;overflow:auto}
+  .src{margin:16px 0 0;padding:12px 0 0;border-top:1px solid var(--rule-2);
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px 22px;overflow-wrap:anywhere;
+    font:400 11.5px/1.55 var(--mono);color:var(--ink-3)}
+  .src b{display:block;font:500 9.5px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--ink-4);margin-bottom:4px}
+  .src a{color:var(--ink-2)}
 
-  .prov{font:400 10.5px/1.6 var(--mono);color:#a09b90;margin:12px 0 0;max-width:78ch}
-  .prov a{color:#8c887f}
-  .unread{border:1px solid #e6c6b4;background:#fdf3ec;padding:14px 16px;margin:14px 0 0;
-    font:400 12px/1.7 var(--mono);color:#8f3a0d}
-  .unread b{display:block;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:10.5px;margin-bottom:5px}
-  .chron{list-style:none;margin:14px 0 0;padding:0}
-  .chron li{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid #eeeade}
-  .chron li:first-child{border-top:1px solid #eeeade}
-  .chron time{font:400 11px/1.7 var(--mono);color:var(--turn)}
-  .chron b{font-weight:500;font-size:15px}
-  .chron p{margin:3px 0 0;font-size:14px;color:#4a4d53;max-width:64ch}
-  .chron a{font:400 10.5px/1.7 var(--mono);color:#8c887f}
-  @media (max-width:560px){.chron li{grid-template-columns:1fr;gap:2px}}
-  .stamp{font:400 10.5px/1.7 var(--mono);color:#a09b90;margin-top:30px}
-  .stamp b{font-weight:500;color:#6c6a64}
-  @media (max-width:620px){
-    .toolbar .key{margin-left:0;width:100%;padding-top:4px}
-    .figs{gap:0 22px}
-    .figs .n{font-size:21px}
-  }
-  @media (prefers-reduced-motion:reduce){.tip{transition:none}}
+  .notretrieved{border:1px solid #e2c3b1;background:#fbf2ec;padding:14px 16px;margin:18px 0 0;
+    font:400 12.5px/1.65 var(--mono);color:#8f3a0d}
+  .notretrieved b{display:block;font-weight:600;letter-spacing:.13em;text-transform:uppercase;font-size:10px;margin-bottom:6px}
+
+  .reg{list-style:none;margin:18px 0 0;padding:0;border-top:1px solid var(--rule-2)}
+  .reg li{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:13px 0;border-bottom:1px solid var(--rule-2)}
+  .reg time{font:500 11.5px/1.6 var(--mono);color:var(--response)}
+  .reg b{font-weight:600;font-size:14.5px}
+  .reg p{margin:3px 0 0;font-size:13.5px;color:var(--ink-2);max-width:70ch}
+  .reg a{font:400 11px/1.6 var(--mono);color:var(--ink-3)}
+  @media (max-width:560px){.reg li{grid-template-columns:1fr;gap:3px}}
+
+  footer.foot{margin-top:40px;border-top:1px solid var(--rule);padding:20px 0 44px;
+    font:400 11.5px/1.7 var(--mono);color:var(--ink-3)}
+  footer.foot a{color:var(--ink-2)}
+  footer.foot nav{margin-top:8px;display:flex;gap:16px;flex-wrap:wrap}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
-<body class="obs">
-<div class="post-top">
-<a href="./">← The Predator Principle</a>
-<span>Nirodha Collective · CC BY 4.0</span>
-</div>
-<main class="doc" id="main">
-<p class="eyebrow">THE OBSERVATORY</p>
-<h1>What is taken, and what turns.</h1>
-<p class="lead-p">Instruments, not opinions. These read the living world directly — the stocks in the sea, the monitored populations, the land cleared — and beside them the one current that has begun to turn. Every reading carries the source it came from and the date it was fetched. Nothing here is estimated and nothing is projected: no dashed line runs into the future, because the future is not a measurement. Where a source could not be reached, the instrument says so rather than showing an old number as though it were current.</p>
-
-<div class="toolbar" id="toolbar" hidden>
-  <span class="lbl">Span</span>
-  <span class="seg" role="group" aria-label="Time span">
-    <button type="button" data-span="full" aria-pressed="true">Whole record</button>
-    <button type="button" data-span="1970" aria-pressed="false">Since 1970</button>
-  </span>
-  <span class="key">
-    <span><i class="k-take"></i> taken</span>
-    <span><i class="k-turn"></i> turning</span>
-  </span>
+<body>
+<div class="topbar">
+  <a href="./">← The Predator Principle</a>
+  <span>Nirodha Collective · CC BY 4.0</span>
 </div>
 
-<div id="obs"><p style="font:400 13px/1.7 'IBM Plex Mono',monospace;color:#8c887f;padding:26px 0">Reading the instruments …</p></div>
+<div class="wrap">
+<header class="head">
+  <p class="eyebrow">Observatory</p>
+  <h1>Biosphere state and energy transition indicators</h1>
+  <p class="method">A small set of quantitative indicators, each retrieved automatically from a published dataset and reproduced without adjustment. Complete series are shown rather than latest values only. No value is interpolated, smoothed, extrapolated or projected.</p>
+  <p class="method">Indicators are grouped following the pressure–response distinction used in environmental indicator frameworks: <span style="color:var(--pressure);font-weight:500">pressure</span> series measure load placed on a biological system, <span style="color:var(--response);font-weight:500">response</span> series measure the countervailing change. Where a source cannot be retrieved, the indicator is marked as not retrieved and no earlier value is shown in its place.</p>
+  <dl class="meta" id="meta"></dl>
+</header>
 
-<p class="stamp" id="stamp"></p>
-<hr>
-<p><strong>How to check any of this:</strong> every value, with its source and the timestamp of the fetch, is in <a href="data/observatory.json">data/observatory.json</a>. The script that goes and gets it is <a href="https://github.com/Mycelorium/predator-principle/blob/main/scripts/observatory-data.mjs" target="_blank" rel="noopener">scripts/observatory-data.mjs</a>, and it runs on a schedule with no hand in between. Each instrument can be read as a table. · <a href="./">Home</a> · <a href="foundation.html">Foundation</a></p>
-</main>
-<footer>
-<p>© Nirodha Collective · The Predator Principle — The Cancer of Evolution</p>
-<div><a href="./">Home</a> · <a href="kadamakara.html">Installation</a> · <a href="feed.xml">RSS</a></div>
+<div class="layout">
+  <nav class="rail" id="rail" aria-label="Indicator index"><h2>Indicators</h2></nav>
+  <main id="out"><p style="font:400 13px/1.7 var(--mono);color:var(--ink-3);padding:24px 0">Loading indicator data…</p></main>
+</div>
+
+<footer class="foot">
+  <p id="foot-note"></p>
+  <nav>
+    <a href="data/observatory.json">Machine-readable data (JSON)</a>
+    <a href="./">Home</a>
+    <a href="foundation.html">Foundation</a>
+  </nav>
+  <p style="margin-top:14px">© Nirodha Collective · The Predator Principle</p>
 </footer>
+</div>
 
 <script>
 (function () {
   'use strict';
 
-  var TAKE = '#a8410f', TURN = '#0b7c4e';
+  var C = { pressure: '#a8410f', response: '#0b7c4e' };
+
   var esc = function (s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
@@ -159,494 +206,573 @@
     if (v == null || isNaN(v)) return '—';
     return Number(v).toLocaleString('en-GB', { minimumFractionDigits: dp, maximumFractionDigits: dp });
   };
-  var svgEl = function (n, attrs) {
+  var el = function (n, a) {
     var e = document.createElementNS('http://www.w3.org/2000/svg', n);
-    for (var k in attrs) if (attrs[k] != null) e.setAttribute(k, attrs[k]);
+    for (var k in a) if (a[k] != null) e.setAttribute(k, a[k]);
     return e;
   };
-
   function niceTicks(lo, hi, want) {
     var span = hi - lo;
     if (!(span > 0)) return [lo];
-    var raw = span / want;
-    var mag = Math.pow(10, Math.floor(Math.log(raw) / Math.LN10));
-    var norm = raw / mag;
-    var step = (norm <= 1 ? 1 : norm <= 2 ? 2 : norm <= 2.5 ? 2.5 : norm <= 5 ? 5 : 10) * mag;
+    var raw = span / want, mag = Math.pow(10, Math.floor(Math.log(raw) / Math.LN10)), n = raw / mag;
+    var step = (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * mag;
     var out = [], v = Math.ceil(lo / step) * step;
     for (; v <= hi + step * 1e-6; v += step) out.push(Number(v.toFixed(10)));
     return out;
   }
 
-  /* ── the instruments, in the order they are read ───────────────────────── */
-  var INSTRUMENTS = [
+  /* ── indicator definitions ─────────────────────────────────────────────── */
+  var IND = [
     {
-      key: 'fish_stocks', kicker: 'The sea',
-      title: 'Inside the limit, and beyond it',
-      say: 'Every assessed marine fish stock is either being fished within what it can replace, or beyond it. Two hands of the same instrument, so they always sum to a hundred — which means the only thing worth watching is how far apart they still are.',
-      dp: 1, unitShort: '%', zero: true,
-      lines: [
-        { name: 'overexploited', label: 'fished beyond the limit', short: 'beyond the limit', role: 'take' },
-        { name: 'sustainable', label: 'within the limit', short: 'within the limit', role: 'turn' }
+      key: 'fish_stocks', code: 'Marine fisheries', nav: 'Marine fish stocks',
+      title: 'Marine fish stocks by exploitation status',
+      def: 'Share of assessed marine fish stocks fished within biologically sustainable limits, and share fished at unsustainable levels. Coverage is limited to stocks assessed by the FAO; the two categories are exhaustive and sum to 100 per cent. Assessment frequency is irregular, so intervals between observations are uneven.',
+      unit: 'per cent of assessed stocks', dp: 1, suffix: '%', zero: true,
+      series: [
+        { name: 'overexploited', label: 'Fished at unsustainable levels', short: 'unsustainable', role: 'pressure' },
+        { name: 'sustainable', label: 'Within biologically sustainable limits', short: 'sustainable', role: 'response' }
       ],
-      figures: function (m) {
-        var o = m.series.overexploited, s = m.series.sustainable;
+      stats: function (s) {
+        var o = s.overexploited, u = s.sustainable, n = o.length - 1;
         return [
-          { n: fmt(o[o.length - 1][1], 1) + '%', c: 'beyond the limit, ' + o[o.length - 1][0], cls: 'take' },
-          { n: fmt(o[0][1], 1) + '%', c: 'beyond the limit, ' + o[0][0], cls: '' },
-          { n: fmt(s[s.length - 1][1] - o[o.length - 1][1], 1) + ' pts', c: 'gap still open', cls: 'turn' }
+          { v: fmt(o[n][1], 1) + '%', k: 'unsustainable, ' + o[n][0], cls: 'pressure' },
+          { v: fmt(o[0][1], 1) + '%', k: 'unsustainable, ' + o[0][0], cls: '' },
+          { v: '+' + fmt(o[n][1] - o[0][1], 1) + ' pp', k: 'change over record', cls: 'pressure' },
+          { v: fmt(u[n][1] - o[n][1], 1) + ' pp', k: 'difference, ' + o[n][0], cls: '' }
         ];
       }
     },
     {
-      key: 'living_planet_index', kicker: 'The monitored populations',
-      title: 'The Living Planet Index',
-      say: 'An average of how fast monitored vertebrate populations are changing in size, with the first year of the record set to 100. It is not a headcount and it is not a share of species lost — it is an average rate of change, and it carries the confidence band you see shaded here, which is part of the reading and not decoration.',
-      dp: 1, unitShort: '', zero: true,
-      lines: [{ name: 'index', label: 'index, first year = 100', short: 'index', role: 'take' }],
+      key: 'living_planet_index', code: 'Vertebrate populations', nav: 'Living Planet Index',
+      title: 'Living Planet Index, global',
+      def: 'Aggregate index of the average rate of change in population size across monitored vertebrate populations, expressed relative to the first year of the record (=100). The index measures mean proportional change across populations; it is not a count of individuals and not a proportion of species lost. The shaded area gives the published upper and lower estimates.',
+      unit: 'index, first year = 100', dp: 1, suffix: '', zero: true,
+      series: [{ name: 'index', label: 'Index value', short: 'index', role: 'pressure' }],
       band: { lower: 'lower', upper: 'upper' },
-      figures: function (m) {
-        var i = m.series.index, last = i[i.length - 1], base = i[0];
-        var lo = m.series.lower, hi = m.series.upper;
-        var drop = (1 - last[1] / base[1]) * 100;
+      stats: function (s) {
+        var i = s.index, n = i.length - 1, base = i[0][1];
         var out = [
-          { n: fmt(last[1], 1), c: 'index in ' + last[0] + ' (' + base[0] + ' = ' + fmt(base[1], 0) + ')', cls: 'take' },
-          { n: '−' + fmt(drop, 0) + '%', c: 'average decline since ' + base[0], cls: 'take' }
+          { v: fmt(i[n][1], 1), k: 'index, ' + i[n][0], cls: 'pressure' },
+          { v: '−' + fmt((1 - i[n][1] / base) * 100, 0) + '%', k: 'change since ' + i[0][0], cls: 'pressure' }
         ];
-        if (lo && hi) {
+        if (s.lower && s.upper) {
           out.push({
-            n: '−' + fmt((1 - hi[hi.length - 1][1] / base[1]) * 100, 0) + ' to −' + fmt((1 - lo[lo.length - 1][1] / base[1]) * 100, 0) + '%',
-            c: 'the published range', cls: ''
+            v: '−' + fmt((1 - s.upper[s.upper.length - 1][1] / base) * 100, 0)
+              + ' to −' + fmt((1 - s.lower[s.lower.length - 1][1] / base) * 100, 0) + '%',
+            k: 'published range', cls: ''
           });
         }
+        out.push({ v: (i[n][0] - i[0][0]) + ' yr', k: 'record length', cls: '' });
         return out;
       }
     },
     {
-      key: 'land_use_change_co2', kicker: 'The clearing',
-      title: 'Carbon that was standing forest',
-      say: 'The carbon released each year by clearing and converting land — the only line on this page that is a direct measure of living matter being turned into atmosphere. It has a peak in it, and the peak is behind us.',
-      dp: 2, unitShort: ' Gt', zero: true,
-      lines: [{ name: 'taken', label: 'Gt CO₂ from land-use change', short: 'land-use CO₂', role: 'take' }],
-      peak: true,
-      figures: function (m) {
-        var t = m.series.taken, last = t[t.length - 1], pk = m.peak;
+      key: 'land_use_change_co2', code: 'Land use', nav: 'Land-use change CO₂',
+      title: 'Carbon dioxide emissions from land-use change',
+      def: 'Annual CO₂ emissions attributed to land-use change, including deforestation and the conversion of other vegetated land. Reported here in gigatonnes per year. Estimates of this term carry substantially larger uncertainty than fossil-fuel emissions, and the publisher revises the full historical series between releases.',
+      unit: 'Gt CO₂ per year', dp: 2, suffix: ' Gt', zero: true,
+      series: [{ name: 'taken', label: 'Annual emissions from land-use change', short: 'LUC CO₂', role: 'pressure' }],
+      mark: 'peak',
+      stats: function (s, m) {
+        var t = s.taken, n = t.length - 1, pk = m.peak;
         return [
-          { n: fmt(last[1], 2) + ' Gt', c: 'released in ' + last[0], cls: 'take' },
-          { n: fmt(pk.value, 2) + ' Gt', c: 'peak, in ' + pk.year, cls: '' },
-          { n: '−' + fmt((1 - last[1] / pk.value) * 100, 0) + '%', c: 'below the peak', cls: 'turn' }
+          { v: fmt(t[n][1], 2) + ' Gt', k: 'emissions, ' + t[n][0], cls: 'pressure' },
+          { v: fmt(pk.value, 2) + ' Gt', k: 'maximum, ' + pk.year, cls: '' },
+          { v: '−' + fmt((1 - t[n][1] / pk.value) * 100, 0) + '%', k: 'below maximum', cls: 'response' },
+          { v: t.length + '', k: 'annual observations', cls: '' }
         ];
       }
     },
     {
-      key: 'electricity_crossing', kicker: 'The current',
-      title: 'Fossil against sun and wind',
-      say: 'The counter-hand. Two shares of the same world electricity supply, on one axis, so the distance between them is the actual distance left to travel. No line is drawn into the future here: where they would meet is a guess, and a guess is not an instrument.',
-      dp: 1, unitShort: '%', zero: true,
-      lines: [
-        { name: 'taken', label: 'fossil share of electricity', short: 'fossil', role: 'take' },
-        { name: 'turning', label: 'solar and wind share', short: 'sun + wind', role: 'turn' }
+      key: 'electricity_crossing', code: 'Electricity', nav: 'Electricity generation',
+      title: 'Electricity generation by source: fossil fuels, solar and wind',
+      def: 'Share of global electricity generation from fossil fuels, and combined share from solar and wind. Both series are percentages of the same total, so the vertical distance between them is directly interpretable. Electricity accounts for roughly one fifth of global final energy consumption; the remainder is not represented here.',
+      unit: 'per cent of global electricity generation', dp: 1, suffix: '%', zero: true,
+      series: [
+        { name: 'taken', label: 'Fossil fuels', short: 'fossil', role: 'pressure' },
+        { name: 'turning', label: 'Solar and wind', short: 'solar + wind', role: 'response' }
       ],
-      figures: function (m) {
-        var f = m.series.taken, s = m.series.turning;
-        var i15 = f.findIndex(function (p) { return p[0] === 2015; });
-        var gapNow = f[f.length - 1][1] - s[s.length - 1][1];
+      stats: function (s) {
+        var f = s.taken, w = s.turning, n = f.length - 1;
+        var i15 = -1;
+        for (var j = 0; j < f.length; j++) if (f[j][0] === 2015) i15 = j;
         var out = [
-          { n: fmt(f[f.length - 1][1], 1) + '%', c: 'fossil, ' + f[f.length - 1][0], cls: 'take' },
-          { n: fmt(s[s.length - 1][1], 1) + '%', c: 'sun and wind', cls: 'turn' }
+          { v: fmt(f[n][1], 1) + '%', k: 'fossil, ' + f[n][0], cls: 'pressure' },
+          { v: fmt(w[n][1], 1) + '%', k: 'solar and wind, ' + w[n][0], cls: 'response' },
+          { v: fmt(f[n][1] - w[n][1], 1) + ' pp', k: 'difference', cls: '' }
         ];
-        if (i15 > -1) {
-          var gap15 = f[i15][1] - s[i15][1];
-          out.push({ n: fmt(gap15 - gapNow, 1) + ' pts', c: 'the gap has closed since 2015', cls: 'turn' });
-        }
+        if (i15 > -1) out.push({ v: '−' + fmt((f[i15][1] - w[i15][1]) - (f[n][1] - w[n][1]), 1) + ' pp', k: 'difference vs 2015', cls: 'response' });
         return out;
       }
     },
     {
-      key: 'ev_share_series', kicker: 'The road',
-      title: 'Electric share of new cars sold',
-      say: 'One more current, and the steepest on the page. A share of sales, not of the fleet — the cars already built do not change when this line moves.',
-      dp: 1, unitShort: '%', zero: true,
-      lines: [{ name: 'turning', label: '% of new cars sold', short: 'new cars', role: 'turn' }],
-      seriesFromValue: 'turning',
-      figures: function (m) {
-        var t = m.series.turning, last = t[t.length - 1];
-        var five = t[Math.max(0, t.length - 6)];
+      key: 'ev_share_series', code: 'Road transport', nav: 'Electric car sales',
+      title: 'Electric share of new car sales',
+      def: 'Battery-electric and plug-in hybrid vehicles as a share of new car registrations worldwide. This is a share of annual sales, not of the vehicle stock in use; the existing fleet is unaffected by movement in this series.',
+      unit: 'per cent of new car sales', dp: 1, suffix: '%', zero: true,
+      fromValue: 'turning',
+      series: [{ name: 'turning', label: 'Electric share of new sales', short: 'electric', role: 'response' }],
+      stats: function (s) {
+        var t = s.turning, n = t.length - 1, p = t[Math.max(0, n - 5)];
         return [
-          { n: fmt(last[1], 1) + '%', c: 'of new cars, ' + last[0], cls: 'turn' },
-          { n: fmt(five[1], 1) + '%', c: 'in ' + five[0], cls: '' },
-          { n: '×' + fmt(five[1] ? last[1] / five[1] : 0, 1), c: 'in five years', cls: 'turn' }
+          { v: fmt(t[n][1], 1) + '%', k: 'share, ' + t[n][0], cls: 'response' },
+          { v: fmt(p[1], 1) + '%', k: 'share, ' + p[0], cls: '' },
+          { v: '×' + fmt(p[1] ? t[n][1] / p[1] : 0, 1), k: 'ratio over ' + (t[n][0] - p[0]) + ' years', cls: 'response' },
+          { v: '+' + fmt(t[n][1] - t[n - 1][1], 1) + ' pp', k: 'change in final year', cls: '' }
         ];
       }
     }
   ];
 
-  /* other readings kept as plain values, no chart */
-  var PLAIN = [
-    ['co2_ppm', 'CO₂ in the air', 'ppm', 2],
-    ['co2_emissions', 'CO₂ emitted from fossil fuels and industry', 'Mt / yr', 0],
-    ['warming_from_co2', 'Warming attributable to CO₂ alone', '°C', 2],
-    ['renewables_share_elec', 'Renewable share of world electricity', '%', 1],
-    ['battery_pack_price', 'Battery pack price', 'USD / kWh', 0],
+  var SINGLE = [
+    ['co2_ppm', 'Atmospheric CO₂ concentration', 'ppm', 2],
+    ['co2_emissions', 'CO₂ emissions, fossil fuels and industry', 'Mt/yr', 0],
+    ['warming_from_co2', 'Warming attributable to CO₂', '°C', 2],
+    ['renewables_share_elec', 'Renewable share of electricity', '%', 1],
+    ['battery_pack_price', 'Lithium-ion battery pack price', 'USD/kWh', 0],
+    ['co2_preindustrial_baseline', 'Pre-industrial CO₂ concentration', 'ppm', 0],
     ['threatened_species', 'Species assessed as threatened', '', 0],
-    ['fever', 'Attention in the world press', '', 0]
+    ['fever', 'Press attention index', '', 0]
   ];
 
-  /* ── chart engine ──────────────────────────────────────────────────────── */
-  function Chart(fig, spec) {
-    var svg = svgEl('svg', { role: 'img', tabindex: '0', 'aria-label': spec.aria });
-    var tip = document.createElement('div');
-    tip.className = 'tip';
+  /* ── plot ──────────────────────────────────────────────────────────────── */
+  function Plot(fig, readout, cfg) {
+    var svg = el('svg', { class: 'plot', role: 'img', tabindex: '0', 'aria-label': cfg.aria });
     fig.appendChild(svg);
-    fig.appendChild(tip);
+    var idx = -1, g = null;
+    var state = { from: null, indexed: false, hidden: {} };
 
-    var idx = -1, geom = null;
-
-    function clip(pts) {
-      if (spec.from == null) return pts;
-      var out = pts.filter(function (p) { return p[0] >= spec.from; });
-      return out.length > 1 ? out : pts;
+    function prep() {
+      return cfg.series.map(function (s) {
+        var pts = s.points;
+        if (state.from != null) {
+          var c = pts.filter(function (p) { return p[0] >= state.from; });
+          if (c.length > 1) pts = c;
+        }
+        if (state.indexed && pts.length) {
+          var b = pts[0][1] || 1;
+          pts = pts.map(function (p) { return [p[0], Number((p[1] / b * 100).toFixed(2))]; });
+        }
+        return { s: s, pts: pts, off: !!state.hidden[s.name] };
+      });
     }
 
     function draw() {
-      var W = fig.clientWidth || 700;
-      if (!W) return;
-      var H = Math.max(220, Math.min(330, Math.round(W * 0.42)));
-      var longest = 0;
-      spec.lines.forEach(function (l) { longest = Math.max(longest, ((l.short || l.label) || '').length); });
-      var rNeed = Math.max(74, longest * 6.4 + 22);
-      var M = { t: 16, r: Math.min(W * 0.34, rNeed), b: 26, l: 48 };
+      var W = fig.clientWidth || 760; if (!W) return;
+      var H = Math.max(230, Math.min(360, Math.round(W * 0.44)));
+      var all = prep(), vis = all.filter(function (d) { return !d.off; });
+      if (!vis.length) vis = all;
+      var lab = 0;
+      vis.forEach(function (d) { lab = Math.max(lab, (d.s.short || d.s.label).length); });
+      var M = { t: 14, r: Math.min(W * 0.3, Math.max(70, lab * 6.3 + 24)), b: 40, l: 54 };
       var iw = W - M.l - M.r, ih = H - M.t - M.b;
       while (svg.firstChild) svg.removeChild(svg.firstChild);
       svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-      svg.setAttribute('width', W); svg.setAttribute('height', H);
-
-      var lines = spec.lines.map(function (l) { return { line: l, pts: clip(l.points) }; });
-      var band = spec.band ? { lo: clip(spec.band.lower), hi: clip(spec.band.upper) } : null;
+      svg.setAttribute('height', H);
 
       var xs = [], ys = [];
-      lines.forEach(function (s) { s.pts.forEach(function (p) { xs.push(p[0]); ys.push(p[1]); }); });
-      if (band) { band.lo.forEach(function (p) { ys.push(p[1]); }); band.hi.forEach(function (p) { ys.push(p[1]); }); }
+      vis.forEach(function (d) { d.pts.forEach(function (p) { xs.push(p[0]); ys.push(p[1]); }); });
+      var band = null;
+      if (cfg.band && !state.indexed && !vis.every(function (d) { return d.off; })) {
+        band = { lo: cfg.band.lower, hi: cfg.band.upper };
+        if (state.from != null) {
+          band.lo = band.lo.filter(function (p) { return p[0] >= state.from; });
+          band.hi = band.hi.filter(function (p) { return p[0] >= state.from; });
+        }
+        band.lo.forEach(function (p) { ys.push(p[1]); });
+        band.hi.forEach(function (p) { ys.push(p[1]); });
+      }
       var x0 = Math.min.apply(null, xs), x1 = Math.max.apply(null, xs);
-      var y0 = spec.zero ? 0 : Math.min.apply(null, ys), y1 = Math.max.apply(null, ys);
-      var peakIn = spec.peak && (spec.from == null || spec.peak.year >= spec.from);
-      if (peakIn && spec.peakValue != null) y1 = Math.max(y1, spec.peakValue);
-      y1 = y1 + (y1 - y0) * 0.10;
-      if (y1 === y0) y1 = y0 + 1;
+      var y0 = cfg.zero ? 0 : Math.min.apply(null, ys), y1 = Math.max.apply(null, ys);
+      var markIn = cfg.mark && (state.from == null || cfg.mark.year >= state.from) && !state.indexed;
+      if (markIn) y1 = Math.max(y1, cfg.mark.value);
+      y1 += (y1 - y0) * 0.09; if (y1 === y0) y1 = y0 + 1;
 
       var X = function (v) { return M.l + (x1 === x0 ? 0 : (v - x0) / (x1 - x0) * iw); };
       var Y = function (v) { return M.t + ih - (v - y0) / (y1 - y0) * ih; };
-      geom = { X: X, Y: Y, M: M, iw: iw, ih: ih, x0: x0, x1: x1, lines: lines, W: W, H: H };
+      g = { X: X, Y: Y, M: M, iw: iw, ih: ih, W: W, vis: vis, indexed: state.indexed };
 
-      // y grid
-      var g = svgEl('g', { class: 'axis' });
-      var ticks = niceTicks(y0, y1, 4);
-      var tdp = ticks.every(function (t) { return Math.abs(t - Math.round(t)) < 1e-9; }) ? 0
-        : ticks.every(function (t) { return Math.abs(t * 10 - Math.round(t * 10)) < 1e-9; }) ? 1 : 2;
-      ticks.forEach(function (v) {
-        var yy = Y(v);
-        if (yy < M.t - 1 || yy > M.t + ih + 1) return;
-        g.appendChild(svgEl('line', { class: v === 0 ? 'zeroline' : 'gridline', x1: M.l, x2: M.l + iw, y1: yy, y2: yy }));
-        var t = svgEl('text', { x: M.l - 9, y: yy + 3.5, 'text-anchor': 'end' });
-        t.textContent = fmt(v, tdp);
-        g.appendChild(t);
+      var ax = el('g', { class: 'axis' });
+      var tk = niceTicks(y0, y1, 4);
+      var tdp = tk.every(function (t) { return Math.abs(t - Math.round(t)) < 1e-9; }) ? 0
+        : tk.every(function (t) { return Math.abs(t * 10 - Math.round(t * 10)) < 1e-9; }) ? 1 : 2;
+      tk.forEach(function (v) {
+        var y = Y(v); if (y < M.t - 1 || y > M.t + ih + 1) return;
+        ax.appendChild(el('line', { class: v === 0 ? 'zeroline' : 'gridline', x1: M.l, x2: M.l + iw, y1: y, y2: y }));
+        var t = el('text', { x: M.l - 9, y: y + 3.5, 'text-anchor': 'end' });
+        t.textContent = fmt(v, tdp); ax.appendChild(t);
       });
-      // x ticks
-      var span = x1 - x0;
-      var step = span > 120 ? 40 : span > 60 ? 20 : span > 30 ? 10 : 5;
-      var startTick = Math.ceil(x0 / step) * step;
-      var lastTick = null;
-      for (var yr = startTick; yr <= x1; yr += step) {
-        var tx = svgEl('text', { x: X(yr), y: M.t + ih + 17, 'text-anchor': 'middle' });
-        tx.textContent = yr;
-        g.appendChild(tx);
-        lastTick = yr;
+      var span = x1 - x0, step = span > 120 ? 40 : span > 60 ? 20 : span > 30 ? 10 : 5;
+      var last = null;
+      for (var yr = Math.ceil(x0 / step) * step; yr <= x1; yr += step) {
+        var tx = el('text', { x: X(yr), y: M.t + ih + 17, 'text-anchor': 'middle' });
+        tx.textContent = yr; ax.appendChild(tx); last = yr;
       }
-      // the final year, but only when it is far enough from the last round tick
-      if (lastTick == null || x1 - lastTick > step * 0.5) {
-        var tl = svgEl('text', { x: X(x1), y: M.t + ih + 17, 'text-anchor': 'end' });
-        tl.textContent = x1;
-        g.appendChild(tl);
+      if (last == null || x1 - last > step * 0.5) {
+        var te = el('text', { x: X(x1), y: M.t + ih + 17, 'text-anchor': 'end' });
+        te.textContent = x1; ax.appendChild(te);
       }
-      svg.appendChild(g);
+      var ul = el('text', { class: 'unitlab', x: M.l, y: M.t + ih + 34, 'text-anchor': 'start' });
+      ul.textContent = state.indexed ? 'index, first year of shown range = 100' : cfg.unit;
+      ax.appendChild(ul);
+      svg.appendChild(ax);
 
-      // peak marker
-      if (peakIn) {
-        var pg = svgEl('g', { class: 'peak' });
-        pg.appendChild(svgEl('line', { x1: X(spec.peak.year), x2: X(spec.peak.year), y1: M.t, y2: M.t + ih }));
-        var pt = svgEl('text', { x: X(spec.peak.year) + 6, y: M.t + 11 });
-        pt.textContent = 'peak ' + spec.peak.year;
-        pg.appendChild(pt);
-        svg.appendChild(pg);
+      if (markIn) {
+        var mg = el('g', { class: 'mark' });
+        mg.appendChild(el('line', { x1: X(cfg.mark.year), x2: X(cfg.mark.year), y1: M.t, y2: M.t + ih }));
+        var mt = el('text', { x: X(cfg.mark.year) + 6, y: M.t + 10 });
+        mt.textContent = 'maximum ' + cfg.mark.year; mg.appendChild(mt);
+        svg.appendChild(mg);
       }
 
-      // uncertainty band
-      if (band) {
+      if (band && band.lo.length && !all[0].off) {
         var d = band.hi.map(function (p, j) { return (j ? 'L' : 'M') + X(p[0]) + ' ' + Y(p[1]); }).join(' ')
           + ' ' + band.lo.slice().reverse().map(function (p) { return 'L' + X(p[0]) + ' ' + Y(p[1]); }).join(' ') + ' Z';
-        svg.appendChild(svgEl('path', { class: 'band', d: d }));
+        svg.appendChild(el('path', { class: 'band', d: d, fill: C[all[0].s.role] }));
       }
 
-      // lines + end labels
-      lines.forEach(function (s) {
-        var d = s.pts.map(function (p, j) { return (j ? 'L' : 'M') + X(p[0]) + ' ' + Y(p[1]); }).join(' ');
-        svg.appendChild(svgEl('path', { class: 'ln ln-' + s.line.role, d: d }));
-        var last = s.pts[s.pts.length - 1];
-        var lab = svgEl('text', {
-          class: 'endlab ' + s.line.role, x: X(last[0]) + 9,
-          y: Y(last[1]) + 4, 'text-anchor': 'start'
-        });
-        lab.textContent = fmt(last[1], spec.dp) + spec.unitShort;
-        svg.appendChild(lab);
-        var lab2 = svgEl('text', {
-          class: 'endlab ' + s.line.role, x: X(last[0]) + 9,
-          y: Y(last[1]) + 19, 'text-anchor': 'start', 'font-size': '10'
-        });
-        lab2.textContent = s.line.short || s.line.label;
-        lab2.setAttribute('opacity', '.72');
-        svg.appendChild(lab2);
+      vis.forEach(function (d) {
+        var col = C[d.s.role];
+        svg.appendChild(el('path', {
+          class: 'ln', d: d.pts.map(function (p, j) { return (j ? 'L' : 'M') + X(p[0]) + ' ' + Y(p[1]); }).join(' '),
+          stroke: col, 'stroke-dasharray': d.s.role === 'response' ? '7 4' : null
+        }));
+        var lp = d.pts[d.pts.length - 1];
+        var a = el('text', { class: 'endlab', x: X(lp[0]) + 9, y: Y(lp[1]) + 4, fill: col });
+        a.textContent = fmt(lp[1], cfg.dp) + (state.indexed ? '' : cfg.suffix);
+        svg.appendChild(a);
+        var b = el('text', { class: 'endlab', x: X(lp[0]) + 9, y: Y(lp[1]) + 18, fill: col, 'font-size': '10', opacity: '.75' });
+        b.textContent = d.s.short || d.s.label;
+        svg.appendChild(b);
       });
 
-      // hover layer
-      var cross = svgEl('line', { class: 'cross', y1: M.t, y2: M.t + ih, x1: -99, x2: -99 });
-      svg.appendChild(cross);
-      var dots = lines.map(function (s) {
-        var c = svgEl('circle', { class: 'dot', r: 4.5, cx: -99, cy: -99, fill: s.line.role === 'take' ? TAKE : TURN });
+      g.cross = el('line', { class: 'cross', y1: M.t, y2: M.t + ih, x1: -99, x2: -99 });
+      svg.appendChild(g.cross);
+      g.dots = vis.map(function (d) {
+        var c = el('circle', { class: 'dot', r: 4.5, cx: -99, cy: -99, fill: C[d.s.role] });
         svg.appendChild(c); return c;
       });
-      geom.cross = cross; geom.dots = dots;
-      svg.appendChild(svgEl('rect', { class: 'hit', x: M.l, y: M.t, width: iw, height: ih }));
-      if (idx > -1) show(idx); else hide();
+      svg.appendChild(el('rect', { class: 'hit', x: M.l, y: M.t, width: iw, height: ih }));
+      if (idx > -1) show(idx); else clear();
     }
 
-    function nearest(px) {
-      var pts = geom.lines[0].pts, best = 0, bd = Infinity;
-      for (var i = 0; i < pts.length; i++) {
-        var d = Math.abs(geom.X(pts[i][0]) - px);
-        if (d < bd) { bd = d; best = i; }
-      }
-      return best;
+    function clear() {
+      idx = -1;
+      if (g) { g.cross.setAttribute('x1', -99); g.cross.setAttribute('x2', -99);
+        g.dots.forEach(function (d) { d.setAttribute('cx', -99); d.setAttribute('cy', -99); }); }
+      readout.innerHTML = '<em>Move the pointer across the plot, or focus it and use the arrow keys, to read individual observations.</em>';
     }
 
     function show(i) {
-      if (!geom) return;
-      var base = geom.lines[0].pts;
+      if (!g) return;
+      var base = g.vis[0].pts;
       idx = Math.max(0, Math.min(base.length - 1, i));
       var year = base[idx][0];
-      geom.cross.setAttribute('x1', geom.X(year));
-      geom.cross.setAttribute('x2', geom.X(year));
-      var html = '<b>' + year + '</b>';
-      geom.lines.forEach(function (s, k) {
-        var p = s.pts.find(function (q) { return q[0] === year; });
-        if (!p) { geom.dots[k].setAttribute('cx', -99); geom.dots[k].setAttribute('cy', -99); return; }
-        geom.dots[k].setAttribute('cx', geom.X(p[0]));
-        geom.dots[k].setAttribute('cy', geom.Y(p[1]));
-        html += '<i style="background:' + (s.line.role === 'take' ? TAKE : TURN) + ';width:8px;height:8px;border-radius:50%;margin-right:6px"></i>'
-          + fmt(p[1], spec.dp) + spec.unitShort + '  ' + esc(s.line.label) + '<br>';
+      g.cross.setAttribute('x1', g.X(year)); g.cross.setAttribute('x2', g.X(year));
+      var h = '<span class="yr">' + year + '</span>';
+      g.vis.forEach(function (d, k) {
+        var p = null;
+        for (var j = 0; j < d.pts.length; j++) if (d.pts[j][0] === year) p = d.pts[j];
+        if (!p) { g.dots[k].setAttribute('cx', -99); g.dots[k].setAttribute('cy', -99); return; }
+        g.dots[k].setAttribute('cx', g.X(p[0])); g.dots[k].setAttribute('cy', g.Y(p[1]));
+        h += '<span><span class="v" style="color:' + C[d.s.role] + '">'
+          + fmt(p[1], cfg.dp) + (g.indexed ? '' : cfg.suffix) + '</span> ' + esc(d.s.label) + '</span>';
       });
-      tip.innerHTML = html;
-      tip.classList.add('on');
-      // pinned to the top corner opposite the crosshair, so it never covers
-      // the reading it belongs to and never rides over the text above the chart
-      var r = svg.getBoundingClientRect();
-      var scale = r.width / geom.W;
-      var xPix = geom.X(year) * scale;
-      var onLeft = xPix > r.width / 2;
-      tip.style.left = onLeft ? (geom.M.l * scale + 6) + 'px' : '';
-      tip.style.right = onLeft ? '' : ((geom.W - geom.M.l - geom.iw) * scale + 6) + 'px';
-      tip.style.top = (geom.M.t * scale + 4) + 'px';
-      svg.setAttribute('aria-label', spec.aria + ' — reading ' + year);
-    }
-    function hide() {
-      idx = -1;
-      tip.classList.remove('on');
-      if (!geom) return;
-      geom.cross.setAttribute('x1', -99); geom.cross.setAttribute('x2', -99);
-      geom.dots.forEach(function (d) { d.setAttribute('cx', -99); d.setAttribute('cy', -99); });
+      readout.innerHTML = h;
+      svg.setAttribute('aria-label', cfg.aria + '. Reading year ' + year + '.');
     }
 
     svg.addEventListener('pointermove', function (e) {
-      var r = svg.getBoundingClientRect();
-      var px = (e.clientX - r.left) * (geom.W / r.width);
-      show(nearest(px));
+      if (!g) return;
+      var r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * (g.W / r.width);
+      var pts = g.vis[0].pts, best = 0, bd = Infinity;
+      for (var i = 0; i < pts.length; i++) { var dd = Math.abs(g.X(pts[i][0]) - px); if (dd < bd) { bd = dd; best = i; } }
+      show(best);
     });
-    svg.addEventListener('pointerleave', hide);
+    svg.addEventListener('pointerleave', clear);
+    svg.addEventListener('blur', clear);
     svg.addEventListener('keydown', function (e) {
       if (e.key === 'ArrowRight') { show(idx < 0 ? 0 : idx + 1); e.preventDefault(); }
-      else if (e.key === 'ArrowLeft') { show(idx < 0 ? geom.lines[0].pts.length - 1 : idx - 1); e.preventDefault(); }
-      else if (e.key === 'Escape') { hide(); }
+      else if (e.key === 'ArrowLeft') { show(idx < 0 ? g.vis[0].pts.length - 1 : idx - 1); e.preventDefault(); }
+      else if (e.key === 'Home') { show(0); e.preventDefault(); }
+      else if (e.key === 'End') { show(g.vis[0].pts.length - 1); e.preventDefault(); }
+      else if (e.key === 'Escape') clear();
     });
-    svg.addEventListener('blur', hide);
 
     this.draw = draw;
-    this.setFrom = function (f) { spec.from = f; idx = -1; draw(); };
+    this.set = function (k, v) { state[k] = v; idx = -1; draw(); };
+    this.toggle = function (name) { state.hidden[name] = !state.hidden[name]; idx = -1; draw(); return !state.hidden[name]; };
+    clear();
     if (window.ResizeObserver) new ResizeObserver(function () { draw(); }).observe(fig);
     else window.addEventListener('resize', draw);
   }
 
-  /* ── provenance + failure blocks ───────────────────────────────────────── */
-  function prov(m) {
-    if (!m) return '';
-    var kind = m.status === 'manual' ? 'entered by hand' : m.status === 'constant' ? 'a constant' : 'fetched';
-    return '<p class="prov">' + esc(m.source || '')
-      + (m.as_of ? ' · as of ' + esc(m.as_of) : '')
-      + ' · ' + kind + ' ' + esc((m.fetched_at || '').slice(0, 10))
-      + (m.licence ? ' · ' + esc(m.licence) : '')
-      + (m.url ? ' · <a href="' + esc(m.url) + '" target="_blank" rel="noopener">source</a>' : '')
-      + (m.note ? '<br>' + esc(m.note) : '') + '</p>';
+  /* ── helpers for a card ────────────────────────────────────────────────── */
+  function sparkline(pts, colour) {
+    if (!pts || pts.length < 2) return '';
+    var xs = pts.map(function (p) { return p[0]; }), ys = pts.map(function (p) { return p[1]; });
+    var x0 = Math.min.apply(null, xs), x1 = Math.max.apply(null, xs);
+    var y0 = Math.min.apply(null, ys), y1 = Math.max.apply(null, ys);
+    if (y1 === y0) y1 = y0 + 1;
+    var d = pts.map(function (p, i) {
+      return (i ? 'L' : 'M') + ((p[0] - x0) / (x1 - x0) * 100).toFixed(2) + ' '
+        + (18 - (p[1] - y0) / (y1 - y0) * 16).toFixed(2);
+    }).join(' ');
+    return '<svg viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true">'
+      + '<path d="' + d + '" fill="none" stroke="' + colour + '" stroke-width="1.4" vector-effect="non-scaling-stroke"/></svg>';
   }
-  function unread(m, name) {
-    var why = m && m.status === 'no_token' ? esc(m.note || 'no access token held')
-      : m && m.error ? 'the source did not answer — ' + esc(m.error)
-        : 'the source did not answer';
-    return '<div class="unread"><b>Not read</b>' + why
-      + (m && m.fetched_at ? '<br>last attempt ' + esc(m.fetched_at.slice(0, 10)) : '')
-      + '<br>Nothing is shown in its place. An old number presented as a current one would be worse than a gap.</div>'
-      + (m ? prov(m) : '');
+
+  function csv(name, series, order) {
+    var years = {};
+    order.forEach(function (n) { (series[n] || []).forEach(function (p) { years[p[0]] = 1; }); });
+    var ys = Object.keys(years).map(Number).sort(function (a, b) { return a - b; });
+    var lines = ['year,' + order.join(',')];
+    ys.forEach(function (y) {
+      lines.push([y].concat(order.map(function (n) {
+        var hit = (series[n] || []).filter(function (p) { return p[0] === y; })[0];
+        return hit ? hit[1] : '';
+      })).join(','));
+    });
+    var blob = new Blob([lines.join('\n') + '\n'], { type: 'text/csv;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name + '.csv';
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 400);
   }
-  function table(m, spec) {
-    var names = spec.lines.map(function (l) { return l.name; });
-    var base = m.series[names[0]];
-    var rows = base.map(function (p) {
-      var cells = names.map(function (n) {
-        var q = (m.series[n] || []).find(function (r) { return r[0] === p[0]; });
-        return '<td>' + (q ? fmt(q[1], spec.dp) : '—') + '</td>';
-      }).join('');
-      return '<tr><td>' + p[0] + '</td>' + cells + '</tr>';
-    }).reverse().join('');
-    return '<details class="tbl"><summary>Read this instrument as a table (' + base.length + ' readings)</summary>'
-      + '<div class="scroll"><table><thead><tr><th>Year</th>'
-      + spec.lines.map(function (l) { return '<th>' + esc(l.label) + '</th>'; }).join('')
-      + '</tr></thead><tbody>' + rows + '</tbody></table></div></details>';
+
+  function tableHtml(series, spec) {
+    var names = spec.series.map(function (s) { return s.name; });
+    if (spec.band) names = names.concat([spec.band.lower, spec.band.upper]);
+    var heads = spec.series.map(function (s) { return s.label; });
+    if (spec.band) heads = heads.concat(['Lower estimate', 'Upper estimate']);
+    var base = series[names[0]];
+    var rows = base.slice().reverse().map(function (p) {
+      return '<tr><td>' + p[0] + '</td>' + names.map(function (n) {
+        var hit = (series[n] || []).filter(function (q) { return q[0] === p[0]; })[0];
+        return '<td>' + (hit ? fmt(hit[1], spec.dp) : '—') + '</td>';
+      }).join('') + '</tr>';
+    }).join('');
+    return '<div class="tbl-wrap"><table class="data"><thead><tr><th>Year</th>'
+      + heads.map(function (h) { return '<th>' + esc(h) + '</th>'; }).join('')
+      + '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+
+  function sourceBlock(m) {
+    var pub = (m.source || '').split(',')[0].split('—')[0].trim();
+    var cells = [
+      ['Dataset', esc(m.source || '—')],
+      ['Reference period', esc(m.as_of || '—')],
+      ['Retrieved', esc((m.fetched_at || '').slice(0, 10) || '—')],
+      ['Licence', esc(m.licence || 'not stated')]
+    ];
+    if (m.url) cells.push(['Access', '<a href="' + esc(m.url) + '" target="_blank" rel="noopener">' + esc(pub || 'dataset') + '</a>']);
+    var h = '<div class="src">' + cells.map(function (c) {
+      return '<div><b>' + c[0] + '</b>' + c[1] + '</div>';
+    }).join('') + '</div>';
+    if (m.note) h += '<p style="margin:10px 0 0;font:400 11.5px/1.6 var(--mono);color:var(--ink-3);max-width:82ch">Note: ' + esc(m.note) + '</p>';
+    return h;
+  }
+
+  function notRetrieved(m) {
+    var why = !m ? 'the indicator is not present in the data file'
+      : m.status === 'no_token' ? esc(m.note || 'access credentials not held')
+        : m.error ? 'request failed: ' + esc(m.error) : 'the request did not complete';
+    return '<div class="notretrieved"><b>Not retrieved</b>' + why
+      + (m && m.fetched_at ? '<br>Last attempt ' + esc(m.fetched_at.slice(0, 10)) + '.' : '')
+      + '<br>No substitute value is displayed.</div>' + (m ? sourceBlock(m) : '');
   }
 
   /* ── build ─────────────────────────────────────────────────────────────── */
-  var charts = [];
+  var plots = [];
+
   function render(data) {
-    var M = data.metrics || {};
-    var host = document.getElementById('obs');
-    host.innerHTML = '';
+    var M = data.metrics || {}, out = document.getElementById('out'), rail = document.getElementById('rail');
+    out.innerHTML = '';
 
-    INSTRUMENTS.forEach(function (spec) {
+    var okN = 0, badN = 0, seriesN = 0, obsN = 0;
+    Object.keys(M).forEach(function (k) {
+      var s = M[k].status;
+      if (s === 'failed' || s === 'no_token') badN++; else okN++;
+      var ss = M[k].series;
+      if (ss) Object.keys(ss).forEach(function (n) { seriesN++; obsN += ss[n].length; });
+    });
+
+    IND.forEach(function (spec) {
       var m = M[spec.key];
-      var sec = document.createElement('section');
-      sec.className = 'inst';
-      var head = '<p class="kicker">' + esc(spec.kicker) + '</p><h2>' + esc(spec.title) + '</h2>'
-        + '<p class="say">' + esc(spec.say) + '</p>';
-
       var series = m && m.series;
-      if (!series && m && m.status === 'ok' && Array.isArray(m.value) && spec.seriesFromValue) {
-        series = {}; series[spec.seriesFromValue] = m.value;
-      }
-      var usable = m && m.status !== 'failed' && m.status !== 'no_token' && series
-        && spec.lines.every(function (l) { return Array.isArray(series[l.name]) && series[l.name].length > 1; });
+      if (!series && m && spec.fromValue && Array.isArray(m.value)) { series = {}; series[spec.fromValue] = m.value; }
+      var ok = m && m.status !== 'failed' && m.status !== 'no_token' && series
+        && spec.series.every(function (s) { return Array.isArray(series[s.name]) && series[s.name].length > 1; });
 
-      if (!usable) { sec.innerHTML = head + unread(m, spec.key); host.appendChild(sec); return; }
+      var card = document.createElement('section');
+      card.className = 'ind';
+      card.id = 'ind-' + spec.key;
+      var head = '<div class="bar"><span class="code">' + esc(spec.code) + '</span>'
+        + '<span class="unit">' + esc(ok ? spec.unit : 'no data') + '</span></div>'
+        + '<div class="body"><h3>' + esc(spec.title) + '</h3><p class="def">' + esc(spec.def) + '</p>';
 
-      var figs = '';
+      if (!ok) { card.innerHTML = head + notRetrieved(m) + '</div>'; out.appendChild(card); return; }
+
+      var stats = '';
       try {
-        figs = '<ul class="figs">' + spec.figures({ series: series, peak: m.peak }).map(function (f) {
-          return '<li><span class="n ' + (f.cls || '') + '">' + esc(f.n) + '</span><span class="c">' + esc(f.c) + '</span></li>';
-        }).join('') + '</ul>';
-      } catch (e) { figs = ''; }
+        stats = '<div class="stats">' + spec.stats(series, m).map(function (s) {
+          return '<div><span class="v ' + (s.cls || '') + '">' + esc(s.v) + '</span><span class="k">' + esc(s.k) + '</span></div>';
+        }).join('') + '</div>';
+      } catch (e) { stats = ''; }
 
-      sec.innerHTML = head + figs + '<figure class="chart"></figure>' + table({ series: series }, spec) + prov(m);
-      host.appendChild(sec);
+      var legend = spec.series.length > 1 || spec.band
+        ? '<div class="legend">' + spec.series.map(function (s) {
+          return '<button type="button" data-series="' + esc(s.name) + '" aria-pressed="true" style="color:'
+            + C[s.role] + '"><i class="' + (s.role === 'response' ? 'sw-dash' : 'sw-solid') + '"></i>'
+            + '<span style="color:var(--ink-2)">' + esc(s.label) + '</span></button>';
+        }).join('') + '</div>' : '';
 
-      charts.push(new Chart(sec.querySelector('figure.chart'), {
-        lines: spec.lines.map(function (l) { return { name: l.name, label: l.label, short: l.short, role: l.role, points: series[l.name] }; }),
+      card.innerHTML = head + stats
+        + '<div class="ctl">'
+        + '<span class="seg" role="group" aria-label="View"><button type="button" data-view="chart" aria-pressed="true">Plot</button>'
+        + '<button type="button" data-view="table" aria-pressed="false">Table</button></span>'
+        + '<span class="seg" role="group" aria-label="Scale"><button type="button" data-scale="abs" aria-pressed="true">Absolute</button>'
+        + '<button type="button" data-scale="idx" aria-pressed="false">Indexed</button></span>'
+        + '<span class="seg"><button type="button" data-csv="1">Download CSV</button></span>'
+        + legend + '</div>'
+        + '<p class="readout"></p><figure class="chart"></figure>'
+        + '<div class="tblhost" hidden></div>'
+        + sourceBlock(m) + '</div>';
+      out.appendChild(card);
+
+      var fig = card.querySelector('figure.chart');
+      var plot = new Plot(fig, card.querySelector('.readout'), {
+        series: spec.series.map(function (s) {
+          return { name: s.name, label: s.label, short: s.short, role: s.role, points: series[s.name] };
+        }),
         band: spec.band && series[spec.band.lower] && series[spec.band.upper]
           ? { lower: series[spec.band.lower], upper: series[spec.band.upper] } : null,
-        dp: spec.dp, unitShort: spec.unitShort, zero: spec.zero,
-        peak: spec.peak && m.peak ? m.peak : null,
-        peakValue: spec.peak && m.peak ? m.peak.value : null,
-        aria: spec.title + '. ' + spec.lines.map(function (l) { return l.label; }).join(' and ') + '. Line chart.',
-        from: null
-      }));
+        mark: spec.mark === 'peak' && m.peak ? m.peak : null,
+        dp: spec.dp, suffix: spec.suffix, zero: spec.zero, unit: spec.unit,
+        aria: spec.title + ', line plot, ' + spec.series.map(function (s) { return s.label; }).join(' and ')
+      });
+      plots.push(plot);
+
+      card.addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        if (b.dataset.view) {
+          [].forEach.call(card.querySelectorAll('[data-view]'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+          var t = b.dataset.view === 'table';
+          card.querySelector('figure.chart').hidden = t;
+          card.querySelector('.readout').hidden = t;
+          var host = card.querySelector('.tblhost');
+          host.hidden = !t;
+          if (t && !host.innerHTML) host.innerHTML = tableHtml(series, spec);
+          if (!t) plot.draw();
+        } else if (b.dataset.scale) {
+          [].forEach.call(card.querySelectorAll('[data-scale]'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+          plot.set('indexed', b.dataset.scale === 'idx');
+        } else if (b.dataset.csv) {
+          var order = spec.series.map(function (s) { return s.name; });
+          if (spec.band) order = order.concat([spec.band.lower, spec.band.upper]);
+          csv(spec.key, series, order);
+        } else if (b.dataset.series) {
+          b.setAttribute('aria-pressed', String(plot.toggle(b.dataset.series)));
+        }
+      });
+
+      var navA = document.createElement('a');
+      navA.href = '#ind-' + spec.key;
+      navA.innerHTML = '<span class="t">' + esc(spec.nav) + '</span><span class="s">'
+        + sparkline(series[spec.series[0].name], C[spec.series[0].role]) + '</span>';
+      rail.appendChild(navA);
     });
 
-    // other readings
-    var rows = PLAIN.map(function (p) {
-      var m = M[p[0]];
-      if (!m) return '';
-      var v = (m.status === 'ok' || m.status === 'manual' || m.status === 'constant')
-        ? (typeof m.value === 'number' ? fmt(m.value, p[3]) + (p[2] ? ' ' + p[2] : '') : '—')
-        : '<span style="color:#a8410f">not read</span>';
-      return '<tr><td>' + esc(p[1]) + '</td><td>' + v + '</td><td style="color:#a09b90">'
-        + esc(m.as_of || '') + '</td><td style="color:#a09b90">' + esc((m.source || '').split(',')[0].split('—')[0].trim()) + '</td></tr>';
+    // single-value readings
+    var rows = SINGLE.map(function (p) {
+      var m = M[p[0]]; if (!m) return '';
+      var good = m.status === 'ok' || m.status === 'manual' || m.status === 'constant';
+      var v = good && typeof m.value === 'number'
+        ? fmt(m.value, p[3]) + (p[2] ? ' ' + p[2] : '')
+        : '<span style="color:var(--pressure)">not retrieved</span>';
+      var prov = m.status === 'manual' ? 'entered manually' : m.status === 'constant' ? 'fixed reference value' : 'automatic';
+      return '<tr><td>' + esc(p[1]) + '</td><td>' + v + '</td><td>' + esc(m.as_of || '—') + '</td><td>' + prov + '</td>'
+        + '<td>' + esc((m.source || '—').split(',')[0].split('—')[0].trim()) + '</td></tr>';
     }).join('');
-    var other = document.createElement('section');
-    other.className = 'inst';
-    other.innerHTML = '<p class="kicker">Also on the bench</p><h2>Readings kept without a chart</h2>'
-      + '<p class="say">Single values, carried for the record. Same rule: a source that did not answer says so.</p>'
-      + '<details class="tbl" open><summary>Seven readings</summary><table><thead><tr><th>Reading</th><th>Value</th><th>As of</th><th>Source</th></tr></thead><tbody>'
-      + rows + '</tbody></table></details>';
-    host.appendChild(other);
+    var sc = document.createElement('section');
+    sc.className = 'ind';
+    sc.id = 'ind-single';
+    sc.innerHTML = '<div class="bar"><span class="code">Single-value readings</span><span class="unit">latest observation only</span></div>'
+      + '<div class="body"><h3>Indicators held without a time series</h3>'
+      + '<p class="def">Values retrieved as a single current observation. Retrieval method is stated per row: automatic requests are repeated on every run, manual entries are transcribed from a periodic publication, and fixed reference values do not change.</p>'
+      + '<div class="tbl-wrap" style="max-height:none;margin-top:18px"><table class="data"><thead><tr><th>Indicator</th><th>Value</th><th>Reference period</th><th>Method</th><th>Publisher</th></tr></thead><tbody>'
+      + rows + '</tbody></table></div></div>';
+    out.appendChild(sc);
+    var na = document.createElement('a');
+    na.href = '#ind-single';
+    na.innerHTML = '<span class="t">Single-value readings</span>';
+    rail.appendChild(na);
 
-    // the Recognition chronicle — the turning hand that is not a number
+    plots.forEach(function (p) { p.draw(); });
+
+    document.getElementById('meta').innerHTML = [
+      ['Last retrieval', esc((data.generated_at || '').slice(0, 10)) + ' <span style="color:var(--ink-3)">'
+        + esc((data.generated_at || '').slice(11, 16)) + ' UTC</span>'],
+      ['Indicators', okN + ' retrieved · ' + badN + ' not retrieved'],
+      ['Series', seriesN + ''],
+      ['Observations', obsN.toLocaleString('en-GB')]
+    ].map(function (r) { return '<div><dt>' + r[0] + '</dt><dd>' + r[1] + '</dd></div>'; }).join('');
+
+    document.getElementById('foot-note').innerHTML =
+      'Retrieval is automated and scheduled; no value passes through manual editing except where the method column states otherwise. '
+      + 'Every figure on this page, with its source and retrieval timestamp, is in the machine-readable data file.';
+
+    // register of recognition
     fetch('data/recognition.json', { cache: 'no-cache' })
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
       .then(function (rec) {
-        var ev = (rec.events || []).slice().sort(function (a, b) {
-          return String(b.date).localeCompare(String(a.date));
-        });
+        var ev = (rec.events || []).slice().sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
         if (!ev.length) return;
-        var sec = document.createElement('section');
-        sec.className = 'inst';
-        sec.innerHTML = '<p class="kicker">Recognition</p>'
-          + '<h2>Where standing was granted across a boundary</h2>'
-          + '<p class="say">' + esc(rec.note || '') + '</p>'
-          + '<ul class="figs"><li><span class="n turn">' + ev.length + '</span>'
-          + '<span class="c">entries in the chronicle</span></li>'
-          + (function () {
-            var yrs = ev.map(function (e) { return /^\d{4}/.exec(String(e.date)); })
-              .filter(Boolean).map(function (mm) { return Number(mm[0]); });
-            if (!yrs.length) return '';
-            var lo = Math.min.apply(null, yrs), hi = Math.max.apply(null, yrs);
-            var undated = ev.length - yrs.length;
-            return '<li><span class="n">' + lo + '–' + hi + '</span><span class="c">the dated span'
-              + (undated ? ', plus ' + undated + ' ongoing' : '') + '</span></li>';
-          })() + '</ul>'
-          + '<ul class="chron">' + ev.map(function (e) {
-            return '<li><time>' + esc(e.date) + '</time><div><b>' + esc(e.title) + '</b>'
-              + '<p>' + esc(e.text) + '</p>'
-              + (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">the record →</a>' : '')
-              + '</div></li>';
-          }).join('') + '</ul>'
-          + '<p class="prov">Kept by ' + esc(rec.maintained_by || 'the Nirodha Collective')
-          + ' · a count of entries, not a measurement of the world · additions may be proposed at '
-          + '<a href="https://github.com/Mycelorium/predator-principle/issues" target="_blank" rel="noopener">the issue tracker</a>.</p>';
-        host.appendChild(sec);
+        var yrs = ev.map(function (e) { return /^\d{4}/.exec(String(e.date)); }).filter(Boolean).map(function (mm) { return Number(mm[0]); });
+        var s = document.createElement('section');
+        s.className = 'ind'; s.id = 'ind-register';
+        s.innerHTML = '<div class="bar"><span class="code">Register</span><span class="unit">curated, not measured</span></div>'
+          + '<div class="body"><h3>Recorded extensions of legal or scientific standing beyond the human</h3>'
+          + '<p class="def">A curated register of dated events in which legal standing, or formal scientific recognition of sentience or communication, was extended across a species boundary. This is a list of documented events, not a sample and not a measurement of any underlying rate; the count reflects what has been entered. Each entry links to its primary record.</p>'
+          + '<div class="stats"><div><span class="v response">' + ev.length + '</span><span class="k">entries</span></div>'
+          + (yrs.length ? '<div><span class="v">' + Math.min.apply(null, yrs) + '–' + Math.max.apply(null, yrs)
+            + '</span><span class="k">dated range' + (ev.length - yrs.length ? ', plus ' + (ev.length - yrs.length) + ' undated' : '') + '</span></div>' : '')
+          + '</div><ul class="reg">' + ev.map(function (e) {
+            return '<li><time>' + esc(e.date) + '</time><div><b>' + esc(e.title) + '</b><p>' + esc(e.text) + '</p>'
+              + (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">Primary record</a>' : '') + '</div></li>';
+          }).join('') + '</ul></div>';
+        document.getElementById('out').appendChild(s);
+        var a = document.createElement('a');
+        a.href = '#ind-register';
+        a.innerHTML = '<span class="t">Register of recognition</span>';
+        document.getElementById('rail').appendChild(a);
+        wireRail();
       })
-      .catch(function () { /* the chronicle is optional; its absence is not a failed reading */ });
+      .catch(function () { wireRail(); });
 
-    charts.forEach(function (c) { c.draw(); });
-
-    var okN = Object.keys(M).filter(function (k) { return M[k].status === 'ok'; }).length;
-    var badN = Object.keys(M).filter(function (k) { return M[k].status === 'failed' || M[k].status === 'no_token'; }).length;
-    document.getElementById('stamp').innerHTML =
-      '<b>' + okN + ' instruments read, ' + badN + ' unread.</b> Fetched ' + esc((data.generated_at || '').slice(0, 16).replace('T', ' ')) + ' UTC by '
-      + esc(data.generator || '') + '. ' + esc((data.rules || []).join(' '));
-    document.getElementById('toolbar').hidden = false;
+    wireRail();
   }
 
-  // span toggle
-  document.getElementById('toolbar').addEventListener('click', function (e) {
-    var b = e.target.closest('button[data-span]');
-    if (!b) return;
-    [].forEach.call(this.querySelectorAll('button[data-span]'), function (x) {
-      x.setAttribute('aria-pressed', String(x === b));
-    });
-    var from = b.dataset.span === 'full' ? null : Number(b.dataset.span);
-    charts.forEach(function (c) { c.setFrom(from); });
-  });
+  function wireRail() {
+    var links = [].slice.call(document.querySelectorAll('nav.rail a'));
+    if (!links.length || !window.IntersectionObserver) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        links.forEach(function (l) { l.setAttribute('aria-current', String(l.getAttribute('href') === '#' + en.target.id)); });
+      });
+    }, { rootMargin: '-15% 0px -70% 0px' });
+    document.querySelectorAll('section.ind').forEach(function (s) { io.observe(s); });
+  }
 
   fetch('data/observatory.json', { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(render)
     .catch(function (err) {
-      document.getElementById('obs').innerHTML =
-        '<div class="unread"><b>The readings could not be loaded</b>' + esc(err.message)
-        + '<br>The raw file is at <a href="data/observatory.json">data/observatory.json</a>.</div>';
+      document.getElementById('out').innerHTML =
+        '<div class="notretrieved"><b>Data file could not be loaded</b>' + esc(err.message)
+        + '<br>The file is at <a href="data/observatory.json">data/observatory.json</a>.</div>';
     });
 })();
 </script>
