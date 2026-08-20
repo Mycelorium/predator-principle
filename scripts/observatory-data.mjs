@@ -24,13 +24,21 @@ const metrics = {};
 const notes = [];
 const nowIso = () => new Date().toISOString();
 
+// Text responses are memoised: the two OWID bulk CSVs are each read by more than
+// one indicator, and downloading ~23 MB twice tripled the run time.
+const textCache = new Map();
+
 async function get(url, as = 'text') {
+  if (as === 'text' && textCache.has(url)) return textCache.get(url);
   const res = await fetch(url, {
     headers: { 'user-agent': UA, accept: as === 'json' ? 'application/json' : '*/*' },
     signal: AbortSignal.timeout(TIMEOUT),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return as === 'json' ? res.json() : res.text();
+  if (as === 'json') return res.json();
+  const body = await res.text();
+  textCache.set(url, body);
+  return body;
 }
 
 function put(key, { value, unit, as_of, source, url, licence, note }) {
