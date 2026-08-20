@@ -228,4 +228,3 @@ Five mass extinctions had an external cause. The sixth has a principle, and the 
 [23] Smith, F.A. et al. Late Pleistocene extinctions synthesis. Wikipedia. https://en.wikipedia.org/wiki/Late_Pleistocene_extinctions
 [24] Dirzo, R. et al. (2014). "Defaunation in the Anthropocene." Science 345:401–406. https://www.science.org/doi/10.1126/science.1251817
 
-**Status:** E = established, I = interpretation, P = proposition. The extinction rates, the biomass dominance, the Darimont signature of adult capital, the Living Planet decomposition (50/43/7), and the Wiens & Saban figures are established (E) or primary datasets (P). The reading of generalized predation as a "cancer within evolution" and the rate-not-sum framing are interpretation (I); "we can decide" is a normative proposition (P). Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective

@@ -256,4 +256,3 @@ The solid Dyson sphere is not a goal. It is a diagnosis. It shows not where inte
 [23] Aktipis, C. A. et al. (2015). Cancer across the tree of life: cooperation and cheating in multicellularity. Phil. Trans. R. Soc. B 370:20140219. https://pmc.ncbi.nlm.nih.gov/articles/PMC4581024/
 [24] Capp, J.-P. et al. (2023). The paradox of cooperation among selfish cancer cells. Evolutionary Applications. https://pmc.ncbi.nlm.nih.gov/articles/PMC10363833/
 
-**Status:** E = established, I = interpretation, P = proposition. Boundaries and primary sources: https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
