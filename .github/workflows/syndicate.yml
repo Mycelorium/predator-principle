@@ -1,7 +1,6 @@
 name: Syndicate to social channels
 
-# Posts new dispatches and essays to Bluesky, Mastodon, Telegram and Discord, and
-# asks the Internet Archive for a permanent snapshot of every page.
+# Posts new essays to Bluesky, Mastodon, Telegram and Discord.
 #
 # Every channel is optional: a channel whose secret is missing is skipped, and the
 # run still succeeds. To switch one on, add its secret under
@@ -11,12 +10,17 @@ name: Syndicate to social channels
 #   MASTODON_INSTANCE / MASTODON_TOKEN
 #   TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
 #   DISCORD_WEBHOOK_URL
-#   IA_ACCESS_KEY / IA_SECRET_KEY        (optional, makes archiving reliable)
+#
+# Runs daily even though essays are weekly: the check is free — with nothing new
+# the script prints "up to date" and exits — and it means anything published off
+# the weekly schedule goes out within a day rather than waiting up to seven.
+# Wayback archiving used to hang off this workflow and ran daily with it, which
+# was six pointless passes a week against a rate-limited endpoint. It now lives
+# in archive.yml and runs weekly.
 
 on:
   workflow_dispatch:
   schedule:
-    # daily, after the autopilot has published
     - cron: '45 7 * * *'
 
 permissions:
@@ -29,7 +33,7 @@ concurrency:
 jobs:
   syndicate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -48,20 +52,21 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: node scripts/syndicate.mjs
 
-      - name: Archive pages in the Wayback Machine
-        env:
-          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
-          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
-        run: node scripts/archive-urls.mjs
-
-      - name: Commit ledgers
+      - name: Commit ledger
         run: |
-          if [[ -n "$(git status --porcelain content/)" ]]; then
+          # Rebase before staging: another workflow may have pushed meanwhile, and
+          # staging first leaves an empty index after an autostash rebase.
+          git pull --rebase --autostash origin main || true
+          git add content/syndication-state.json
+          if git diff --cached --quiet; then
+            echo "Nothing new to record."
+          else
             git config user.name "Nirodha Collective"
             git config user.email "285060945+Mycelorium@users.noreply.github.com"
-            git add content/syndication-state.json content/archive-state.json 2>/dev/null || true
-            git commit -m "chore: update syndication and archive ledgers"
-            git push
-          else
-            echo "Nothing new to record."
+            git commit -m "chore: update syndication ledger"
+            git push || {
+              echo "Push rejected; rebasing once and retrying."
+              git pull --rebase --autostash origin main
+              git push
+            }
           fi

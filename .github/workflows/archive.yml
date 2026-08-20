@@ -1,0 +1,58 @@
+name: Archive pages in the Wayback Machine
+
+# Asks the Internet Archive for a permanent snapshot of every page in the sitemap.
+#
+# Weekly, on the day after the essay goes out. This used to run inside syndicate.yml
+# and therefore fired every day: twelve URLs, eight seconds apart, against the
+# anonymous rate-limited endpoint — six pointless passes a week, and the rate limit
+# showed up as "skipped (fetch failed)" in the logs. Once a week is ample; the pages
+# change rarely and the archive keeps every earlier snapshot.
+#
+# IA_ACCESS_KEY / IA_SECRET_KEY are optional. Without them the anonymous endpoint is
+# used, which works but is throttled; with them archiving is reliable.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 6 * * 4'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Request snapshots
+        env:
+          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+        run: node scripts/archive-urls.mjs
+
+      - name: Commit ledger
+        run: |
+          git pull --rebase --autostash origin main || true
+          git add content/archive-state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing new to record."
+          else
+            git config user.name "Nirodha Collective"
+            git config user.email "285060945+Mycelorium@users.noreply.github.com"
+            git commit -m "chore: update archive ledger"
+            git push || {
+              echo "Push rejected; rebasing once and retrying."
+              git pull --rebase --autostash origin main
+              git push
+            }
+          fi
