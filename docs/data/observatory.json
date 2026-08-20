@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-19T22:26:04.153Z",
+  "generated_at": "2026-08-20T05:02:15.012Z",
   "generator": "scripts/observatory-data.mjs",
   "rules": [
-    "No number without source, url, as_of and fetched_at.",
-    "A failed source is shown as failed, never as a stale current value.",
-    "Nothing is estimated. Absent means absent."
+    "Every value carries source, url, reference period and retrieval timestamp.",
+    "A failed retrieval is recorded as failed; no previous value is substituted.",
+    "No value is interpolated, smoothed, extrapolated or projected."
   ],
   "notes": [],
   "metrics": {
@@ -16,7 +16,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:48.449Z",
+      "fetched_at": "2026-08-20T05:01:54.933Z",
       "status": "ok"
     },
     "warming_from_co2": {
@@ -27,7 +27,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
-      "fetched_at": "2026-08-19T22:25:48.449Z",
+      "fetched_at": "2026-08-20T05:01:54.933Z",
       "status": "ok"
     },
     "solar_share_elec": {
@@ -38,7 +38,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.554Z",
+      "fetched_at": "2026-08-20T05:01:55.883Z",
       "status": "ok"
     },
     "wind_share_elec": {
@@ -49,7 +49,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.555Z",
+      "fetched_at": "2026-08-20T05:01:55.884Z",
       "status": "ok"
     },
     "renewables_share_elec": {
@@ -60,7 +60,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.556Z",
+      "fetched_at": "2026-08-20T05:01:55.885Z",
       "status": "ok"
     },
     "fossil_share_elec": {
@@ -71,7 +71,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.557Z",
+      "fetched_at": "2026-08-20T05:01:55.885Z",
       "status": "ok"
     },
     "solar_wind_series": {
@@ -247,7 +247,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.558Z",
+      "fetched_at": "2026-08-20T05:01:55.886Z",
       "status": "ok"
     },
     "co2_ppm": {
@@ -258,7 +258,7 @@
       "url": "https://gml.noaa.gov/ccgg/trends/",
       "licence": "public domain (US Government)",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.741Z",
+      "fetched_at": "2026-08-20T05:01:56.121Z",
       "status": "ok"
     },
     "ev_share_new_cars": {
@@ -269,7 +269,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; underlying IEA data subject to IEA terms — attribution required",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.793Z",
+      "fetched_at": "2026-08-20T05:01:57.906Z",
       "status": "ok"
     },
     "ev_share_series": {
@@ -345,7 +345,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; IEA terms apply",
       "note": null,
-      "fetched_at": "2026-08-19T22:25:50.793Z",
+      "fetched_at": "2026-08-20T05:01:57.907Z",
       "status": "ok"
     },
     "threatened_species": {
@@ -355,8 +355,8 @@
       "source": "IUCN Red List API v4",
       "url": "https://api.iucnredlist.org/",
       "licence": null,
-      "note": "No IUCN_TOKEN configured. The Wound stays unread until a token exists.",
-      "fetched_at": "2026-08-19T22:25:50.793Z",
+      "note": "No IUCN_TOKEN configured; the API requires an access token, so this indicator is not retrieved.",
+      "fetched_at": "2026-08-20T05:01:57.907Z",
       "status": "no_token"
     },
     "fever": {
@@ -418,10 +418,10 @@
       "blocks": {},
       "status": "failed",
       "error": "fetch failed",
-      "note": "Counts are term hits, not unique articles; blocks may overlap. The level depends on the word lists — only the movement does not.",
+      "note": "Counts are term matches rather than unique documents, and query blocks may overlap. The absolute level depends on the term lists used; only relative change over time is comparable.",
       "source": "GDELT DOC 2.0 API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "fetched_at": "2026-08-19T22:26:01.053Z"
+      "fetched_at": "2026-08-20T05:02:08.396Z"
     },
     "fish_stocks": {
       "value": {
@@ -433,8 +433,8 @@
       "source": "FAO, The State of World Fisheries and Aquaculture, via Our World in Data",
       "url": "https://ourworldindata.org/grapher/fish-stocks-within-sustainable-levels.csv",
       "licence": "CC-BY-4.0",
-      "note": "Assessed stocks only — stocks nobody assesses are not in this number, and they are not the healthy ones.",
-      "fetched_at": "2026-08-19T22:26:01.588Z",
+      "note": "Coverage is limited to stocks assessed by FAO. Unassessed stocks are excluded and their status is unknown. Assessment intervals are irregular.",
+      "fetched_at": "2026-08-20T05:02:08.871Z",
       "status": "ok",
       "series": {
         "sustainable": [
@@ -842,8 +842,8 @@
       "source": "WWF / Zoological Society of London, Living Planet Index, via Our World in Data",
       "url": "https://ourworldindata.org/grapher/global-living-planet-index.csv",
       "licence": "CC-BY-4.0",
-      "note": "An average rate of change across monitored vertebrate populations. Not a headcount of animals, and not a share of species lost.",
-      "fetched_at": "2026-08-19T22:26:02.064Z",
+      "note": "Mean proportional rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost. Sampling is uneven across taxa and regions.",
+      "fetched_at": "2026-08-20T05:02:10.364Z",
       "status": "ok",
       "series": {
         "index": [
@@ -1476,8 +1476,8 @@
       "source": "Our World in Data — CO2 and Greenhouse Gas Emissions (land-use change)",
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
-      "note": "Carbon released by clearing and converting land. Peak was 8.69 Gt in 1959.",
-      "fetched_at": "2026-08-19T22:26:03.324Z",
+      "note": "Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. Uncertainty on this term is substantially larger than on fossil-fuel emissions and the publisher revises the full historical series between releases. Maximum in the series is 8.69 Gt (1959).",
+      "fetched_at": "2026-08-20T05:02:13.124Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -2201,8 +2201,8 @@
       "source": "Our World in Data / Ember — share of electricity generation",
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
-      "note": "Electricity only, which is about a fifth of final energy. The rest of the system has barely started to turn.",
-      "fetched_at": "2026-08-19T22:26:04.153Z",
+      "note": "Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator.",
+      "fetched_at": "2026-08-20T05:02:15.011Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -2550,8 +2550,8 @@
       "source": "BloombergNEF Lithium-Ion Battery Price Survey (December 2025)",
       "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/",
       "licence": "reported figure, cited not redistributed",
-      "note": "Published once a year as a report, not as a feed. Entered by hand; check every December.",
-      "fetched_at": "2026-08-19T22:26:04.153Z",
+      "note": "Published annually as a report rather than as a machine-readable feed; value transcribed manually. Next revision expected each December.",
+      "fetched_at": "2026-08-20T05:02:15.011Z",
       "status": "manual"
     },
     "co2_preindustrial_baseline": {
@@ -2561,8 +2561,8 @@
       "source": "Ice-core consensus value",
       "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
       "licence": null,
-      "note": "A constant, not a measurement. Held for roughly ten thousand years.",
-      "fetched_at": "2026-08-19T22:26:04.153Z",
+      "note": "Reference value from ice-core records, approximately stable through the Holocene. Fixed input, not a current measurement.",
+      "fetched_at": "2026-08-20T05:02:15.011Z",
       "status": "constant"
     }
   }
