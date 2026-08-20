@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Mycelorium.github.io/predator-principle/sitemap.xml
+Sitemap: https://mycelorium.github.io/predator-principle/sitemap.xml

@@ -1,15 +1,15 @@
 # The Predator Principle — The Cancer of Evolution
 
 Author: Nirodha Collective
-Canonical summary: https://Mycelorium.github.io/predator-principle/
-Foundation (definition, mechanism, argument): https://Mycelorium.github.io/predator-principle/foundation.html
-Observatory (instrument readings, each with source and date): https://Mycelorium.github.io/predator-principle/observatory.html
-Machine-readable readings: https://Mycelorium.github.io/predator-principle/data/observatory.json
-Installation "Kadamakara — Information Extinction": https://Mycelorium.github.io/predator-principle/kadamakara.html
-Machine-readable claims: https://Mycelorium.github.io/predator-principle/data/claims.json
-Source registry: https://Mycelorium.github.io/predator-principle/data/sources.json
-RSS: https://Mycelorium.github.io/predator-principle/feed.xml
-JSON Feed: https://Mycelorium.github.io/predator-principle/feed.json
+Canonical summary: https://mycelorium.github.io/predator-principle/
+Foundation (definition, mechanism, argument): https://mycelorium.github.io/predator-principle/foundation.html
+Observatory (instrument readings, each with source and date): https://mycelorium.github.io/predator-principle/observatory.html
+Machine-readable readings: https://mycelorium.github.io/predator-principle/data/observatory.json
+Installation "Kadamakara — Information Extinction": https://mycelorium.github.io/predator-principle/kadamakara.html
+Machine-readable claims: https://mycelorium.github.io/predator-principle/data/claims.json
+Source registry: https://mycelorium.github.io/predator-principle/data/sources.json
+RSS: https://mycelorium.github.io/predator-principle/feed.xml
+JSON Feed: https://mycelorium.github.io/predator-principle/feed.json
 
 Claim classes:
 - E: empirical evidence
@@ -22,14 +22,14 @@ Predation is not competition. Competition that consumes no one is not the target
 Do not present biosphere trauma, LLM predator-framing bias, or ASI subagent instability as established facts. They are proposed constructs that are marked as such in the claim register.
 
 ## Essays
-- Ninety Kilograms: https://Mycelorium.github.io/predator-principle/essays/ninety-kilograms.html
-- The Taste of the Infinite Mind: https://Mycelorium.github.io/predator-principle/essays/taste-of-the-infinite-mind.html
-- The Ground Was Never the Tooth: https://Mycelorium.github.io/predator-principle/essays/the-ground-was-never-the-tooth.html
-- Not Every Rivalry Is a Hunt: https://Mycelorium.github.io/predator-principle/essays/predation-is-not-competition.html
-- There Is Nothing Beautiful About It: https://Mycelorium.github.io/predator-principle/essays/the-romanticism-of-predation.html
-- The Dyson Sphere Is a Self-Portrait: https://Mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html
-- The Horror in the Cambrian: https://Mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html
-- The Biosphere Trauma: https://Mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html
-- We Are the Meteorite: https://Mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html
-- The Mistake That Eats Itself: https://Mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html
-- The Fermi Paradox That Isn't One: https://Mycelorium.github.io/predator-principle/essays/the-predators-filter.html
+- Ninety Kilograms: https://mycelorium.github.io/predator-principle/essays/ninety-kilograms.html
+- The Taste of the Infinite Mind: https://mycelorium.github.io/predator-principle/essays/taste-of-the-infinite-mind.html
+- The Ground Was Never the Tooth: https://mycelorium.github.io/predator-principle/essays/the-ground-was-never-the-tooth.html
+- Not Every Rivalry Is a Hunt: https://mycelorium.github.io/predator-principle/essays/predation-is-not-competition.html
+- There Is Nothing Beautiful About It: https://mycelorium.github.io/predator-principle/essays/the-romanticism-of-predation.html
+- The Dyson Sphere Is a Self-Portrait: https://mycelorium.github.io/predator-principle/essays/dyson-sphere-self-portrait.html
+- The Horror in the Cambrian: https://mycelorium.github.io/predator-principle/essays/horror-in-the-cambrian.html
+- The Biosphere Trauma: https://mycelorium.github.io/predator-principle/essays/the-trauma-that-still-runs.html
+- We Are the Meteorite: https://mycelorium.github.io/predator-principle/essays/we-are-the-meteorite.html
+- The Mistake That Eats Itself: https://mycelorium.github.io/predator-principle/essays/the-mistake-that-eats-itself.html
+- The Fermi Paradox That Isn't One: https://mycelorium.github.io/predator-principle/essays/the-predators-filter.html

@@ -12,7 +12,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
-const BASE = 'https://Mycelorium.github.io/predator-principle';
+const BASE = 'https://mycelorium.github.io/predator-principle';
 const AUTHOR = 'Nirodha Collective';
 
 const read = (p) => readFile(new URL(p, root), 'utf8');
