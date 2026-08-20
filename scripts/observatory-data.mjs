@@ -157,6 +157,9 @@ try {
     as_of: `${last[iY].trim()}-${String(last[iM]).trim().padStart(2, '0')}`,
     source: 'NOAA Global Monitoring Laboratory — Mauna Loa monthly mean',
     url: 'https://gml.noaa.gov/ccgg/trends/', licence: 'public domain (US Government)',
+    note: 'Monthly mean for the stated month at one station, not an annual or global figure. '
+      + 'The Mauna Loa record has a pronounced seasonal cycle peaking in May, so a month outside that peak sits below the year\'s maximum. '
+      + 'NOAA states that the most recent year of data remains preliminary, pending recalibration of reference gases and further quality control.',
   });
 } catch (error) {
   fail('co2_ppm', { source: 'NOAA GML Mauna Loa', url: NOAA, error });
@@ -319,7 +322,7 @@ await grapherWorld('fish_stocks', 'fish-stocks-within-sustainable-levels', {
   unit: '% of assessed marine fish stocks',
   source: 'FAO, The State of World Fisheries and Aquaculture, via Our World in Data',
   licence: 'CC-BY-4.0',
-  note: 'Coverage is limited to stocks assessed by FAO. Unassessed stocks are excluded and their status is unknown. Assessment intervals are irregular.',
+  note: 'Shares are by number of assessed stocks, not by volume of landings; for 2023 FAO reports that 72.6 per cent of landings came from sustainably fished stocks, because larger and better-monitored stocks dominate catch. Coverage is limited to the stocks FAO assesses (about 2,570 in the 2025 review); unassessed stocks are excluded, are not a random sample, and their status is unknown. This series follows the Our World in Data mirror and currently ends at 2021; FAO SOFIA 2026 reports 62.4 per cent sustainable and 37.6 per cent unsustainable for reference year 2023, and attributes part of that change to assessment revisions and methodological updates rather than to stock condition alone.',
   hands: { turn: 'sustainable', take: 'overexploited' },
 });
 
@@ -333,7 +336,7 @@ await grapherWorld('living_planet_index', 'global-living-planet-index', {
   unit: 'index, 1970 = 1',
   source: 'WWF / Zoological Society of London, Living Planet Index, via Our World in Data',
   licence: 'CC-BY-4.0',
-  note: 'Mean proportional rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost. Sampling is uneven across taxa and regions.',
+  note: 'Geometric mean rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost: roughly half the monitored populations are declining and the remainder are stable or increasing. The upper and lower series are 95 per cent confidence limits obtained by bootstrap resampling. Sampling is uneven across taxa and regions. The 2024 edition covers 34,836 populations of 5,495 species.',
   hands: { take: 'index' },
 });
 
@@ -351,7 +354,7 @@ try {
     value: last[1], unit: 'Gt CO₂ / year', as_of: String(last[0]),
     source: 'Our World in Data — CO2 and Greenhouse Gas Emissions (land-use change)',
     url: 'https://github.com/owid/co2-data', licence: 'CC-BY-4.0',
-    note: `Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. Uncertainty on this term is substantially larger than on fossil-fuel emissions and the publisher revises the full historical series between releases. Maximum in the series is ${peak[1]} Gt (${peak[0]}).`,
+    note: `Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. This is the least certain term in the global carbon budget: the Global Carbon Project attaches an uncertainty of about ±2.6 Gt CO₂ per year at one standard deviation, roughly half the annual value itself. The full historical series is revised between annual releases — the same year can move by more than ten per cent between vintages — so the maximum of ${peak[1]} Gt in ${peak[0]} is a property of this release rather than a settled historical fact, and the mid-1950s values sit within uncertainty of one another.`,
   });
   metrics.land_use_change_co2.series = { taken: pts };
   metrics.land_use_change_co2.peak = { year: peak[0], value: peak[1] };
@@ -363,8 +366,11 @@ try {
   });
 }
 
-// 4 · Electricity generation shares: fossil fuels against solar and wind, both as
-//     percentages of the same total.
+// 4 · Electricity generation shares: fossil fuels against all low-carbon
+//     generation. In this dataset fossil_share_elec + low_carbon_share_elec = 100
+//     exactly, so the two series are complementary. Low-carbon comprises nuclear and
+//     every renewable source; the components are carried alongside so that nuclear
+//     and hydro are visible rather than folded silently into a single line.
 try {
   const rows = parseCsv(await get(OWID_ENERGY));
   const world = rows.filter((r) => r.country === 'World' && Number(r.year) >= 1985);
@@ -373,19 +379,30 @@ try {
     .map((r) => [Number(r.year), Number(Number(r[col]).toFixed(2))])
     .sort((a, b) => a[0] - b[0]);
   const fossil = pick('fossil_share_elec');
-  const sw = world
+  const lowc = pick('low_carbon_share_elec');
+  const nuclear = pick('nuclear_share_elec');
+  const hydro = pick('hydro_share_elec');
+  const solarwind = world
     .filter((r) => r.solar_share_elec !== '' && r.solar_share_elec != null)
     .map((r) => [Number(r.year), Number((Number(r.solar_share_elec) + Number(r.wind_share_elec || 0)).toFixed(2))])
     .sort((a, b) => a[0] - b[0]);
-  if (!fossil.length || !sw.length) throw new Error('no World electricity shares');
+  if (!fossil.length || !lowc.length) throw new Error('no World electricity shares');
+  const at = (arr) => (arr.length ? arr[arr.length - 1][1] : null);
   put('electricity_crossing', {
-    value: { fossil: fossil[fossil.length - 1][1], solar_wind: sw[sw.length - 1][1] },
-    unit: '% of world electricity', as_of: String(fossil[fossil.length - 1][0]),
+    value: {
+      fossil: at(fossil), low_carbon: at(lowc), nuclear: at(nuclear),
+      hydro: at(hydro), solar_wind: at(solarwind),
+    },
+    unit: '% of world electricity generation', as_of: String(fossil[fossil.length - 1][0]),
     source: 'Our World in Data / Ember — share of electricity generation',
     url: 'https://github.com/owid/energy-data', licence: 'CC-BY-4.0',
-    note: 'Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator.',
+    note: 'Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator. '
+      + 'Low-carbon generation is nuclear plus all renewable sources — hydro, wind, solar, bioenergy and other renewables. In this dataset the fossil and low-carbon shares sum to 100 per cent, '
+      + 'so the two plotted series are complementary; the component shares are given above and are also in the machine-readable file.',
   });
-  metrics.electricity_crossing.series = { taken: fossil, turning: sw };
+  metrics.electricity_crossing.series = {
+    taken: fossil, turning: lowc, nuclear, hydro, solar_wind: solarwind,
+  };
   metrics.electricity_crossing.hands = { take: 'taken', turn: 'turning' };
 } catch (error) {
   fail('electricity_crossing', {
@@ -397,9 +414,9 @@ try {
 put('battery_pack_price', {
   value: 108, unit: 'USD / kWh', as_of: '2025',
   source: 'BloombergNEF Lithium-Ion Battery Price Survey (December 2025)',
-  url: 'https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/',
+  url: 'https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/',
   licence: 'reported figure, cited not redistributed',
-  note: 'Published annually as a report rather than as a machine-readable feed; value transcribed manually. Next revision expected each December.',
+  note: 'Global volume-weighted average across all end uses; BloombergNEF reports substantially different figures by segment, chemistry and region (stationary storage 70, battery-electric vehicle packs 99, LFP 81, NMC 128 USD/kWh; China 84 USD/kWh with North America and Europe well above it). Published annually as a report rather than as a machine-readable feed; transcribed manually. Next revision expected December 2026.',
 });
 metrics.battery_pack_price.status = 'manual';
 
