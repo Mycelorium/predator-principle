@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T05:03:30.871Z",
+  "generated_at": "2026-08-20T05:31:51.450Z",
   "generator": "scripts/observatory-data.mjs",
   "rules": [
     "Every value carries source, url, reference period and retrieval timestamp.",
@@ -16,7 +16,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:16.300Z",
+      "fetched_at": "2026-08-20T05:31:36.340Z",
       "status": "ok"
     },
     "warming_from_co2": {
@@ -27,7 +27,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
-      "fetched_at": "2026-08-20T05:03:16.300Z",
+      "fetched_at": "2026-08-20T05:31:36.340Z",
       "status": "ok"
     },
     "solar_share_elec": {
@@ -38,7 +38,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:17.656Z",
+      "fetched_at": "2026-08-20T05:31:38.334Z",
       "status": "ok"
     },
     "wind_share_elec": {
@@ -49,7 +49,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:17.657Z",
+      "fetched_at": "2026-08-20T05:31:38.334Z",
       "status": "ok"
     },
     "renewables_share_elec": {
@@ -60,7 +60,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:17.658Z",
+      "fetched_at": "2026-08-20T05:31:38.335Z",
       "status": "ok"
     },
     "fossil_share_elec": {
@@ -71,7 +71,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:17.659Z",
+      "fetched_at": "2026-08-20T05:31:38.336Z",
       "status": "ok"
     },
     "solar_wind_series": {
@@ -247,7 +247,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:17.660Z",
+      "fetched_at": "2026-08-20T05:31:38.337Z",
       "status": "ok"
     },
     "co2_ppm": {
@@ -257,8 +257,8 @@
       "source": "NOAA Global Monitoring Laboratory — Mauna Loa monthly mean",
       "url": "https://gml.noaa.gov/ccgg/trends/",
       "licence": "public domain (US Government)",
-      "note": null,
-      "fetched_at": "2026-08-20T05:03:17.986Z",
+      "note": "Monthly mean for the stated month at one station, not an annual or global figure. The Mauna Loa record has a pronounced seasonal cycle peaking in May, so a month outside that peak sits below the year's maximum. NOAA states that the most recent year of data remains preliminary, pending recalibration of reference gases and further quality control.",
+      "fetched_at": "2026-08-20T05:31:38.517Z",
       "status": "ok"
     },
     "ev_share_new_cars": {
@@ -269,7 +269,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; underlying IEA data subject to IEA terms — attribution required",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:18.352Z",
+      "fetched_at": "2026-08-20T05:31:38.825Z",
       "status": "ok"
     },
     "ev_share_series": {
@@ -345,7 +345,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; IEA terms apply",
       "note": null,
-      "fetched_at": "2026-08-20T05:03:18.353Z",
+      "fetched_at": "2026-08-20T05:31:38.825Z",
       "status": "ok"
     },
     "threatened_species": {
@@ -356,7 +356,7 @@
       "url": "https://api.iucnredlist.org/",
       "licence": null,
       "note": "No IUCN_TOKEN configured; the API requires an access token, so this indicator is not retrieved.",
-      "fetched_at": "2026-08-20T05:03:18.353Z",
+      "fetched_at": "2026-08-20T05:31:38.825Z",
       "status": "no_token"
     },
     "fever": {
@@ -421,7 +421,7 @@
       "note": "Counts are term matches rather than unique documents, and query blocks may overlap. The absolute level depends on the term lists used; only relative change over time is comparable.",
       "source": "GDELT DOC 2.0 API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "fetched_at": "2026-08-20T05:03:28.654Z"
+      "fetched_at": "2026-08-20T05:31:48.831Z"
     },
     "fish_stocks": {
       "value": {
@@ -433,8 +433,8 @@
       "source": "FAO, The State of World Fisheries and Aquaculture, via Our World in Data",
       "url": "https://ourworldindata.org/grapher/fish-stocks-within-sustainable-levels.csv",
       "licence": "CC-BY-4.0",
-      "note": "Coverage is limited to stocks assessed by FAO. Unassessed stocks are excluded and their status is unknown. Assessment intervals are irregular.",
-      "fetched_at": "2026-08-20T05:03:28.845Z",
+      "note": "Shares are by number of assessed stocks, not by volume of landings; for 2023 FAO reports that 72.6 per cent of landings came from sustainably fished stocks, because larger and better-monitored stocks dominate catch. Coverage is limited to the stocks FAO assesses (about 2,570 in the 2025 review); unassessed stocks are excluded, are not a random sample, and their status is unknown. This series follows the Our World in Data mirror and currently ends at 2021; FAO SOFIA 2026 reports 62.4 per cent sustainable and 37.6 per cent unsustainable for reference year 2023, and attributes part of that change to assessment revisions and methodological updates rather than to stock condition alone.",
+      "fetched_at": "2026-08-20T05:31:49.272Z",
       "status": "ok",
       "series": {
         "sustainable": [
@@ -842,8 +842,8 @@
       "source": "WWF / Zoological Society of London, Living Planet Index, via Our World in Data",
       "url": "https://ourworldindata.org/grapher/global-living-planet-index.csv",
       "licence": "CC-BY-4.0",
-      "note": "Mean proportional rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost. Sampling is uneven across taxa and regions.",
-      "fetched_at": "2026-08-20T05:03:29.134Z",
+      "note": "Geometric mean rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost: roughly half the monitored populations are declining and the remainder are stable or increasing. The upper and lower series are 95 per cent confidence limits obtained by bootstrap resampling. Sampling is uneven across taxa and regions. The 2024 edition covers 34,836 populations of 5,495 species.",
+      "fetched_at": "2026-08-20T05:31:49.676Z",
       "status": "ok",
       "series": {
         "index": [
@@ -1476,8 +1476,8 @@
       "source": "Our World in Data — CO2 and Greenhouse Gas Emissions (land-use change)",
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
-      "note": "Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. Uncertainty on this term is substantially larger than on fossil-fuel emissions and the publisher revises the full historical series between releases. Maximum in the series is 8.69 Gt (1959).",
-      "fetched_at": "2026-08-20T05:03:30.178Z",
+      "note": "Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. This is the least certain term in the global carbon budget: the Global Carbon Project attaches an uncertainty of about ±2.6 Gt CO₂ per year at one standard deviation, roughly half the annual value itself. The full historical series is revised between annual releases — the same year can move by more than ten per cent between vintages — so the maximum of 8.69 Gt in 1959 is a property of this release rather than a settled historical fact, and the mid-1950s values sit within uncertainty of one another.",
+      "fetched_at": "2026-08-20T05:31:50.724Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -2194,15 +2194,18 @@
     "electricity_crossing": {
       "value": {
         "fossil": 57.39,
+        "low_carbon": 42.61,
+        "nuclear": 8.85,
+        "hydro": 13.96,
         "solar_wind": 17.28
       },
-      "unit": "% of world electricity",
+      "unit": "% of world electricity generation",
       "as_of": "2025",
       "source": "Our World in Data / Ember — share of electricity generation",
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
-      "note": "Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator.",
-      "fetched_at": "2026-08-20T05:03:30.870Z",
+      "note": "Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator. Low-carbon generation is nuclear plus all renewable sources — hydro, wind, solar, bioenergy and other renewables. In this dataset the fossil and low-carbon shares sum to 100 per cent, so the two plotted series are complementary; the component shares are given above and are also in the machine-readable file.",
+      "fetched_at": "2026-08-20T05:31:51.449Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -2372,6 +2375,504 @@
           ]
         ],
         "turning": [
+          [
+            1985,
+            35.88
+          ],
+          [
+            1986,
+            36.21
+          ],
+          [
+            1987,
+            36.17
+          ],
+          [
+            1988,
+            36.66
+          ],
+          [
+            1989,
+            35.51
+          ],
+          [
+            1990,
+            35.79
+          ],
+          [
+            1991,
+            36.26
+          ],
+          [
+            1992,
+            36.13
+          ],
+          [
+            1993,
+            37.05
+          ],
+          [
+            1994,
+            36.6
+          ],
+          [
+            1995,
+            37.08
+          ],
+          [
+            1996,
+            36.85
+          ],
+          [
+            1997,
+            36.28
+          ],
+          [
+            1998,
+            35.81
+          ],
+          [
+            1999,
+            35.66
+          ],
+          [
+            2000,
+            35.34
+          ],
+          [
+            2001,
+            34.9
+          ],
+          [
+            2002,
+            34.45
+          ],
+          [
+            2003,
+            33.09
+          ],
+          [
+            2004,
+            33.6
+          ],
+          [
+            2005,
+            33.13
+          ],
+          [
+            2006,
+            32.89
+          ],
+          [
+            2007,
+            31.69
+          ],
+          [
+            2008,
+            32.31
+          ],
+          [
+            2009,
+            32.79
+          ],
+          [
+            2010,
+            32.54
+          ],
+          [
+            2011,
+            31.9
+          ],
+          [
+            2012,
+            31.78
+          ],
+          [
+            2013,
+            32.29
+          ],
+          [
+            2014,
+            32.78
+          ],
+          [
+            2015,
+            33.52
+          ],
+          [
+            2016,
+            34.14
+          ],
+          [
+            2017,
+            34.66
+          ],
+          [
+            2018,
+            35.13
+          ],
+          [
+            2019,
+            36.34
+          ],
+          [
+            2020,
+            37.9
+          ],
+          [
+            2021,
+            37.88
+          ],
+          [
+            2022,
+            38.6
+          ],
+          [
+            2023,
+            39.42
+          ],
+          [
+            2024,
+            40.91
+          ],
+          [
+            2025,
+            42.61
+          ]
+        ],
+        "nuclear": [
+          [
+            1985,
+            15.06
+          ],
+          [
+            1986,
+            15.66
+          ],
+          [
+            1987,
+            16.26
+          ],
+          [
+            1988,
+            16.98
+          ],
+          [
+            1989,
+            16.68
+          ],
+          [
+            1990,
+            16.73
+          ],
+          [
+            1991,
+            17.15
+          ],
+          [
+            1992,
+            17.12
+          ],
+          [
+            1993,
+            17.34
+          ],
+          [
+            1994,
+            17.22
+          ],
+          [
+            1995,
+            17.36
+          ],
+          [
+            1996,
+            17.44
+          ],
+          [
+            1997,
+            16.92
+          ],
+          [
+            1998,
+            16.75
+          ],
+          [
+            1999,
+            16.91
+          ],
+          [
+            2000,
+            16.63
+          ],
+          [
+            2001,
+            16.86
+          ],
+          [
+            2002,
+            16.54
+          ],
+          [
+            2003,
+            15.64
+          ],
+          [
+            2004,
+            15.62
+          ],
+          [
+            2005,
+            15.04
+          ],
+          [
+            2006,
+            14.66
+          ],
+          [
+            2007,
+            13.71
+          ],
+          [
+            2008,
+            13.4
+          ],
+          [
+            2009,
+            13.32
+          ],
+          [
+            2010,
+            12.82
+          ],
+          [
+            2011,
+            11.88
+          ],
+          [
+            2012,
+            10.8
+          ],
+          [
+            2013,
+            10.57
+          ],
+          [
+            2014,
+            10.52
+          ],
+          [
+            2015,
+            10.55
+          ],
+          [
+            2016,
+            10.41
+          ],
+          [
+            2017,
+            10.2
+          ],
+          [
+            2018,
+            10.05
+          ],
+          [
+            2019,
+            10.26
+          ],
+          [
+            2020,
+            9.91
+          ],
+          [
+            2021,
+            9.78
+          ],
+          [
+            2022,
+            9.13
+          ],
+          [
+            2023,
+            9.09
+          ],
+          [
+            2024,
+            8.98
+          ],
+          [
+            2025,
+            8.85
+          ]
+        ],
+        "hydro": [
+          [
+            1985,
+            20.02
+          ],
+          [
+            1986,
+            19.7
+          ],
+          [
+            1987,
+            19.05
+          ],
+          [
+            1988,
+            18.84
+          ],
+          [
+            1989,
+            17.91
+          ],
+          [
+            1990,
+            18.05
+          ],
+          [
+            1991,
+            18.07
+          ],
+          [
+            1992,
+            17.9
+          ],
+          [
+            1993,
+            18.58
+          ],
+          [
+            1994,
+            18.23
+          ],
+          [
+            1995,
+            18.56
+          ],
+          [
+            1996,
+            18.24
+          ],
+          [
+            1997,
+            18.13
+          ],
+          [
+            1998,
+            17.79
+          ],
+          [
+            1999,
+            17.42
+          ],
+          [
+            2000,
+            17.21
+          ],
+          [
+            2001,
+            16.54
+          ],
+          [
+            2002,
+            16.27
+          ],
+          [
+            2003,
+            15.71
+          ],
+          [
+            2004,
+            16.09
+          ],
+          [
+            2005,
+            16.06
+          ],
+          [
+            2006,
+            16.02
+          ],
+          [
+            2007,
+            15.54
+          ],
+          [
+            2008,
+            16.14
+          ],
+          [
+            2009,
+            16.25
+          ],
+          [
+            2010,
+            16.12
+          ],
+          [
+            2011,
+            15.88
+          ],
+          [
+            2012,
+            16.26
+          ],
+          [
+            2013,
+            16.37
+          ],
+          [
+            2014,
+            16.3
+          ],
+          [
+            2015,
+            16.17
+          ],
+          [
+            2016,
+            16.26
+          ],
+          [
+            2017,
+            15.94
+          ],
+          [
+            2018,
+            15.78
+          ],
+          [
+            2019,
+            15.76
+          ],
+          [
+            2020,
+            16.27
+          ],
+          [
+            2021,
+            15.18
+          ],
+          [
+            2022,
+            14.95
+          ],
+          [
+            2023,
+            14.29
+          ],
+          [
+            2024,
+            14.33
+          ],
+          [
+            2025,
+            13.96
+          ]
+        ],
+        "solar_wind": [
           [
             1985,
             0
@@ -2548,10 +3049,10 @@
       "unit": "USD / kWh",
       "as_of": "2025",
       "source": "BloombergNEF Lithium-Ion Battery Price Survey (December 2025)",
-      "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/",
+      "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/",
       "licence": "reported figure, cited not redistributed",
-      "note": "Published annually as a report rather than as a machine-readable feed; value transcribed manually. Next revision expected each December.",
-      "fetched_at": "2026-08-20T05:03:30.870Z",
+      "note": "Global volume-weighted average across all end uses; BloombergNEF reports substantially different figures by segment, chemistry and region (stationary storage 70, battery-electric vehicle packs 99, LFP 81, NMC 128 USD/kWh; China 84 USD/kWh with North America and Europe well above it). Published annually as a report rather than as a machine-readable feed; transcribed manually. Next revision expected December 2026.",
+      "fetched_at": "2026-08-20T05:31:51.450Z",
       "status": "manual"
     },
     "co2_preindustrial_baseline": {
@@ -2562,7 +3063,7 @@
       "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
       "licence": null,
       "note": "Reference value from ice-core records, approximately stable through the Holocene. Fixed input, not a current measurement.",
-      "fetched_at": "2026-08-20T05:03:30.870Z",
+      "fetched_at": "2026-08-20T05:31:51.450Z",
       "status": "constant"
     }
   }
