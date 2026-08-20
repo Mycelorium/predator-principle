@@ -188,9 +188,7 @@ footer { display: flex; justify-content: space-between; padding: 2rem max(24px, 
 .claim-box .eyebrow { margin-bottom: .9rem; }
 .claim-list { margin: 0; padding-left: 1.2rem; }
 .claim-list li { margin: .7rem 0; font-size: 1.06rem; line-height: 1.55; }
-.cls { display: inline-block; min-width: 1.15em; padding: 0 .32em; background: var(--ink); color: var(--white); font-size: .72em; font-weight: 850; text-align: center; vertical-align: .1em; }
-.claim-key { margin: 1.1rem 0 0; padding-top: .9rem; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
-.claim-key a { color: inherit; }
+.cls { display: inline-block; margin-left: .15em; font-size: .68em; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; color: var(--forest); white-space: nowrap; vertical-align: .12em; }
 .contents { display: block; margin: 2rem 0 0; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
 .contents .eyebrow { margin-bottom: .7rem; }
 .contents ol { margin: 0; padding-left: 2.3rem; columns: 2; column-gap: 2.5rem; }
