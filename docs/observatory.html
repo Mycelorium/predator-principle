@@ -170,8 +170,8 @@
 <header class="head">
   <p class="eyebrow">Observatory</p>
   <h1>Biosphere state and energy transition indicators</h1>
-  <p class="method">A small set of quantitative indicators, each retrieved automatically from a published dataset and reproduced without adjustment. Complete series are shown rather than latest values only. No value is interpolated, smoothed, extrapolated or projected.</p>
-  <p class="method">Indicators are grouped following the pressure–response distinction used in environmental indicator frameworks: <span style="color:var(--pressure);font-weight:500">pressure</span> series measure load placed on a biological system, <span style="color:var(--response);font-weight:500">response</span> series measure the countervailing change. Where a source cannot be retrieved, the indicator is marked as not retrieved and no earlier value is shown in its place.</p>
+  <p class="method">A small set of quantitative indicators from published datasets.</p>
+  <p class="method">Indicators are grouped following the pressure–response distinction used in environmental indicator frameworks: <span style="color:var(--pressure);font-weight:500">pressure</span> series measure load placed on a biological system, <span style="color:var(--response);font-weight:500">response</span> series measure the countervailing change.</p>
   <dl class="meta" id="meta"></dl>
 </header>
 
@@ -226,7 +226,7 @@
     {
       key: 'fish_stocks', code: 'Marine fisheries', nav: 'Marine fish stocks',
       title: 'Marine fish stocks by exploitation status',
-      def: 'Share of assessed marine fish stocks fished within biologically sustainable limits, and share fished at unsustainable levels. Coverage is limited to stocks assessed by the FAO; the two categories are exhaustive and sum to 100 per cent. Assessment frequency is irregular, so intervals between observations are uneven.',
+      def: 'Share of assessed marine fish stocks fished within biologically sustainable limits, and share fished at unsustainable levels. Shares are by number of stocks, not by volume of landings, which gives a lower figure than the landings-weighted equivalent. Coverage is limited to the stocks FAO assesses; the two categories are exhaustive over that set and sum to 100 per cent. Assessment frequency is irregular, so intervals between observations are uneven, and FAO attributes part of the movement between assessment rounds to methodological revision rather than to stock condition.',
       unit: 'per cent of assessed stocks', dp: 1, suffix: '%', zero: true,
       series: [
         { name: 'overexploited', label: 'Fished at unsustainable levels', short: 'unsustainable', role: 'pressure' },
@@ -245,7 +245,7 @@
     {
       key: 'living_planet_index', code: 'Vertebrate populations', nav: 'Living Planet Index',
       title: 'Living Planet Index, global',
-      def: 'Aggregate index of the average rate of change in population size across monitored vertebrate populations, expressed relative to the first year of the record (=100). The index measures mean proportional change across populations; it is not a count of individuals and not a proportion of species lost. The shaded area gives the published upper and lower estimates.',
+      def: 'Geometric mean rate of change in population size across monitored vertebrate populations, expressed relative to the first year of the record (=100). The index measures average proportional change across populations: it is not a count of individuals and not a proportion of species lost, and roughly half the monitored populations are stable or increasing. The shaded area gives the 95 per cent confidence limits obtained by bootstrap resampling.',
       unit: 'index, first year = 100', dp: 1, suffix: '', zero: true,
       series: [{ name: 'index', label: 'Index value', short: 'index', role: 'pressure' }],
       band: { lower: 'lower', upper: 'upper' },
@@ -269,7 +269,7 @@
     {
       key: 'land_use_change_co2', code: 'Land use', nav: 'Land-use change CO₂',
       title: 'Carbon dioxide emissions from land-use change',
-      def: 'Annual CO₂ emissions attributed to land-use change, including deforestation and the conversion of other vegetated land. Reported here in gigatonnes per year. Estimates of this term carry substantially larger uncertainty than fossil-fuel emissions, and the publisher revises the full historical series between releases.',
+      def: 'Annual CO₂ emissions attributed to land-use change, including deforestation and the conversion of other vegetated land, in gigatonnes per year. This is the least certain term in the global carbon budget: the stated uncertainty is about ±2.6 Gt per year at one standard deviation, roughly half the current annual value. The full historical series is revised between annual releases, so the marked maximum is a property of this release rather than a settled date, and the mid-1950s values lie within uncertainty of one another.',
       unit: 'Gt CO₂ per year', dp: 2, suffix: ' Gt', zero: true,
       series: [{ name: 'taken', label: 'Annual emissions from land-use change', short: 'LUC CO₂', role: 'pressure' }],
       mark: 'peak',
@@ -277,7 +277,7 @@
         var t = s.taken, n = t.length - 1, pk = m.peak;
         return [
           { v: fmt(t[n][1], 2) + ' Gt', k: 'emissions, ' + t[n][0], cls: 'pressure' },
-          { v: fmt(pk.value, 2) + ' Gt', k: 'maximum, ' + pk.year, cls: '' },
+          { v: fmt(pk.value, 2) + ' Gt', k: 'series maximum, ' + pk.year, cls: '' },
           { v: '−' + fmt((1 - t[n][1] / pk.value) * 100, 0) + '%', k: 'below maximum', cls: 'response' },
           { v: t.length + '', k: 'annual observations', cls: '' }
         ];
@@ -285,23 +285,24 @@
     },
     {
       key: 'electricity_crossing', code: 'Electricity', nav: 'Electricity generation',
-      title: 'Electricity generation by source: fossil fuels, solar and wind',
-      def: 'Share of global electricity generation from fossil fuels, and combined share from solar and wind. Both series are percentages of the same total, so the vertical distance between them is directly interpretable. Electricity accounts for roughly one fifth of global final energy consumption; the remainder is not represented here.',
+      title: 'Electricity generation: fossil fuels against low-carbon sources',
+      def: 'Share of global electricity generation from fossil fuels, and the combined share from all low-carbon sources — nuclear together with hydro, wind, solar, bioenergy and other renewables. In this dataset the two shares sum to 100 per cent, so they are complementary and the vertical distance between them is directly interpretable. The composition of the low-carbon share is given below; nuclear and hydro are the largest components and neither is a recent addition. Electricity accounts for roughly one fifth of global final energy consumption; the remainder is not represented here.',
       unit: 'per cent of global electricity generation', dp: 1, suffix: '%', zero: true,
       series: [
         { name: 'taken', label: 'Fossil fuels', short: 'fossil', role: 'pressure' },
-        { name: 'turning', label: 'Solar and wind', short: 'solar + wind', role: 'response' }
+        { name: 'turning', label: 'Low-carbon (nuclear and renewables)', short: 'low-carbon', role: 'response' }
       ],
       stats: function (s) {
         var f = s.taken, w = s.turning, n = f.length - 1;
-        var i15 = -1;
-        for (var j = 0; j < f.length; j++) if (f[j][0] === 2015) i15 = j;
+        var lastOf = function (a) { return a && a.length ? a[a.length - 1][1] : null; };
         var out = [
-          { v: fmt(f[n][1], 1) + '%', k: 'fossil, ' + f[n][0], cls: 'pressure' },
-          { v: fmt(w[n][1], 1) + '%', k: 'solar and wind, ' + w[n][0], cls: 'response' },
-          { v: fmt(f[n][1] - w[n][1], 1) + ' pp', k: 'difference', cls: '' }
+          { v: fmt(f[n][1], 1) + '%', k: 'fossil fuels, ' + f[n][0], cls: 'pressure' },
+          { v: fmt(w[n][1], 1) + '%', k: 'low-carbon total', cls: 'response' }
         ];
-        if (i15 > -1) out.push({ v: '−' + fmt((f[i15][1] - w[i15][1]) - (f[n][1] - w[n][1]), 1) + ' pp', k: 'difference vs 2015', cls: 'response' });
+        var nu = lastOf(s.nuclear), hy = lastOf(s.hydro), sw = lastOf(s.solar_wind);
+        if (hy != null) out.push({ v: fmt(hy, 1) + '%', k: 'of which hydro', cls: '' });
+        if (nu != null) out.push({ v: fmt(nu, 1) + '%', k: 'of which nuclear', cls: '' });
+        if (sw != null) out.push({ v: fmt(sw, 1) + '%', k: 'of which wind and solar', cls: '' });
         return out;
       }
     },
@@ -325,14 +326,13 @@
   ];
 
   var SINGLE = [
-    ['co2_ppm', 'Atmospheric CO₂ concentration', 'ppm', 2],
+    ['co2_ppm', 'Atmospheric CO₂, monthly mean at Mauna Loa', 'ppm', 2],
     ['co2_emissions', 'CO₂ emissions, fossil fuels and industry', 'Mt/yr', 0],
     ['warming_from_co2', 'Warming attributable to CO₂', '°C', 2],
     ['renewables_share_elec', 'Renewable share of electricity', '%', 1],
     ['battery_pack_price', 'Lithium-ion battery pack price', 'USD/kWh', 0],
     ['co2_preindustrial_baseline', 'Pre-industrial CO₂ concentration', 'ppm', 0],
-    ['threatened_species', 'Species assessed as threatened', '', 0],
-    ['fever', 'Press attention index', '', 0]
+    ['threatened_species', 'Species assessed as threatened', '', 0]
   ];
 
   /* ── plot ──────────────────────────────────────────────────────────────── */
@@ -720,7 +720,10 @@
     ].map(function (r) { return '<div><dt>' + r[0] + '</dt><dd>' + r[1] + '</dd></div>'; }).join('');
 
     document.getElementById('foot-note').innerHTML =
-      'Retrieval is automated and scheduled; no value passes through manual editing except where the method column states otherwise. '
+      'Method. Values are reproduced from their source without adjustment, and complete series are shown rather than latest values only. '
+      + 'No value is interpolated, smoothed, extrapolated or projected, and no series is drawn beyond its last observation. '
+      + 'Where a source cannot be retrieved the indicator is marked as not retrieved and no earlier value is shown in its place. '
+      + 'Retrieval is automated and scheduled; no value passes through manual editing except where the method column states otherwise. '
       + 'Every figure on this page, with its source and retrieval timestamp, is in the machine-readable data file.';
 
     // register of recognition
