@@ -6,6 +6,8 @@ within evolution.
 
 **Read them here: <https://mycelorium.github.io/predator-principle/>**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22048391.svg)](https://doi.org/10.5281/zenodo.22048391)
+
 ## What the claim is, and is not
 
 Predation is real, ancient, and locally adaptive. Some predators stabilise the
@@ -67,6 +69,17 @@ The essays are written with AI assistance. The argument, the direction and every
 editorial decision are the collective's; drafting, source retrieval and the
 checking pass are done with a language model. Every factual statement is traced
 to a named source and appears in the register with a DOI wherever one exists.
+
+## Citing this
+
+The corpus is archived on Zenodo and has a DOI. Cite the concept DOI — it always
+resolves to the current version:
+
+    Nirodha Collective (2026). The Predator Principle — The Cancer of Evolution.
+    Zenodo. https://doi.org/10.5281/zenodo.22048391
+
+If you rely on a particular claim, cite its ID as well (`C001` … `C011`); the
+register records what each one asserts, where it stops, and what would break it.
 
 ## Rights
 
