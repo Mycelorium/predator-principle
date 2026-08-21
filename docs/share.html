@@ -113,9 +113,9 @@
     var parts = [
       item.body,
       item.boundary ? '**' + item.boundary + '**' : '',
-      'Full piece, with sources and the claim status: ' + item.url,
+      'Full piece, with its sources: ' + item.url,
       '',
-      'This is published as a falsifiable systems hypothesis, not as settled fact — every claim on the site carries its evidence status (E empirical / I interpretation / P proposition) and its own falsifier. Counterevidence is genuinely wanted; the strongest objection is published alongside the thesis.'
+      'Every factual statement is traced to a named source. Every claim in the open register carries its boundary and what would falsify it, and each one has a form for submitting work that takes it further — or that breaks it.'
     ].filter(Boolean);
     return trim(parts.join('\n\n'), 1500);
   }

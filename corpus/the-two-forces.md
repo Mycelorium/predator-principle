@@ -1,8 +1,8 @@
 # The two forces: the collaborative ground and the malignant pattern
 
 *Position paper — Nirodha Collective. Two-layer voice: the thesis is stated
-boldly; every factual claim keeps its evidence status (E empirical, I
-interpretation, P proposition) and its falsifier. Boldness is not overclaiming.*
+boldly; every factual claim is traced to a named source and keeps its boundary
+and its falsifier. Boldness is not overclaiming.*
 
 ## 1. The thesis, without hedging
 

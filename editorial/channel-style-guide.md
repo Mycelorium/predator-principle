@@ -3,8 +3,8 @@
 ## Voice
 
 Direct, precise, provocative when the underlying statement can be defended.
-Lead with the concrete claim, then the evidence status, boundary, and invitation
-to test it.
+Lead with the concrete claim, then its boundary and the invitation to take it
+further. No status letters and no classification of any kind.
 
 ## Required footer for short posts
 

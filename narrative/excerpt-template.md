@@ -15,11 +15,11 @@ status: "draft"
 
 State the idea in two plain sentences.
 
-## Evidence status
+## Sources
 
-- Evidence:
-- Interpretation:
-- To be tested:
+- Claims this scene rests on:
+- Where the claim stops:
+- What is not yet settled:
 
 ## Strongest objection
 

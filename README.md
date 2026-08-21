@@ -47,7 +47,7 @@ register, and the change is visible in the git history.
 
     docs/        the published site: essays, foundation, observatory, register
     docs/data/   claims, sources, glossary, and the observatory readings, as JSON
-    essays/      the essay sources
+    essays/      drafting workspace and the archive of superseded drafts
     corpus/      the underlying position, methodology and evidence map
     scripts/     site build, syndication, archiving, data retrieval
     content/     ledgers written by the workflows; not written by hand

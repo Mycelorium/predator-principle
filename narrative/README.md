@@ -16,8 +16,8 @@ to make the stakes memorable, not to establish factual truth.
 
 1. **Excerpt** — no more than one self-contained scene or 800 words online.
 2. **What this scene proposes** — two sentences in plain language.
-3. **Evidence status** — linked `E`, `I`, and `P` claims; no narrative sentence
-   may be presented as empirical evidence.
+3. **Sources** — link the claims the scene rests on; no narrative sentence may
+   be presented as empirical evidence.
 4. **Strongest objection** — the best counterargument, not a straw man.
 5. **Continue** — one link to the evidence map and one to the next scene.
 
