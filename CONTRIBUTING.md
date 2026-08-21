@@ -1,7 +1,7 @@
 # Take a claim further
 
-The register holds eleven claims. Each one states what it asserts, where it
-stops, what would break it, and the papers behind it. That structure exists so
+The register holds every factual claim the essays rest on. Each one states what
+it asserts, where it stops, what would break it, and the papers behind it. That structure exists so
 that someone else can pick a claim up and carry it somewhere.
 
 ## Bring work

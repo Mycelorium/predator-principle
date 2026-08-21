@@ -1,6 +1,6 @@
 # The Predator Principle
 
-Eleven essays and an open claim register, arguing that generalised predation —
+Essays and an open claim register, arguing that generalised predation —
 a part optimising against the whole that carries it — behaves like a cancer
 within evolution.
 
