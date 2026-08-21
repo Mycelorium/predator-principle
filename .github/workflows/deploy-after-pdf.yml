@@ -1,0 +1,42 @@
+name: Deploy Pages after the corpus PDF
+
+# corpus-pdf commits with GITHUB_TOKEN, and commits made with that token do not
+# trigger other workflows — so pages.yml never sees the push and the new PDF
+# would sit in the repo without ever going live. workflow_run is the one event
+# that does fire in that case, so the deploy hangs off it.
+
+on:
+  workflow_run:
+    workflows: ["corpus-pdf"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
