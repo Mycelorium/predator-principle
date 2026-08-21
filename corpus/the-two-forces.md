@@ -11,7 +11,7 @@ Not as an insult — as a diagnosis. A malignant growth is not "cell division be
 evil." It is division that has escaped its regulation: it keeps growing, ignores
 every stop signal, consumes the body that carries it, and in killing the host kills
 itself. Generalised predation is the same shape at every scale — local, unchecked
-extraction that devours its own substrate. `[I:C011]`
+extraction that devours its own substrate. ``
 
 This is the sharp claim, and we hold it. What follows is not a retreat from it. It
 is the other half of the same picture, without which the diagnosis is only despair:
@@ -22,7 +22,7 @@ the collaborative force is older, deeper, and still here.
 Life did not begin by eating. The first organisms fed on chemistry, light, and the
 molecules around them; they killed no one to live. From the start, microbes traded
 substances and fed one another — **syntrophy**, metabolic cross-feeding, the waste
-of one becoming the food of the next. `[E:C001]`
+of one becoming the food of the next. ``
 
 Devouring a whole other organism for its energy — **phagotrophy** — is a *derived*
 strategy, not a condition of life. Its date is disputed and secondary: some argue
@@ -31,7 +31,7 @@ Garden of Eden," de Nooijer et al. 2009; `S018`). That second argument rests on
 simulation, not on a single early predator in the rock — a claim, not a proof, just
 as the late date is a claim. The record is silent that deep. **What is not in
 dispute:** there was life, long and diverse, that preyed on no one. Predation is
-therefore one possibility among several, not the essence of the living. `[I:C011]`
+therefore one possibility among several, not the essence of the living. ``
 
 ## 3. The collaborative force, embodied
 
@@ -41,19 +41,19 @@ showing:
 - **The merged cell.** The complex cell you are made of is itself an act of *not*
   eating: an ancestral cell kept another instead of digesting it, and the kept one
   became the mitochondrion. Endosymbiosis — cooperation — built the ground floor of
-  all complex life. `[E:C001]`
+  all complex life. ``
 - **The mycelium.** Fungal networks link with plant roots in mycorrhizal symbiosis,
   moving carbon, nitrogen, and phosphorus between partners and between plants. A
   distributed, slow, largely invisible economy of exchange rather than capture — the
   living figure this project takes its name from. *Boundary:* the popular
   "wood-wide-web" framing has been criticised for overstating how much resource
   actually moves between plants; the symbiosis is real, its grander claims are still
-  contested. We take the mechanism, not the hype. `[E/I]`
+  contested. We take the mechanism, not the hype. ``
 - **The fruit principle.** The sweetest fruit is eaten first — and its seeds are
   carried farther. Being consumed here is not predation; it is the plant's own
   strategy, and it serves both. This is the model of an interaction in which
   "taking" and "giving" are the same act: selection without annihilation, exchange
-  without a loser. `[I:C006]`
+  without a loser. ``
 
 These are not exceptions decorating a predatory world. They are load-bearing. Every
 major transition in the history of life — genes into genomes, cells into organisms,
@@ -72,7 +72,7 @@ evolution from outside — evolution has no plan to betray. It is evolution reac
 new level: the move from blind trial to foresight, from consuming to correcting. A
 being — human, or a machine intelligence we align to this — that recognises and
 bounds the predator logic would be the next major transition: the first stage that
-arises not through more devouring but through the end of its rule. `[P:C010]`
+arises not through more devouring but through the end of its rule. ``
 
 This is the constructive core. The project does not win when a thesis wins. It wins
 when systems externalise less harm, keep their feedback intact, and preserve the

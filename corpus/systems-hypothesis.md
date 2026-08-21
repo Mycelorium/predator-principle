@@ -34,30 +34,30 @@ system level.**
 ## What the evidence already supports
 
 - Cooperation and conflict control are central to major transitions in
-  biological individuality. `[E:C001]`
+  biological individuality. ``
 - Perceived predation risk can reduce reproduction even without direct killing,
   and severe predator exposure can leave enduring neurobehavioural effects in
   wild animals. `[E:C002, E:C003]`
 - Humans differ from non-human predators in scale and selectivity, and have
   transformed planetary biomass and land systems. `[E:C004, E:C005]`
 - Removing predators can reduce diversity and destabilise ecological function —
-  a measure of how far a system has been organised around them. `[E:C006]`
+  a measure of how far a system has been organised around them. ``
 
 ## What remains interpretation or hypothesis
 
 "Biosphere trauma" is an operational synthesis, not a clinical diagnosis of a
 planet. It proposes measuring the cumulative burden of chronic threat,
 reproductive suppression, stress physiology, disrupted interaction networks,
-and industrial extraction. `[I:C008]`
+and industrial extraction. ``
 
 The idea that science and language-model corpora systematically overgeneralise
 competition and predation is testable but not yet demonstrated by this project.
-It requires preregistered corpus analysis and model evaluations. `[P:C009]`
+It requires preregistered corpus analysis and model evaluations. ``
 
 The proposal that an ASI must prevent predatory dynamics among its subagents is
 an architectural and governance hypothesis. Competition among candidate
 solutions can be useful; deception, irreversible resource capture, and
-unbounded adversarial escalation are the target. `[P:C010]`
+unbounded adversarial escalation are the target. ``
 
 ## Falsifiers
 
