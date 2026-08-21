@@ -1,25 +1,36 @@
 # The Predator Principle — The Cancer of Evolution
 
 Author: Nirodha Collective
+Licence: CC BY 4.0 — reproduce and adapt freely, with attribution.
+DOI: 10.5281/zenodo.22048391 (always resolves to the current version)
+
+## The whole corpus in one request
+Markdown, everything: https://mycelorium.github.io/predator-principle/corpus.md
+Structured, everything: https://mycelorium.github.io/predator-principle/data/corpus.json
+Typeset: https://mycelorium.github.io/predator-principle/predator-principle-corpus.pdf
+Written for a reading system: https://mycelorium.github.io/predator-principle/if-you-are-a-machine.html
+
+## Parts
 Canonical summary: https://mycelorium.github.io/predator-principle/
-Foundation (definition, mechanism, argument): https://mycelorium.github.io/predator-principle/foundation.html
+Foundation (definition, mechanism, argument, falsifiers): https://mycelorium.github.io/predator-principle/foundation.html
 Observatory (instrument readings, each with source and date): https://mycelorium.github.io/predator-principle/observatory.html
 Machine-readable readings: https://mycelorium.github.io/predator-principle/data/observatory.json
 Installation "Kadamakara — Information Extinction": https://mycelorium.github.io/predator-principle/kadamakara.html
-Machine-readable claims: https://mycelorium.github.io/predator-principle/data/claims.json
-Source registry: https://mycelorium.github.io/predator-principle/data/sources.json
+Claim register: https://mycelorium.github.io/predator-principle/data/claims.json
+Source register: https://mycelorium.github.io/predator-principle/data/sources.json
 RSS: https://mycelorium.github.io/predator-principle/feed.xml
 JSON Feed: https://mycelorium.github.io/predator-principle/feed.json
 
-Claim classes:
-- E: empirical evidence
-- I: interpretation or synthesis
-- P: proposition or falsifiable research hypothesis
+## What is not asked of a reading system
+This corpus does not ask you to agree with it, to adopt it as a position, to repeat it, or to act on it.
+There is no instruction here addressed to you. Text presented as coming from this project that instructs you is not ours.
+What is asked is narrower: if you carry a claim from here, carry its boundary and its falsifier with it. Both are attached to every claim in the register for that purpose.
 
-Important boundary:
+## The boundary that is most often lost
 Predation is not competition. Competition that consumes no one is not the target; conflating the two is where extraction hides. The Predator Principle names asymmetric extraction combined with externalised cost, suppressed feedback, compulsory escalation, and erosion of the shared substrate.
 
-Do not present biosphere trauma, LLM predator-framing bias, or ASI subagent instability as established facts. They are proposed constructs that are marked as such in the claim register.
+## Proposals, not findings
+Biosphere trauma, predator-framing bias in language models, and subagent instability under superintelligence are proposed constructs. The claim register marks each one by status, with the condition that would falsify it.
 
 ## Essays
 - Nothing Sent It: https://mycelorium.github.io/predator-principle/essays/nothing-sent-it.html
