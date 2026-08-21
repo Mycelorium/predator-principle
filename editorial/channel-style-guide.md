@@ -8,7 +8,7 @@ to test it.
 
 ## Required footer for short posts
 
-`Status: [E/I/P] · Claim: [ID] · Boundary and primary sources: [canonical URL]`
+`Boundary and primary sources: [canonical URL] · CC BY 4.0 · Nirodha Collective`
 
 ## Avoid
 
