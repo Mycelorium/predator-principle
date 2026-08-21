@@ -1,79 +1,72 @@
-# The Predator Principle — The Cancer of Evolution
+# The Predator Principle
 
-An open, adversarially testable project about a dangerous confusion: a locally
-successful strategy has been promoted into a universal law.
+Eleven essays and an open claim register, arguing that generalised predation —
+a part optimising against the whole that carries it — behaves like a cancer
+within evolution.
 
-**Provocation:** Predation is the error. Cooperation is the correction.
-Intelligence is the chance to stop repeating the wound.
+**Read them here: <https://mycelorium.github.io/predator-principle/>**
 
-**Scientific formulation:** Predation is real, ancient, locally adaptive and
-sometimes ecologically stabilising. The *Predator Principle* is not identical
-to animal predation. It names a system pattern in which extraction becomes
-one-directional, costs are externalised, feedback is suppressed, escalation
-becomes compulsory, and the sustaining substrate is degraded.
+## What the claim is, and is not
 
-Competition is neither rejected in advance nor made the goal. It is assessed
-by its consequences and belongs to the Predator Principle only when the defined
-destructive system characteristics appear.
+Predation is real, ancient, and locally adaptive. Some predators stabilise the
+systems they live in. None of that is disputed here.
 
-This repository keeps those two levels visible. Every public claim is tagged:
+The claim is about a *pattern*, not about animals. A system is predatory in this
+sense when extraction runs one way, costs land on someone who cannot answer,
+corrective feedback is captured or switched off, escalation becomes compulsory,
+and the substrate that carries the whole thing is worn down. A lion does not
+meet that description; it is bound by feedback that answers back. A firm
+competing on price does not meet it either — competition is not predation, and
+conflating the two is exactly where extraction hides.
 
-- `E` — empirical evidence
-- `I` — interpretation or synthesis
-- `P` — proposition or falsifiable research hypothesis
+The full statement, with the mechanism, the four levels of the argument and the
+conditions that would falsify it, is at
+[foundation.html](https://mycelorium.github.io/predator-principle/foundation.html).
 
-## Start here
+## Attack it here
 
-- Public site: `docs/index.html`
-- Canonical thesis: `corpus/systems-hypothesis.md`
-- Position: `corpus/position.de.md` and `corpus/position.en.md`
-- Evidence and counterevidence: `corpus/evidence-map.md`
-- AI/ASI argument: `corpus/open-letter-to-future-intelligence.md`
-- Optional narrative bridge: `narrative/README.md`
-- Machine-readable claims: `docs/data/claims.json`
-- 90-day launch: `editorial/content-calendar-90-days.md`
-- GitHub/Claude handoff: `handoff/CLAUDE_GITHUB_HANDOFF.md`
+The register at
+[the front page](https://mycelorium.github.io/predator-principle/#evidence)
+lists every claim with its boundary, what would falsify it, and the papers
+behind it. `docs/data/claims.json` is the machine-readable version.
 
-## Local preview
+- **A claim is wrong, overstated, or missing a boundary** → open a
+  [claim challenge](https://github.com/Mycelorium/predator-principle/issues/new?template=claim-challenge.yml).
+  Primary evidence is required: a DOI, a dataset, code, or an exact
+  counterexample.
+- **You can propose a test** → open a
+  [research proposal](https://github.com/Mycelorium/predator-principle/issues/new?template=research-proposal.yml).
+- **You would rather just write** → <office@artecont.at>. No account, no form.
 
-No build system or dependency is required.
+Counterevidence stays visible. When the research has contradicted a planned
+argument, the argument changed — that has already happened more than once.
 
-```bash
-python3 -m http.server 8000 --directory docs
-```
+## The repository
 
-Open `http://localhost:8000`. Validation requires Node 20+:
+    docs/        the published site: essays, foundation, observatory, register
+    docs/data/   claims, sources, glossary, and the observatory readings, as JSON
+    essays/      the essay sources
+    corpus/      the underlying position, methodology and evidence map
+    scripts/     site build, syndication, archiving, data retrieval
+    content/     ledgers written by the workflows; not written by hand
 
-```bash
-node scripts/validate.mjs
-```
+`scripts/build-site.mjs` generates the feeds, the sitemap and `llms.txt` from
+`docs/essays-feed.xml`. GitHub Actions rebuild and deploy on every push, refresh
+the observatory readings from their published sources, post new essays to the
+social channels, and request Wayback snapshots once a week.
 
-## Publishing discipline
+To read the site locally:
 
-The 24 bilingual launch dispatches are covered by the Nirodha Collective launch
-mandate and publish automatically over eight weeks on Monday, Wednesday, and
-Friday. Each publication rebuilds the site archive, RSS, JSON Feed, sitemap,
-and `llms.txt`, then deploys GitHub Pages. A Sunday GitHub release provides a
-weekly digest. New material outside this fixed campaign remains review-gated.
+    python3 -m http.server 8000 --directory docs
 
-Scientific corrections are accepted through issues and pull requests. Strong
-counterevidence is part of the project, not an enemy of it. A Tuesday metadata
-search opens an explicitly unreviewed research inbox; it never edits claims or
-sources automatically.
+## How this is written
 
-The narrative layer is optional and never used as evidence. Full literary
-manuscripts remain private unless the rights holder selects specific excerpts.
-
-## Status
-
-This is a launch-ready research and communication scaffold. Claims about
-"biosphere trauma", training-data bias, and ASI subagent conflict are explicitly
-research hypotheses until operational measures and results justify stronger
-language.
-
-See `START_HERE.md` for the one-time GitHub activation.
+The essays are written with AI assistance. The argument, the direction and every
+editorial decision are the collective's; drafting, source retrieval and the
+checking pass are done with a language model. Every factual statement is traced
+to a named source and appears in the register with a DOI wherever one exists.
 
 ## Rights
 
-Original public content is released by Nirodha Collective under CC BY 4.0.
-Private Fire materials and unpublished manuscripts are excluded.
+Original public content by Nirodha Collective under
+[CC BY 4.0](LICENSE.md). Contact: <office@artecont.at>.
