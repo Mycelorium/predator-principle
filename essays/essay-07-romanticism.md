@@ -24,11 +24,11 @@ Das ist die eine Verschiebung, um die es in diesem Text geht. Die Erhabenheit �
 
 ## Die Rechnung, die niemand filmt
 
-Rechne einmal nach. Ein weiblicher Kabeljau legt etwa zwei Millionen Eier. In einer ungefähr stabilen Population überleben davon im Durchschnitt zwei bis zur Fortpflanzung (Horta 2010) [I/P]. Zwei. Der Rest — annähernd zwei Millionen minus zwei — stirbt. Er stirbt jung, meist in den ersten Tagen, gefressen oder verhungert, oft bevor er überhaupt viel mehr war als ein Punkt aus Zellen mit einem gerade erst angeschalteten Nervensystem.
+Rechne einmal nach. Ein weiblicher Kabeljau legt etwa zwei Millionen Eier. In einer ungefähr stabilen Population überleben davon im Durchschnitt zwei bis zur Fortpflanzung (Horta 2010) . Zwei. Der Rest — annähernd zwei Millionen minus zwei — stirbt. Er stirbt jung, meist in den ersten Tagen, gefressen oder verhungert, oft bevor er überhaupt viel mehr war als ein Punkt aus Zellen mit einem gerade erst angeschalteten Nervensystem.
 
 Das ist kein Sonderfall. Das ist die Grundgleichung. Die Larvenfische sterben in intensiver, größenselektiver Sterblichkeit, die Mehrheit in den ersten Tagen bis Wochen (*Scientific Reports* 5:17065, 2015) ; die Überlebensrate vom Ei bis zur Rekrutierung liegt regelmäßig unter einem Prozent (NOAA/NMFS, *Marine Fisheries Review* 41(3)) . Pianka (1970) gab dem den Namen: r-Strategen maximieren die Nachkommenzahl, und die meisten Nachkommen sterben vor der Reife . Reznick, Bryant und Bashey (2002) haben das r/K-Schema als grobe Theorie überholt, aber der harte Kern — hohe Fruchtbarkeit bedeutet hohe Jugendsterblichkeit — steht unverändert .
 
-Horta (2010) zieht die Konsequenz kalt: für jedes Individuum, das die Reife erreicht, gibt es viele Hunderte oder Tausende, die verhungern oder gefressen werden, kurz nachdem sie zu empfinden begonnen haben [I/P]. Die Arithmetik der Ersetzung ist die Arithmetik des Todes. Ein überlebender Nachkomme pro Elter; alle anderen weg.
+Horta (2010) zieht die Konsequenz kalt: für jedes Individuum, das die Reife erreicht, gibt es viele Hunderte oder Tausende, die verhungern oder gefressen werden, kurz nachdem sie zu empfinden begonnen haben . Die Arithmetik der Ersetzung ist die Arithmetik des Todes. Ein überlebender Nachkomme pro Elter; alle anderen weg.
 
 Und jetzt sieh, wen die Kamera zeigt. Sie zeigt den Löwen, den Wolf, den großen, langsam sich fortpflanzenden Wirbeltier-Jäger — das seltene, charismatische, K-selektierte Tier. Das mediane Opfer auf diesem Planeten ist keine in die Enge getriebene Gazelle. Es ist eine Larve, ein Winzling, ein Wirbelloses, das jung stirbt, und niemand richtet je ein Objektiv darauf.
 
@@ -36,7 +36,7 @@ Und jetzt sieh, wen die Kamera zeigt. Sie zeigt den Löwen, den Wolf, den große
 
 Halte kurz die Größenordnungen fest, denn sie sind das Fundament. Die gesamte lebende Biomasse der Erde beträgt etwa 550 Gigatonnen Kohlenstoff; alle Tiere zusammen nur etwa 2 Gigatonnen, rund 0,4 Prozent, und die Gliederfüßer dominieren diesen Anteil (Bar-On, Phillips & Milo 2018) . Ein Rundungsfehler der Biosphäre.
 
-Aber zähle Individuen statt Gewicht, und die Sache kippt ins Astronomische. Terrestrische Gliederfüßer in der Größenordnung 10¹⁸ (Bar-On et al. 2018; Rosenberg et al., PMC9897674) , marine Gliederfüßer 10²⁰, Fische 10¹³ bis 10¹⁵, Vögel 10¹¹, Säugetiere 10¹¹ bis 10¹² (Bar-On et al. 2018; Tomasik, reducing-suffering.org) [E/I]. Das typische empfindungsfähigkeitsverdächtige Wesen der Erde ist ein kleines, kurzlebiges Wirbelloses oder ein Larvenfisch — kein Löwe.
+Aber zähle Individuen statt Gewicht, und die Sache kippt ins Astronomische. Terrestrische Gliederfüßer in der Größenordnung 10¹⁸ (Bar-On et al. 2018; Rosenberg et al., PMC9897674) , marine Gliederfüßer 10²⁰, Fische 10¹³ bis 10¹⁵, Vögel 10¹¹, Säugetiere 10¹¹ bis 10¹² (Bar-On et al. 2018; Tomasik, reducing-suffering.org) . Das typische empfindungsfähigkeitsverdächtige Wesen der Erde ist ein kleines, kurzlebiges Wirbelloses oder ein Larvenfisch — kein Löwe.
 
 Und dann der Schlag, der die romantische Kulisse von der "unberührten natürlichen Ordnung" wegzieht: Menschen und Nutztiere stellen zusammen etwa 95 Prozent der Säugetierbiomasse, wilde Säugetiere nur etwa 5 Prozent; allein die menschliche Biomasse übertrifft die aller wilden Säugetiere um mehr als das Siebenfache (Greenspoon et al. 2023) . Die "ursprüngliche Wildnis", die der Romantiker beschwört, existiert kaum noch. Wir bewundern eine Ordnung, die zahlenmäßig schon fast eine Erinnerung ist.
 
@@ -48,11 +48,11 @@ Zanette, White, Allen und Clinchy (2011) haben ein Experiment gebaut, das man si
 
 Das ist kein Ausreißer. Clinchy, Sheriff und Zanette (2013) zeigen chronischen physiologischen Stress mit Fitnesskosten . Zanette und Clinchy (2020) dokumentieren, dass durch Raubtiere induzierte Furcht anhaltende, PTBS-ähnliche neurobiologische Veränderungen in wilden Beutetieren erzeugt . Preisser, Bolnick und Benard (2005) fanden in ihrer Meta-Analyse, dass die Einschüchterungswirkung von Raubtieren so stark ist wie der direkte Verzehr, oft stärker [E, Titel/Abstract; contested im Detail]. Preisser und Bolnick (2008) zeigen die vielen Wege, auf denen diese Furcht wirkt .
 
-Ehrlich bleiben: Sheriff et al. (2020) mahnen zur Vorsicht — die Wirkung der Furcht auf einzelne Tiere und ihre Physiologie ist gut belegt, robuste Belege dafür, dass Furcht allein die *Populationsgröße* verändert, sind dünn [E/contested]. Gut. Wir brauchen die Populationsbehauptung nicht. Für den Punkt reicht das Individuum: ein lebenslanger, leichenloser Terror, den die erhabene Einstellung nie zeigt, weil er sich nicht in einen schönen Bogen fassen lässt.
+Ehrlich bleiben: Sheriff et al. (2020) mahnen zur Vorsicht — die Wirkung der Furcht auf einzelne Tiere und ihre Physiologie ist gut belegt, robuste Belege dafür, dass Furcht allein die *Populationsgröße* verändert, sind dünn . Gut. Wir brauchen die Populationsbehauptung nicht. Für den Punkt reicht das Individuum: ein lebenslanger, leichenloser Terror, den die erhabene Einstellung nie zeigt, weil er sich nicht in einen schönen Bogen fassen lässt.
 
 ## Wer alles empfinden kann
 
-Und wie weit reicht das nach unten? Weiter, als die Kulisse annimmt. Gibbons et al. (2022) prüften die Schmerzevidenz bei Insekten anhand von acht Kriterien. Erwachsene Zweiflügler und Schaben erfüllen sechs von acht — "starke Evidenz". Und, entscheidend: kein untersuchtes Insekt fiel bei einem Kriterium durch [I/E].
+Und wie weit reicht das nach unten? Weiter, als die Kulisse annimmt. Gibbons et al. (2022) prüften die Schmerzevidenz bei Insekten anhand von acht Kriterien. Erwachsene Zweiflügler und Schaben erfüllen sechs von acht — "starke Evidenz". Und, entscheidend: kein untersuchtes Insekt fiel bei einem Kriterium durch .
 
 Das ist keine Gewissheit, es ist eine Wahrscheinlichkeit, eine abgestufte, und wir behaupten nichts darüber hinaus. Aber lege diese Wahrscheinlichkeit neben die 10¹⁸ bis 10²⁰ Gliederfüßer, und im Erwartungswert wird die Menge an prädationsverbundenem Leiden ungeheuer. Nicht weil ein einzelnes Insekt gewiss litte, sondern weil die Zahl so groß ist, dass selbst eine bescheidene Wahrscheinlichkeit eine Rechnung ergibt, vor der man nicht ehrlich weggehen kann.
 
@@ -70,9 +70,9 @@ Kommt der stärkste Einwand: Prädation ist notwendig, sie baut das System, nimm
 
 Aber sieh genau hin, wie hier zwei Behauptungen zu einer verschmolzen werden. Die schwache ist wahr: *gegeben das jetzige Design*, kann Eingreifen schaden. Die starke folgt daraus nicht: dass Prädation als **organisierendes Prinzip** der Biosphäre deshalb gut, notwendig oder bewunderungswürdig sei. "Notwendig innerhalb des Designs" ist nicht "notwendig als Design". Und selbst echte Notwendigkeit verleiht keine Schönheit — ein Tumor ist stromabwärts seiner eigenen Biologie auch "notwendig".
 
-Dazu kommt die empirische Demut, die die Kulisse nie erwähnt. Die Vorzeigegeschichte "Prädation heilt das Ökosystem" wird gerade demontiert. Ripple und Beschta (2012) erzählten die saubere Yellowstone-Kaskade: Wölfe zurück, Elche vorsichtiger, Espen und Weiden erholt . Doch Painter et al. (2025) gegen MacNulty et al. (2026) streiten heute offen: Die behauptete 152-fache Espenerholung fällt nach Basislinien- und statistischer Korrektur auf etwa das 17,5-fache, und die Effekte sind "real, aber kontextabhängig" [P, contested] — nicht das saubere Moralstück der Dokumentationen. Gillis et al. (2025) fassen zusammen: Keystone-Prädation ist real, aber weit weniger allgemein, als der Lehrbuchgebrauch suggeriert [E/P].
+Dazu kommt die empirische Demut, die die Kulisse nie erwähnt. Die Vorzeigegeschichte "Prädation heilt das Ökosystem" wird gerade demontiert. Ripple und Beschta (2012) erzählten die saubere Yellowstone-Kaskade: Wölfe zurück, Elche vorsichtiger, Espen und Weiden erholt . Doch Painter et al. (2025) gegen MacNulty et al. (2026) streiten heute offen: Die behauptete 152-fache Espenerholung fällt nach Basislinien- und statistischer Korrektur auf etwa das 17,5-fache, und die Effekte sind "real, aber kontextabhängig" (contested) — nicht das saubere Moralstück der Dokumentationen. Gillis et al. (2025) fassen zusammen: Keystone-Prädation ist real, aber weit weniger allgemein, als der Lehrbuchgebrauch suggeriert .
 
-Und die Harmonie selbst, das Gerüst, an dem die "schöne Notwendigkeit" hängt? Kricher (2009) hat es abgeräumt: Ökosysteme sind Nicht-Gleichgewichte, kontingent, ohne inhärente Balance, Harmonie oder Zweck; das "Gleichgewicht der Natur" ist Volksmetaphysik, nicht Ökologie [I/E]. Nimm die falsche Harmonie weg, und die schöne Notwendigkeit hat nichts mehr, worauf sie steht.
+Und die Harmonie selbst, das Gerüst, an dem die "schöne Notwendigkeit" hängt? Kricher (2009) hat es abgeräumt: Ökosysteme sind Nicht-Gleichgewichte, kontingent, ohne inhärente Balance, Harmonie oder Zweck; das "Gleichgewicht der Natur" ist Volksmetaphysik, nicht Ökologie . Nimm die falsche Harmonie weg, und die schöne Notwendigkeit hat nichts mehr, worauf sie steht.
 
 ## Der Unterschied, den das eine Wort verbirgt
 
@@ -147,11 +147,11 @@ That is the single shift this essay turns on. The sublime — the terror convert
 
 ## The arithmetic nobody films
 
-Do the arithmetic. A female Atlantic cod lays roughly two million eggs. In a roughly stable population, on average two of them survive to reproduce (Horta 2010) [I/P]. Two. The rest — almost two million minus two — die. They die young, most in the first days, eaten or starved, often before they were much more than a dot of cells with a nervous system barely switched on.
+Do the arithmetic. A female Atlantic cod lays roughly two million eggs. In a roughly stable population, on average two of them survive to reproduce (Horta 2010) . Two. The rest — almost two million minus two — die. They die young, most in the first days, eaten or starved, often before they were much more than a dot of cells with a nervous system barely switched on.
 
 This is not a special case. It is the base equation. Larval fish die in intense, size-selective mortality, the majority within the first days to weeks (*Scientific Reports* 5:17065, 2015) ; egg-to-recruitment survival routinely runs below one percent (NOAA/NMFS, *Marine Fisheries Review* 41(3)) . Pianka (1970) named the shape of it: r-strategists maximise fecundity, and most offspring die before maturity . Reznick, Bryant and Bashey (2002) superseded the r/K scheme as coarse theory, but the hard core — high fecundity means high juvenile mortality — stands untouched .
 
-Horta (2010) draws the conclusion coldly: for every individual that reaches maturity, there are many hundreds or thousands that starve or are eaten shortly after they begin to be conscious [I/P]. The arithmetic of replacement is the arithmetic of death. One surviving offspring per parent; all the others gone.
+Horta (2010) draws the conclusion coldly: for every individual that reaches maturity, there are many hundreds or thousands that starve or are eaten shortly after they begin to be conscious . The arithmetic of replacement is the arithmetic of death. One surviving offspring per parent; all the others gone.
 
 Now look at whom the camera shows. It shows the lion, the wolf, the large, slow-breeding vertebrate hunter — the rare, charismatic, K-selected animal. The median victim on this planet is not a cornered gazelle. It is a larva, a mote, an invertebrate that dies young, and no one ever points a lens at it.
 
@@ -159,7 +159,7 @@ Now look at whom the camera shows. It shows the lion, the wolf, the large, slow-
 
 Hold the orders of magnitude fixed, because they are the foundation. Earth's total living biomass is about 550 gigatonnes of carbon; all animals combined only about 2 gigatonnes, roughly 0.4 percent, with arthropods dominating that share (Bar-On, Phillips & Milo 2018) . A rounding error of the biosphere.
 
-But count individuals instead of weight, and the thing tips into the astronomical. Terrestrial arthropods on the order of 10¹⁸ (Bar-On et al. 2018; Rosenberg et al., PMC9897674) , marine arthropods 10²⁰, fish 10¹³ to 10¹⁵, birds 10¹¹, mammals 10¹¹ to 10¹² (Bar-On et al. 2018; Tomasik, reducing-suffering.org) [E/I]. The typical sentience-candidate being on Earth is a small, short-lived invertebrate or a larval fish — not a lion.
+But count individuals instead of weight, and the thing tips into the astronomical. Terrestrial arthropods on the order of 10¹⁸ (Bar-On et al. 2018; Rosenberg et al., PMC9897674) , marine arthropods 10²⁰, fish 10¹³ to 10¹⁵, birds 10¹¹, mammals 10¹¹ to 10¹² (Bar-On et al. 2018; Tomasik, reducing-suffering.org) . The typical sentience-candidate being on Earth is a small, short-lived invertebrate or a larval fish — not a lion.
 
 And then the blow that pulls the romantic backdrop of the "untouched natural order" away: humans and livestock together make up about 95 percent of mammalian biomass, wild mammals only about 5 percent; human biomass alone exceeds that of all wild mammals by more than sevenfold (Greenspoon et al. 2023) . The "primeval wilderness" the romantic invokes barely exists any longer. We are admiring an order that is, in numbers, already nearly a memory.
 
@@ -171,11 +171,11 @@ Zanette, White, Allen and Clinchy (2011) built an experiment worth memorising. T
 
 This is no outlier. Clinchy, Sheriff and Zanette (2013) show chronic physiological stress with fitness costs . Zanette and Clinchy (2020) document that predator-induced fear produces enduring, PTSD-like neurobiological change in wild prey . Preisser, Bolnick and Benard (2005) found in their meta-analysis that predator intimidation is as strong as direct consumption, often stronger [E, from title/abstract; contested in detail]. Preisser and Bolnick (2008) map the many pathways through which that fear works .
 
-Stay exact: Sheriff et al. (2020) counsel caution — the effect of fear on individual animals and their physiology is well established, but robust evidence that fear alone changes *population size* is thin [E/contested]. Good. We do not need the population claim. For the point, the individual suffices: a lifelong, corpseless terror the sublime shot never shows, because it cannot be packed into a beautiful arc.
+Stay exact: Sheriff et al. (2020) counsel caution — the effect of fear on individual animals and their physiology is well established, but robust evidence that fear alone changes *population size* is thin . Good. We do not need the population claim. For the point, the individual suffices: a lifelong, corpseless terror the sublime shot never shows, because it cannot be packed into a beautiful arc.
 
 ## Who can feel
 
-And how far down does it reach? Farther than the backdrop assumes. Gibbons et al. (2022) tested the pain evidence in insects against eight criteria. Adult Diptera and Blattodea meet six of eight — "strong evidence". And, crucially: no insect studied failed a criterion [I/E].
+And how far down does it reach? Farther than the backdrop assumes. Gibbons et al. (2022) tested the pain evidence in insects against eight criteria. Adult Diptera and Blattodea meet six of eight — "strong evidence". And, crucially: no insect studied failed a criterion .
 
 This is not certainty; it is a probability, a graded one, and we assert nothing beyond it. But set that probability beside 10¹⁸ to 10²⁰ arthropods, and in expected value the quantity of predation-linked suffering becomes enormous. Not because a single insect certainly suffers, but because the number is so large that even a modest probability produces a sum you cannot walk away from.
 
@@ -193,9 +193,9 @@ Here comes the strongest objection: predation is necessary, it builds the system
 
 But watch closely how two claims get fused into one. The weak one is true: *given the current design*, intervening can harm. The strong one does not follow: that predation as the **organising principle** of the biosphere is therefore good, necessary, or admirable. "Necessary within the design" is not "necessary as a design". And even genuine necessity confers no beauty — a tumour is "necessary" downstream of its own biology too.
 
-Add the empirical humility the backdrop never mentions. The flagship "predation heals the ecosystem" story is being taken apart right now. Ripple and Beschta (2012) told the clean Yellowstone cascade: wolves back, elk warier, aspen and willow recovered . But Painter et al. (2025) against MacNulty et al. (2026) now dispute it openly: the claimed 152-fold aspen recovery falls to about 17.5-fold after baseline and statistical correction, and the effects are "real but context-dependent" [P, contested] — not the clean morality play of the documentaries. Gillis et al. (2025) summarise: keystone predation is real, but far less general than textbook use implies [E/P].
+Add the empirical humility the backdrop never mentions. The flagship "predation heals the ecosystem" story is being taken apart right now. Ripple and Beschta (2012) told the clean Yellowstone cascade: wolves back, elk warier, aspen and willow recovered . But Painter et al. (2025) against MacNulty et al. (2026) now dispute it openly: the claimed 152-fold aspen recovery falls to about 17.5-fold after baseline and statistical correction, and the effects are "real but context-dependent" (contested) — not the clean morality play of the documentaries. Gillis et al. (2025) summarise: keystone predation is real, but far less general than textbook use implies .
 
-And the harmony itself, the scaffold the "beautiful necessity" hangs on? Kricher (2009) cleared it away: ecosystems are non-equilibrium, contingent, without inherent balance, harmony or purpose; the "balance of nature" is folk metaphysics, not ecology [I/E]. Take the false harmony away, and the beautiful necessity has nothing left to stand on.
+And the harmony itself, the scaffold the "beautiful necessity" hangs on? Kricher (2009) cleared it away: ecosystems are non-equilibrium, contingent, without inherent balance, harmony or purpose; the "balance of nature" is folk metaphysics, not ecology . Take the false harmony away, and the beautiful necessity has nothing left to stand on.
 
 ## The distinction the one word hides
 
