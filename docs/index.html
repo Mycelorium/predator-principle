@@ -235,10 +235,10 @@ the public page. Activate by registering the free site code at goatcounter.com. 
         + '<p><strong>Falsified/weakened if:</strong> ' + esc(claim.falsifier_en) + '</p>'
         + (links ? '<p class="source-links"><strong>Sources:</strong> ' + links + '</p>' : '')
         + '<p class="claim-act">'
-        +   '<a href="' + ISSUE + '01-contribute-research.yml&amp;title='
+        +   '<a href="' + ISSUE + '01-contribute-research.yml&amp;claim=' + esc(claim.id) + '&amp;title='
         +     encodeURIComponent('[Research]: ' + claim.id) + '" target="_blank" rel="noopener">'
         +     'Submit work on ' + esc(claim.id) + ' &rarr;</a>'
-        +   '<a class="act-secondary" href="' + ISSUE + '02-challenge-a-claim.yml&amp;title='
+        +   '<a class="act-secondary" href="' + ISSUE + '02-challenge-a-claim.yml&amp;claim=' + esc(claim.id) + '&amp;title='
         +     encodeURIComponent('[Claim challenge]: ' + claim.id) + '" target="_blank" rel="noopener">'
         +     'Contest it</a>'
         + '</p>'
