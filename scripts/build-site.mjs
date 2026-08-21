@@ -134,6 +134,7 @@ const pages = [
   `${BASE}/essays-feed.xml`,
   `${BASE}/essays-feed.json`,
   `${BASE}/llms.txt`,
+  `${BASE}/predator-principle-corpus.pdf`,
   ...items.map((i) => i.url),
 ];
 await write('docs/sitemap.xml',
