@@ -35,7 +35,7 @@ jobs:
       - name: Apply the edits
         run: |
           python3 - <<'PY'
-          import json, os, pathlib, re, subprocess, sys
+          import json, pathlib, sys
 
           def rep(path, pairs):
               p = pathlib.Path(path)
@@ -104,7 +104,7 @@ jobs:
               text = p.read_text(encoding='utf-8')
               if 'status: draft-for-review' not in text:
                   sys.exit(f"GUARD: {p} is not marked draft-for-review — refusing to move it.")
-              subprocess.run(['git', 'mv', str(p), str(dest / p.name)], check=True)
+              p.rename(dest / p.name)
               moved.append(p.name)
           print("moved", len(moved), "drafts:", ", ".join(moved))
 
@@ -122,17 +122,21 @@ jobs:
           PY
 
       - name: Delete this workflow
-        run: git rm -qf .github/workflows/tidy-metadata.yml
+        run: rm -f .github/workflows/tidy-metadata.yml
 
       - name: Commit
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main || git rebase --abort
+          git config user.name "Nirodha Collective"
+          git config user.email "285060945+Mycelorium@users.noreply.github.com"
+          git pull --rebase --autostash origin main || true
           git add -A
           if git diff --cached --quiet; then
-            echo "nothing to commit"; exit 0
+            echo "Nothing to commit."
+          else
+            git commit -m "Tidy: fix the Zenodo text before it gets a DOI, archive the German drafts"
+            git push || {
+              echo "Push rejected; rebasing once and retrying."
+              git pull --rebase --autostash origin main
+              git push
+            }
           fi
-          git commit -m "Tidy: fix the Zenodo text before it gets a DOI, archive the German drafts"
-          git push origin HEAD:main
