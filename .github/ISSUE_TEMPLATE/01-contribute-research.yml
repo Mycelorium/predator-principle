@@ -1,0 +1,41 @@
+name: Take a claim further
+description: Submit a paper, a dataset, an analysis or a line of work that extends or tests a claim.
+title: "[Research]: "
+labels: [research]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The register holds eleven claims. Several of them are barely explored.
+        C008 (biosphere trauma), C009 (what training data carries forward) and
+        C010 (multi-agent conflict) are where new work counts most.
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID
+      description: Which claim does this bear on? Leave blank if it bears on the argument as a whole.
+      placeholder: C009
+  - type: textarea
+    id: contribution
+    attributes:
+      label: What you have
+      description: A paper, a preprint, a dataset, an analysis, a model, an experiment, or an argument that goes somewhere new.
+    validations:
+      required: true
+  - type: textarea
+    id: bearing
+    attributes:
+      label: How it bears on the claim
+      description: What it extends, narrows, tests, or replaces.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: DOI where one exists, otherwise a stable URL. An attachment below works too.
+  - type: textarea
+    id: next
+    attributes:
+      label: What would come next
+      description: The study, the measurement or the argument this opens up. Optional.
