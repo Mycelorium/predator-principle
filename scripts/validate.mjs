@@ -26,18 +26,14 @@ if (!unique(sources.map((source) => source.id))) errors.push('Source IDs must be
 
 for (const claim of claims) {
   if (!/^C\d{3}$/.test(claim.id)) errors.push(`${claim.id}: invalid claim ID.`);
-  if (!['E', 'I', 'P'].includes(claim.class)) errors.push(`${claim.id}: class must be E, I, or P.`);
   for (const field of ['title_en', 'claim_en', 'boundary_en', 'falsifier_en']) {
     if (!claim[field]?.trim()) errors.push(`${claim.id}: missing ${field}.`);
   }
   for (const sourceId of claim.sources || []) {
     if (!sourceIds.has(sourceId)) errors.push(`${claim.id}: unknown source ${sourceId}.`);
   }
-  if (claim.class === 'E' && !(claim.sources || []).length) {
-    errors.push(`${claim.id}: empirical claims require at least one source.`);
-  }
-  if (claim.class === 'P' && claim.status === 'supported') {
-    warnings.push(`${claim.id}: proposition is marked supported; consider reclassification.`);
+  if (!(claim.sources || []).length && claim.status === 'supported') {
+    errors.push(`${claim.id}: a supported claim requires at least one source.`);
   }
 }
 
