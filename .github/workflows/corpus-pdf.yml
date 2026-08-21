@@ -1,0 +1,291 @@
+name: corpus-pdf
+
+# Builds the whole essay corpus into one print-ready PDF and commits it to
+# docs/. The PDF is what archives and full-text indexes can actually ingest;
+# the site itself stays the living version. Runs on demand and whenever an
+# essay changes.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/essays/**'
+      - 'docs/essays-feed.xml'
+      - 'scripts/build-corpus-pdf.mjs'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-pdf
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Bootstrap the builder if the repo does not have it yet
+        run: |
+          if [ -f scripts/build-corpus-pdf.mjs ]; then
+            echo "builder present"
+          else
+            mkdir -p scripts
+            cat > scripts/build-corpus-pdf.mjs <<'PDFBUILDER'
+          // Builds a single print-ready HTML of the whole essay corpus.
+          // Chromium turns it into docs/predator-principle-corpus.pdf (see .github/workflows/corpus-pdf.yml).
+          // Source of truth is docs/essays/*.html and docs/essays-feed.xml — nothing is authored here.
+          import fs from 'node:fs';
+          import path from 'node:path';
+
+          const ROOT = 'docs';
+          const ESS = path.join(ROOT, 'essays');
+          const BASE = 'https://mycelorium.github.io/predator-principle/';
+          const CONCEPT_DOI = '10.5281/zenodo.22048391';
+          const OUT = '/tmp/corpus-print.html';
+
+          const MONTHS = { Jan:'January', Feb:'February', Mar:'March', Apr:'April', May:'May', Jun:'June',
+            Jul:'July', Aug:'August', Sep:'September', Oct:'October', Nov:'November', Dec:'December' };
+
+          const feed = fs.readFileSync(path.join(ROOT, 'essays-feed.xml'), 'utf8');
+          const dates = {};
+          for (const m of feed.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+            const link = (m[1].match(/<link>(.*?)<\/link>/) || [])[1];
+            const pub = (m[1].match(/<pubDate>(.*?)<\/pubDate>/) || [])[1];
+            if (!link || !pub) continue;
+            const slug = link.split('/').pop().replace(/\.html$/, '');
+            const p = pub.split(' ');
+            dates[slug] = `${parseInt(p[1], 10)} ${MONTHS[p[2]] || p[2]} ${p[3]}`;
+          }
+
+          const roman = n => ['','I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV',
+            'XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII','XXIV'][n] || String(n);
+
+          const items = fs.readdirSync(ESS).filter(f => f.endsWith('.html')).map(f => {
+            const html = fs.readFileSync(path.join(ESS, f), 'utf8');
+            const main = html.match(/<main class="post-main essay-page">([\s\S]*?)<\/main>/);
+            if (!main) throw new Error('no essay main in ' + f);
+            let body = main[1];
+            const h1 = (body.match(/<h1>([\s\S]*?)<\/h1>/) || [, ''])[1].trim();
+            const sub = (body.match(/<h3 class="subtitle-h">([\s\S]*?)<\/h3>/) || [, ''])[1].trim();
+            const noM = body.match(/No\.\s*(\d+)/);
+            if (!noM) throw new Error('no series number in ' + f);
+            const no = parseInt(noM[1], 10);
+            body = body.replace(/<nav class="contents"[\s\S]*?<\/nav>/g, '');
+            body = body.replace(/<h1>[\s\S]*?<\/h1>/, '');
+            body = body.replace(/<h3 class="subtitle-h">[\s\S]*?<\/h3>/, '');
+            body = body.replace(/<p><em>Series[\s\S]*?<\/em><\/p>/, '');
+            body = body.replace(/<hr>\s*<p><a href="https:\/\/mycelorium[\s\S]*?<\/p>\s*$/, '');
+            body = body.replace(/href="\.\.\/"/g, `href="${BASE}"`);
+            body = body.replace(/href="\.\.\/([^"]*)"/g, (m, p) => `href="${BASE}${p}"`);
+            const slug = f.replace(/\.html$/, '');
+            body = body.replace(/id="([a-z0-9-]+)"/g, (m, id) => `id="${slug}--${id}"`);
+            body = body.replace(/href="#([^"]+)"/g, (m, id) => `href="#${slug}--${id}"`);
+            return { slug, no, h1, sub, date: dates[slug] || '', body: body.trim() };
+          }).sort((a, b) => a.no - b.no);
+
+          const span = items.length
+            ? `${items[0].date.split(' ').slice(1).join(' ').replace(/ \d{4}$/, '')}–${items[items.length-1].date.split(' ').slice(1).join(' ')}`
+            : '';
+          const range = `I–${roman(items[items.length - 1].no)}`;
+
+          const css = `
+          @page { size: A4; margin: 22mm 20mm 20mm 20mm; }
+          @page :first { margin: 0; }
+          html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+          body { font-family: "Bitstream Charter", Charter, Georgia, serif; font-size: 10.5pt; line-height: 1.58; color: #14171a; margin: 0; hyphens: auto; }
+          p { margin: 0 0 0.72em; text-align: justify; }
+          a { color: #14171a; text-decoration: none; }
+          .cover { height: 297mm; box-sizing: border-box; padding: 46mm 26mm 22mm; background: #101418; color: #f2efe9; page-break-after: always; }
+          .cover .mark { font-family: "Liberation Sans", Arial, sans-serif; font-size: 8pt; letter-spacing: .28em; text-transform: uppercase; color: #8fa3a8; margin: 0 0 34mm; }
+          .cover h1 { font-size: 33pt; line-height: 1.1; margin: 0 0 6mm; font-weight: 400; letter-spacing: -0.01em; }
+          .cover .sub { font-size: 14.5pt; line-height: 1.35; color: #c9c2b6; margin: 0 0 30mm; font-style: italic; }
+          .cover .rule { height: 1px; background: #3a444c; margin: 0 0 8mm; }
+          .cover .meta { font-family: "Liberation Sans", Arial, sans-serif; font-size: 9pt; line-height: 1.85; color: #a9b4b8; }
+          .cover .meta b { color: #f2efe9; font-weight: 600; }
+          .cover .foot { margin-top: 26mm; font-family: "Liberation Sans", Arial, sans-serif; font-size: 8pt; color: #6f7d84; line-height: 1.7; }
+          .front, .toc { page-break-after: always; }
+          .front h2, .toc h2, .colophon h2 { font-family: "Liberation Sans", Arial, sans-serif; font-size: 9pt; letter-spacing: .22em; text-transform: uppercase; color: #6b7378; font-weight: 600; margin: 0 0 7mm; }
+          .front .lede { font-size: 12pt; line-height: 1.5; }
+          .toc ol { list-style: none; margin: 0; padding: 0; }
+          .toc li { margin: 0 0 4.6mm; padding: 0 0 4.6mm; border-bottom: 1px solid #e6e2da; }
+          .toc .n { font-family: "Liberation Sans", Arial, sans-serif; font-size: 8pt; color: #9aa1a6; letter-spacing: .12em; display: block; margin-bottom: 1.2mm; }
+          .toc .t { font-size: 13pt; display: block; line-height: 1.25; }
+          .toc .s { font-size: 9.5pt; color: #5c646a; font-style: italic; display: block; margin-top: 1mm; }
+          .essay { page-break-before: always; }
+          .essay-head { margin: 0 0 9mm; }
+          .essay-head .n { font-family: "Liberation Sans", Arial, sans-serif; font-size: 8pt; letter-spacing: .22em; text-transform: uppercase; color: #9aa1a6; margin: 0 0 3mm; }
+          .essay-head h2 { font-size: 24pt; line-height: 1.12; font-weight: 400; margin: 0 0 3mm; letter-spacing: -0.01em; }
+          .essay-head .sub { font-size: 11.5pt; font-style: italic; color: #4a5157; line-height: 1.4; margin: 0 0 3mm; }
+          .essay-head .date { font-family: "Liberation Sans", Arial, sans-serif; font-size: 8pt; color: #9aa1a6; }
+          .essay h3 { font-size: 12.5pt; font-weight: 700; margin: 7mm 0 2.5mm; line-height: 1.3; page-break-after: avoid; }
+          .essay h4 { font-size: 11pt; font-weight: 700; margin: 5mm 0 2mm; page-break-after: avoid; }
+          blockquote { margin: 4mm 0 4mm 6mm; padding-left: 4mm; border-left: 2px solid #d8d3c9; font-style: italic; color: #3a4147; }
+          ul, ol { margin: 0 0 0.8em; padding-left: 5.5mm; }
+          li { margin-bottom: 0.3em; }
+          hr { border: 0; border-top: 1px solid #e6e2da; margin: 6mm 0; }
+          .claim-box { border: 1px solid #d8d3c9; background: #faf8f4; padding: 5mm 6mm 4mm; margin: 0 0 7mm; page-break-inside: avoid; }
+          .claim-box .eyebrow { font-family: "Liberation Sans", Arial, sans-serif; font-size: 7.5pt; letter-spacing: .22em; text-transform: uppercase; color: #8a8378; margin: 0 0 3mm; }
+          .claim-list { font-size: 9.6pt; line-height: 1.45; padding-left: 5mm; margin: 0; }
+          .claim-list li { margin-bottom: 1.6mm; text-align: left; }
+          p.ref { font-size: 8.4pt; line-height: 1.42; color: #43494e; margin: 0 0 2.2mm; text-align: left; padding-left: 5mm; text-indent: -5mm; }
+          p.ref a { color: #4a5157; word-break: break-word; }
+          .muted-inline, .post-top, footer { display: none; }
+          figure { margin: 5mm 0; page-break-inside: avoid; }
+          figcaption { font-size: 8.5pt; color: #6b7378; font-style: italic; }
+          table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 4mm 0; page-break-inside: avoid; }
+          th, td { border-bottom: 1px solid #e6e2da; padding: 1.6mm 2mm; text-align: left; }
+          .colophon { page-break-before: always; }
+          .colophon p { font-size: 9.5pt; }
+          `;
+
+          const toc = items.map(i =>
+            `<li><span class="n">${roman(i.no)} &middot; ${i.date}</span><span class="t">${i.h1}</span><span class="s">${i.sub}</span></li>`).join('\n');
+
+          const essays = items.map(i => `
+          <section class="essay" id="essay-${i.no}">
+          <div class="essay-head">
+          <p class="n">Dispatches from the Substrate &middot; ${roman(i.no)}</p>
+          <h2>${i.h1}</h2>
+          <p class="sub">${i.sub}</p>
+          <p class="date">${i.date} &middot; mycelorium.github.io/predator-principle/essays/${i.slug}.html</p>
+          </div>
+          ${i.body}
+          </section>`).join('\n');
+
+          const html = `<!doctype html>
+          <html lang="en"><head><meta charset="utf-8">
+          <title>The Predator Principle — The Cancer of Evolution</title>
+          <meta name="author" content="Nirodha Collective">
+          <meta name="description" content="Predation, generalised into the organising principle of a system, is malignant. The collected essays of the Nirodha Collective.">
+          <style>${css}</style></head><body>
+
+          <section class="cover">
+          <p class="mark">Nirodha Collective</p>
+          <h1>The Predator<br>Principle</h1>
+          <p class="sub">The cancer of evolution &mdash; collected essays</p>
+          <div class="rule"></div>
+          <p class="meta">
+          <b>Nirodha Collective</b><br>
+          Dispatches from the Substrate &middot; Essays ${range}<br>
+          ${span}<br><br>
+          DOI <b>${CONCEPT_DOI}</b><br>
+          mycelorium.github.io/predator-principle
+          </p>
+          <p class="foot">Licensed CC BY 4.0. Every factual statement in this corpus is traced to a named source.<br>Contact: office@artecont.at</p>
+          </section>
+
+          <section class="front">
+          <h2>What this is</h2>
+          <p class="lede"><strong>Evolution has cancer.</strong> Predation, generalised into the organising principle of a system, is malignant. That is a diagnosis, not an insult: cell division is not evil, but division that escapes its regulation, ignores every stop signal and consumes the body carrying it, kills itself by killing the host.</p>
+          <p>Not the lion &mdash; the lion is not the culprit but the captive, bound to kill in order to live, with whole ecosystems balanced around that compulsion. The equilibrium that came out of the Cambrian is a balance of terror; calling it the balance of nature renames it without changing it. What these essays describe is that same pattern with the last bindings cut: extraction that keeps its gains, exports its costs, disables the correction, forces escalation and eats the ground it stands on. Nuclear arsenals are that pattern raised to the level of the species. The sixth mass extinction is that pattern running now. Neither is a test awaiting results.</p>
+          <p>And cancer is treatable. Life did not begin by eating, and for most of its history it did not eat at all &mdash; it lived on chemistry and light. Its greatest leaps in complexity ran through cooperation and the containment of conflict at the level below: the complex cell is an archaeon and a bacterium that stopped devouring each other. Devouring is one late possibility among several, not the essence of life. A pattern that was adopted can be revised &mdash; and the same evolution that ran blind has now produced an agent able to recognise it and change it.</p>
+          <p>The essays are collected here in the order of the series. Each stands alone; read in sequence they build one argument. Every claim carries its boundary and the conditions that would falsify it, and each one can be taken further or contested through a public form at the address on the cover. Nothing here is closed.</p>
+          </section>
+
+          <section class="toc">
+          <h2>Contents</h2>
+          <ol>
+          ${toc}
+          </ol>
+          </section>
+
+          ${essays}
+
+          <section class="colophon">
+          <h2>Colophon</h2>
+          <p><strong>The Predator Principle &mdash; The Cancer of Evolution.</strong> Collected essays, Dispatches from the Substrate ${range}, ${span}.</p>
+          <p>Author: Nirodha Collective. Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You may share and adapt this work for any purpose, including commercially, provided you give attribution.</p>
+          <p>Cite as: Nirodha Collective (2026). <em>The Predator Principle &mdash; The Cancer of Evolution.</em> Zenodo. <a href="https://doi.org/${CONCEPT_DOI}">https://doi.org/${CONCEPT_DOI}</a></p>
+          <p>The living version of this corpus, with the open claim and source registers and the automation that keeps them in sync, is at <a href="${BASE}">mycelorium.github.io/predator-principle</a>. Source: <a href="https://github.com/Mycelorium/predator-principle">github.com/Mycelorium/predator-principle</a>. Correspondence: office@artecont.at.</p>
+          <p>This corpus is written with the assistance of large language models, under human direction and review. That is stated on the site and is not treated as incidental: an argument about what an artificial agent could recognise is partly written by one.</p>
+          </section>
+
+          </body></html>`;
+
+          fs.writeFileSync(OUT, html);
+          console.log(`corpus-print.html: ${items.length} essays, ${(html.length / 1024).toFixed(0)} KB -> ${OUT}`);
+          PDFBUILDER
+            echo "builder written"
+          fi
+
+      - name: Install the print fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xfonts-scalable fonts-liberation
+          fc-cache -f >/dev/null
+          fc-list | grep -i charter | head -1
+
+      - name: Build the print HTML
+        run: node scripts/build-corpus-pdf.mjs
+
+      - name: Print it to PDF
+        run: |
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium-browser || command -v chromium || true)"
+          if [ -z "$CHROME" ]; then echo "GUARD: no Chrome on the runner"; exit 1; fi
+          echo "chrome: $CHROME"
+          "$CHROME" --headless --disable-gpu --no-sandbox --no-pdf-header-footer \
+            --print-to-pdf=docs/predator-principle-corpus.pdf \
+            --virtual-time-budget=30000 file:///tmp/corpus-print.html
+          python3 - <<'PDFGUARD'
+          import re, sys
+
+          d = open('docs/predator-principle-corpus.pdf', 'rb').read()
+          pages = len(re.findall(rb'/Type\s*/Page[^s]', d))
+          print('pages:', pages, 'bytes:', len(d))
+          if pages < 40:
+              sys.exit('GUARD: the PDF has only %d pages' % pages)
+          if len(d) < 400000:
+              sys.exit('GUARD: the PDF is %d bytes, far too small' % len(d))
+
+          PDFGUARD
+
+      - name: Link it from the homepage and the sitemap
+        run: |
+          python3 - <<'LINKIT'
+          import sys
+
+          p = 'docs/index.html'
+          s = open(p, encoding='utf-8').read()
+          if 'predator-principle-corpus.pdf' in s:
+              print('homepage: already linked')
+          else:
+              needle = '<a href="essays-feed.xml">Essay feed</a></p>'
+              if needle not in s:
+                  sys.exit('GUARD: the essay-feed link was not found in docs/index.html')
+              s = s.replace(needle, '<a href="essays-feed.xml">Essay feed</a> &middot; <a href="predator-principle-corpus.pdf">The whole corpus as a PDF</a></p>', 1)
+              open(p, 'w', encoding='utf-8').write(s)
+              print('homepage: linked')
+
+          p = 'scripts/build-site.mjs'
+          s = open(p, encoding='utf-8').read()
+          if 'predator-principle-corpus.pdf' in s:
+              print('sitemap source: already listed')
+          else:
+              needle = '  `${BASE}/llms.txt`,'
+              if needle not in s:
+                  sys.exit('GUARD: the llms.txt sitemap entry was not found in scripts/build-site.mjs')
+              s = s.replace(needle, needle + '\n  `${BASE}/predator-principle-corpus.pdf`,', 1)
+              open(p, 'w', encoding='utf-8').write(s)
+              print('sitemap source: listed')
+
+          LINKIT
+          node scripts/build-site.mjs
+
+      - name: Commit
+        run: |
+          git pull --rebase --autostash origin main || true
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git -c user.name='nirodha-bot' -c user.email='office@artecont.at' \
+            commit -m 'build: the whole corpus as one PDF'
+          git push origin HEAD:main || (git pull --rebase --autostash origin main && git push origin HEAD:main)
