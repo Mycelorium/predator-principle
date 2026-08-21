@@ -23,23 +23,25 @@ The full statement, with the mechanism, the four levels of the argument and the
 conditions that would falsify it, is at
 [foundation.html](https://mycelorium.github.io/predator-principle/foundation.html).
 
-## Attack it here
+## Take a claim further
 
 The register at
 [the front page](https://mycelorium.github.io/predator-principle/#evidence)
 lists every claim with its boundary, what would falsify it, and the papers
 behind it. `docs/data/claims.json` is the machine-readable version.
 
+- **You have work that bears on a claim** — a paper, a dataset, a model, an
+  analysis → open a
+  [research submission](https://github.com/Mycelorium/predator-principle/issues/new?template=01-contribute-research.yml).
+  C008, C009 and C010 are the least explored.
 - **A claim is wrong, overstated, or missing a boundary** → open a
-  [claim challenge](https://github.com/Mycelorium/predator-principle/issues/new?template=claim-challenge.yml).
+  [claim challenge](https://github.com/Mycelorium/predator-principle/issues/new?template=02-challenge-a-claim.yml).
   Primary evidence is required: a DOI, a dataset, code, or an exact
   counterexample.
-- **You can propose a test** → open a
-  [research proposal](https://github.com/Mycelorium/predator-principle/issues/new?template=research-proposal.yml).
 - **You would rather just write** → <office@artecont.at>. No account, no form.
 
-Counterevidence stays visible. When the research has contradicted a planned
-argument, the argument changed — that has already happened more than once.
+Work that narrows a claim is as useful as work that widens it. Both change the
+register, and the change is visible in the git history.
 
 ## The repository
 
