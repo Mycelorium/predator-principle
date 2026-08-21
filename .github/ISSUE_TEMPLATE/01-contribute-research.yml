@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        The register holds eleven claims. Several of them are barely explored.
-        C008 (biosphere trauma), C009 (what training data carries forward) and
-        C010 (multi-agent conflict) are where new work counts most.
+        Some claims in the register are barely explored. C008 (biosphere trauma),
+        C009 (what training data carries forward) and C010 (multi-agent conflict)
+        are where new work counts most.
   - type: input
     id: claim
     attributes:
