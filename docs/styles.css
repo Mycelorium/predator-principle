@@ -66,14 +66,10 @@ h2 { margin: 0 0 1.5rem; font-size: clamp(2.4rem, 5vw, 5rem); line-height: 1; }
 .hypothesis { margin-top: 3rem; padding: 2rem; background: var(--acid); display: grid; grid-template-columns: 160px 1fr; gap: 1rem; }
 .hypothesis span { font-size: .75rem; font-weight: 900; letter-spacing: .12em; }
 .hypothesis p { margin: 0; font-size: 1.25rem; font-weight: 650; }
-.filters { display: flex; gap: .5rem; margin-bottom: 2rem; }
-.filter { min-width: 54px; border: 1px solid var(--line); padding: .7rem 1rem; background: transparent; cursor: pointer; font-weight: 800; }
-.filter.active, .filter:hover { background: var(--forest); color: white; border-color: var(--forest); }
 .claims { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--ink); }
 .claim { padding: 2rem 2rem 2rem 0; border-bottom: 1px solid var(--line); }
 .claim:nth-child(even) { padding-left: 2rem; border-left: 1px solid var(--line); }
 .claim-meta { display: flex; justify-content: space-between; font-size: .72rem; font-weight: 900; letter-spacing: .08em; color: var(--muted); }
-.claim-class { display: inline-grid; place-items: center; width: 28px; height: 28px; background: var(--acid); color: var(--ink); }
 .claim h3 { font-family: Georgia, serif; font-size: 1.7rem; font-weight: 400; margin: 1.2rem 0 .7rem; }
 .claim p { color: #414842; }
 .claim details { margin-top: 1.2rem; font-size: .88rem; }
@@ -154,7 +150,6 @@ footer { display: flex; justify-content: space-between; padding: 2rem max(24px, 
 .mechanism p { margin: 0; font-size: 1.25rem; line-height: 1.4; }
 .legend { display: flex; flex-wrap: wrap; align-items: center; gap: 1.4rem; margin-top: 2.5rem; font-size: .9rem; color: var(--muted); }
 .legend > span { display: inline-flex; align-items: center; gap: .55rem; }
-.legend .claim-class { width: 26px; height: 26px; font-size: .8rem; font-weight: 800; font-style: normal; }
 .legend-more { flex-basis: 100%; margin-top: .5rem; }
 .legend-more a { color: var(--forest); font-weight: 700; }
 .dispatch-card.skeleton { display: flex; flex-direction: column; gap: 1rem; }
@@ -196,3 +191,9 @@ footer { display: flex; justify-content: space-between; padding: 2rem max(24px, 
 .contents a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .muted-inline { color: var(--muted); }
 @media (max-width: 700px) { .contents ol { columns: 1; } }
+
+.claim-act { display: flex; flex-wrap: wrap; gap: 1.3rem; align-items: baseline; margin: 1.5rem 0 .2rem; padding-top: 1.1rem; border-top: 1px solid var(--line); }
+.claim-act a { font-weight: 850; font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; color: var(--ink); text-decoration: none; box-shadow: inset 0 -.4em 0 var(--acid); }
+.claim-act a:hover { box-shadow: inset 0 -1em 0 var(--acid); }
+.claim-act a.act-secondary { box-shadow: none; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+.claim-act a.act-secondary:hover { color: var(--ink); }
