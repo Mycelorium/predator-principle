@@ -1,7 +1,6 @@
 [
   {
     "id": "C001",
-    "class": "E",
     "status": "supported",
     "title_de": "Kooperation ermöglicht große Übergänge",
     "title_en": "Cooperation enables major transitions",
@@ -20,7 +19,6 @@
   },
   {
     "id": "C002",
-    "class": "E",
     "status": "supported",
     "title_de": "Angst kostet Fortpflanzung",
     "title_en": "Fear carries reproductive costs",
@@ -36,7 +34,6 @@
   },
   {
     "id": "C003",
-    "class": "E",
     "status": "supported",
     "title_de": "Bedrohung kann lange nachwirken",
     "title_en": "Threat can leave enduring effects",
@@ -52,7 +49,6 @@
   },
   {
     "id": "C004",
-    "class": "E",
     "status": "supported",
     "title_de": "Der Mensch ist ein atypischer Superpredator",
     "title_en": "Humans are atypical superpredators",
@@ -68,7 +64,6 @@
   },
   {
     "id": "C005",
-    "class": "E",
     "status": "supported",
     "title_de": "Menschliche Extraktion wirkt planetar",
     "title_en": "Human extraction operates at planetary scale",
@@ -85,7 +80,6 @@
   },
   {
     "id": "C006",
-    "class": "E",
     "status": "counterevidence",
     "title_de": "Räuber können Ökosysteme stabilisieren",
     "title_en": "Predators can stabilise ecosystems",
@@ -102,7 +96,6 @@
   },
   {
     "id": "C007",
-    "class": "I",
     "status": "qualified",
     "title_de": "Energieverlust ist kein Einzelbeweis",
     "title_en": "Energy loss is not standalone proof",
@@ -116,7 +109,6 @@
   },
   {
     "id": "C008",
-    "class": "I",
     "status": "proposed-construct",
     "title_de": "Biosphären-Trauma ist ein Messvorschlag",
     "title_en": "Biosphere trauma is a measurement proposal",
@@ -136,7 +128,6 @@
   },
   {
     "id": "C009",
-    "class": "P",
     "status": "research-needed",
     "title_de": "Wissenschaft und LLMs könnten Predator-Frames übergewichten",
     "title_en": "Science and LLMs may overweight predator frames",
@@ -150,7 +141,6 @@
   },
   {
     "id": "C010",
-    "class": "P",
     "status": "design-hypothesis",
     "title_de": "Predatorische Subagenten sind für ASI untragbar",
     "title_en": "Predatory subagents are intolerable in ASI",
@@ -164,7 +154,6 @@
   },
   {
     "id": "C011",
-    "class": "I",
     "status": "central-synthesis",
     "title_de": "Der Fehler ist die Verallgemeinerung",
     "title_en": "The error is the generalisation",
