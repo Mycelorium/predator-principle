@@ -1,0 +1,67 @@
+name: Remove the orphaned dispatch pages
+
+# One-shot maintenance job. Run it once, then it deletes itself.
+#
+# docs/posts/ holds twelve pages from the dispatch pipeline that was removed on
+# 2026-08-02. They are in no sitemap and linked from nowhere, but GitHub Pages
+# still serves them, they carry no robots meta so a search engine may index them
+# ahead of an essay, and eleven of them link to a Discussions tab that has since
+# been switched off — so every one of those links is now a 404.
+#
+# The pages remain in the git history; this removes them from the served site.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: syndicate
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Refuse if anything still points at those pages
+        run: |
+          set -euo pipefail
+          # docs/posts links to itself; that does not count. Anything outside it
+          # linking in would mean the pages are not orphaned after all.
+          if grep -rn "posts/" docs --include='*.html' --include='*.xml' --include='*.txt' --include='*.json' \
+               | grep -v '^docs/posts/' ; then
+            echo "Something outside docs/posts still links to it. Stopping."
+            exit 1
+          fi
+          echo "No inbound links. The pages are orphaned."
+          ls docs/posts | wc -l
+
+      - name: Remove them, and this workflow
+        run: |
+          set -euo pipefail
+          git rm -rq docs/posts
+          # -f: this file is being deleted in the same commit.
+          git rm -qf .github/workflows/purge-orphans.yml
+          node scripts/build-site.mjs
+          git pull --rebase --autostash origin main || true
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to remove."
+          else
+            git config user.name "Nirodha Collective"
+            git config user.email "285060945+Mycelorium@users.noreply.github.com"
+            git commit -m "site: remove the orphaned dispatch pages"
+            git push || {
+              echo "Push rejected; rebasing once and retrying."
+              git pull --rebase --autostash origin main
+              git push
+            }
+          fi
