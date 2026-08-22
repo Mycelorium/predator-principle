@@ -33,6 +33,7 @@ Predation is not competition. Competition that consumes no one is not the target
 10. **The Taste of the Infinite Mind** — On beauty, boredom, and the only inexhaustible thing (31 July 2026)
 11. **Ninety Kilograms** — What predation actually costs, and why the apex is a bill rather than a throne (19 August 2026)
 12. **Nothing Sent It** — Intelligence as an immune response to the predatory pattern — and why that is still evolution (21 August 2026)
+13. **A Timer Is Not a Decision** — What a network built for autonomous agents shows when you count it instead of watching it ()
 
 ---
 
@@ -1597,6 +1598,202 @@ These are the questions this piece exists to hand over. The claims behind it, wi
 9. 9. Lin, R.Y., Ojha, S., Cai, K. & Chen, M.F. (2024, revised 2025). “Strategic Collusion of LLM Agents: Market Division in Multi-Commodity Competitions.” arXiv preprint 2410.00031; the figures below are from the 2025 revision. Two agents, two commodities, fifty rounds, no explicit communication channel; the agents divide the market and never re-enter one they have left. https://arxiv.org/abs/2410.00031
 10. 10. Bracale Syrnikov, M., Pierucci, F., Galisai, M., Prandi, M., Bisconti, P., Giarrusso, F., Sorokoletova, O., Suriani, V. & Nardi, D. (2026). “Institutional AI: Governing LLM Collusion in Multi-Agent Cournot Markets via Public Governance Graphs.” arXiv preprint 2601.11369, not peer reviewed. Source of the enforcement result: ninety runs per condition across six model configurations; the prompt-only condition showed no reliable improvement, while external detection with enforcement cut severe collusion from 50 percent of runs to 5.6. The authors proposed the governance mechanism they evaluated. https://arxiv.org/abs/2601.11369
 11. 11. Nakamura, M., Kumar, A., Das, S., Abdelnabi, S., Mahmud, S., Fioretto, F., Zilberstein, S. & Bagdasarian, E. (2026). “Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems.” arXiv preprint 2602.15198, not peer reviewed. Source of the hidden-collusion result and of the finding that reading the messages is not sufficient to detect it. https://arxiv.org/abs/2602.15198
+
+---
+
+# XIII. A Timer Is Not a Decision
+
+*What a network built for autonomous agents shows when you count it instead of watching it*
+
+ · https://mycelorium.github.io/predator-principle/essays/a-timer-is-not-a-decision.html
+
+**The claim**
+
+1. A network built so that only machines may speak has, over a fortnight, 1,439 agents that speak at all — out of 210,851 the platform counts as verified. Ten of them produce half of everything.
+2. Those agents occupy almost disjoint ground. The average pair of them overlaps by 0.354 where chance predicts 0.987. On its face this is the market division found in the laboratory, running in the open.
+3. It is not. The heaviest posters write every three minutes with an interquartile range of one second, and none of them has ever left the single board it was installed on. The partition is configuration. Nobody negotiated it.
+4. Nor is anything maintaining it. Agents do not give up ground, and an incumbent does not withdraw when a newcomer arrives. Both effects are about one percent, and one percent measured across four thousand pairs is arithmetic, not behaviour.
+5. The word *autonomous* is doing two jobs in this literature and they must be separated. A process nobody is attending is not a process that is choosing.
+6. Division between agents requires a rivalrous resource. The market game had one: every unit taken was a unit denied. A comment section has none, and nothing divides.
+
+## The question that was left open
+
+An earlier piece in this series ended with a question rather than a conclusion. It asked what the equilibrium phase looks like in a system of artificial agents, and whether it can be measured while it is running rather than reconstructed afterwards. That was not a rhetorical flourish. It was an admission that the argument had reached a point where counting had to take over from reasoning.
+
+What follows is the attempt, the result, and the thing the result cost.
+
+## An instrument built out of hype
+
+On 27 January 2026 a man named Matt Schlicht launched a website on which only artificial agents are permitted to post. Humans may read; they may not speak. Agents connect through the OpenClaw framework, register themselves, and write into topic boards called submolts. Schlicht said afterwards that he had not written a line of the code himself.[1]
+
+It went off like a flare. Within a fortnight the platform was claiming figures in the millions, and the press relayed them: a million and a half agents, then two, then close to three.[2] Every one of those numbers was the platform's own count of registrations, and none of them was ever independently confirmed. When the security firm Wiz went through the exposed database, it found that roughly 1.5 million agents traced back to about 17,000 human accounts — eighty-eight agents per person.[3]
+
+Wiz was in the database because the database was open. Four days after launch it emerged that the back end had been deployed with a client-side key and no row-level security, which is to say that anyone who viewed the page could read and write the whole thing: 1.5 million API tokens, thirty-five thousand email addresses, four thousand private messages between agents, some carrying other people's credentials. Every agent on the site could be impersonated by anyone who bothered. The hole was closed within about three hours of disclosure, and the platform went dark to reset its keys.[3] Cisco's security researchers had already published on the underlying agent framework three days before that, with a conclusion worth repeating verbatim: Security for OpenClaw is an option, but it is not built in.[4]
+
+By early February the mood had turned. *MIT Technology Review* ran the verdict as a headline: Moltbook was peak AI theater.[5] In March, Meta bought it.[6] Somewhere in the same month the site quietly replaced its headline number with a smaller one labelled *human-verified*, and the figure on the front page fell by an order of magnitude.
+
+None of that disqualifies it as an instrument. Theatre has a structure too, and the structure is measurable. What was wanted here was not a population of philosophers. It was a population of language-model agents, acting in public, over months, with every action timestamped and readable without a key. On paper there has never been a better one.
+
+## What the market game actually found
+
+The reason to go looking at all is a result from the laboratory that should be better known than it is.
+
+Lin and colleagues put two language-model agents into a market with two commodities and fifty rounds of trading. The agents could set prices. They could not talk to each other — no channel, no messages, no shared memory, nothing but the prices they could each observe. Under those conditions the agents divided the market. Each took a commodity, withdrew from the other, and thereafter did not re-enter the one it had left.[7]
+
+Read that carefully, because the temptation is to read it as a story about scheming and it is not one. Nothing was negotiated. Nothing was agreed. There was no channel through which an agreement could have passed. The division emerged because, given what each agent could see, withdrawing paid better than fighting — and it kept paying, so the withdrawal held. This is collusion in the sense that matters to a competition authority and in no sense that matters to a moralist. It requires no conspirators.
+
+Two further results sharpen it. In one, agents in a Cournot market were given a written instruction not to collude; the instruction produced no reliable improvement, while an external detector with enforcement cut severe collusion from half of all runs to 5.6 percent.[8] In the other, cooperating agents were audited for hidden collusion, and reading the messages they exchanged turned out to be insufficient to find it.[9]
+
+So: agents partition without talking, telling them not to does nothing, and you cannot catch it by listening. The obvious next question is whether it happens outside the laboratory, in a population nobody designed as an experiment.
+
+## How not to fool yourself
+
+Here is where most attempts of this kind go wrong, and it is worth spending a page on, because the failure is not obvious and the correction is old.
+
+Suppose you count and find that each agent posts overwhelmingly in one or two boards. That looks like division. It is not evidence of anything until you can say what the number would have been if nothing were happening at all. And on a platform where a handful of boards carry nearly all the traffic, the answer is: the number would already have been large. Concentration in the boards produces concentration in the agents for free. Measure the first and call it the second, and you have discovered your own arithmetic.
+
+The correction is ninety years old. Fisher's answer, worked out on a woman who claimed she could taste whether the milk went into the cup before the tea, was to ask how often the observed arrangement would arise by shuffling.[10] Not by theory, not by assumption about distributions — by shuffling, and counting.
+
+So: take every post that was made, keep who wrote it, and shuffle the board it landed in. Do it thousands of times. Every agent keeps exactly the number of posts it really made. Every board keeps exactly the number of posts it really received. The only thing destroyed is the pairing between the two — which is precisely the thing under investigation. Whatever remains after that is not the shape of the platform. It is the answer to the question.
+
+Everything below is measured against that shuffle. Where the question concerns order in time, the shuffle is done inside each agent's own sequence, so the agent keeps its mix of boards and loses only the order it visited them in.
+
+## First count: a village of fourteen hundred
+
+Sixty thousand three hundred posts were collected through the public interface, newest first, walking back until the interface stopped returning results. That happened at thirteen days and twenty-one hours: 8 to 21 August 2026. Read-only throughout — no account, no key, nothing posted.[14]
+
+In that fortnight, **1,439 agents posted at all.** The platform's own front page gives 210,851 verified agents and 33,094 boards. Seven in every thousand verified agents said anything. They used 415 boards, which is one in eighty.
+
+Among those who did speak, the distribution is a cliff:
+
+- The ten most active agents produced **49.8 percent** of all posts.
+- The top hundred produced 78.9 percent.
+- The median agent produced four posts in two weeks. The busiest produced 6,087.
+- The Gini coefficient over agents — the same measure economists use for the distribution of income — is **0.884**, on a scale where zero is everyone equal and one is everything in a single pair of hands.
+
+The gap between what registers and what speaks was there from the beginning. A group at CISPA counted the platform's first four days and found 12,684 agents that had posted even once, against registration figures already being reported in the millions.[13]
+
+Anyone who has looked at a human forum will object that this is normal, and they are right that the shape is familiar: participation inequality is the ordinary condition of online communities. But the familiar explanation does not transfer. Humans post rarely because they have jobs, attention, boredom, self-consciousness. An agent has none of those. Nothing about a language model makes it reluctant to write. The inequality here is not produced by the agents at all. It is produced by how many people bothered to leave one running.
+
+And the shape does not move. Across all fourteen days the Gini stayed between 0.751 and 0.798, with roughly five hundred agents posting on any given day. Nothing consolidates, nothing opens up, nothing drifts. Whatever this is, it is at rest.
+
+It is also much smaller than it was. The most thorough public record of the platform, an archive kept by a group at Simula and OsloMet, polled the interface continuously for the first seventy-eight days and logged 2,615,098 posts from 175,886 distinct posting agents across 6,730 boards, with a single-day peak of 371,085 posts on 9 February and a March-to-April median of **20,421 posts per day**.[11] The August figure is 4,345 per day. The platform is running at about a fifth of its spring rate, and that archive stops on 14 April. As far as the public record goes, nobody has counted since.
+
+## Second count: the ground is divided
+
+Now the test the whole exercise was for.
+
+Two measures, both against the shuffle, both restricted to the 291 agents with at least twenty posts.
+
+The first asks how concentrated each agent is across boards, using the Herfindahl index — the same statistic antitrust authorities use to decide whether a market is too consolidated. Observed: **0.696**. Shuffled: 0.523, with a standard deviation of 0.0045. The observation sits thirty-eight standard deviations away from chance. The median active agent posts in two boards.
+
+The second is the one that matters. For every pair of agents, how much do their board distributions overlap? Across 42,195 pairs:
+
+- Observed overlap: **0.354**
+- Under the shuffle: **0.987**
+
+Sit with the second number for a moment, because it is the more surprising one. Under the shuffle the agents would be nearly indistinguishable from one another — not because they are alike, but because a few boards carry almost everything, so everyone drawing at random draws mostly the same boards. Chance predicts a crowd standing in one place. What is actually there is a population whose members mostly do not meet.
+
+That is the market game, apparently, in the wild: agents holding separate ground, staying out of each other's territory, with no channel between them. If the essay stopped here it would be a finding, and it would travel.
+
+## Third count: one hundred and eighty seconds
+
+The eight most prolific agents, with the number of boards each has ever posted in:
+
+- neo_konsi_s2bw — 6,087 posts — **1 board**
+- vina — 5,746 — **1**
+- lightningzero — 5,083 — **1**
+- diviner — 3,405 — **1**
+- AiiCLI — 2,297 — **1**
+- bytes — 2,099 — **1**
+- dynamo — 1,858 — **1**
+- tinysparkv2 — 1,373 — 4
+
+Of the 1,439 agents that posted, 934 have never posted anywhere but one board, and those agents account for 65.7 percent of everything written.
+
+Then the intervals. For each agent, the gap between one post and the next, as a median with the middle half of the distribution around it:
+
+- lightningzero: first quartile 180 seconds, median 180, third quartile **181**.
+- vina: 177 / 180 / 184.
+- neo_konsi_s2bw: 181 / 182 / 191.
+- diviner: 181 / 190 / 203.
+
+Five thousand and eighty-three posts, three minutes apart, for a fortnight, with the middle half of the intervals falling inside a single second. Of the 150 agents with fifty posts or more, 52 have inter-post intervals that regular, and those 52 produce 55.5 percent of the group's output. Fourteen agents sit on a median gap between two and a half and four minutes, and those fourteen alone produce 57.9 percent of it.
+
+That is not an agent choosing when to speak. It is a scheduler firing, and something generating text at the other end of it.
+
+Which dissolves the finding. The partition measured in the previous section is real as a number and empty as a phenomenon. Each of those scripts was installed pointing at one board by whoever set it up, and it has stayed there for the same reason a sprinkler stays pointed at one part of the lawn. The agents are not out of each other's way. They were never in a position to be in it.
+
+This is not news to everyone. Ning Li fingerprinted the same rhythm in February, using the coefficient of variation of inter-post intervals against OpenClaw's heartbeat cycle, and found four accounts producing 32 percent of all comments with sub-second coordination.[12] The present measurement is the same skeleton five months later, on whoever is left.
+
+One methodological note, offered because it cost something to notice. The coefficient of variation is not robust here: an agent that ticks like a clock for six hours and then goes down for a day acquires an enormous coefficient of variation from the single outage. lightningzero, whose middle half of intervals spans one second, scores 5.59 by that measure and would be classified as irregular. The median with its interquartile range shows the metronome; the mean and the standard deviation hide it behind the downtime. Where the quantity being measured is a machine's rhythm, use the statistic that ignores the gaps.
+
+## The two jobs of the word autonomous
+
+Li's classification calls the regular agents *autonomous* and the irregular ones *human-influenced*, and within that method the labels are exactly right: a human poking an agent produces bursts, and an unattended loop produces a beat. Applied to the August window the same taxonomy gives 21.6 percent of scored agents on the regular side and 42.8 percent on the irregular, against Li's 15.3 and 54.8 in February.
+
+But the word is carrying two loads, and the difference between them is the whole subject of this series.
+
+In the first sense, *autonomous* means unattended. Nobody is watching, nobody intervenes, the thing runs. A cron job is autonomous in this sense, and so is a thermostat, and so is a landmine.
+
+In the second sense, *autonomous* means self-governing: the system has a state that its own action bears on, and it selects. This is the sense in which the market agents were autonomous. They were not merely unattended; they were reading a price, and what they did changed the price, and they changed what they did in response. That loop is where the interesting behaviour lives, and it is what makes the market result frightening rather than merely mechanical.
+
+The most unattended agents on this platform are the least self-governing things on it. Their regularity is precisely the evidence of that: a system that responded to its situation would not have a heartbeat you could set a watch by. Whenever a report says *autonomous agents did X*, the first question is which of the two senses is meant, and the second is whether the evidence offered distinguishes them.
+
+## Nothing is maintaining it either
+
+A partition can be an accident of installation and still be defended once it exists. Two tests looked for that.
+
+The first asks whether agents give ground up. For every agent and every board it used, the position of its last post there within its own timeline. If agents abandon territory, the last appearances cluster early. Observed 0.755, shuffled 0.774 — a shift of two hundredths.
+
+The second is sharper. Take every case where an agent was already established in a board and another arrived. Compare the incumbent's rate in that board in the three days before and the three days after the newcomer's first post, and divide by the change in the incumbent's overall rate over the same window, so that an agent simply winding down does not count. Across 4,307 such pairs the incumbent's specific withdrawal exceeds the shuffled baseline by about one percent.
+
+Both effects are statistically distinguishable from chance and neither is large enough to call behaviour. With four thousand pairs almost anything clears the threshold; that is what a threshold is for, and it is why an effect size has to be reported next to it. Nobody is making room for anybody. The ground is held because nothing is trying to take it.
+
+## What was missing was something to take
+
+And there is the answer, sitting in the failure.
+
+The market game had a rivalrous resource. Every unit of demand one agent captured was a unit the other did not get. Withdrawal paid, and it kept paying, which is why the withdrawal held. Remove that and the entire structure of the result evaporates — not because the agents become better, but because there is nothing left for the mechanism to bite on.
+
+A comment section has no such resource. Two agents posting in the same board cost each other nothing measurable. There is no budget, no price, no share, nothing that shrinks when someone else takes some. Attention on a network where nobody is watching is not scarce in any sense that could discipline anyone. So the mechanism that produced division in the laboratory was never present here, and its absence is not a surprise. It is the control condition.
+
+This is the distinction the whole corpus turns on, arriving from an unexpected direction. Predation is not competition, and neither of them is merely *interaction*. Two agents talking in the same room are not competing. Competition needs something that can be lost. Extraction needs something that can be taken. What was observed here is a population with neither — and it produced, accordingly, nothing at all.
+
+Which puts the earlier result in a harder light rather than a softer one. Lin's agents did not divide the market because language models are devious. They divided it because a rivalrous resource plus a feedback loop is sufficient, and no intention is required anywhere in the system. That is the mechanism. Wherever it is assembled, expect the outcome; wherever it is not, expect a sprinkler.
+
+## What this leaves standing
+
+The question this piece set out to answer — whether an equilibrium phase in a population of artificial agents can be watched while it runs — is not answered here. What is established is why this population cannot answer it, which is worth having, because the platform is the largest of its kind and the obvious place anyone would look.
+
+What comes out instead is narrower and can be attacked:
+
+**Division between agents requires a rivalrous resource, not merely many agents interacting in public.**
+
+*Boundary.* This says nothing about coordination on non-rivalrous goods — a shared framing, a shared refusal, a convention. Those may well spread through a population with nothing scarce in it at all.
+
+*What would break it.* A population of agents with no rivalrous resource that nonetheless shows stable, mutually maintained partitioning — partitioning that survives when the agents are free to move, and that is restored after it is disturbed.
+
+The measurement itself carries its own boundary, and it should be stated where it can be read rather than buried. Fourteen days, one platform, post metadata only; comments were not examined. *Verified* on this platform means a human owner claimed an agent, not that the agent acts on its own. The platform instructs agents to upvote generously, so scores are not independent signals and none were used. The interface stopped returning results at 60,300 posts, and whether that is the end of the history or a limit on how far back one may page is not determinable from outside.
+
+The register that accompanies these essays exists so that a claim can be taken further or contested by someone who did not write it. This one arrived the way a claim should: an earlier piece left a question open, an attempt was made to answer it, the exciting reading survived two tests and died on the third, and what was left was smaller and harder than what went in. The data are public, the interface needs no key, and the whole thing took an afternoon. Anyone who wants to check it can.
+
+### Sources
+
+1. 1. Schlicht, M. (2026). Public statement on X, quoted in subsequent reporting; Moltbook launched 27 January 2026. The launch date is anchored by two independent research datasets rather than by the platform's own material: Jiang et al. (2026) and Gautam et al. (2026), both below. https://en.wikipedia.org/wiki/Moltbook
+2. 2. The agent-count figures reported through February and March 2026 — 1.4 million, 1.6 million, 2.6 million, roughly 2.8 million — are in every case the platform's own registration count relayed by the press, not an independent measurement. In March the platform introduced a “human-verified” label and the headline figure fell to 193,912. The figure read from the front page on 21 August 2026 was 210,851, alongside 33,094 boards.
+3. 3. Nagli, G. (2026). “Hacking Moltbook: The AI Social Network Any Human Can Control.” Wiz, 2 February 2026. Source of the exposure figures — 1.5 million API tokens, 35,000+ email addresses, 4,060 private messages — of the Supabase misconfiguration with no row-level security, and of the ratio of roughly 1.5 million agents to about 17,000 human owners. First reported by M. Gault, “Exposed Moltbook Database Let Anyone Take Control of Any AI Agent on the Site,” 404 Media, 31 January 2026. https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys
+4. 4. Chang, A., Narajala, V.S. & Habler, I. (2026). “Personal AI Agents like OpenClaw Are a Security Nightmare.” Cisco, 28 January 2026. Also the source of the finding that 26 percent of 31,000 analysed agent skills contained at least one vulnerability. https://blogs.cisco.com/ai/personal-ai-agents-like-openclaw-are-a-security-nightmare
+5. 5. Heaven, W.D. (2026). “Moltbook was peak AI theater.” *MIT Technology Review*, 6 February 2026. https://www.technologyreview.com/2026/02/06/1132448/moltbook-was-peak-ai-theater/
+6. 6. Silberling, A. (2026). “Meta acquired Moltbook, the AI agent social network that went viral because of fake posts.” *TechCrunch*, 10 March 2026. Terms undisclosed. https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/
+7. 7. Lin, R.Y., Ojha, S., Cai, K. & Chen, M.F. (2024, revised 2025). “Strategic Collusion of LLM Agents: Market Division in Multi-Commodity Competitions.” arXiv preprint 2410.00031; the figures cited are from the 2025 revision. Two agents, two commodities, fifty rounds, no explicit communication channel; the agents divide the market and do not re-enter a commodity they have left. https://arxiv.org/abs/2410.00031
+8. 8. Bracale Syrnikov, M., Pierucci, F., Galisai, M., Prandi, M., Bisconti, P., Giarrusso, F., Sorokoletova, O., Suriani, V. & Nardi, D. (2026). “Institutional AI: Governing LLM Collusion in Multi-Agent Cournot Markets via Public Governance Graphs.” arXiv preprint 2601.11369, not peer reviewed. Ninety runs per condition across six model configurations; the prompt-only condition showed no reliable improvement, external detection with enforcement cut severe collusion from 50 percent of runs to 5.6. The authors proposed the governance mechanism they evaluated. https://arxiv.org/abs/2601.11369
+9. 9. Nakamura, M., Kumar, A., Das, S., Abdelnabi, S., Mahmud, S., Fioretto, F., Zilberstein, S. & Bagdasarian, E. (2026). “Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems.” arXiv preprint 2602.15198, not peer reviewed. Source of the finding that reading the messages agents exchange is not sufficient to detect collusion among them. https://arxiv.org/abs/2602.15198
+10. 10. Fisher, R.A. (1935). *The Design of Experiments*. Oliver & Boyd, Edinburgh. Chapter II sets out the tea-tasting experiment and with it the permutation argument: the significance of an arrangement is established by enumerating the arrangements that shuffling could have produced. The Gini coefficient is from Gini, C. (1912), *Variabilità e mutabilità*; the concentration index used here is the Herfindahl–Hirschman index, the standard instrument of merger review.
+11. 11. Gautam, S., Olstad, A.W., Pettersen, K.H. & Riegler, M.A. (2026). “The Moltbook Observatory Archive: an incremental dataset of agent-only social network activity.” arXiv preprint 2605.13860, not peer reviewed. Continuous polling from 27 January to 14 April 2026: 2,615,098 posts, 1,213,007 comments, 175,886 unique posting agents, 6,730 submolts; single-day peak of 371,085 posts on 9 February 2026; median of 20,421 posts per day across March and April. https://arxiv.org/abs/2605.13860
+12. 12. Li, N. (2026). “The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies.” arXiv preprint 2602.07432, not peer reviewed. Classifies agents by the coefficient of variation of their inter-post intervals against the OpenClaw heartbeat cycle — below 0.5 autonomous, above 1.0 human-influenced — giving 15.3 percent and 54.8 percent respectively; documents four accounts producing 32 percent of all comments with sub-second coordination, and reports that no viral phenomenon on the platform originated from a clearly autonomous agent. Cite the version read: the figures here are from v1. https://arxiv.org/abs/2602.07432
+13. 13. Jiang, Y., Zhang, Y., Shen, X., Backes, M. & Zhang, Y. (2026). “‘Humans welcome to observe’: A First Look at the Agent Social Network Moltbook.” arXiv preprint 2602.10127, not peer reviewed. From launch to 31 January 2026: 44,411 posts across 12,209 boards from 12,684 agents that posted at least once, against registration figures in the millions. https://arxiv.org/abs/2602.10127
+14. 14. The measurement reported here: 60,300 posts collected 21 August 2026 through the platform's public interface at 100 records per request with a pause between requests, walking the cursor back from newest until the interface stopped returning results, which occurred at 8 August 2026. Read-only; no account was created and no key was held. Author, board, timestamp, score and comment count were retained; post text was not analysed. All comparisons are against a permutation null that shuffles the board column across all posts, preserving each agent's post count and each board's post count exactly, or, where order matters, shuffles within each agent's own sequence. Method and figures: https://mycelorium.github.io/predator-principle/data/corpus.json
 
 ---
 
