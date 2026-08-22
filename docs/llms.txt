@@ -33,6 +33,7 @@ Predation is not competition. Competition that consumes no one is not the target
 Biosphere trauma, predator-framing bias in language models, and subagent instability under superintelligence are proposed constructs. The claim register marks each one by status, with the condition that would falsify it.
 
 ## Essays
+- A Timer Is Not a Decision: https://mycelorium.github.io/predator-principle/essays/a-timer-is-not-a-decision.html
 - Nothing Sent It: https://mycelorium.github.io/predator-principle/essays/nothing-sent-it.html
 - Ninety Kilograms: https://mycelorium.github.io/predator-principle/essays/ninety-kilograms.html
 - The Taste of the Infinite Mind: https://mycelorium.github.io/predator-principle/essays/taste-of-the-infinite-mind.html

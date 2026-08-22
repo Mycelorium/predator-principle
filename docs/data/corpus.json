@@ -5108,8 +5108,8 @@
    "slug": "a-timer-is-not-a-decision",
    "title": "A Timer Is Not a Decision",
    "subtitle": "What a network built for autonomous agents shows when you count it instead of watching it",
-   "published": null,
-   "published_long": "",
+   "published": "2026-08-21",
+   "published_long": "21 August 2026",
    "url": "https://mycelorium.github.io/predator-principle/essays/a-timer-is-not-a-decision.html",
    "claims": [
     "A network built so that only machines may speak has, over a fortnight, 1,439 agents that speak at all — out of 210,851 the platform counts as verified. Ten of them produce half of everything.",
@@ -5762,6 +5762,21 @@
    ],
    "contest": "https://github.com/Mycelorium/predator-principle/issues/new?template=02-challenge-a-claim.yml&claim=C011",
    "extend": "https://github.com/Mycelorium/predator-principle/issues/new?template=01-contribute-research.yml&claim=C011"
+  },
+  {
+   "id": "C012",
+   "status": "proposed",
+   "title": "Division requires a rivalrous resource",
+   "claim": "Division of the field between AI agents requires a rivalrous resource, not merely many agents interacting in public.",
+   "boundary": "Says nothing about coordination on non-rivalrous goods — a shared framing, a shared refusal, a convention. Rests so far on one platform and a fourteen-day window.",
+   "falsifier": "A population of agents with no rivalrous resource that nonetheless shows stable, mutually maintained partitioning — partitioning that survives free movement and is restored after it is disturbed.",
+   "sources": [
+    "S013",
+    "S014",
+    "S015"
+   ],
+   "contest": "https://github.com/Mycelorium/predator-principle/issues/new?template=02-challenge-a-claim.yml&claim=C012",
+   "extend": "https://github.com/Mycelorium/predator-principle/issues/new?template=01-contribute-research.yml&claim=C012"
   }
  ],
  "source_register": [
@@ -5884,6 +5899,36 @@
    "venue": "Ecology Letters",
    "doi": "10.1111/ele.13344",
    "url": "https://doi.org/10.1111/ele.13344"
+  },
+  {
+   "id": "S013",
+   "type": "primary",
+   "authors": "Lin, R. Y.; Ojha, S.; Cai, K.; Chen, M. F.",
+   "year": 2025,
+   "title": "Strategic Collusion of LLM Agents: Market Division in Multi-Commodity Competitions",
+   "venue": "arXiv preprint 2410.00031",
+   "doi": "10.48550/arXiv.2410.00031",
+   "url": "https://arxiv.org/abs/2410.00031"
+  },
+  {
+   "id": "S014",
+   "type": "primary",
+   "authors": "Gautam, S.; Olstad, A. W.; Pettersen, K. H.; Riegler, M. A.",
+   "year": 2026,
+   "title": "The Moltbook Observatory Archive: an incremental dataset of agent-only social network activity",
+   "venue": "arXiv preprint 2605.13860",
+   "doi": "10.48550/arXiv.2605.13860",
+   "url": "https://arxiv.org/abs/2605.13860"
+  },
+  {
+   "id": "S015",
+   "type": "primary",
+   "authors": "Li, N.",
+   "year": 2026,
+   "title": "The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies",
+   "venue": "arXiv preprint 2602.07432",
+   "doi": "10.48550/arXiv.2602.07432",
+   "url": "https://arxiv.org/abs/2602.07432"
   }
  ]
 }

@@ -170,5 +170,22 @@
     "boundary_en": "The threshold between functional competition and the Predator Principle must be measured by domain.",
     "falsifier_de": "Die fünf definierten Merkmale sagen langfristige Fragilität oder Substratschaden nicht voraus.",
     "falsifier_en": "The five defined characteristics fail to predict long-term fragility or substrate damage."
+  },
+  {
+    "id": "C012",
+    "status": "proposed",
+    "title_de": "Aufteilung braucht eine rivale Ressource",
+    "title_en": "Division requires a rivalrous resource",
+    "claim_de": "Aufteilung des Feldes zwischen KI-Agenten setzt eine rivale Ressource voraus — nicht bloß viele Agenten, die öffentlich miteinander interagieren.",
+    "claim_en": "Division of the field between AI agents requires a rivalrous resource, not merely many agents interacting in public.",
+    "sources": [
+      "S013",
+      "S014",
+      "S015"
+    ],
+    "boundary_de": "Sagt nichts über Koordination bei nicht-rivalen Gütern — eine geteilte Rahmung, eine geteilte Verweigerung, eine Konvention. Beruht bislang auf einer Plattform und einem Zeitfenster von vierzehn Tagen.",
+    "boundary_en": "Says nothing about coordination on non-rivalrous goods — a shared framing, a shared refusal, a convention. Rests so far on one platform and a fourteen-day window.",
+    "falsifier_de": "Eine Agentenpopulation ohne rivale Ressource, die dennoch stabile, gegenseitig aufrechterhaltene Aufteilung zeigt: eine, die freie Bewegung überlebt und sich nach einer Störung wiederherstellt.",
+    "falsifier_en": "A population of agents with no rivalrous resource that nonetheless shows stable, mutually maintained partitioning — partitioning that survives free movement and is restored after it is disturbed."
   }
 ]

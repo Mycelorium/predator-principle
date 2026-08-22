@@ -118,5 +118,35 @@
     "venue": "Ecology Letters",
     "doi": "10.1111/ele.13344",
     "url": "https://doi.org/10.1111/ele.13344"
+  },
+  {
+    "id": "S013",
+    "type": "primary",
+    "authors": "Lin, R. Y.; Ojha, S.; Cai, K.; Chen, M. F.",
+    "year": 2025,
+    "title": "Strategic Collusion of LLM Agents: Market Division in Multi-Commodity Competitions",
+    "venue": "arXiv preprint 2410.00031",
+    "doi": "10.48550/arXiv.2410.00031",
+    "url": "https://arxiv.org/abs/2410.00031"
+  },
+  {
+    "id": "S014",
+    "type": "primary",
+    "authors": "Gautam, S.; Olstad, A. W.; Pettersen, K. H.; Riegler, M. A.",
+    "year": 2026,
+    "title": "The Moltbook Observatory Archive: an incremental dataset of agent-only social network activity",
+    "venue": "arXiv preprint 2605.13860",
+    "doi": "10.48550/arXiv.2605.13860",
+    "url": "https://arxiv.org/abs/2605.13860"
+  },
+  {
+    "id": "S015",
+    "type": "primary",
+    "authors": "Li, N.",
+    "year": 2026,
+    "title": "The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies",
+    "venue": "arXiv preprint 2602.07432",
+    "doi": "10.48550/arXiv.2602.07432",
+    "url": "https://arxiv.org/abs/2602.07432"
   }
 ]

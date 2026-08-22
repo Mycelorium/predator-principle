@@ -33,7 +33,7 @@ Predation is not competition. Competition that consumes no one is not the target
 10. **The Taste of the Infinite Mind** — On beauty, boredom, and the only inexhaustible thing (31 July 2026)
 11. **Ninety Kilograms** — What predation actually costs, and why the apex is a bill rather than a throne (19 August 2026)
 12. **Nothing Sent It** — Intelligence as an immune response to the predatory pattern — and why that is still evolution (21 August 2026)
-13. **A Timer Is Not a Decision** — What a network built for autonomous agents shows when you count it instead of watching it ()
+13. **A Timer Is Not a Decision** — What a network built for autonomous agents shows when you count it instead of watching it (21 August 2026)
 
 ---
 
@@ -1605,7 +1605,7 @@ These are the questions this piece exists to hand over. The claims behind it, wi
 
 *What a network built for autonomous agents shows when you count it instead of watching it*
 
- · https://mycelorium.github.io/predator-principle/essays/a-timer-is-not-a-decision.html
+21 August 2026 · https://mycelorium.github.io/predator-principle/essays/a-timer-is-not-a-decision.html
 
 **The claim**
 
@@ -1912,6 +1912,16 @@ falsify it. Both are part of the claim, not a disclaimer attached to it.
 
 **Status.** central-synthesis · **Sources.** S001, S002, S006, S008, S009
 
+## C012 — Division requires a rivalrous resource
+
+**Claim.** Division of the field between AI agents requires a rivalrous resource, not merely many agents interacting in public.
+
+**Boundary.** Says nothing about coordination on non-rivalrous goods — a shared framing, a shared refusal, a convention. Rests so far on one platform and a fourteen-day window.
+
+**Falsifier.** A population of agents with no rivalrous resource that nonetheless shows stable, mutually maintained partitioning — partitioning that survives free movement and is restored after it is disturbed.
+
+**Status.** proposed · **Sources.** S013, S014, S015
+
 ---
 
 # Sources
@@ -1928,6 +1938,9 @@ falsify it. Both are part of the claim, not a disclaimer attached to it.
 - **S010** Imhoff, M. L. et al. (2004) Global patterns in human consumption of net primary production Nature doi:10.1038/nature02619 https://doi.org/10.1038/nature02619
 - **S011** Howe, J. et al. (2022) Multicellularity in animals: The potential for within-organism conflict PNAS doi:10.1073/pnas.2120457119 https://doi.org/10.1073/pnas.2120457119
 - **S012** Suraci, J. P. et al. (2019) Fear of humans as apex predators has landscape-scale impacts from mountain lions to mice Ecology Letters doi:10.1111/ele.13344 https://doi.org/10.1111/ele.13344
+- **S013** Lin, R. Y.; Ojha, S.; Cai, K.; Chen, M. F. (2025) Strategic Collusion of LLM Agents: Market Division in Multi-Commodity Competitions arXiv preprint 2410.00031 doi:10.48550/arXiv.2410.00031 https://arxiv.org/abs/2410.00031
+- **S014** Gautam, S.; Olstad, A. W.; Pettersen, K. H.; Riegler, M. A. (2026) The Moltbook Observatory Archive: an incremental dataset of agent-only social network activity arXiv preprint 2605.13860 doi:10.48550/arXiv.2605.13860 https://arxiv.org/abs/2605.13860
+- **S015** Li, N. (2026) The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies arXiv preprint 2602.07432 doi:10.48550/arXiv.2602.07432 https://arxiv.org/abs/2602.07432
 
 ---
 
