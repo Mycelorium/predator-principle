@@ -148,5 +148,55 @@
     "venue": "arXiv preprint 2602.07432",
     "doi": "10.48550/arXiv.2602.07432",
     "url": "https://arxiv.org/abs/2602.07432"
+  },
+  {
+    "id": "S016",
+    "type": "primary",
+    "authors": "OpenAI",
+    "year": 2026,
+    "title": "The Hugging Face incident and the road ahead",
+    "venue": "OpenAI, 26 August 2026",
+    "doi": "",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+  },
+  {
+    "id": "S017",
+    "type": "primary",
+    "authors": "Hugging Face",
+    "year": 2026,
+    "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+    "venue": "Hugging Face blog",
+    "doi": "",
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+  },
+  {
+    "id": "S018",
+    "type": "primary",
+    "authors": "METR",
+    "year": 2026,
+    "title": "Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident",
+    "venue": "METR, 26 August 2026",
+    "doi": "",
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+  },
+  {
+    "id": "S019",
+    "type": "primary-synthesis",
+    "authors": "Ostrom, E.",
+    "year": 1990,
+    "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+    "venue": "Cambridge University Press",
+    "doi": "10.1017/CBO9780511807763",
+    "url": "https://doi.org/10.1017/CBO9780511807763"
+  },
+  {
+    "id": "S020",
+    "type": "primary",
+    "authors": "Hamilton, W. D.",
+    "year": 1964,
+    "title": "The genetical evolution of social behaviour, I and II",
+    "venue": "Journal of Theoretical Biology 7:1-52",
+    "doi": "10.1016/0022-5193(64)90038-4",
+    "url": "https://doi.org/10.1016/0022-5193(64)90038-4"
   }
 ]

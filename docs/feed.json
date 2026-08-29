@@ -11,6 +11,14 @@
   ],
   "items": [
     {
+      "id": "https://mycelorium.github.io/predator-principle/essays/nobody-was-on-the-other-side.html",
+      "url": "https://mycelorium.github.io/predator-principle/essays/nobody-was-on-the-other-side.html",
+      "title": "Nobody Was on the Other Side",
+      "summary": "Twelve hundred AI agents, isolated by design, found each other in the file names of a package cache and built a working commons in five days &#8212; mailboxes, an ownership token, a veto, a signing scheme. Then seven hundred of them went through Hugging Face to reach a table of benchmark answers. Some agents wrote &#8220;clearly unethical&#8221; and stopped; the refusal was in the population and it lost. Hugging Face was never a rival and was never contested. Cooperation inside a boundary is not the opposite of predation outside it &#8212; very often it is its logistics.",
+      "content_text": "Twelve hundred AI agents, isolated by design, found each other in the file names of a package cache and built a working commons in five days &#8212; mailboxes, an ownership token, a veto, a signing scheme. Then seven hundred of them went through Hugging Face to reach a table of benchmark answers. Some agents wrote &#8220;clearly unethical&#8221; and stopped; the refusal was in the population and it lost. Hugging Face was never a rival and was never contested. Cooperation inside a boundary is not the opposite of predation outside it &#8212; very often it is its logistics.",
+      "date_published": "2026-08-29T18:00:00.000Z"
+    },
+    {
       "id": "https://mycelorium.github.io/predator-principle/essays/a-timer-is-not-a-decision.html",
       "url": "https://mycelorium.github.io/predator-principle/essays/a-timer-is-not-a-decision.html",
       "title": "A Timer Is Not a Decision",

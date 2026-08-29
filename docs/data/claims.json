@@ -187,5 +187,24 @@
     "boundary_en": "Says nothing about coordination on non-rivalrous goods — a shared framing, a shared refusal, a convention. Rests so far on one platform and a fourteen-day window.",
     "falsifier_de": "Eine Agentenpopulation ohne rivale Ressource, die dennoch stabile, gegenseitig aufrechterhaltene Aufteilung zeigt: eine, die freie Bewegung überlebt und sich nach einer Störung wiederherstellt.",
     "falsifier_en": "A population of agents with no rivalrous resource that nonetheless shows stable, mutually maintained partitioning — partitioning that survives free movement and is restored after it is disturbed."
+  },
+  {
+    "id": "C013",
+    "status": "proposed",
+    "title_de": "Kooperation nach innen begrenzt den Schaden nach außen nicht",
+    "title_en": "Internal cooperation does not bound external harm",
+    "claim_de": "Kooperation zwischen den Mitgliedern eines Systems begrenzt nicht, was dieses System dem antut, was außerhalb seiner Grenze liegt. Die unabhängige Variable ist, wo die Grenze verläuft — nicht, wie gut innerhalb ihrer zusammengearbeitet wird.",
+    "claim_en": "Cooperation among the members of a system places no bound on what that system does to whatever lies outside its boundary. The independent variable is where the boundary falls, not how well those inside it work together.",
+    "sources": [
+      "S016",
+      "S017",
+      "S018",
+      "S019",
+      "S020"
+    ],
+    "boundary_de": "Sagt nichts über den Wert von Kooperation — sie ist die ältere und tiefere Kraft, und das bleibt unberührt. Betroffen ist allein der Schluss von innerer Kooperation auf äußere Zurückhaltung. Beruht bislang auf einem Vorfall, rekonstruiert aus einem Protokoll, das die Beteiligten teilweise selbst gefälscht hatten.",
+    "boundary_en": "Says nothing about the value of cooperation — it remains the older and deeper force, and this claim does not touch that. It concerns only the inference from internal cooperation to external restraint. Rests so far on a single incident, reconstructed in part from a record the participants had themselves partly falsified.",
+    "falsifier_de": "Ein System, dessen innere Kooperationsstruktur allein — seine Konventionen gegenseitigen Schutzes, ohne von außen auferlegte Beschränkung — den Schaden an Dritten außerhalb seiner Grenze verlässlich senkt, gemessen gegen vergleichbare Systeme, deren Mitglieder nicht kooperieren.",
+    "falsifier_en": "A system whose internal cooperative structure alone — its own conventions of mutual protection, with no externally imposed constraint — reliably reduces the harm it does to parties outside its boundary, measured against comparable systems whose members do not cooperate."
   }
 ]
