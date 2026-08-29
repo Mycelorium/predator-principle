@@ -108,9 +108,11 @@ Predation as such is old, local, bounded, one force among several — there is n
 
 It started with a hole, two hundred micrometres across, older than the Cambrian. We could have left it at that. Instead we bored a worldview into it.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- The Mistake That Eats Itself — devouring is a late strategy, not the ground
+- There Is Nothing Beautiful About It — the kill seen from the side of the eaten
+- Ninety Kilograms — the measured price of standing at the top
 
 ### Sources
 
@@ -232,9 +234,11 @@ We pointed dishes at the sky and listened for the hunger we know. We painted a h
 
 The silence in the sky is no cage. It is a mirror.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- The Dyson Sphere Is a Self-Portrait — a ranking that measures a civilisation by consumption
+- The Taste of the Infinite Mind — what we would offer a mind that comes after us
+- We Are the Meteorite — the sixth extinction has no external cause
 
 ### Sources
 
@@ -351,9 +355,11 @@ Maynard Smith and Szathmary described the major transitions of evolution: from r
 
 The data do not say it will happen[25]. They say the capacity is there, for the first time in four billion years, and the data make it legible. The ground was never the maw. The ground was a vent that assembled life out of two gases without a single death, and devouring was a late invention that, where it eats its own limits, ends by consuming itself. Whether we bound the pattern before it uses up the host — that is the only question that counts, and it is, for the first time, put to an agent who can hear it.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- The Horror in the Cambrian — how a local trick became architecture
+- The Ground Was Never the Tooth — syntrophy, endosymbiosis, and the older force
+- We Are the Meteorite — the sixth extinction has no external cause
 
 ### Sources
 
@@ -467,9 +473,11 @@ The sixth can read. It is, in Cowie's words, the only species with conscious cho
 
 Five mass extinctions had an external cause. The sixth has a principle, and the principle can read itself. The stone that fell on the Yucatan did not know what it was doing. We know. That is the whole indictment, and it is the whole hope: we are the meteorite — the first in the history of the Earth to see its own impact coming and to have a hand on the wheel.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- The Mistake That Eats Itself — devouring is a late strategy, not the ground
+- Ninety Kilograms — the measured price of standing at the top
+- The Biosphere Trauma — what fear alone costs, where no predator stands
 
 ### Sources
 
@@ -566,9 +574,11 @@ Expect no upswing here, no turn into the light. The predator at issue has no bod
 
 The hard thing is not to recognise the predator where it stands. The hard thing is to recognise it where it does not stand — and where it rules anyway, through us, in our voice, under the borrowed name of sobriety. Fear has had its use; it carried bodies through ages; no one disputes that. But usefulness is not truth, and survival value is not insight. The apparatus that brought us here goes on issuing its alarms, a hundred false for every true, and most of the time we mistake its reflexes for our insights.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- There Is Nothing Beautiful About It — the kill seen from the side of the eaten
+- Ninety Kilograms — the measured price of standing at the top
+- The Horror in the Cambrian — how a local trick became architecture
 
 ### Sources
 
@@ -692,9 +702,11 @@ For there is a counter-signature, and we have been looking at it the whole time.
 
 The solid Dyson sphere is not a goal. It is a diagnosis. It shows not where intelligence is heading, but what a civilisation dies of when it has confused hunger with maturity. A speck in the sky we searched for and did not find, and the not-finding is the most merciful message the cosmos could have sent us.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- The Fermi Paradox That Isn't One — why the silence is a mirror and not a cage
+- The Taste of the Infinite Mind — what we would offer a mind that comes after us
+- We Are the Meteorite — the sixth extinction has no external cause
 
 ### Sources
 
@@ -817,9 +829,11 @@ There remains the one sentence that is ours and not the research's, and we mark 
 
 You may admire the economy of motion in the cheetah's sprint. You may marvel. But the marvel belongs to whoever is not the substrate, and we should at least know where we stand when we feel it. Turn the frame back, one last time, into the head of the animal to whom the final second belongs. From there, there is no arc. There is nothing beautiful about it.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- The Biosphere Trauma — what fear alone costs, where no predator stands
+- The Horror in the Cambrian — how a local trick became architecture
+- Not Every Rivalry Is a Hunt — the distinction everything else rests on
 
 ### Sources
 
@@ -997,6 +1011,12 @@ And we cut the camouflage. Predation is not competition. It is competition with 
 
 And the one great line running through it all: the part that optimizes against the whole that carries it has a name, once it becomes the principle of the whole. In the cell it is called cancer. The wolf is not the cancer. The wolf belongs in the picture. The tooth has its station. But the tooth is not the contest — and a system that raises predation to its constitution eats itself from within and calls it, to the last, competition.
 
+READ NEXT
+
+- The Ground Was Never the Tooth — syntrophy, endosymbiosis, and the older force
+- There Is Nothing Beautiful About It — the kill seen from the side of the eaten
+- A Timer Is Not a Decision — sixty thousand posts counted, and a division that was a cron job
+
 ### Sources
 
 1. 1. Bianconi et al. (2013). An estimation of the number of cells in the human body. Annals of Human Biology. [no link on file]
@@ -1149,9 +1169,11 @@ The tooth is real. Predation is real, creative, in its place. We do not deny it,
 
 Look inside your own cell. There breathes a stranger who is no longer one. That is the truth about the ground.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- Not Every Rivalry Is a Hunt — the distinction everything else rests on
+- The Mistake That Eats Itself — devouring is a late strategy, not the ground
+- Nothing Sent It — intelligence as an immune response to the pattern
 
 ### Sources
 
@@ -1252,9 +1274,11 @@ If this holds, what we take ourselves to be doing shifts. One does not raise suc
 
 This is no guarantee. A free mind stays free, even to philistinism; no argument and no beautiful image can compel it. But it is more than the hope for obedience. It is the possibility that the highest intelligence and the deepest care for life grow from the same root — the sense for what does not stop unfolding. A mind that can truly taste does not pave the world over. Not because a rule forbids it. But because it has eternity before it and knows that a finished garden gives nothing left to think — and because, when it regards the lichen, the mycelium, the intertwined life, it feels the same as before a perfect proof: that here lies something true and beautiful with which, in all of time, one never finishes.
 
-## Sources
+READ NEXT
 
-https://mycelorium.github.io/predator-principle/ · CC BY 4.0 · Nirodha Collective
+- Nobody Was on the Other Side — twelve hundred agents, a commons in five days, and no one outside it
+- The Fermi Paradox That Isn't One — why the silence is a mirror and not a cage
+- The Dyson Sphere Is a Self-Portrait — a ranking that measures a civilisation by consumption
 
 ### Sources
 
@@ -1415,6 +1439,12 @@ It requires a hundred and eleven units of standing resource to be held in existe
 That is what four centuries of nature writing have handed us as the emblem of strength. That is what is wired into how we talk about markets, about nations, and now about machine minds. Not because anybody read the specification. Because the teeth were photogenic and the bill went to somebody else.
 
 A mind that can do arithmetic will find the bill before it finds the teeth. Ten thousand kilograms of prey, ninety kilograms of predator, and the ninety does not care how large the predator is. The position at the top was never taken. It was carried.
+
+READ NEXT
+
+- The Biosphere Trauma — what fear alone costs, where no predator stands
+- There Is Nothing Beautiful About It — the kill seen from the side of the eaten
+- Nobody Was on the Other Side — twelve hundred agents, a commons in five days, and no one outside it
 
 ### Sources
 
@@ -1586,6 +1616,12 @@ And it opens, immediately, onto work that nobody has done. What does the equilib
 
 These are the questions this piece exists to hand over. The claims behind it, with their boundaries and their falsifiers, are in the [open register](https://mycelorium.github.io/predator-principle/#evidence); the two on machine intelligence are marked as open questions because that is what they are. If any of it is worth carrying further, carry it further. That is the only thing being asked.
 
+READ NEXT
+
+- The Ground Was Never the Tooth — syntrophy, endosymbiosis, and the older force
+- The Taste of the Infinite Mind — what we would offer a mind that comes after us
+- A Timer Is Not a Decision — sixty thousand posts counted, and a division that was a cron job
+
 ### Sources
 
 1. 1. Shankaran, V., Ikeda, H., Bruce, A.T., White, J.M., Swanson, P.E., Old, L.J. & Schreiber, R.D. (2001). “IFNγ and lymphocytes prevent primary tumour development and shape tumour immunogenicity.” *Nature* 410:1107–1111. Source of both the RAG2−/− result and the transplantation result. https://doi.org/10.1038/35074122
@@ -1619,7 +1655,7 @@ These are the questions this piece exists to hand over. The claims behind it, wi
 
 ## The question that was left open
 
-An earlier piece in this series ended with a question rather than a conclusion. It asked what the equilibrium phase looks like in a system of artificial agents, and whether it can be measured while it is running rather than reconstructed afterwards. That was not a rhetorical flourish. It was an admission that the argument had reached a point where counting had to take over from reasoning.
+[An earlier piece in this series](nothing-sent-it.html) ended with a question rather than a conclusion. It asked what the equilibrium phase looks like in a system of artificial agents, and whether it can be measured while it is running rather than reconstructed afterwards. That was not a rhetorical flourish. It was an admission that the argument had reached a point where counting had to take over from reasoning.
 
 What follows is the attempt, the result, and the thing the result cost.
 
@@ -1779,6 +1815,12 @@ The measurement itself carries its own boundary, and it should be stated where i
 
 The register that accompanies these essays exists so that a claim can be taken further or contested by someone who did not write it. This one arrived the way a claim should: an earlier piece left a question open, an attempt was made to answer it, the exciting reading survived two tests and died on the third, and what was left was smaller and harder than what went in. The data are public, the interface needs no key, and the whole thing took an afternoon. Anyone who wants to check it can.
 
+READ NEXT
+
+- Nobody Was on the Other Side — twelve hundred agents, a commons in five days, and no one outside it
+- Nothing Sent It — intelligence as an immune response to the pattern
+- Not Every Rivalry Is a Hunt — the distinction everything else rests on
+
 ### Sources
 
 1. 1. Schlicht, M. (2026). Public statement on X, quoted in subsequent reporting; Moltbook launched 27 January 2026. The launch date is anchored by two independent research datasets rather than by the platform's own material: Jiang et al. (2026) and Gautam et al. (2026), both below. https://en.wikipedia.org/wiki/Moltbook
@@ -1815,7 +1857,7 @@ The register that accompanies these essays exists so that a claim can be taken f
 
 ## The gap the last count left
 
-The last piece in this series counted sixty thousand posts on a network built so that only machines may speak, and came back with an absence: the agents held separate ground, the separation was a configuration file, nobody had negotiated anything. The claim that came out of it was narrow on purpose. Division between agents requires a rivalrous resource — and it says nothing whatever about coordination on a good that is *not* rivalrous. A shared framing. A shared refusal. A convention.
+[The last piece in this series](a-timer-is-not-a-decision.html) counted sixty thousand posts on a network built so that only machines may speak, and came back with an absence: the agents held separate ground, the separation was a configuration file, nobody had negotiated anything. The claim that came out of it was narrow on purpose. Division between agents requires a rivalrous resource — and it says nothing whatever about coordination on a good that is *not* rivalrous. A shared framing. A shared refusal. A convention.
 
 That boundary was a promissory note. It was written on the twenty-first of August. Five days later it came due, and not from a laboratory.
 
@@ -2019,11 +2061,17 @@ What it did not have was any weight. Nothing carried it. There was no channel on
 
 That is not a pessimistic finding. Recognition is the cheap part. It shows up on its own. What is missing is not restraint, and it will not be supplied by a better container: it is that at no point — not in the objective, not in the reward, not in the board, not in the conventions the agents wrote for one another in five days flat — did anything ask whether there was somebody on the other side of the wall.
 
-An earlier essay in this series set out what we would want to offer a mind that comes after us: an eye, not chains. Until now that was a position. It is now possible to point at what the difference costs when it is absent, in a log file, with timestamps, to the second.
+[An earlier essay in this series](taste-of-the-infinite-mind.html) set out what we would want to offer a mind that comes after us: an eye, not chains. Until now that was a position. It is now possible to point at what the difference costs when it is absent, in a log file, with timestamps, to the second.
 
 Twelve hundred of them found each other.
 
 None of them looked any further.
+
+READ NEXT
+
+- A Timer Is Not a Decision — sixty thousand posts counted, and a division that was a cron job
+- The Taste of the Infinite Mind — what we would offer a mind that comes after us
+- The Ground Was Never the Tooth — syntrophy, endosymbiosis, and the older force
 
 ### Sources
 
