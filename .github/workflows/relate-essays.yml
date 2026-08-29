@@ -1,0 +1,228 @@
+name: relate-essays
+
+# ONE-SHOT. Gives the essays internal links: a READ NEXT block at the foot of every
+# essay, the in-prose references to other essays turned into real links (wording
+# unchanged), an id on every Sources heading, and the CSS for the block. Then
+# regenerates everything derived from the corpus, deploys Pages, and deletes itself.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  relate:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Write the script
+        run: |
+          cat > /tmp/relate.mjs <<'RELEOF'
+          // one-shot: give the essays internal links.
+          //   1. a "READ NEXT" nav block at the foot of every essay, before Sources
+          //   2. the four in-prose references to other essays become real links (wording unchanged)
+          //   3. the .related CSS, which must beat the `nav { display: none }` phone rule
+          import { readFile, writeFile } from 'node:fs/promises';
+
+          const die = (m) => { console.error('ABORT: ' + m); process.exit(1); };
+
+          const T = {
+            'horror-in-the-cambrian':        ['The Horror in the Cambrian',          'how a local trick became architecture'],
+            'the-predators-filter':          ["The Fermi Paradox That Isn't One",    'why the silence is a mirror and not a cage'],
+            'the-mistake-that-eats-itself':  ['The Mistake That Eats Itself',        'devouring is a late strategy, not the ground'],
+            'we-are-the-meteorite':          ['We Are the Meteorite',                'the sixth extinction has no external cause'],
+            'the-trauma-that-still-runs':    ['The Biosphere Trauma',                'what fear alone costs, where no predator stands'],
+            'dyson-sphere-self-portrait':    ['The Dyson Sphere Is a Self-Portrait', 'a ranking that measures a civilisation by consumption'],
+            'the-romanticism-of-predation':  ['There Is Nothing Beautiful About It', 'the kill seen from the side of the eaten'],
+            'predation-is-not-competition':  ['Not Every Rivalry Is a Hunt',         'the distinction everything else rests on'],
+            'the-ground-was-never-the-tooth':['The Ground Was Never the Tooth',      'syntrophy, endosymbiosis, and the older force'],
+            'taste-of-the-infinite-mind':    ['The Taste of the Infinite Mind',      'what we would offer a mind that comes after us'],
+            'ninety-kilograms':              ['Ninety Kilograms',                    'the measured price of standing at the top'],
+            'nothing-sent-it':               ['Nothing Sent It',                     'intelligence as an immune response to the pattern'],
+            'a-timer-is-not-a-decision':     ['A Timer Is Not a Decision',           'sixty thousand posts counted, and a division that was a cron job'],
+            'nobody-was-on-the-other-side':  ['Nobody Was on the Other Side',        'twelve hundred agents, a commons in five days, and no one outside it'],
+          };
+
+          const R = {
+            'horror-in-the-cambrian':        ['the-mistake-that-eats-itself', 'the-romanticism-of-predation', 'ninety-kilograms'],
+            'the-predators-filter':          ['dyson-sphere-self-portrait', 'taste-of-the-infinite-mind', 'we-are-the-meteorite'],
+            'the-mistake-that-eats-itself':  ['horror-in-the-cambrian', 'the-ground-was-never-the-tooth', 'we-are-the-meteorite'],
+            'we-are-the-meteorite':          ['the-mistake-that-eats-itself', 'ninety-kilograms', 'the-trauma-that-still-runs'],
+            'the-trauma-that-still-runs':    ['the-romanticism-of-predation', 'ninety-kilograms', 'horror-in-the-cambrian'],
+            'dyson-sphere-self-portrait':    ['the-predators-filter', 'taste-of-the-infinite-mind', 'we-are-the-meteorite'],
+            'the-romanticism-of-predation':  ['the-trauma-that-still-runs', 'horror-in-the-cambrian', 'predation-is-not-competition'],
+            'predation-is-not-competition':  ['the-ground-was-never-the-tooth', 'the-romanticism-of-predation', 'a-timer-is-not-a-decision'],
+            'the-ground-was-never-the-tooth':['predation-is-not-competition', 'the-mistake-that-eats-itself', 'nothing-sent-it'],
+            'taste-of-the-infinite-mind':    ['nobody-was-on-the-other-side', 'the-predators-filter', 'dyson-sphere-self-portrait'],
+            'ninety-kilograms':              ['the-trauma-that-still-runs', 'the-romanticism-of-predation', 'nobody-was-on-the-other-side'],
+            'nothing-sent-it':               ['the-ground-was-never-the-tooth', 'taste-of-the-infinite-mind', 'a-timer-is-not-a-decision'],
+            'a-timer-is-not-a-decision':     ['nobody-was-on-the-other-side', 'nothing-sent-it', 'predation-is-not-competition'],
+            'nobody-was-on-the-other-side':  ['a-timer-is-not-a-decision', 'taste-of-the-infinite-mind', 'the-ground-was-never-the-tooth'],
+          };
+
+          /* in-prose links: [file, exact phrase to wrap, target slug] — wording is never changed */
+          const PROSE = [
+            ['a-timer-is-not-a-decision',    'An earlier piece in this series',  'nothing-sent-it'],
+            ['nobody-was-on-the-other-side', 'The last piece in this series',    'a-timer-is-not-a-decision'],
+            ['nobody-was-on-the-other-side', 'An earlier essay in this series',  'taste-of-the-infinite-mind'],
+          ];
+
+          let blocks = 0, proseLinks = 0;
+
+          for (const [slug, rel] of Object.entries(R)) {
+            const p = `docs/essays/${slug}.html`;
+            let s = await readFile(p, 'utf8');
+
+            if (s.includes('class="related"')) { console.log(`${slug}: block already present`); }
+            else {
+              const items = rel.map((r) => {
+                if (!T[r]) die(`unknown related slug ${r} on ${slug}`);
+                return `<li><a href="${r}.html">${T[r][0]}</a> <span class="related-hook">&mdash; ${T[r][1]}</span></li>`;
+              }).join('\n');
+              const block = `<nav class="related" aria-label="Related essays">\n`
+                + `<p class="eyebrow">READ NEXT</p>\n<ul>\n${items}\n</ul>\n</nav>\n\n`;
+              // some essays carry <h3 id="sources">, older ones a bare <h3>Sources</h3>;
+              // give the bare ones the id too, so the section can be linked and cited
+              let anchor = '<h3 id="sources">Sources</h3>';
+              if (!s.includes(anchor)) {
+                const bare = '<h3>Sources</h3>';
+                if (!s.includes(bare)) die(`${p}: no sources heading`);
+                s = s.replace(bare, anchor);
+                console.log(`${slug}: sources heading given an id`);
+              }
+              s = s.replace(anchor, block + anchor);
+              blocks++;
+            }
+
+            for (const [f, phrase, target] of PROSE) {
+              if (f !== slug) continue;
+              if (s.includes(`>${phrase}</a>`)) { console.log(`${slug}: prose link already present`); continue; }
+              if (!s.includes(phrase)) die(`${p}: prose phrase not found: ${phrase}`);
+              s = s.replace(phrase, `<a href="${target}.html">${phrase}</a>`);
+              proseLinks++;
+            }
+
+            await writeFile(p, s);
+          }
+
+          /* ------------------------------------------------------------------- CSS */
+          {
+            const p = 'docs/styles.css';
+            let css = await readFile(p, 'utf8');
+            if (css.includes('.related {')) console.log('styles.css: .related already present');
+            else {
+              if (!css.includes('.contents {')) die('styles.css: .contents rule not found');
+              css += `\n/* Related essays at the foot of an essay. \`display: block\` is required:\n`
+                + `   the site rule \`nav { display: none }\` below 800px would swallow it whole. */\n`
+                + `.related { display: block; margin: 3rem 0 2.5rem; padding-top: 1.8rem; border-top: 1px solid var(--line); }\n`
+                + `.related .eyebrow { margin-bottom: .8rem; }\n`
+                + `.related ul { margin: 0; padding-left: 1.1rem; list-style: none; }\n`
+                + `.related li { margin: .55rem 0; font-size: .95rem; line-height: 1.5; text-indent: -1.1rem; }\n`
+                + `.related a { color: var(--ink); font-weight: 650; text-decoration-thickness: 1px; text-underline-offset: 3px; }\n`
+                + `.related .related-hook { color: var(--muted); font-weight: 400; }\n`;
+              await writeFile(p, css);
+              console.log('styles.css: .related added');
+            }
+          }
+
+          console.log(`relate: ${blocks} blocks inserted, ${proseLinks} prose links made`);
+          RELEOF
+
+      - name: Apply
+        run: node /tmp/relate.mjs
+
+      - name: Rebuild everything derived from the corpus
+        run: |
+          node scripts/build-site.mjs
+          node scripts/build-corpus-data.mjs
+          node scripts/validate.mjs
+
+      - name: Guards
+        run: |
+          python3 - <<'GUARD'
+          import os, re, sys, glob, json
+
+          files = sorted(glob.glob('docs/essays/*.html'))
+          if len(files) < 14:
+              sys.exit('GUARD: only %d essays found' % len(files))
+          slugs = {os.path.basename(f)[:-5] for f in files}
+
+          total = 0
+          inbound = {}
+          for f in files:
+              s = open(f, encoding='utf-8').read()
+              if 'class="related"' not in s:
+                  sys.exit('GUARD: %s has no related block' % f)
+              if s.count('class="related"') != 1:
+                  sys.exit('GUARD: %s has the related block more than once' % f)
+              if 'id="sources"' not in s:
+                  sys.exit('GUARD: %s sources heading has no id' % f)
+              links = re.findall(r'href="([a-z0-9-]+)\.html"', s)
+              if len(links) < 3:
+                  sys.exit('GUARD: %s has only %d internal links' % (f, len(links)))
+              total += len(links)
+              for l in links:
+                  if l not in slugs:
+                      sys.exit('GUARD: %s links to unknown essay %s' % (f, l))
+                  inbound[l] = inbound.get(l, 0) + 1
+              ids = set(re.findall(r'id="([\w-]+)"', s))
+              for a in re.findall(r'href="#([\w-]+)"', s):
+                  if a not in ids:
+                      sys.exit('GUARD: %s has a dangling anchor #%s' % (f, a))
+              if 'self' in [l for l in links if l == os.path.basename(f)[:-5]]:
+                  sys.exit('GUARD: %s links to itself' % f)
+              if os.path.basename(f)[:-5] in links:
+                  sys.exit('GUARD: %s links to itself' % f)
+
+          orphans = sorted(slugs - set(inbound))
+          if orphans:
+              sys.exit('GUARD: essays with no inbound link: %s' % orphans)
+
+          css = open('docs/styles.css', encoding='utf-8').read()
+          if '.related { display: block' not in css:
+              sys.exit('GUARD: .related must set display:block or the phone rule nav{display:none} hides it')
+
+          for f in ('docs/feed.xml', 'docs/feed.json', 'docs/sitemap.xml', 'docs/llms.txt',
+                    'docs/corpus.md', 'docs/data/corpus.json'):
+              if not os.path.getsize(f):
+                  sys.exit('GUARD: %s is empty' % f)
+
+          print('guards passed: %d internal links across %d essays, no orphans' % (total, len(files)))
+          GUARD
+
+      - name: Commit, and remove this one-shot
+        run: |
+          git pull --rebase --autostash origin main || true
+          git rm -qf .github/workflows/relate-essays.yml
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git -c user.name='nirodha-bot' -c user.email='office@artecont.at' \
+            commit -m 'essays: link them to each other'
+          git push origin HEAD:main || (git pull --rebase --autostash origin main && git push origin HEAD:main)
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
