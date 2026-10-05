@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T11:50:55.647Z",
+  "generated_at": "2026-10-05T12:26:04.886Z",
   "generator": "scripts/observatory-data.mjs",
   "rules": [
     "Every value carries source, url, reference period and retrieval timestamp.",
@@ -16,7 +16,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:31.603Z",
+      "fetched_at": "2026-10-05T12:22:38.498Z",
       "status": "ok"
     },
     "warming_from_co2": {
@@ -27,7 +27,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
-      "fetched_at": "2026-09-28T11:47:31.603Z",
+      "fetched_at": "2026-10-05T12:22:38.499Z",
       "status": "ok"
     },
     "solar_share_elec": {
@@ -38,7 +38,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:33.114Z",
+      "fetched_at": "2026-10-05T12:22:39.978Z",
       "status": "ok"
     },
     "wind_share_elec": {
@@ -49,7 +49,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:33.115Z",
+      "fetched_at": "2026-10-05T12:22:39.979Z",
       "status": "ok"
     },
     "renewables_share_elec": {
@@ -60,7 +60,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:33.116Z",
+      "fetched_at": "2026-10-05T12:22:39.980Z",
       "status": "ok"
     },
     "fossil_share_elec": {
@@ -71,7 +71,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:33.117Z",
+      "fetched_at": "2026-10-05T12:22:39.981Z",
       "status": "ok"
     },
     "solar_wind_series": {
@@ -247,7 +247,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:33.118Z",
+      "fetched_at": "2026-10-05T12:22:39.982Z",
       "status": "ok"
     },
     "co2_ppm": {
@@ -258,7 +258,7 @@
       "url": "https://gml.noaa.gov/ccgg/trends/",
       "licence": "public domain (US Government)",
       "note": "Monthly mean for the stated month at one station, not an annual or global figure. The Mauna Loa record has a pronounced seasonal cycle peaking in May, so a month outside that peak sits below the year's maximum. NOAA states that the most recent year of data remains preliminary, pending recalibration of reference gases and further quality control.",
-      "fetched_at": "2026-09-28T11:47:33.403Z",
+      "fetched_at": "2026-10-05T12:22:40.282Z",
       "status": "ok"
     },
     "ev_share_new_cars": {
@@ -269,7 +269,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; underlying IEA data subject to IEA terms — attribution required",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:33.827Z",
+      "fetched_at": "2026-10-05T12:22:40.538Z",
       "status": "ok"
     },
     "ev_share_series": {
@@ -345,7 +345,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; IEA terms apply",
       "note": null,
-      "fetched_at": "2026-09-28T11:47:33.827Z",
+      "fetched_at": "2026-10-05T12:22:40.538Z",
       "status": "ok"
     },
     "threatened_species": {
@@ -356,7 +356,7 @@
       "url": "https://api.iucnredlist.org/",
       "licence": null,
       "note": "No IUCN_TOKEN configured; the API requires an access token, so this indicator is not retrieved.",
-      "fetched_at": "2026-09-28T11:47:33.827Z",
+      "fetched_at": "2026-10-05T12:22:40.538Z",
       "status": "no_token"
     },
     "fever": {
@@ -417,11 +417,11 @@
       },
       "blocks": {},
       "status": "failed",
-      "error": "fetch failed",
+      "error": "HTTP 429",
       "note": "Counts are term matches rather than unique documents, and query blocks may overlap. The absolute level depends on the term lists used; only relative change over time is comparable.",
       "source": "GDELT DOC 2.0 API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "fetched_at": "2026-09-28T11:50:53.087Z"
+      "fetched_at": "2026-10-05T12:26:01.581Z"
     },
     "fish_stocks": {
       "value": {
@@ -434,7 +434,7 @@
       "url": "https://ourworldindata.org/grapher/fish-stocks-within-sustainable-levels.csv",
       "licence": "CC-BY-4.0",
       "note": "Shares are by number of assessed stocks, not by volume of landings; for 2023 FAO reports that 72.6 per cent of landings came from sustainably fished stocks, because larger and better-monitored stocks dominate catch. Coverage is limited to the stocks FAO assesses (about 2,570 in the 2025 review); unassessed stocks are excluded, are not a random sample, and their status is unknown. This series follows the Our World in Data mirror and currently ends at 2021; FAO SOFIA 2026 reports 62.4 per cent sustainable and 37.6 per cent unsustainable for reference year 2023, and attributes part of that change to assessment revisions and methodological updates rather than to stock condition alone.",
-      "fetched_at": "2026-09-28T11:50:53.485Z",
+      "fetched_at": "2026-10-05T12:26:01.982Z",
       "status": "ok",
       "series": {
         "sustainable": [
@@ -843,7 +843,7 @@
       "url": "https://ourworldindata.org/grapher/global-living-planet-index.csv",
       "licence": "CC-BY-4.0",
       "note": "Geometric mean rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost: roughly half the monitored populations are declining and the remainder are stable or increasing. The upper and lower series are 95 per cent confidence limits obtained by bootstrap resampling. Sampling is uneven across taxa and regions. The 2024 edition covers 34,836 populations of 5,495 species.",
-      "fetched_at": "2026-09-28T11:50:53.684Z",
+      "fetched_at": "2026-10-05T12:26:02.863Z",
       "status": "ok",
       "series": {
         "index": [
@@ -1477,7 +1477,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. This is the least certain term in the global carbon budget: the Global Carbon Project attaches an uncertainty of about ±2.6 Gt CO₂ per year at one standard deviation, roughly half the annual value itself. The full historical series is revised between annual releases — the same year can move by more than ten per cent between vintages — so the maximum of 8.69 Gt in 1959 is a property of this release rather than a settled historical fact, and the mid-1950s values sit within uncertainty of one another.",
-      "fetched_at": "2026-09-28T11:50:54.924Z",
+      "fetched_at": "2026-10-05T12:26:04.124Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -2205,7 +2205,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": "Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator. Low-carbon generation is nuclear plus all renewable sources — hydro, wind, solar, bioenergy and other renewables. In this dataset the fossil and low-carbon shares sum to 100 per cent, so the two plotted series are complementary; the component shares are given above and are also in the machine-readable file.",
-      "fetched_at": "2026-09-28T11:50:55.646Z",
+      "fetched_at": "2026-10-05T12:26:04.885Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -3052,7 +3052,7 @@
       "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/",
       "licence": "reported figure, cited not redistributed",
       "note": "Global volume-weighted average across all end uses; BloombergNEF reports substantially different figures by segment, chemistry and region (stationary storage 70, battery-electric vehicle packs 99, LFP 81, NMC 128 USD/kWh; China 84 USD/kWh with North America and Europe well above it). Published annually as a report rather than as a machine-readable feed; transcribed manually. Next revision expected December 2026.",
-      "fetched_at": "2026-09-28T11:50:55.646Z",
+      "fetched_at": "2026-10-05T12:26:04.885Z",
       "status": "manual"
     },
     "co2_preindustrial_baseline": {
@@ -3063,7 +3063,7 @@
       "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
       "licence": null,
       "note": "Reference value from ice-core records, approximately stable through the Holocene. Fixed input, not a current measurement.",
-      "fetched_at": "2026-09-28T11:50:55.646Z",
+      "fetched_at": "2026-10-05T12:26:04.885Z",
       "status": "constant"
     }
   }
