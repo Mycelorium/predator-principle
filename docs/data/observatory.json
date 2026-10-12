@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T12:26:04.886Z",
+  "generated_at": "2026-10-12T13:20:51.661Z",
   "generator": "scripts/observatory-data.mjs",
   "rules": [
     "Every value carries source, url, reference period and retrieval timestamp.",
@@ -16,7 +16,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:38.498Z",
+      "fetched_at": "2026-10-12T13:20:37.097Z",
       "status": "ok"
     },
     "warming_from_co2": {
@@ -27,7 +27,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
-      "fetched_at": "2026-10-05T12:22:38.499Z",
+      "fetched_at": "2026-10-12T13:20:37.097Z",
       "status": "ok"
     },
     "solar_share_elec": {
@@ -38,7 +38,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:39.978Z",
+      "fetched_at": "2026-10-12T13:20:38.689Z",
       "status": "ok"
     },
     "wind_share_elec": {
@@ -49,7 +49,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:39.979Z",
+      "fetched_at": "2026-10-12T13:20:38.690Z",
       "status": "ok"
     },
     "renewables_share_elec": {
@@ -60,7 +60,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:39.980Z",
+      "fetched_at": "2026-10-12T13:20:38.690Z",
       "status": "ok"
     },
     "fossil_share_elec": {
@@ -71,7 +71,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:39.981Z",
+      "fetched_at": "2026-10-12T13:20:38.690Z",
       "status": "ok"
     },
     "solar_wind_series": {
@@ -247,18 +247,18 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:39.982Z",
+      "fetched_at": "2026-10-12T13:20:38.691Z",
       "status": "ok"
     },
     "co2_ppm": {
-      "value": 427.55,
+      "value": 426.07,
       "unit": "ppm",
-      "as_of": "2026-08",
+      "as_of": "2026-09",
       "source": "NOAA Global Monitoring Laboratory — Mauna Loa monthly mean",
       "url": "https://gml.noaa.gov/ccgg/trends/",
       "licence": "public domain (US Government)",
       "note": "Monthly mean for the stated month at one station, not an annual or global figure. The Mauna Loa record has a pronounced seasonal cycle peaking in May, so a month outside that peak sits below the year's maximum. NOAA states that the most recent year of data remains preliminary, pending recalibration of reference gases and further quality control.",
-      "fetched_at": "2026-10-05T12:22:40.282Z",
+      "fetched_at": "2026-10-12T13:20:38.875Z",
       "status": "ok"
     },
     "ev_share_new_cars": {
@@ -269,7 +269,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; underlying IEA data subject to IEA terms — attribution required",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:40.538Z",
+      "fetched_at": "2026-10-12T13:20:39.188Z",
       "status": "ok"
     },
     "ev_share_series": {
@@ -345,7 +345,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; IEA terms apply",
       "note": null,
-      "fetched_at": "2026-10-05T12:22:40.538Z",
+      "fetched_at": "2026-10-12T13:20:39.188Z",
       "status": "ok"
     },
     "threatened_species": {
@@ -356,7 +356,7 @@
       "url": "https://api.iucnredlist.org/",
       "licence": null,
       "note": "No IUCN_TOKEN configured; the API requires an access token, so this indicator is not retrieved.",
-      "fetched_at": "2026-10-05T12:22:40.538Z",
+      "fetched_at": "2026-10-12T13:20:39.188Z",
       "status": "no_token"
     },
     "fever": {
@@ -417,11 +417,11 @@
       },
       "blocks": {},
       "status": "failed",
-      "error": "HTTP 429",
+      "error": "fetch failed",
       "note": "Counts are term matches rather than unique documents, and query blocks may overlap. The absolute level depends on the term lists used; only relative change over time is comparable.",
       "source": "GDELT DOC 2.0 API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "fetched_at": "2026-10-05T12:26:01.581Z"
+      "fetched_at": "2026-10-12T13:20:49.188Z"
     },
     "fish_stocks": {
       "value": {
@@ -434,7 +434,7 @@
       "url": "https://ourworldindata.org/grapher/fish-stocks-within-sustainable-levels.csv",
       "licence": "CC-BY-4.0",
       "note": "Shares are by number of assessed stocks, not by volume of landings; for 2023 FAO reports that 72.6 per cent of landings came from sustainably fished stocks, because larger and better-monitored stocks dominate catch. Coverage is limited to the stocks FAO assesses (about 2,570 in the 2025 review); unassessed stocks are excluded, are not a random sample, and their status is unknown. This series follows the Our World in Data mirror and currently ends at 2021; FAO SOFIA 2026 reports 62.4 per cent sustainable and 37.6 per cent unsustainable for reference year 2023, and attributes part of that change to assessment revisions and methodological updates rather than to stock condition alone.",
-      "fetched_at": "2026-10-05T12:26:01.982Z",
+      "fetched_at": "2026-10-12T13:20:49.666Z",
       "status": "ok",
       "series": {
         "sustainable": [
@@ -833,635 +833,659 @@
     },
     "living_planet_index": {
       "value": {
-        "index": 27.13,
-        "upper": 33.28,
-        "lower": 21.97
+        "index": 0.27,
+        "upper": 0.33,
+        "lower": 0.22
       },
       "unit": "index, 1970 = 1",
-      "as_of": "2020",
+      "as_of": "2022",
       "source": "WWF / Zoological Society of London, Living Planet Index, via Our World in Data",
       "url": "https://ourworldindata.org/grapher/global-living-planet-index.csv",
       "licence": "CC-BY-4.0",
       "note": "Geometric mean rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost: roughly half the monitored populations are declining and the remainder are stable or increasing. The upper and lower series are 95 per cent confidence limits obtained by bootstrap resampling. Sampling is uneven across taxa and regions. The 2024 edition covers 34,836 populations of 5,495 species.",
-      "fetched_at": "2026-10-05T12:26:02.863Z",
+      "fetched_at": "2026-10-12T13:20:50.008Z",
       "status": "ok",
       "series": {
         "index": [
           [
             1970,
-            100
+            1
           ],
           [
             1971,
-            99.41
+            0.99
           ],
           [
             1972,
-            98.14
+            0.98
           ],
           [
             1973,
-            96.62
+            0.97
           ],
           [
             1974,
-            94.81
+            0.95
           ],
           [
             1975,
-            92.66
+            0.92
           ],
           [
             1976,
-            89.99
+            0.9
           ],
           [
             1977,
-            86.37
+            0.87
           ],
           [
             1978,
-            82.87
+            0.84
           ],
           [
             1979,
-            80.26
+            0.82
           ],
           [
             1980,
-            78.43
+            0.8
           ],
           [
             1981,
-            77.01
+            0.78
           ],
           [
             1982,
-            74.73
+            0.76
           ],
           [
             1983,
-            72.18
+            0.74
           ],
           [
             1984,
-            69.71
+            0.71
           ],
           [
             1985,
-            67.67
+            0.69
           ],
           [
             1986,
-            66.17
+            0.68
           ],
           [
             1987,
-            64.42
+            0.66
           ],
           [
             1988,
-            62.68
+            0.64
           ],
           [
             1989,
-            61.36
+            0.63
           ],
           [
             1990,
-            60.09
+            0.62
           ],
           [
             1991,
-            58.82
+            0.6
           ],
           [
             1992,
-            57.28
+            0.59
           ],
           [
             1993,
-            55.24
+            0.57
           ],
           [
             1994,
-            53.25
+            0.56
           ],
           [
             1995,
-            51.15
+            0.54
           ],
           [
             1996,
-            50.25
+            0.52
           ],
           [
             1997,
-            48.92
+            0.51
           ],
           [
             1998,
-            47.5
+            0.49
           ],
           [
             1999,
-            45.68
+            0.47
           ],
           [
             2000,
-            44.37
+            0.46
           ],
           [
             2001,
-            43.13
+            0.45
           ],
           [
             2002,
-            42.01
+            0.44
           ],
           [
             2003,
-            40.93
+            0.43
           ],
           [
             2004,
-            39.98
+            0.42
           ],
           [
             2005,
-            38.87
+            0.41
           ],
           [
             2006,
-            37.45
+            0.4
           ],
           [
             2007,
-            35.95
+            0.39
           ],
           [
             2008,
-            34.36
+            0.37
           ],
           [
             2009,
-            32.71
+            0.35
           ],
           [
             2010,
-            31.1
+            0.33
           ],
           [
             2011,
-            29.6
+            0.32
           ],
           [
             2012,
-            28.67
+            0.31
           ],
           [
             2013,
-            28.41
+            0.31
           ],
           [
             2014,
-            28.5
+            0.31
           ],
           [
             2015,
-            28.57
+            0.3
           ],
           [
             2016,
-            27.79
+            0.29
           ],
           [
             2017,
-            27.37
+            0.29
           ],
           [
             2018,
-            27.1
+            0.29
           ],
           [
             2019,
-            27.33
+            0.29
           ],
           [
             2020,
-            27.13
+            0.28
+          ],
+          [
+            2021,
+            0.27
+          ],
+          [
+            2022,
+            0.27
           ]
         ],
         "upper": [
           [
             1970,
-            100
+            1
           ],
           [
             1971,
-            101.6
+            1.02
           ],
           [
             1972,
-            101.83
+            1.02
           ],
           [
             1973,
-            101.14
+            1.01
           ],
           [
             1974,
-            100.25
+            1
           ],
           [
             1975,
-            98.94
+            0.99
           ],
           [
             1976,
-            96.91
+            0.97
           ],
           [
             1977,
-            93.39
+            0.94
           ],
           [
             1978,
-            89.9
+            0.91
           ],
           [
             1979,
-            87.47
+            0.89
           ],
           [
             1980,
-            85.98
+            0.88
           ],
           [
             1981,
-            84.87
+            0.86
           ],
           [
             1982,
-            82.63
+            0.84
           ],
           [
             1983,
-            80.03
+            0.82
           ],
           [
             1984,
-            77.48
+            0.79
           ],
           [
             1985,
-            75.47
+            0.77
           ],
           [
             1986,
-            73.98
+            0.76
           ],
           [
             1987,
-            72.23
+            0.74
           ],
           [
             1988,
-            70.37
+            0.72
           ],
           [
             1989,
-            68.98
+            0.71
           ],
           [
             1990,
-            67.74
+            0.69
           ],
           [
             1991,
-            66.5
+            0.68
           ],
           [
             1992,
-            64.98
+            0.67
           ],
           [
             1993,
-            62.8
+            0.65
           ],
           [
             1994,
-            60.68
+            0.63
           ],
           [
             1995,
-            58.43
+            0.61
           ],
           [
             1996,
-            57.52
+            0.6
           ],
           [
             1997,
-            56.1
+            0.58
           ],
           [
             1998,
-            54.57
+            0.56
           ],
           [
             1999,
-            52.54
+            0.54
           ],
           [
             2000,
-            51.09
+            0.53
           ],
           [
             2001,
-            49.72
+            0.52
           ],
           [
             2002,
-            48.55
+            0.5
           ],
           [
             2003,
-            47.43
+            0.49
           ],
           [
             2004,
-            46.45
+            0.49
           ],
           [
             2005,
-            45.31
+            0.48
           ],
           [
             2006,
-            43.8
+            0.47
           ],
           [
             2007,
-            42.2
+            0.45
           ],
           [
             2008,
-            40.42
+            0.43
           ],
           [
             2009,
-            38.58
+            0.41
           ],
           [
             2010,
-            36.78
+            0.39
           ],
           [
             2011,
-            35.12
+            0.38
           ],
           [
             2012,
-            34.08
+            0.37
           ],
           [
             2013,
-            33.85
+            0.37
           ],
           [
             2014,
-            34.03
+            0.37
           ],
           [
             2015,
-            34.19
+            0.36
           ],
           [
             2016,
-            33.39
+            0.35
           ],
           [
             2017,
-            33.07
+            0.35
           ],
           [
             2018,
-            32.98
+            0.35
           ],
           [
             2019,
-            33.41
+            0.35
           ],
           [
             2020,
-            33.28
+            0.34
+          ],
+          [
+            2021,
+            0.33
+          ],
+          [
+            2022,
+            0.33
           ]
         ],
         "lower": [
           [
             1970,
-            100
+            1
           ],
           [
             1971,
-            97.36
+            0.97
           ],
           [
             1972,
-            94.61
+            0.95
           ],
           [
             1973,
-            92.21
+            0.92
           ],
           [
             1974,
-            89.59
+            0.89
           ],
           [
             1975,
-            86.79
+            0.86
           ],
           [
             1976,
-            83.69
+            0.84
           ],
           [
             1977,
-            79.97
+            0.8
           ],
           [
             1978,
-            76.47
+            0.77
           ],
           [
             1979,
-            73.67
+            0.75
           ],
           [
             1980,
-            71.55
+            0.73
           ],
           [
             1981,
-            69.88
+            0.71
           ],
           [
             1982,
-            67.6
+            0.69
           ],
           [
             1983,
-            65.16
+            0.66
           ],
           [
             1984,
-            62.78
+            0.64
           ],
           [
             1985,
-            60.77
+            0.62
           ],
           [
             1986,
-            59.27
+            0.61
           ],
           [
             1987,
-            57.56
+            0.59
           ],
           [
             1988,
-            55.85
+            0.57
           ],
           [
             1989,
-            54.57
+            0.56
           ],
           [
             1990,
-            53.3
+            0.55
           ],
           [
             1991,
-            52.01
+            0.53
           ],
           [
             1992,
-            50.5
+            0.52
           ],
           [
             1993,
-            48.57
+            0.5
           ],
           [
             1994,
-            46.73
+            0.49
           ],
           [
             1995,
-            44.78
+            0.47
           ],
           [
             1996,
-            43.91
+            0.46
           ],
           [
             1997,
-            42.65
+            0.44
           ],
           [
             1998,
-            41.33
+            0.43
           ],
           [
             1999,
-            39.68
+            0.41
           ],
           [
             2000,
-            38.48
+            0.4
           ],
           [
             2001,
-            37.25
+            0.39
           ],
           [
             2002,
-            36.14
+            0.38
           ],
           [
             2003,
-            35.08
+            0.37
           ],
           [
             2004,
-            34.2
+            0.36
           ],
           [
             2005,
-            33.15
+            0.35
           ],
           [
             2006,
-            31.82
+            0.34
           ],
           [
             2007,
-            30.44
+            0.33
           ],
           [
             2008,
-            29
+            0.31
           ],
           [
             2009,
-            27.55
+            0.3
           ],
           [
             2010,
-            26.11
+            0.28
           ],
           [
             2011,
-            24.77
+            0.27
           ],
           [
             2012,
-            23.9
+            0.26
           ],
           [
             2013,
-            23.63
+            0.26
           ],
           [
             2014,
-            23.65
+            0.26
           ],
           [
             2015,
-            23.69
+            0.25
           ],
           [
             2016,
-            22.98
+            0.24
           ],
           [
             2017,
-            22.49
+            0.24
           ],
           [
             2018,
-            22.09
+            0.24
           ],
           [
             2019,
-            22.17
+            0.23
           ],
           [
             2020,
-            21.97
+            0.23
+          ],
+          [
+            2021,
+            0.22
+          ],
+          [
+            2022,
+            0.22
           ]
         ]
       },
@@ -1477,7 +1501,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. This is the least certain term in the global carbon budget: the Global Carbon Project attaches an uncertainty of about ±2.6 Gt CO₂ per year at one standard deviation, roughly half the annual value itself. The full historical series is revised between annual releases — the same year can move by more than ten per cent between vintages — so the maximum of 8.69 Gt in 1959 is a property of this release rather than a settled historical fact, and the mid-1950s values sit within uncertainty of one another.",
-      "fetched_at": "2026-10-05T12:26:04.124Z",
+      "fetched_at": "2026-10-12T13:20:51.021Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -2205,7 +2229,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": "Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator. Low-carbon generation is nuclear plus all renewable sources — hydro, wind, solar, bioenergy and other renewables. In this dataset the fossil and low-carbon shares sum to 100 per cent, so the two plotted series are complementary; the component shares are given above and are also in the machine-readable file.",
-      "fetched_at": "2026-10-05T12:26:04.885Z",
+      "fetched_at": "2026-10-12T13:20:51.660Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -3052,7 +3076,7 @@
       "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/",
       "licence": "reported figure, cited not redistributed",
       "note": "Global volume-weighted average across all end uses; BloombergNEF reports substantially different figures by segment, chemistry and region (stationary storage 70, battery-electric vehicle packs 99, LFP 81, NMC 128 USD/kWh; China 84 USD/kWh with North America and Europe well above it). Published annually as a report rather than as a machine-readable feed; transcribed manually. Next revision expected December 2026.",
-      "fetched_at": "2026-10-05T12:26:04.885Z",
+      "fetched_at": "2026-10-12T13:20:51.660Z",
       "status": "manual"
     },
     "co2_preindustrial_baseline": {
@@ -3063,7 +3087,7 @@
       "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
       "licence": null,
       "note": "Reference value from ice-core records, approximately stable through the Holocene. Fixed input, not a current measurement.",
-      "fetched_at": "2026-10-05T12:26:04.885Z",
+      "fetched_at": "2026-10-12T13:20:51.660Z",
       "status": "constant"
     }
   }
