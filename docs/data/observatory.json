@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T11:20:16.392Z",
+  "generated_at": "2026-11-02T13:40:25.499Z",
   "generator": "scripts/observatory-data.mjs",
   "rules": [
     "Every value carries source, url, reference period and retrieval timestamp.",
@@ -16,7 +16,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:24.950Z",
+      "fetched_at": "2026-11-02T13:38:42.723Z",
       "status": "ok"
     },
     "warming_from_co2": {
@@ -27,7 +27,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Attributed warming from CO₂ alone, not the total observed anomaly.",
-      "fetched_at": "2026-10-26T11:16:24.950Z",
+      "fetched_at": "2026-11-02T13:38:42.723Z",
       "status": "ok"
     },
     "solar_share_elec": {
@@ -38,7 +38,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:26.361Z",
+      "fetched_at": "2026-11-02T13:38:44.088Z",
       "status": "ok"
     },
     "wind_share_elec": {
@@ -49,7 +49,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:26.362Z",
+      "fetched_at": "2026-11-02T13:38:44.089Z",
       "status": "ok"
     },
     "renewables_share_elec": {
@@ -60,7 +60,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:26.363Z",
+      "fetched_at": "2026-11-02T13:38:44.090Z",
       "status": "ok"
     },
     "fossil_share_elec": {
@@ -71,7 +71,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:26.364Z",
+      "fetched_at": "2026-11-02T13:38:44.090Z",
       "status": "ok"
     },
     "solar_wind_series": {
@@ -247,7 +247,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:26.365Z",
+      "fetched_at": "2026-11-02T13:38:44.091Z",
       "status": "ok"
     },
     "co2_ppm": {
@@ -258,7 +258,7 @@
       "url": "https://gml.noaa.gov/ccgg/trends/",
       "licence": "public domain (US Government)",
       "note": "Monthly mean for the stated month at one station, not an annual or global figure. The Mauna Loa record has a pronounced seasonal cycle peaking in May, so a month outside that peak sits below the year's maximum. NOAA states that the most recent year of data remains preliminary, pending recalibration of reference gases and further quality control.",
-      "fetched_at": "2026-10-26T11:16:26.694Z",
+      "fetched_at": "2026-11-02T13:38:44.297Z",
       "status": "ok"
     },
     "ev_share_new_cars": {
@@ -269,7 +269,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; underlying IEA data subject to IEA terms — attribution required",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:26.789Z",
+      "fetched_at": "2026-11-02T13:38:44.861Z",
       "status": "ok"
     },
     "ev_share_series": {
@@ -345,7 +345,7 @@
       "url": "https://ourworldindata.org/grapher/electric-car-sales-share",
       "licence": "OWID CC-BY; IEA terms apply",
       "note": null,
-      "fetched_at": "2026-10-26T11:16:26.789Z",
+      "fetched_at": "2026-11-02T13:38:44.862Z",
       "status": "ok"
     },
     "threatened_species": {
@@ -356,7 +356,7 @@
       "url": "https://api.iucnredlist.org/",
       "licence": null,
       "note": "No IUCN_TOKEN configured; the API requires an access token, so this indicator is not retrieved.",
-      "fetched_at": "2026-10-26T11:16:26.789Z",
+      "fetched_at": "2026-11-02T13:38:44.862Z",
       "status": "no_token"
     },
     "fever": {
@@ -415,315 +415,13 @@
           ]
         }
       },
-      "blocks": {
-        "predation.economy": {
-          "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(%22hostile%20takeover%22%20OR%20%22predatory%20pricing%22%20OR%20%22price%20war%22%20OR%20%22asset%20stripping%22%20OR%20%22squeeze%20out%20competitors%22%20OR%20%22corner%20the%20market%22)&mode=timelinevol&timespan=3m&format=json",
-          "points": [
-            [
-              "20260729T000000Z",
-              0.0481
-            ],
-            [
-              "20260730T000000Z",
-              0.0499
-            ],
-            [
-              "20260731T000000Z",
-              0.0714
-            ],
-            [
-              "20260801T000000Z",
-              0.0453
-            ],
-            [
-              "20260802T000000Z",
-              0.0504
-            ],
-            [
-              "20260803T000000Z",
-              0.0759
-            ],
-            [
-              "20260804T000000Z",
-              0.0736
-            ],
-            [
-              "20260805T000000Z",
-              0.075
-            ],
-            [
-              "20260806T000000Z",
-              0.0584
-            ],
-            [
-              "20260807T000000Z",
-              0.0593
-            ],
-            [
-              "20260808T000000Z",
-              0.0288
-            ],
-            [
-              "20260809T000000Z",
-              0.0359
-            ],
-            [
-              "20260810T000000Z",
-              0.0755
-            ],
-            [
-              "20260811T000000Z",
-              0.0473
-            ],
-            [
-              "20260812T000000Z",
-              0.0627
-            ],
-            [
-              "20260813T000000Z",
-              0.0539
-            ],
-            [
-              "20260814T000000Z",
-              0.0561
-            ],
-            [
-              "20260815T000000Z",
-              0.0369
-            ],
-            [
-              "20260816T000000Z",
-              0.0453
-            ],
-            [
-              "20260817T000000Z",
-              0.0551
-            ],
-            [
-              "20260818T000000Z",
-              0.0455
-            ],
-            [
-              "20260819T000000Z",
-              0.0495
-            ],
-            [
-              "20260820T000000Z",
-              0.0506
-            ],
-            [
-              "20260821T000000Z",
-              0.0454
-            ],
-            [
-              "20260822T000000Z",
-              0.0784
-            ],
-            [
-              "20260823T000000Z",
-              0.0464
-            ],
-            [
-              "20260824T000000Z",
-              0.0654
-            ],
-            [
-              "20260825T000000Z",
-              0.0477
-            ],
-            [
-              "20260826T000000Z",
-              0.0556
-            ],
-            [
-              "20260827T000000Z",
-              0.0602
-            ],
-            [
-              "20260828T000000Z",
-              0.0707
-            ],
-            [
-              "20260829T000000Z",
-              0.0457
-            ],
-            [
-              "20260830T000000Z",
-              0.0566
-            ],
-            [
-              "20260831T000000Z",
-              0.0651
-            ],
-            [
-              "20260901T000000Z",
-              0.061
-            ],
-            [
-              "20260902T000000Z",
-              0.0684
-            ],
-            [
-              "20260903T000000Z",
-              0.0821
-            ],
-            [
-              "20260904T000000Z",
-              0.0543
-            ],
-            [
-              "20260905T000000Z",
-              0.0545
-            ],
-            [
-              "20260906T000000Z",
-              0.0375
-            ],
-            [
-              "20260907T000000Z",
-              0.0474
-            ],
-            [
-              "20260908T000000Z",
-              0.0841
-            ],
-            [
-              "20260909T000000Z",
-              0.0692
-            ],
-            [
-              "20260910T000000Z",
-              0.0671
-            ],
-            [
-              "20260911T000000Z",
-              0.0797
-            ],
-            [
-              "20260912T000000Z",
-              0.0513
-            ],
-            [
-              "20260913T000000Z",
-              0.0651
-            ],
-            [
-              "20260920T000000Z",
-              0.0569
-            ],
-            [
-              "20260921T000000Z",
-              0.0581
-            ],
-            [
-              "20260922T000000Z",
-              0.0596
-            ],
-            [
-              "20260923T000000Z",
-              0.0621
-            ],
-            [
-              "20260924T000000Z",
-              0.0603
-            ],
-            [
-              "20260925T000000Z",
-              0.0459
-            ],
-            [
-              "20260927T000000Z",
-              0.0233
-            ],
-            [
-              "20260928T000000Z",
-              0.0619
-            ],
-            [
-              "20260929T000000Z",
-              0.0697
-            ],
-            [
-              "20260930T000000Z",
-              0.0278
-            ],
-            [
-              "20261001T000000Z",
-              0.0441
-            ],
-            [
-              "20261002T000000Z",
-              0.0356
-            ],
-            [
-              "20261006T000000Z",
-              0
-            ],
-            [
-              "20261008T000000Z",
-              0
-            ],
-            [
-              "20261010T000000Z",
-              0.0545
-            ],
-            [
-              "20261015T000000Z",
-              0.0462
-            ],
-            [
-              "20261016T000000Z",
-              0.0433
-            ],
-            [
-              "20261017T000000Z",
-              0.0404
-            ],
-            [
-              "20261018T000000Z",
-              0.0315
-            ],
-            [
-              "20261019T000000Z",
-              0.0411
-            ],
-            [
-              "20261020T000000Z",
-              0.0403
-            ],
-            [
-              "20261021T000000Z",
-              0.0419
-            ],
-            [
-              "20261022T000000Z",
-              0.0347
-            ],
-            [
-              "20261023T000000Z",
-              0.0577
-            ],
-            [
-              "20261024T000000Z",
-              0.0232
-            ],
-            [
-              "20261025T000000Z",
-              0.0157
-            ],
-            [
-              "20261026T000000Z",
-              0.2231
-            ]
-          ]
-        }
-      },
+      "blocks": {},
       "status": "failed",
       "error": "fetch failed",
       "note": "Counts are term matches rather than unique documents, and query blocks may overlap. The absolute level depends on the term lists used; only relative change over time is comparable.",
       "source": "GDELT DOC 2.0 API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "fetched_at": "2026-10-26T11:20:13.245Z"
+      "fetched_at": "2026-11-02T13:40:22.920Z"
     },
     "fish_stocks": {
       "value": {
@@ -736,7 +434,7 @@
       "url": "https://ourworldindata.org/grapher/fish-stocks-within-sustainable-levels.csv",
       "licence": "CC-BY-4.0",
       "note": "Shares are by number of assessed stocks, not by volume of landings; for 2023 FAO reports that 72.6 per cent of landings came from sustainably fished stocks, because larger and better-monitored stocks dominate catch. Coverage is limited to the stocks FAO assesses (about 2,570 in the 2025 review); unassessed stocks are excluded, are not a random sample, and their status is unknown. This series follows the Our World in Data mirror and currently ends at 2021; FAO SOFIA 2026 reports 62.4 per cent sustainable and 37.6 per cent unsustainable for reference year 2023, and attributes part of that change to assessment revisions and methodological updates rather than to stock condition alone.",
-      "fetched_at": "2026-10-26T11:20:14.417Z",
+      "fetched_at": "2026-11-02T13:40:23.675Z",
       "status": "ok",
       "series": {
         "sustainable": [
@@ -1145,7 +843,7 @@
       "url": "https://ourworldindata.org/grapher/global-living-planet-index.csv",
       "licence": "CC-BY-4.0",
       "note": "Geometric mean rate of change across monitored vertebrate populations. Not an abundance count and not a proportion of species lost: roughly half the monitored populations are declining and the remainder are stable or increasing. The upper and lower series are 95 per cent confidence limits obtained by bootstrap resampling. Sampling is uneven across taxa and regions. The 2024 edition covers 34,836 populations of 5,495 species.",
-      "fetched_at": "2026-10-26T11:20:14.484Z",
+      "fetched_at": "2026-11-02T13:40:24.004Z",
       "status": "ok",
       "series": {
         "index": [
@@ -1803,7 +1501,7 @@
       "url": "https://github.com/owid/co2-data",
       "licence": "CC-BY-4.0",
       "note": "Emissions attributed to land-use change, including deforestation and conversion of other vegetated land. This is the least certain term in the global carbon budget: the Global Carbon Project attaches an uncertainty of about ±2.6 Gt CO₂ per year at one standard deviation, roughly half the annual value itself. The full historical series is revised between annual releases — the same year can move by more than ten per cent between vintages — so the maximum of 8.69 Gt in 1959 is a property of this release rather than a settled historical fact, and the mid-1950s values sit within uncertainty of one another.",
-      "fetched_at": "2026-10-26T11:20:15.686Z",
+      "fetched_at": "2026-11-02T13:40:24.950Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -2531,7 +2229,7 @@
       "url": "https://github.com/owid/energy-data",
       "licence": "CC-BY-4.0",
       "note": "Electricity generation only. Electricity accounts for approximately one fifth of global final energy consumption; other end uses are not covered by this indicator. Low-carbon generation is nuclear plus all renewable sources — hydro, wind, solar, bioenergy and other renewables. In this dataset the fossil and low-carbon shares sum to 100 per cent, so the two plotted series are complementary; the component shares are given above and are also in the machine-readable file.",
-      "fetched_at": "2026-10-26T11:20:16.391Z",
+      "fetched_at": "2026-11-02T13:40:25.497Z",
       "status": "ok",
       "series": {
         "taken": [
@@ -3378,7 +3076,7 @@
       "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/",
       "licence": "reported figure, cited not redistributed",
       "note": "Global volume-weighted average across all end uses; BloombergNEF reports substantially different figures by segment, chemistry and region (stationary storage 70, battery-electric vehicle packs 99, LFP 81, NMC 128 USD/kWh; China 84 USD/kWh with North America and Europe well above it). Published annually as a report rather than as a machine-readable feed; transcribed manually. Next revision expected December 2026.",
-      "fetched_at": "2026-10-26T11:20:16.391Z",
+      "fetched_at": "2026-11-02T13:40:25.497Z",
       "status": "manual"
     },
     "co2_preindustrial_baseline": {
@@ -3389,7 +3087,7 @@
       "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
       "licence": null,
       "note": "Reference value from ice-core records, approximately stable through the Holocene. Fixed input, not a current measurement.",
-      "fetched_at": "2026-10-26T11:20:16.391Z",
+      "fetched_at": "2026-11-02T13:40:25.497Z",
       "status": "constant"
     }
   }
